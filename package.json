@@ -6,6 +6,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-datocms": "^0.2.1",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
