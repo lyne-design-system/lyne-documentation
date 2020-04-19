@@ -1,6 +1,5 @@
 {
   "name": "lyne-documentation",
-  "private": true,
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
@@ -11,5 +10,14 @@
   },
   "devDependencies": {
     "@gridsome/cli": "^0.3.2"
+  },
+  "author": "Lyne Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyne-design-system/lyne-documentation"
+  },
+  "bugs": {
+    "url": "https://github.com/lyne-design-system/lyne-documentation/issues"
   }
 }
