@@ -1,16 +1,33 @@
-// Server API makes it possible to hook into various parts of Gridsome
-// on server-side and add custom data to the GraphQL data layer.
-// Learn more: https://gridsome.org/docs/server-api/
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+  api.createPages(async ({ graphql, createPage }) => {
+    const {
+      data: {
+        allDatoCmsComponent
+      }
+    } = await graphql(`
+      {
+        allDatoCmsComponent {
+          edges {
+            node {
+              id
+              componentName
+            }
+          }
+        }
+      }
+    `);
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
+    allDatoCmsComponent.edges.forEach(({node}) => createPage({
+      path: `/components/${node.componentName}`,
+      component: './src/templates/LyneComponent.vue',
+      context: {
+
+        // TODO: for `datoCmsComponent` in query, type ID is needed. for
+        // filtering `allDatoCmsComponentVariant` in query, type Date is needed.
+        // This does not make sense... ?
+        compIdDate: node.id,
+        compIdString: node.id
+      }
+    }));
+  });
 }

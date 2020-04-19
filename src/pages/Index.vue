@@ -1,19 +1,14 @@
 <template>
   <Layout>
+    <h1>Lyne Design System</h1>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
 
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <h2>Lyne Design System on GitHub</h2>
+    <ul>
+      <li><a href="https://github.com/lyne-design-system/lyne-components" target="_blank" rel="noopener">lyne-components</a>: Base Components for Lyne Design System</li>
+      <li><a href="https://github.com/lyne-design-system/lyne-design-tokens" target="_blank" rel="noopener">lyne-design-tokens</a>: Managing and publishing design tokens for the lyne design system</li>
+      <li><a href="https://github.com/lyne-design-system/lyne-getting-started" target="_blank" rel="noopener">lyne-getting-started</a>: Sample integrations for Lyne Design System</li>
+    </ul>
 
   </Layout>
 </template>
@@ -21,13 +16,10 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Documentation for Lyne Design System'
   }
 }
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>

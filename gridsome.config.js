@@ -1,10 +1,16 @@
-// This is where project configuration and plugin options are located. 
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'Lyne Design System',
+  siteDescription: 'Documentation for Lyne Design System',
+  siteUrl: '',
+  plugins: [
+    {
+      use: '@gridsome/source-datocms',
+      options: {
+        apiToken: process.env['DATO_API_TOKEN'],
+        previewMode: true,
+        apiUrl: 'https://site-api.datocms.com',
+        typeName: 'DatoCms'
+      }
+    }
+  ]
 }
