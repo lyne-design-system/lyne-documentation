@@ -7,10 +7,8 @@ jobs:
       if: branch = master
       script:
 
-        - npx @gridsome/cli build
-
         # Make production build
-        - npm run build
+        - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
 
       after_success:
 
