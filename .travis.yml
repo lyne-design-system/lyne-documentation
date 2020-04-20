@@ -5,14 +5,6 @@ jobs:
   include:
     - stage: build and deploy
       if: branch = master
-
-      before_install:
-        - |
-          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
-          -H 'Content-Type: application/json' \
-          -d '{ "status": "pending" }'
-
-
       script:
 
         # Make production build
@@ -33,7 +25,7 @@ jobs:
           -H 'Content-Type: application/json' \
           -d '{ "status": "success" }'
 
-
+      # Inform Dato CMS of failure of build
       after_failure:
         - |
           curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
