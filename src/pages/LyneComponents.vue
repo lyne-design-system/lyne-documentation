@@ -3,7 +3,7 @@
     <h1>Lyne Components</h1>
 
     <ul
-      v-for="({ node: comp}) in $static.allDatoCmsComponent.edges"
+      v-for="(comp) in $page.lyne.allComponents"
       :key="comp.id"
     >
 
@@ -20,19 +20,17 @@
   </Layout>
 </template>
 
-<static-query>
+<page-query>
   query {
-    allDatoCmsComponent {
-      edges {
-        node {
-          id
-          title
-          componentName
-        }
+    lyne {
+      allComponents {
+        id
+        title
+        componentName
       }
     }
   }
-</static-query>
+</page-query>
 
 <style>
 </style>

@@ -6,7 +6,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/source-datocms": "^0.2.1",
+    "@gridsome/source-graphql": "^0.1.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {

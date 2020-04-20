@@ -4,13 +4,16 @@ module.exports = {
   siteUrl: '',
   plugins: [
     {
-      use: '@gridsome/source-datocms',
+      use: '@gridsome/source-graphql',
       options: {
-        apiToken: process.env['DATO_API_TOKEN'],
-        previewMode: true,
-        apiUrl: 'https://site-api.datocms.com',
-        typeName: 'DatoCms'
-      }
+        url: 'https://graphql.datocms.com',
+        fieldName: 'lyne',
+        typeName: 'lyneTypes',
+
+        headers: {
+          Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
+        },
+      },
     }
   ]
 }

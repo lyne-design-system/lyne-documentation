@@ -1,32 +1,33 @@
 <template>
   <Layout>
-
-    <h1>{{$page.component.title}}</h1>
+    test
+    <h1>{{$page.component.component.title}}</h1>
 
     <div
-      v-for="({ node: comp}) in $page.variants.edges"
+      v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
     >
 
       <h2>{{comp.title}}</h2>
       <p>{{comp.description}}</p>
     </div>
+
   </Layout>
 </template>
 
 <page-query>
 
-query($compIdDate: Date!, $compIdString: ID!) {
-  component: datoCmsComponent(id: $compIdString){
-    title
+query($compId: lyneTypes_ItemId) {
+  component: lyne {
+    component(filter: {id: {eq: $compId}}) {
+      title
+    }
   },
-  variants: allDatoCmsComponentVariant(filter: { component: {eq: $compIdDate} }) {
-    edges {
-      node {
-        id
-        title
-        description
-      }
+  variants: lyne {
+    allComponentVariants(filter: { component: {eq: $compId} }) {
+      id
+      title
+      description
     }
   }
 }
