@@ -6,7 +6,7 @@
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
     >
-
+      <hr>
       <h2>{{comp.title}}</h2>
       <p>{{comp.description}}</p>
 
