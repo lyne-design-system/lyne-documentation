@@ -11,7 +11,7 @@ module.exports = {
         typeName: 'lyneTypes',
 
         headers: {
-          Authorization: `Bearer ${process.env.AUTH_TOKEN}`,
+          Authorization: `Bearer ${process.env.DATO_API_TOKEN}`,
         },
       },
     }
