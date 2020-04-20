@@ -10,7 +10,7 @@ jobs:
         - |
           curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
           -H 'Content-Type: application/json' \
-          -d '{ "status": "building" }'
+          -d '{ "status": "pending" }'
 
 
       script:
