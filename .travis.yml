@@ -1,8 +1,6 @@
 os: linux
 language: node_js
 notifications:
-  webhooks:
-  - https://webhooks.datocms.com/Sj12iWmf3N/deploy-results
 jobs:
   include:
     - stage: build and deploy
