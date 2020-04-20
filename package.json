@@ -10,7 +10,8 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "@gridsome/cli": "^0.3.2"
+    "@gridsome/cli": "^0.3.2",
+    "lyne-test": "^6.0.1"
   },
   "author": "Lyne Team",
   "license": "MIT",
