@@ -20,7 +20,14 @@ jobs:
         - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/
 
         # Inform Dato CMS on successfull build&deploy
-        - curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results -H 'Content-Type: application/json' -d '{ "status": "success" }'
+        - |
+          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results
+          -H 'Content-Type: application/json'
+          -d '{ "status": "success" }'
+
 
       after_failure:
-        - curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results -H 'Content-Type: application/json' -d '{ "status": "error" }'
+        - |
+          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results
+          -H 'Content-Type: application/json'
+          -d '{ "status": "error" }'
