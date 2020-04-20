@@ -21,13 +21,13 @@ jobs:
 
         # Inform Dato CMS on successfull build&deploy
         - |
-          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results
-          -H 'Content-Type: application/json'
+          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
+          -H 'Content-Type: application/json' \
           -d '{ "status": "success" }'
 
 
       after_failure:
         - |
-          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results
-          -H 'Content-Type: application/json'
+          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
+          -H 'Content-Type: application/json' \
           -d '{ "status": "error" }'
