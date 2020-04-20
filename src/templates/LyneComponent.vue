@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <h1>{{$page.component.component.title}}</h1>
-
     <div
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
@@ -40,6 +39,16 @@ query($compId: lyneTypes_ItemId) {
   }
 }
 </page-query>
+
+<script>
+export default {
+  name: 'LyneComponent',
+  mounted() {
+    window.lyneComps = require('lyne-test/loader');
+    window.lyneComps.defineCustomElements();
+  }
+}
+</script>
 
 <style>
 </style>
