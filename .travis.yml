@@ -1,12 +1,13 @@
 os: linux
 language: node_js
-cache:
-  npm: false
 jobs:
   include:
     - stage: build and deploy
       if: branch = master
       script:
+
+        # Make sure we have latest version of lyne-components
+        - npm up lyne-test
 
         # Make production build
         - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
