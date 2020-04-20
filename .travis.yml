@@ -1,6 +1,7 @@
 os: linux
 language: node_js
-notifications:
+cache:
+  npm: false
 jobs:
   include:
     - stage: build and deploy
