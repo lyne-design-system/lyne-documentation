@@ -5,6 +5,14 @@ jobs:
   include:
     - stage: build and deploy
       if: branch = master
+
+      before_install:
+        - |
+          curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
+          -H 'Content-Type: application/json' \
+          -d '{ "status": "building" }'
+
+
       script:
 
         # Make production build
