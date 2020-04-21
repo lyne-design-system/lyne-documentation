@@ -1,8 +1,8 @@
 module.exports = {
-  lyneComponentsPrefix: 'lyne',
-  lyneComponentsDocumentationPath: 'node_modules/lyne-test/dist/documentation',
-  graphqlDatoUrl: 'https://graphql.datocms.com',
+  graphqlComponentsReadmeTypeName: 'MdDoc',
   graphqlDatoFieldName: 'lyne',
   graphqlDatoTypeName: 'lyneTypes',
-  graphqlComponentsReadmeTypeName: 'MdDoc'
+  graphqlDatoUrl: 'https://graphql.datocms.com',
+  lyneComponentsDocumentationPath: 'node_modules/lyne-test/dist/documentation',
+  lyneComponentsPrefix: 'lyne'
 };

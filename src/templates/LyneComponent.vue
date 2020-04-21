@@ -31,59 +31,49 @@
 </template>
 
 <page-query>
-
-query($compId: lyneTypes_ItemId, $componentDistPath: String) {
-  component: lyne {
-    component(filter: {id: {eq: $compId}}) {
-      title
-      componentName
+  query($compId: lyneTypes_ItemId, $componentDistPath: String) {
+    component: lyne {
+      component(filter: { id: { eq: $compId } }) {
+        title
+        componentName
+      }
     }
-  },
-  variants: lyne {
-    allComponentVariants(filter: { component: {eq: $compId} }) {
-      id
-      title
-      description
-      properties
+    variants: lyne {
+      allComponentVariants(filter: { component: { eq: $compId } }) {
+        id
+        title
+        description
+        properties
+      }
     }
-  },
-  mdDoc: allMdDoc(
-    filter: {
-      fileInfo: {
-        directory: {
-          in: [
-            $componentDistPath
-          ]
+    mdDoc: allMdDoc(
+      filter: { fileInfo: { directory: { in: [$componentDistPath] } } }
+    ) {
+      edges {
+        node {
+          content
         }
       }
     }
-  ) {
-    edges {
-      node {
-        content
-      }
-    }
   }
-}
 </page-query>
 
 <script>
 const lyneComponentDocs = require('lyne-test/dist/documentation/jsonDocs.json');
 
 export default {
-  name: 'LyneComponent',
   data() {
     return {
       docs: lyneComponentDocs
-    }
+    };
   },
   methods: {
 
     // Get component from jsonDocs.json
     jsonDocsForComp(comp) {
-      const foundComponent = lyneComponentDocs.components.filter((lyneComponent) => {
-        return lyneComponent.tag === comp;
-      });
+      const foundComponent = lyneComponentDocs
+        .components
+        .filter((lyneComponent) => lyneComponent.tag === comp);
 
       if (foundComponent && foundComponent.length === 1) {
         return foundComponent[0];
@@ -95,13 +85,18 @@ export default {
   },
   mounted() {
 
-    // This makes sure that components only get rendered on the
-    // client.
+    // This makes sure that components only get rendered on the client.
+
     // TODO: enable SSR
+
+    /* eslint-disable global-require */
     window.lyneComps = require('lyne-test/loader');
+    /* eslint-enable global-require */
+
     window.lyneComps.defineCustomElements();
-  }
-}
+  },
+  name: 'LyneComponent'
+};
 
 </script>
 

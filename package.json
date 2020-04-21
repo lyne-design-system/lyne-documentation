@@ -3,18 +3,25 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "lint": "eslint --ext .js,.vue ./"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/source-graphql": "^0.1.0",
     "@gridsome/transformer-remark": "^0.5.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "lyne-test": "^6.10.0"
   },
   "devDependencies": {
     "@gridsome/cli": "^0.3.2",
-    "lyne-test": "^6.10.0",
-    "netlify-cli": "^2.47.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-gridsome": "^1.4.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "netlify-cli": "^2.47.0",
+    "vue-eslint-parser": "^7.0.0"
   },
   "author": "Lyne Team",
   "license": "MIT",

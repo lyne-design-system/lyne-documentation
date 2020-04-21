@@ -1,0 +1,5 @@
+/node_modules/
+/cache/
+/git/
+/dist/
+/src/.temp
