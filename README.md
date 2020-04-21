@@ -23,3 +23,7 @@ You can pass the env flag directly in the npm command
 ```bash
 DATO_API_TOKEN=PAST_TOKEN_HERE npm run develop
 ```
+
+## Linting
+
+Make sure to run `npm run lint` on your console to check for linting issues. The build on Travis CI will fail if there are linting issues.
