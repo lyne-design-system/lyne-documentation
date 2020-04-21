@@ -99,10 +99,15 @@ export default {
     // This makes sure that components only get rendered on the
     // client.
     // TODO: enable SSR
+    // window.lyneComps = require('lyne-test/loader');
+    // window.lyneComps.defineCustomElements();
+  },
+  beforeMount() {
     window.lyneComps = require('lyne-test/loader');
     window.lyneComps.defineCustomElements();
   }
 }
+
 </script>
 
 <style>
