@@ -12,7 +12,7 @@ You must provide an API token for the Dato CMS GraphQL Endpoint. There are two p
 
 Add a .env file with the following content
 ```bash
-DATO_API_TOKEN=PAST_TOKEN_HERE
+DATO_API_TOKEN=PASTE_TOKEN_HERE
 ```
 
 After adding the .env file, you can run the dev server: `npm run develop`
@@ -21,7 +21,7 @@ After adding the .env file, you can run the dev server: `npm run develop`
 
 You can pass the env flag directly in the npm command
 ```bash
-DATO_API_TOKEN=PAST_TOKEN_HERE npm run develop
+DATO_API_TOKEN=PASTE_TOKEN_HERE npm run develop
 ```
 
 ## Linting
