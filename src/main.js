@@ -6,6 +6,6 @@ export default function (Vue, { router, head, isClient }) {
 
   head.script.push({
     src: 'https://unpkg.com/lyne-test/dist/lyne-components.js',
-    body: true
+    body: false
   })
 }
