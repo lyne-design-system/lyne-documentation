@@ -1,16 +1,14 @@
+const globalConfig = require('./global.config');
+
 module.exports = function (api) {
 
   // create a page for each lyne-component
   api.createPages(async ({ graphql, createPage }) => {
     const {
-      data: {
-        lyne: {
-          allComponents
-        }
-      }
+      data
     } = await graphql(`
       {
-        lyne {
+        ${globalConfig.graphqlDatoFieldName} {
           allComponents {
             id
             componentName
@@ -19,12 +17,12 @@ module.exports = function (api) {
       }
     `);
 
-    allComponents.forEach((comp) => createPage({
+    data[globalConfig.graphqlDatoFieldName].allComponents.forEach((comp) => createPage({
       path: `/components/${comp.componentName}`,
       component: './src/templates/LyneComponent.vue',
       context: {
         compId: comp.id,
-        componentDistPath: `./node_modules/lyne-test/dist/documentation/components/${comp.componentName}`
+        componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${comp.componentName}`
       }
     }));
   })

@@ -1,3 +1,5 @@
+const globalConfig = require('./global.config');
+
 module.exports = {
   siteName: 'Lyne Design System',
   siteDescription: 'Documentation for Lyne Design System',
@@ -6,20 +8,19 @@ module.exports = {
     {
       use: '@gridsome/source-graphql',
       options: {
-        url: 'https://graphql.datocms.com',
-        fieldName: 'lyne',
-        typeName: 'lyneTypes',
-
+        url: globalConfig.graphqlDatoUrl,
+        fieldName: globalConfig.graphqlDatoFieldName,
+        typeName: globalConfig.graphqlDatoTypeName,
         headers: {
           Authorization: `Bearer ${process.env.DATO_API_TOKEN}`,
         },
       },
     },
     {
-     use: "@gridsome/source-filesystem",
+     use: '@gridsome/source-filesystem',
      options: {
-       path: "./node_modules/lyne-test/dist/documentation/**/*.md",
-       typeName: "MdDoc"
+       path: `./${globalConfig.lyneComponentsDocumentationPath}/**/*.md`,
+       typeName: globalConfig.graphqlComponentsReadmeTypeName
      }
     }
   ],
