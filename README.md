@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation)
+
 # Documentation for Lyne Design System
 
 ## Setup for development
