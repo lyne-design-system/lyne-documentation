@@ -9,7 +9,7 @@
     <hr>
     <h2><i>Readme file from stencil build</i></h2>
     <p v-html="$page.mdDoc.edges[0].node.content"></p>
-
+<!--
     <div
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
@@ -18,16 +18,15 @@
       <p>{{comp.description}}</p>
 
       <h3>Preview</h3>
-      <!-- <ClientOnly> -->
-      <!--
+      <ClientOnly>
         <component
         v-bind:is="$page.component.component.componentName"
         v-bind="comp.properties"
-        ></component> -->
-      <!-- </ClientOnly> -->
+        ></component>
+      </ClientOnly>
       <hr>
     </div>
-
+-->
   </Layout>
 </template>
 
