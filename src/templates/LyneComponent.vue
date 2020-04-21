@@ -86,7 +86,7 @@ export default {
       });
 
       if (foundComponent && foundComponent.length === 1) {
-        return foundComponent[0]
+        return foundComponent[0];
       }
 
       return {};
@@ -98,8 +98,8 @@ export default {
     // This makes sure that components only get rendered on the
     // client.
     // TODO: enable SSR
-    window.lyneComps = require('lyne-test/loader');
-    window.lyneComps.defineCustomElements();
+    // window.lyneComps = require('lyne-test/loader');
+    // window.lyneComps.defineCustomElements();
   }
 }
 
