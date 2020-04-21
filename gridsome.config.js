@@ -14,6 +14,16 @@ module.exports = {
           Authorization: `Bearer ${process.env.DATO_API_TOKEN}`,
         },
       },
+    },
+    {
+     use: "@gridsome/source-filesystem",
+     options: {
+       path: "./node_modules/lyne-test/dist/documentation/**/*.md",
+       typeName: "MdDoc"
+     }
     }
-  ]
+  ],
+  transformers: {
+    remark: {}
+  }
 }
