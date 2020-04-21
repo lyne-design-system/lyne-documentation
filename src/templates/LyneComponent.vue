@@ -8,7 +8,7 @@
 
     <hr>
     <h2><i>Readme file from stencil build</i></h2>
-    <p v-html="$page.mdDoc.edges[0].node.content"></p>
+    <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
     <div
       v-for="(comp) in $page.variants.allComponentVariants"
