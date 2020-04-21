@@ -4,6 +4,11 @@ const globalConfig = require('../global.config');
 
 export default function (Vue, { head }) {
 
+  // add <html> attributes
+  /* eslint-disable no-param-reassign */
+  head.htmlAttrs = { lang: 'en' };
+  /* eslint-enable no-param-reassign */
+
   // define layout component
   Vue.component('Layout', DefaultLayout);
 
