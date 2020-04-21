@@ -10,14 +10,12 @@
     <h2><i>Readme file from stencil build</i></h2>
     <p v-html="$page.mdDoc.edges[0].node.content"></p>
 
-    {{$page.variants.allComponentVariants[0].title}}
-<!--
     <div
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
     >
-      <h2>{{comp.title}}</h2>
-      <p>{{comp.description}}</p>
+      <!-- <h2>{{comp.title}}</h2>
+      <p>{{comp.description}}</p> -->
 
       <h3>Preview</h3>
       <ClientOnly>
@@ -28,7 +26,7 @@
       </ClientOnly>
       <hr>
     </div>
--->
+
   </Layout>
 </template>
 
