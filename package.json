@@ -14,12 +14,15 @@
     "lyne-test": "^6.10.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@gridsome/cli": "^0.3.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-gridsome": "^1.4.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
     "netlify-cli": "^2.47.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
