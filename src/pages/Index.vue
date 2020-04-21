@@ -46,5 +46,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+h1 {
+  color: $color;
+}
 </style>
