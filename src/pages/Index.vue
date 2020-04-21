@@ -3,7 +3,7 @@
     <h1>Lyne Design System</h1>
 
     <h2>Component Explorer</h2>
-    <g-link to="/lyne-components">Components</g-link>
+    <g-link to="/lyne-components/">Components</g-link>
 
     <h2>Lyne Design System on GitHub</h2>
     <ul>

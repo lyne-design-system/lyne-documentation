@@ -9,7 +9,7 @@
 
       <li>
 
-        <g-link :to="`/components/${comp.componentName}`">
+        <g-link :to="`/components/${comp.componentName}/`">
           {{comp.title}} ({{comp.componentName}})
         </g-link>
 
