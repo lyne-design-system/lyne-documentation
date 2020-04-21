@@ -18,12 +18,10 @@
       <p>{{comp.description}}</p>
 
       <h3>Preview</h3>
-      <ClientOnly>
-        <component
+      <component
         v-bind:is="$page.component.component.componentName"
         v-bind="comp.properties"
-        ></component>
-      </ClientOnly>
+      ></component>
       <hr>
     </div>
 
