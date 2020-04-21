@@ -183,7 +183,7 @@ module.exports = {
     // ####################################################
     // Stylistic issues
     // ####################################################
-    'array-bracket-newline': ['error', { 'multiline': true }],
+    'array-bracket-newline': ['error', { 'minItems': 1 }],
     'array-bracket-spacing': ['error', 'never'],
     'array-element-newline': ['error', 'always'],
     'block-spacing': 'error',
