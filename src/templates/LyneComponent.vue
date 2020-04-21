@@ -14,7 +14,6 @@
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
     >
-      <hr>
       <h2>{{comp.title}}</h2>
       <p>{{comp.description}}</p>
 
@@ -25,7 +24,7 @@
         v-bind="comp.properties"
         ></component>
       </ClientOnly>
-
+      <hr>
     </div>
 
   </Layout>
@@ -99,10 +98,6 @@ export default {
     // This makes sure that components only get rendered on the
     // client.
     // TODO: enable SSR
-    // window.lyneComps = require('lyne-test/loader');
-    // window.lyneComps.defineCustomElements();
-  },
-  beforeMount() {
     window.lyneComps = require('lyne-test/loader');
     window.lyneComps.defineCustomElements();
   }
