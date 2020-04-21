@@ -13,7 +13,8 @@
   },
   "devDependencies": {
     "@gridsome/cli": "^0.3.2",
-    "lyne-test": "^6.10.0"
+    "lyne-test": "^6.10.0",
+    "netlify-cli": "^2.47.0"
   },
   "author": "Lyne Team",
   "license": "MIT",
