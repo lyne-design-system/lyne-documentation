@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.0...v1.2.1) (2020-04-22)
+
+
+### Bug Fixes
+
+* optimize slack notification format ([8595b0e](https://github.com/lyne-design-system/lyne-documentation/commit/8595b0e5f67f93ff6ba21e7a5208138726a3bfde))
+
 # [1.2.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.1.0...v1.2.0) (2020-04-22)
 
 
