@@ -21,7 +21,7 @@
         "notifyOnSuccess": true,
         "notifyOnFail": true,
         "onSuccessTemplate": {
-          "text": "A new version of $package_name has been released"
+          "text": "A new version of $package_name has been released: $npm_package_version"
         }
       }
     ]
