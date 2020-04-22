@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.1.0...v1.2.0) (2020-04-22)
+
+
+### Bug Fixes
+
+* fix linting issue ([b638c50](https://github.com/lyne-design-system/lyne-documentation/commit/b638c5085ca97d697a9bf899b7a522f6f28ec866))
+
+
+### Features
+
+* add version numbers to footer ([aebb9ac](https://github.com/lyne-design-system/lyne-documentation/commit/aebb9ac1ac2e36291fe001fa9564db46fb8a9e49))
+
 # [1.1.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.0.0...v1.1.0) (2020-04-22)
 
 
