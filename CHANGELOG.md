@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.3.0...v1.3.1) (2020-04-22)
+
+
+### Bug Fixes
+
+* remove log ([f439860](https://github.com/lyne-design-system/lyne-documentation/commit/f439860c56659ff77191e37242071d510c4e2d8f))
+* test commit ([1f06890](https://github.com/lyne-design-system/lyne-documentation/commit/1f0689061694e4af7930ad7315354ec7505f6d04))
+* text commit ([ba2d677](https://github.com/lyne-design-system/lyne-documentation/commit/ba2d67736d386da79d9d6202bf7098f1ee5b8e7c))
+
 # [1.3.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.2...v1.3.0) (2020-04-22)
 
 
