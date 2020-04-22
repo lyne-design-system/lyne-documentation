@@ -52,13 +52,19 @@ module.exports = {
       use: '@gridsome/source-filesystem'
     }
   ],
-  scss: {
-
-  },
   siteDescription: 'Documentation for Lyne Design System',
   siteName: 'Lyne Design System',
   siteUrl: '',
   transformers: {
-    remark: {}
+    remark: {
+      plugins: [
+        [
+          'gridsome-plugin-remark-shiki',
+          {
+            skipInline: false
+          }
+        ]
+      ]
+    }
   }
 };
