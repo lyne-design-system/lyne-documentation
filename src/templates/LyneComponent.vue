@@ -76,6 +76,7 @@ export default {
     }
 
   },
+
   mounted() {
 
     // This makes sure that components only get rendered on the client.
