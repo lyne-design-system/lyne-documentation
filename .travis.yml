@@ -20,6 +20,9 @@ jobs:
         # Deploy to netlify
         - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/
 
+        # run semantic release
+        - npm run semantic-release
+
         # Inform Dato CMS on successfull build&deploy
         - |
           curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
