@@ -256,8 +256,8 @@ module.exports = {
       'error',
       { 'ImportDeclaration': 'never' }
     ],
-    'object-curly-spacing': ['error', 'always'],
-    'object-property-newline': 'error',
+    'object-curly-spacing': ['error', 'never'],
+    'object-property-newline': ['error', { 'allowAllPropertiesOnSameLine': false }],
     'one-var': 'off',
     'one-var-declaration-per-line': 'error',
     'operator-assignment': 'error',
