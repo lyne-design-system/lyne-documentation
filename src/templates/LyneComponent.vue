@@ -60,11 +60,6 @@
 const lyneComponentDocs = require('lyne-test/dist/documentation/jsonDocs.json');
 
 export default {
-  data() {
-    return {
-      docs: lyneComponentDocs
-    };
-  },
   methods: {
 
     // Get component from jsonDocs.json
