@@ -36,7 +36,6 @@
 
 <script>
 const lyneComponentsVersion = require('lyne-test/package.json').version;
-const lyneDocumentationVersion = require('../../package.json').version;
 const globalConfig = require('../../global.config');
 
 export default {
