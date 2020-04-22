@@ -3,7 +3,7 @@ const globalConfig = require('./global.config');
 function mainFunction(api) {
 
   // create a page for each lyne-component
-  api.createPages(async ({ graphql, createPage }) => {
+  api.createPages(async ({graphql, createPage}) => {
     const {
       data
     } = await graphql(`
