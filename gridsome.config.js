@@ -1,7 +1,10 @@
 const path = require('path');
 const globalConfig = require('./global.config');
 
-// add global scss file using webpack style-resources-loader
+/**
+ * add webpack use rule for global scss file using webpack
+ * style-resources-loader
+ */
 function addStyleResource (rule) {
   rule.use('style-resource')
     .loader('style-resources-loader')
@@ -22,11 +25,20 @@ module.exports = {
       'normal'
     ];
 
-    // or if you use scss
     types.forEach((type) => {
       addStyleResource(config.module.rule('scss')
         .oneOf(type));
     });
+
+    const svgRule = config.module.rule('svg');
+
+    svgRule
+      .uses
+      .clear();
+
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader');
   },
   plugins: [
 

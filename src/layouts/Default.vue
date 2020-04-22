@@ -3,6 +3,7 @@
     <header>
       <nav>
         <g-link to="/">Home</g-link>
+        <g-link to="/playground">Playground</g-link>
       </nav>
     </header>
     <transition name="fade" appear>
