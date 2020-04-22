@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.1...v1.2.2) (2020-04-22)
+
+
+### Bug Fixes
+
+* wrap docs inside pre tag ([357219f](https://github.com/lyne-design-system/lyne-documentation/commit/357219f8a5587f79cc9f685c9c6ba67808798ff0))
+
 ## [1.2.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.0...v1.2.1) (2020-04-22)
 
 
