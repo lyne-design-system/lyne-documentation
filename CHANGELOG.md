@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.0.0...v1.1.0) (2020-04-22)
+
+
+### Features
+
+* add slack notification after semantic release ([4f40179](https://github.com/lyne-design-system/lyne-documentation/commit/4f40179eb91e5886b5b5385d7a70b99207bf8d6c))
+
 # 1.0.0 (2020-04-22)
 
 
