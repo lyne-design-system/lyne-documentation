@@ -2,11 +2,11 @@ import DefaultLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
 
-export default function (Vue, { head }) {
+export default function (Vue, {head}) {
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
-  head.htmlAttrs = { lang: 'en' };
+  head.htmlAttrs = {lang: 'en'};
   /* eslint-enable no-param-reassign */
 
   // define layout component
