@@ -58,7 +58,7 @@
 
 <script>
 const lyneComponentDocs = require('lyne-test/dist/documentation/jsonDocs.json');
-console.log(lyneComponentDocs);
+
 export default {
   methods: {
 
