@@ -4,7 +4,7 @@
 
     <hr>
     <h2><i>JsonDocs contents from stencil bulid</i></h2>
-    {{jsonDocsForComp($page.component.component.componentName)}}
+    <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
 
     <hr>
     <h2><i>Readme file from stencil build</i></h2>
