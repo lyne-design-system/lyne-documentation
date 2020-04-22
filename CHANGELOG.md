@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.2...v1.3.0) (2020-04-22)
+
+
+### Features
+
+* add playground, add webpack svg loader ([d7c4008](https://github.com/lyne-design-system/lyne-documentation/commit/d7c4008735798d7cbc2a2250b575f7121e99f539))
+
 ## [1.2.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.2.1...v1.2.2) (2020-04-22)
 
 
