@@ -3,7 +3,9 @@
     <header>
       <nav>
         <g-link to="/">Home</g-link>
+        <g-link to="/lyne-components">Components</g-link>
         <g-link to="/playground">Playground</g-link>
+        <g-link to="/deployments">Deployments</g-link>
       </nav>
     </header>
     <transition name="fade" appear>
