@@ -14,7 +14,7 @@
             class="tab-list-item"
           >
             <a
-              :href="tab.href"
+              href="#"
               @click="selectTab(tab)"
               :class="[tab.isActive
                 ? 'tab-list-item-link is-active'
