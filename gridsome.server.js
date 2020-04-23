@@ -1,9 +1,11 @@
+const axios = require('axios')
 const globalConfig = require('./global.config');
 
 function mainFunction(api) {
 
-  // create a page for each lyne-component
   api.createPages(async ({graphql, createPage}) => {
+
+    // get lyne-components from graph-ql
     const {
       data
     } = await graphql(`
@@ -17,6 +19,7 @@ function mainFunction(api) {
       }
     `);
 
+    // create a page for each lyne-component
     data[globalConfig.graphqlDatoFieldName]
       .allComponents
       .forEach((comp) => createPage({
@@ -27,6 +30,22 @@ function mainFunction(api) {
         },
         path: `/components/${comp.componentName}`
       }));
+  });
+
+  api.loadSource(async (actions) => {
+
+    // get prod/preview deployments json info
+    const {
+      data
+    } = await axios.get(globalConfig.deploymentsJsonUrl);
+
+    // add deployments collection to graphql
+    const deploymentsCollection = actions.addCollection({
+      typeName: 'Deployments'
+    });
+
+    deploymentsCollection.addNode(data);
+
   });
 
 }
