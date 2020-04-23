@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.4.1...v1.5.0) (2020-04-23)
+
+
+### Features
+
+* add basic style to header and footer ([98be1d1](https://github.com/lyne-design-system/lyne-documentation/commit/98be1d13107f6b2917b193624eb57f2d52a9fadf))
+
 ## [1.4.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.4.0...v1.4.1) (2020-04-23)
 
 
