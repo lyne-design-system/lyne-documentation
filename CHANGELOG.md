@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.4.0...v1.4.1) (2020-04-23)
+
+
+### Bug Fixes
+
+* remove anchor link to prevent bowser from jumping to link ([c1a4d52](https://github.com/lyne-design-system/lyne-documentation/commit/c1a4d525d181b48d59f7d08aacc61b80a85129d3))
+
 # [1.4.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.3.1...v1.4.0) (2020-04-23)
 
 
