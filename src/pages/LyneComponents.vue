@@ -2,12 +2,12 @@
   <Layout>
     <h1>Lyne Components</h1>
 
-    <ul
-      v-for="(comp) in $page.lyne.allComponents"
-      :key="comp.id"
-    >
+    <ul>
 
-      <li>
+      <li
+        v-for="(comp) in $page.lyne.allComponents"
+        :key="comp.id"
+      >
 
         <g-link :to="`/components/${comp.componentName}/`">
           {{comp.title}} ({{comp.componentName}})
