@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.5.0...v1.5.1) (2020-04-23)
+
+
+### Bug Fixes
+
+* make sure version in package.json is updated ([a33c537](https://github.com/lyne-design-system/lyne-documentation/commit/a33c53797064a67be07077e82c6106be79b0c17a))
+
 # [1.5.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.4.1...v1.5.0) (2020-04-23)
 
 
