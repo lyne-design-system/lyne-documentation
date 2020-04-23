@@ -1,39 +1,38 @@
 <template>
   <div>
     <header>
-      <nav>
-        <g-link to="/">Home</g-link>
-        <g-link to="/lyne-components">Components</g-link>
-        <g-link to="/playground">Playground</g-link>
-        <g-link to="/deployments">Deployments</g-link>
+      <nav class="nav">
+        <g-link class="nav-link" to="/">Home</g-link>
+        <g-link class="nav-link" to="/lyne-components">Components</g-link>
+        <g-link class="nav-link" to="/playground">Playground</g-link>
+        <g-link class="nav-link" to="/deployments">Deployments</g-link>
       </nav>
     </header>
     <transition name="fade" appear>
       <main>
         <slot/>
       </main>
-  </transition>
-  <footer>
-    <hr>
-    Lyne Design System:
-    <ul>
-      <li>
-        <a
-          href="https://github.com/lyne-design-system/lyne-components"
-          target="_blank"
-          rel="noopener"
-        >lyne-components {{$data.versions.lyneComponents}}</a>
-      </li>
+    </transition>
+    <footer class='footer'>
+      Lyne Design System:
+      <ul>
+        <li>
+          <a
+            href="https://github.com/lyne-design-system/lyne-components"
+            target="_blank"
+            rel="noopener"
+          >lyne-components {{$data.versions.lyneComponents}}</a>
+        </li>
 
-      <li>
-        <a
-          href="https://github.com/lyne-design-system/lyne-documentation"
-          target="_blank"
-          rel="noopener"
-        >lyne-documentation {{$data.versions.lyneDocumentation}}</a>
-      </li>
-    </ul>
-  </footer>
+        <li>
+          <a
+            href="https://github.com/lyne-design-system/lyne-documentation"
+            target="_blank"
+            rel="noopener"
+          >lyne-documentation {{$data.versions.lyneDocumentation}}</a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </template>
 
@@ -71,5 +70,28 @@ export default {
 
 .fade-enter {
   opacity: 0;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem;
+  float: left;
+}
+
+.nav-link.active--exact {
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  padding: 1rem;
 }
 </style>
