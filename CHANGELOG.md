@@ -1,3 +1,19 @@
+# [1.4.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.3.1...v1.4.0) (2020-04-23)
+
+
+### Bug Fixes
+
+* add links to components and deployments ([63149f1](https://github.com/lyne-design-system/lyne-documentation/commit/63149f15bd5fdf6192515a5cd8ba139573f368c5))
+* iterate on li instead of ul ([57a211d](https://github.com/lyne-design-system/lyne-documentation/commit/57a211da4c301446b223c0519980f4d50d410cd0))
+* linting issue ([e656552](https://github.com/lyne-design-system/lyne-documentation/commit/e65655274aa24a3074ef41916b69673eb4ae15ea))
+* remove components link ([7162855](https://github.com/lyne-design-system/lyne-documentation/commit/7162855b8e00a58d8f4a06dcaaf7a7bd68830e1b))
+
+
+### Features
+
+* add deployments page ([4665bdc](https://github.com/lyne-design-system/lyne-documentation/commit/4665bdcedae268ceb4552d65e7e9e8801e1a1eb0))
+* add deployments to graphql layer ([d5f8e23](https://github.com/lyne-design-system/lyne-documentation/commit/d5f8e2349776225783acbaa48571cfb5b3fc7282))
+
 ## [1.3.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.3.0...v1.3.1) (2020-04-22)
 
 

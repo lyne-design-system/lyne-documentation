@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.3.1",
-    "lyne-test": "^6.11.1"
+    "lyne-test": "^6.12.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
