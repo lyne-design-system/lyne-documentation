@@ -1,4 +1,4 @@
-const axios = require('axios')
+const axios = require('axios');
 const globalConfig = require('./global.config');
 
 function mainFunction(api) {
@@ -35,16 +35,14 @@ function mainFunction(api) {
   api.loadSource(async (actions) => {
 
     // get prod/preview deployments json info
-    const {
-      data
-    } = await axios.get(globalConfig.deploymentsJsonUrl);
+    const deployments = await axios.get(globalConfig.deploymentsJsonUrl);
 
     // add deployments collection to graphql
     const deploymentsCollection = actions.addCollection({
       typeName: 'Deployments'
     });
 
-    deploymentsCollection.addNode(data);
+    deploymentsCollection.addNode(deployments.data);
 
   });
 
