@@ -1,4 +1,5 @@
 const path = require('path');
+const messages = require('./src/i18n');
 const globalConfig = require('./global.config');
 
 /**
@@ -62,6 +63,25 @@ module.exports = {
         typeName: globalConfig.graphqlComponentsReadmeTypeName
       },
       use: '@gridsome/source-filesystem'
+    },
+
+    // i18n
+    {
+      options: {
+        defaultLocale: 'en',
+        enablePathRewrite: false,
+        fallbackLocale: 'en',
+        locales: [
+          'de',
+          'en'
+        ],
+        messages,
+        pathAliases: {
+          de: 'de',
+          en: 'en'
+        }
+      },
+      use: 'gridsome-plugin-i18n'
     }
   ],
   siteDescription: 'Documentation for Lyne Design System',
