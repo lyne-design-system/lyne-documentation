@@ -1,5 +1,5 @@
-const de = require('./translations/de.json');
-const en = require('./translations/en.json');
+const de = require('./translations/de');
+const en = require('./translations/en');
 
 module.exports = {
   de,
