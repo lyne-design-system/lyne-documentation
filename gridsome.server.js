@@ -28,7 +28,7 @@ function mainFunction(api) {
           compId: comp.id,
           componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${comp.componentName}`
         },
-        path: `/components/${comp.componentName}`
+        path: `/lyne-components/${comp.componentName}`
       }));
   });
 

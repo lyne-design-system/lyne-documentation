@@ -9,7 +9,7 @@
         :key="comp.id"
       >
 
-        <g-link :to="$tp(`/components/${comp.componentName}/`)">
+        <g-link :to="$tp(`/lyne-components/${comp.componentName}/`)">
           {{comp.title}} ({{comp.componentName}})
         </g-link>
 
