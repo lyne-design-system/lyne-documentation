@@ -69,7 +69,7 @@ module.exports = {
     {
       options: {
         defaultLocale: 'en',
-        enablePathRewrite: false,
+        enablePathRewrite: true,
         fallbackLocale: 'en',
         locales: [
           'de',

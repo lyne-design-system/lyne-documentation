@@ -29,7 +29,11 @@
 </template>
 
 <page-query>
-  query($compId: lyneTypes_ItemId, $componentDistPath: String) {
+  query(
+    $compId: lyneTypes_ItemId
+    $componentDistPath: String
+    $locale: lyneTypes_SiteLocale
+  ) {
     component: lyne {
       component(filter: { id: { eq: $compId } }) {
         title
@@ -37,7 +41,10 @@
       }
     }
     variants: lyne {
-      allComponentVariants(filter: { component: { eq: $compId } }) {
+      allComponentVariants(
+        locale: $locale
+        filter: { component: { eq: $compId } }
+      ) {
         id
         title
         description
