@@ -6,7 +6,7 @@
         class="tabs"
       >
 
-      <!-- Tab list -->
+        <!-- Tab list -->
         <ul class="tab-list">
           <li
             v-for="(tab, index) in $data.tabs"
