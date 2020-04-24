@@ -1,6 +1,6 @@
 <!-- Master layout -->
 <template>
-  <div class="asdf">
+  <div>
     <router-view />
   </div>
 </template>
