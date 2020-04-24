@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.7.0...v1.7.1) (2020-04-24)
+
+
+### Bug Fixes
+
+* add correct path for component url ([cb85e50](https://github.com/lyne-design-system/lyne-documentation/commit/cb85e50441a1aaed404be2598abf0bd406d3f750))
+* add trailing slashes ([79bbe17](https://github.com/lyne-design-system/lyne-documentation/commit/79bbe1765942299e8c6e5d58a579ef8b85a30930))
+
 # [1.7.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.6.0...v1.7.0) (2020-04-24)
 
 
