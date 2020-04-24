@@ -16,7 +16,7 @@
 
         <g-link
           class="nav-link"
-          :to="$tp('/playground/')"
+          :to="$tp(`/${$t('paths.playground')}/`)"
         >Playground</g-link>
 
         <g-link
