@@ -1,12 +1,33 @@
 <template>
   <div>
     <header>
+
       <nav class="nav">
-        <g-link class="nav-link" to="/">Home</g-link>
-        <g-link class="nav-link" to="/lyne-components">Components</g-link>
-        <g-link class="nav-link" to="/playground">Playground</g-link>
-        <g-link class="nav-link" to="/deployments">Deployments</g-link>
+
+        <g-link
+          class="nav-link"
+          :to="$tp('/')"
+        >Home</g-link>
+
+        <g-link
+          class="nav-link"
+          :to="$tp('/lyne-components')"
+        >Components</g-link>
+
+        <g-link
+          class="nav-link"
+          :to="$tp('/playground')"
+        >Playground</g-link>
+
+        <g-link
+          class="nav-link"
+          :to="$tp('/deployments')"
+        >Deployments</g-link>
+
+        <LocaleSwitcher class="nav-link nav-link__lang-switch"/>
+
       </nav>
+
     </header>
     <transition name="fade" appear>
       <main>
@@ -37,10 +58,15 @@
 </template>
 
 <script>
+import LocaleSwitcher from '../components/LocaleSwitcher.vue';
+
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const globalConfig = require('../../global.config');
 
 export default {
+  components: {
+    LocaleSwitcher
+  },
   data() {
     return {
       versions: {
@@ -73,14 +99,21 @@ export default {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow: auto;
+  // overflow: auto;
 }
 
 .nav-link {
   display: block;
   padding: 1rem;
-  float: left;
+  // float: left;
+}
+
+.nav-link__lang-switch {
+  height: 2rem;
+  margin: 0 1rem 0 auto;
 }
 
 .nav-link.active--exact {
