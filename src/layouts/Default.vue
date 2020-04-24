@@ -11,17 +11,17 @@
 
         <g-link
           class="nav-link"
-          :to="$tp('/lyne-components')"
+          :to="$tp('/lyne-components/')"
         >Components</g-link>
 
         <g-link
           class="nav-link"
-          :to="$tp('/playground')"
+          :to="$tp('/playground/')"
         >Playground</g-link>
 
         <g-link
           class="nav-link"
-          :to="$tp('/deployments')"
+          :to="$tp('/deployments/')"
         >Deployments</g-link>
 
         <LocaleSwitcher class="nav-link nav-link__lang-switch"/>
