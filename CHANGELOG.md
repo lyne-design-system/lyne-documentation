@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.6.0...v1.7.0) (2020-04-24)
+
+
+### Features
+
+* get localized data from dato cms ([e8e7051](https://github.com/lyne-design-system/lyne-documentation/commit/e8e7051e2585f5eba5dccc35ca5aa2bffc7f3842))
+
 # [1.6.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.5.1...v1.6.0) (2020-04-24)
 
 
