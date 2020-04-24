@@ -2,7 +2,8 @@
   <Layout>
 
     Current locale: {{ $i18n.locale }}
-    <p>{{ $t('translation2') }}</p>
+    <p>{{ $t('content.translation1') }}</p>
+    <p>{{ $t('paths.playground') }}</p>
 
     <h1>Lyne Design System</h1>
 
