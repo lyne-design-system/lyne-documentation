@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.5.1...v1.6.0) (2020-04-24)
+
+
+### Features
+
+* add component for locale switcher ([f7b65e7](https://github.com/lyne-design-system/lyne-documentation/commit/f7b65e701c1b802df54a0c8fc4f504e19349480d))
+* add english sample translations ([7deaec5](https://github.com/lyne-design-system/lyne-documentation/commit/7deaec5f917d69577af4f82df53f68d484b7947a))
+* add german sample translations ([5ac9350](https://github.com/lyne-design-system/lyne-documentation/commit/5ac9350162817b43a9166f72ab2882e61a3c2577))
+* add i18n translations entry ([305516d](https://github.com/lyne-design-system/lyne-documentation/commit/305516dc1326655cda92fa00a65b6764e2e0d14e))
+* add locale switcher compoment to main nav ([2e19d65](https://github.com/lyne-design-system/lyne-documentation/commit/2e19d653efea977ca8dc882878fc69b72fc432b6))
+* add options for i18n ([c5d9df9](https://github.com/lyne-design-system/lyne-documentation/commit/c5d9df97f9aad92181af7e1accada06f847312a2))
+* add sample translation on index page ([728425c](https://github.com/lyne-design-system/lyne-documentation/commit/728425c9423c7c78a1b7fe414a7e39f9edda6831))
+* make localized link to component ([a3e7e0a](https://github.com/lyne-design-system/lyne-documentation/commit/a3e7e0ae24709ca47af5514b143182a076f2e9e1))
+
 ## [1.5.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.5.0...v1.5.1) (2020-04-23)
 
 
