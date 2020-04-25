@@ -5,26 +5,16 @@
       <nav class="nav">
 
         <g-link
+          v-for="(link) in $data.navLinks"
           class="nav-link"
-          :to="$tp('/')"
-        >Home</g-link>
+          :to="$tp(link.path)"
+          :key="link.path"
+        >{{link.title}}</g-link>
 
-        <g-link
-          class="nav-link"
-          :to="$tp('/lyne-components/')"
-        >Components</g-link>
-
-        <g-link
-          class="nav-link"
-          :to="$tp(`/${$t('paths.playground')}/`)"
-        >Playground</g-link>
-
-        <g-link
-          class="nav-link"
-          :to="$tp('/deployments/')"
-        >Deployments</g-link>
-
-        <LocaleSwitcher class="nav-link nav-link__lang-switch"/>
+        <LocaleSwitcher
+          class="nav-link nav-link__lang-switch"
+          @clicked="onClickChild"
+        />
 
       </nav>
 
@@ -62,18 +52,44 @@ import LocaleSwitcher from '../components/LocaleSwitcher.vue';
 
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const globalConfig = require('../../global.config');
+const paths = require('../i18n/paths');
+
+const getNavLinks = (locale) => {
+  const langObjects = paths[locale];
+  const {
+    components,
+    deployments,
+    home,
+    playground
+  } = langObjects;
+
+  return [
+    home,
+    components,
+    deployments,
+    playground
+  ];
+};
 
 export default {
   components: {
     LocaleSwitcher
   },
-  data() {
+  data: (comp) => {
+    const locale = comp._i18n.locale.toString();
+
     return {
+      navLinks: getNavLinks(locale),
       versions: {
         lyneComponents: `v${lyneComponentsVersion}`,
         lyneDocumentation: null
       }
     };
+  },
+  methods: {
+    onClickChild (locale) {
+      this.navLinks = getNavLinks(locale);
+    }
   },
   async mounted () {
     try {
@@ -102,13 +118,11 @@ export default {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
-  // overflow: auto;
 }
 
 .nav-link {
   display: block;
   padding: 1rem;
-  // float: left;
 }
 
 .nav-link__lang-switch {
