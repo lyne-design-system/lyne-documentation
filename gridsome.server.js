@@ -1,5 +1,6 @@
 const axios = require('axios');
 const globalConfig = require('./global.config');
+const paths = require('./src/i18n/paths');
 
 function mainFunction(api) {
 
@@ -23,13 +24,30 @@ function mainFunction(api) {
     data[globalConfig.graphqlDatoFieldName]
       .allComponents
       .forEach((comp) => createPage({
-        component: './src/templates/LyneComponent.vue',
+        component: './src/templates/Component.vue',
         context: {
           compId: comp.id,
           componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${comp.componentName}`
         },
-        path: `/lyne-components/${comp.componentName}`
+        path: `/components/${comp.componentName}`
       }));
+
+    // create a page for each template and each language
+    const langKeys = Object.keys(paths);
+
+    langKeys.forEach((langKey) => {
+      const langObject = paths[langKey];
+      const pathKeys = Object.keys(langObject);
+
+      pathKeys.forEach((pathKey) => {
+        const pathObject = langObject[pathKey];
+
+        return createPage({
+          component: `./src/templates/${pathObject.template}.vue`,
+          path: `/${pathObject.path}`
+        });
+      });
+    });
   });
 
   api.loadSource(async (actions) => {
