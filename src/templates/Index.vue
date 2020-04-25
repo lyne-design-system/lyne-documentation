@@ -1,10 +1,5 @@
 <template>
   <Layout>
-
-    Current locale: {{ $i18n.locale }}
-    <p>{{ $t('content.translation1') }}</p>
-    <p>{{ $t('paths.playground') }}</p>
-
     <h1>Lyne Design System</h1>
 
     <h2>Lyne Design System on GitHub</h2>
