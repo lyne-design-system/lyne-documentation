@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.0...v1.8.1) (2020-04-25)
+
+
+### Bug Fixes
+
+* fix switch router path for nested paths ([ec3ed8e](https://github.com/lyne-design-system/lyne-documentation/commit/ec3ed8e2c3043f6f07e2749ed10ba04db0bd709e))
+
 # [1.8.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.7.1...v1.8.0) (2020-04-25)
 
 
