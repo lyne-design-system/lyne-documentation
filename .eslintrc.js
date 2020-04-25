@@ -223,7 +223,7 @@ module.exports = {
     ],
     'max-lines': 'off',
     'max-lines-per-function': 'off',
-    'max-nested-callbacks': ['error', 2],
+    'max-nested-callbacks': ['error', 3],
     'max-params': 'off',
     'max-statements': 'off',
     'max-statements-per-line': ['error', { 'max': 1 }],
