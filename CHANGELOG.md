@@ -1,3 +1,30 @@
+# [1.8.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.7.1...v1.8.0) (2020-04-25)
+
+
+### Bug Fixes
+
+* convert json to js ([359561a](https://github.com/lyne-design-system/lyne-documentation/commit/359561ab82a8b92e7c81aa4e6ef02aa025549023))
+* convert json to js ([748ccde](https://github.com/lyne-design-system/lyne-documentation/commit/748ccdea7759c4caf3650dd21dd7fdc0b310a084))
+* disable path rewrite ([ba07287](https://github.com/lyne-design-system/lyne-documentation/commit/ba072877f0289c312b0af734bbe7575d7d060090))
+* disable rewrites ([10767a2](https://github.com/lyne-design-system/lyne-documentation/commit/10767a2225cef775d1ace68ebc28a887ed772d10))
+* imclude sample translations ([c077cef](https://github.com/lyne-design-system/lyne-documentation/commit/c077cefdaa9dfd13cf943e39a52d774d68c491f0))
+* include js instead of json ([695d4a8](https://github.com/lyne-design-system/lyne-documentation/commit/695d4a8b6069f3d4ae68f073ff1858ae8eb7501d))
+* move components from pages to templates ([ec739da](https://github.com/lyne-design-system/lyne-documentation/commit/ec739dafb34620a64bff8f63b0ca4bacec38004e))
+* move deployments from pages to templates ([9d19ea2](https://github.com/lyne-design-system/lyne-documentation/commit/9d19ea2c40b4c540b32f4558f9d17e33011ec443))
+* move index from pages to templates ([764fd2c](https://github.com/lyne-design-system/lyne-documentation/commit/764fd2c4dd62258a7814dd32c9718b0b6195553f))
+* move playground from pages to templates ([beb716a](https://github.com/lyne-design-system/lyne-documentation/commit/beb716a3c68244c1066d9bca7d6c1d84cb0ec32a))
+* remove paths ([3bd63d8](https://github.com/lyne-design-system/lyne-documentation/commit/3bd63d8d618543a493423d806d4e39e81fdac9c7))
+* remove unneded class ([02fab7f](https://github.com/lyne-design-system/lyne-documentation/commit/02fab7f583fb0392601ee990eb0a5d6b3094de63))
+* rename lyneComponents ([94af69e](https://github.com/lyne-design-system/lyne-documentation/commit/94af69e26b7aefa80aa78ca78e16a4faaf0acc4b))
+
+
+### Features
+
+* add event emitter ([58b3ba2](https://github.com/lyne-design-system/lyne-documentation/commit/58b3ba251d1d1023c3a65944eb4f1a6306604b90))
+* add paths file ([2374c3b](https://github.com/lyne-design-system/lyne-documentation/commit/2374c3bd748629666449915d33999ef17e383897))
+* dyanmically create pages for translated paths ([f8b54e9](https://github.com/lyne-design-system/lyne-documentation/commit/f8b54e9a15c38864626ca8094ade813f942a1aca))
+* integrate translated nav links ([bbe9966](https://github.com/lyne-design-system/lyne-documentation/commit/bbe9966f2812c19d9dd8d065c095d9534e78c21b))
+
 ## [1.7.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.7.0...v1.7.1) (2020-04-24)
 
 
