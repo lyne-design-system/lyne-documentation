@@ -42,17 +42,23 @@ export default {
           }
         });
 
+      let desiredPath;
+
       if (keyFound) {
         const pathObjects = paths[this.currentLocale];
-        const desiredPath = `/${this.currentLocale}/${pathObjects[keyFound].path}`;
 
+        desiredPath = `/${this.currentLocale}/${pathObjects[keyFound].path}`;
         this.pathObject = pathObjects;
-        this.$router.push({
-          path: desiredPath
-        });
 
-        this.$emit('clicked', this.currentLocale);
+      } else {
+        desiredPath = this.$tp(this.$route.path, this.currentLocale, true);
       }
+
+      this.$router.push({
+        path: desiredPath
+      });
+
+      this.$emit('clicked', this.currentLocale);
     }
   },
   name: 'LocaleSwitcher'
