@@ -6,3 +6,5 @@
 - [ ] for now, we use `npm up lyne-test` in travis config, to make sure that always the latest version from lyne-components is installed. We have the same issue in lyne-components build, where we have lyne-design-tokens as a dependency and always want latest version. Find a better way to get always latest version with every `npm install`
 
 - [ ] currently, components are rendered client side. Enable SSR
+
+- [ ] the mechanism to generate the localized url paths is really basic an only works for root paths like `/deployments` or `/components`. It does not yet work with nested paths like `/components/lyne-cta-button`.
