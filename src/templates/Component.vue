@@ -2,14 +2,6 @@
   <Layout>
     <h1>{{$page.component.component.title}}</h1>
 
-    <hr>
-    <h2><i>JsonDocs contents from stencil bulid</i></h2>
-    <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
-
-    <hr>
-    <h2><i>Readme file from stencil build</i></h2>
-    <div v-html="$page.mdDoc.edges[0].node.content"></div>
-
     <div
       v-for="(comp) in $page.variants.allComponentVariants"
       :key="comp.id"
@@ -24,6 +16,14 @@
       ></component>
       <hr>
     </div>
+
+    <hr>
+    <h2><i>JsonDocs contents from stencil bulid</i></h2>
+    <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
+
+    <hr>
+    <h2><i>Readme file from stencil build</i></h2>
+    <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
   </Layout>
 </template>
