@@ -11,5 +11,6 @@
 
 - [ ] every published content change in dato triggers a build in travis. e.g. if you change an publish 5 content items in 1 minute, travis will have 5 jobs waiting to be run. But in such cases, only the last change should be build on travis, the other ones should be skipped/canceled. We have the option on travis to "auto cancel branch build". But that only works if every build trigger has a different commit hash. Possible solution:
   - remove the dato webhook for travis
-  - add a github webhook which is making an empty commit: `git commit --allow-empty -m "content change in dato"`
+  - add a github webhook which is making an empty commit: `git commit --allow-empty -m "content: change in dato"`
+    - if we use empty commits add `content` to commitlint.config.js
   - that way, we would get a new commit hash for every trigger

@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.1...v1.8.2) (2020-04-29)
+
+
+### Bug Fixes
+
+* move jsonDocs and md description to bottom ([5df24bb](https://github.com/lyne-design-system/lyne-documentation/commit/5df24bbddc42a8283a9769de15da5bc16688912f))
+
 ## [1.8.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.0...v1.8.1) (2020-04-25)
 
 
