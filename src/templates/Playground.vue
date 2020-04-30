@@ -56,6 +56,7 @@
     <g-image :src="$page.lyne.playground.testMedia.responsiveImage.src" />
 
     <h2>SVG</h2>
+    <p>{{$page.lyne.playground.testSvg}}</p>
     <p>Tags: {{$page.lyne.playground.testSvg.tags}}</p>
     <p>Title: {{$page.lyne.playground.testSvg.title}}</p>
     <p>Alt: {{$page.lyne.playground.testSvg.alt}}</p>
@@ -64,6 +65,28 @@
     <p>Filename: {{$page.lyne.playground.testSvg.filename}}</p>
     <p>Format: {{$page.lyne.playground.testSvg.format}}</p>
     <p>Url: {{$page.lyne.playground.testSvg.url}}</p>
+
+    <h3>SVG as markup</h3>
+    <div
+      v-html="$data.testIcon"
+      style="width: 100px; height: 100px; fill: red"
+    ></div>
+
+    <h3>SVG with image tag</h3>
+    <img
+      :src="$page.lyne.playground.testSvg.url"
+      alt="SVG alt text"
+      width="100"
+      height="100"
+    />
+
+    <h3>SVG with object tag</h3>
+    <object
+      :data="$page.lyne.playground.testSvg.url"
+      type="image/svg+xml"
+      width="100"
+      height="100"
+    />
 
     <h2>SEO</h2>
     <p>Description: {{$page.lyne.playground.testSeo.description}}</p>
@@ -145,6 +168,24 @@
     }
   }
 </page-query>
+
+<script>
+const axios = require('axios');
+
+export default {
+  data() {
+    return {
+      testIcon: ''
+    };
+  },
+  async mounted() {
+    const svg = this.$page.lyne.playground.testSvg.url;
+    const testIcon = await axios.get(svg);
+
+    this.testIcon = testIcon.data;
+  }
+};
+</script>
 
 <style>
 </style>
