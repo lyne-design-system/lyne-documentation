@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.2...v1.9.0) (2020-04-30)
+
+
+### Features
+
+* integrate svg into playground ([2683b4c](https://github.com/lyne-design-system/lyne-documentation/commit/2683b4cf01c20b78d6d20c402cda4036701beb8c))
+
 ## [1.8.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.1...v1.8.2) (2020-04-29)
 
 
