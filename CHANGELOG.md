@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.0...v1.9.1) (2020-05-06)
+
+
+### Bug Fixes
+
+* move component md up ([8a31009](https://github.com/lyne-design-system/lyne-documentation/commit/8a310092c25e31ea61c674d0647aed0d3f7a2960))
+
 # [1.9.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.8.2...v1.9.0) (2020-04-30)
 
 
