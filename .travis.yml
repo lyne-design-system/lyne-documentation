@@ -1,11 +1,15 @@
 os: linux
 language: node_js
 install: skip
+
 jobs:
   include:
     - stage: build and deploy
       if: branch = master
       script:
+
+        # install dependencies
+        - npm install
 
         # lint
         - npm run lint || travis_terminate 1
