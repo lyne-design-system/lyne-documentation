@@ -1,31 +1,31 @@
 [![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation)
 
-# Documentation for Lyne Design System
+# Lyne Documentation Platform for Lyne Design System
 
 ## Setup for development
 
-- `npm install`
+First of all run `npm install` on the command line to install all dependencies required by the Lyne Documentation Platform. 
 
-## Run dev server
+### Run dev server
 
-You must provide an API token for the Dato CMS GraphQL Endpoint. There are two possibilities:
+You must provide an API token for the Dato CMS GraphQL Endpoint. There are **two** possibilities:
 
-1. .env file
+#### First — .env file
 
-Add a .env file with the following content
+Add a `.env` file with the following content to the project root
 ```bash
 DATO_API_TOKEN=PASTE_TOKEN_HERE
 ```
 
-After adding the .env file, you can run the dev server: `npm run develop`
+After adding the `.env` file, you can run the dev server with `npm run develop`
 
-2. Pass with npm command
+#### Second — Pass token with npm command
 
-You can pass the env flag directly in the npm command
+You can pass the token directly in the npm command
 ```bash
 DATO_API_TOKEN=PASTE_TOKEN_HERE npm run develop
 ```
 
-## Linting
+### Linting
 
 Make sure to run `npm run lint` on your console to check for linting issues. The build on Travis CI will fail if there are linting issues.
