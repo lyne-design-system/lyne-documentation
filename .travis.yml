@@ -9,9 +9,6 @@ jobs:
         # lint
         - npm run lint || travis_terminate 1
 
-        # Make sure we have latest version of lyne-components
-        - npm up lyne-test
-
         # Make production build
         - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
 
