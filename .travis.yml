@@ -1,5 +1,6 @@
 os: linux
 language: node_js
+install: skip
 jobs:
   include:
     - stage: build and deploy
