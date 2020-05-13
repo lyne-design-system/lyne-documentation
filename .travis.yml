@@ -1,5 +1,8 @@
 os: linux
 language: node_js
+
+# we want to install lyne-components @ latest version. if we dont's
+# skip install, travis take the dependency from cache.
 install: skip
 
 jobs:
