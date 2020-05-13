@@ -16,7 +16,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-i18n": "^1.2.1",
     "gridsome-plugin-remark-shiki": "^0.3.1",
-    "lyne-test": "^6.14.1"
+    "lyne-test": "latest"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
