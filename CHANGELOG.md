@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.3...v1.9.4) (2020-05-18)
+
+
+### Bug Fixes
+
+* reformat release message (fake fix to trigger release) ([7b4da07](https://github.com/lyne-design-system/lyne-documentation/commit/7b4da073667a1ec440ec942f905bec25565119e1))
+
 ## [1.9.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.2...v1.9.3) (2020-05-18)
 
 
