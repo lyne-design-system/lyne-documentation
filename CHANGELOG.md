@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.2...v1.9.3) (2020-05-18)
+
+
+### Bug Fixes
+
+* revert eslint to version 6 ([ac56809](https://github.com/lyne-design-system/lyne-documentation/commit/ac568098c27829218ab455146fb84d4790aada24))
+
 ## [1.9.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.1...v1.9.2) (2020-05-13)
 
 
