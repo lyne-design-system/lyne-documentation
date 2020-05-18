@@ -1,3 +1,10 @@
+## [1.9.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.5...v1.9.6) (2020-05-18)
+
+
+### Bug Fixes
+
+* add proper slack notification format ([f5a6e44](https://github.com/lyne-design-system/lyne-documentation/commit/f5a6e44ea9e4aff0ab28efc31f99b0acae1d3740))
+
 ## [1.9.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.4...v1.9.5) (2020-05-18)
 
 
