@@ -1,6 +1,17 @@
 os: linux
 language: node_js
 install: skip
+notifications:
+  slack:
+    template:
+      # This template config somehow breaks yaml syntax
+      # in the editor although it is valid yaml syntax
+      - "Project: lyne-documentation"
+      - "Build: <%{build_url}|%{build_number}>"
+      - "Commit: <%{compare_url}|%{commit}>"
+      - "Author: %{author}"
+      - "Result: %{result} in %{duration}"
+    secure: ZpJsN3YCvYLMFgeq+uvN3srT9Ln+3/cq4DSY3RkD2gy2tuJkfBw1O9F8f29xLhyJUyJQC/Q+LGephMVvDI6FFEtUgqYlLwDilGrNAmwa0RRga/yKNrIm2K+3CPtt8eaOxKB5odiVX2Fu78ncLx5ZM5yHdwY4fz1/ErZ9y6Rb6iPaKvF3KAxvNl3Vgt+XfTDb27mN7mEufgcYZgyW7VLGm06De1ApnvB59f2gPiX5ldQJwgbDWW9u5GwmQOVsfY+AJJrtWl8vutmDPsQE0+HHrSNg9RNvSLPVGDAMfmIMozelLTSFfLZgJZZBLM/Ti+4R4Vt8CsPzqAFFUnYAi+bQNULNHRRkXLnpfZj+nKFBdPSZvYNPUcZ3IBLXWEHvJszWw8HyLW5XNiGEay8P9+ePqKRUo8IB1PIMIIlwkFbmaNa5526SBv73j+Ng5ZM25q81vGWjbtlaOiL6+5ER9SOjZGXcZjXsT8qeQEXjHqc8xCKIPjkIPd4m+qSPeZILERrMbfMMGy0PF9hKB9OCXd6ntYjeDy7BkpYeDGKVKeQPs39LCG3iYsxazV8SM0Vs+nv60aLIRBC86bvgVWIaNthF1O66znbaVGYe40H++AZIvPrUIScrxyq4dGg883FXdmbd/ut2aNDFH6j11fe8+3BYkyDfmGceqPiNw6qR4qHvD20=
 jobs:
   include:
   - stage: build and deploy
@@ -22,6 +33,3 @@ jobs:
       curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
       -H 'Content-Type: application/json' \
       -d '{ "status": "error" }'
-notifications:
-  slack:
-    secure: ZpJsN3YCvYLMFgeq+uvN3srT9Ln+3/cq4DSY3RkD2gy2tuJkfBw1O9F8f29xLhyJUyJQC/Q+LGephMVvDI6FFEtUgqYlLwDilGrNAmwa0RRga/yKNrIm2K+3CPtt8eaOxKB5odiVX2Fu78ncLx5ZM5yHdwY4fz1/ErZ9y6Rb6iPaKvF3KAxvNl3Vgt+XfTDb27mN7mEufgcYZgyW7VLGm06De1ApnvB59f2gPiX5ldQJwgbDWW9u5GwmQOVsfY+AJJrtWl8vutmDPsQE0+HHrSNg9RNvSLPVGDAMfmIMozelLTSFfLZgJZZBLM/Ti+4R4Vt8CsPzqAFFUnYAi+bQNULNHRRkXLnpfZj+nKFBdPSZvYNPUcZ3IBLXWEHvJszWw8HyLW5XNiGEay8P9+ePqKRUo8IB1PIMIIlwkFbmaNa5526SBv73j+Ng5ZM25q81vGWjbtlaOiL6+5ER9SOjZGXcZjXsT8qeQEXjHqc8xCKIPjkIPd4m+qSPeZILERrMbfMMGy0PF9hKB9OCXd6ntYjeDy7BkpYeDGKVKeQPs39LCG3iYsxazV8SM0Vs+nv60aLIRBC86bvgVWIaNthF1O66znbaVGYe40H++AZIvPrUIScrxyq4dGg883FXdmbd/ut2aNDFH6j11fe8+3BYkyDfmGceqPiNw6qR4qHvD20=
