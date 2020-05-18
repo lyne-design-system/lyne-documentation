@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.4...v1.9.5) (2020-05-18)
+
+
+### Bug Fixes
+
+* add slack notifications for travis builds ([3bfcc8d](https://github.com/lyne-design-system/lyne-documentation/commit/3bfcc8d59d9bc7fe50771351bfb1dcd97f04ffca))
+
 ## [1.9.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.3...v1.9.4) (2020-05-18)
 
 
