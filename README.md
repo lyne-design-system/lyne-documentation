@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation)
+[![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation) [![Depfu](https://badges.depfu.com/badges/3f26ab824adc1c0d2bce3c1c795fa74a/count.svg)](https://depfu.com/github/lyne-design-system/lyne-documentation?project_id=12759)
 
 # Lyne Documentation Platform for Lyne Design System
 
 ## Setup for development
 
-First of all run `npm install` on the command line to install all dependencies required by the Lyne Documentation Platform. 
+First of all run `npm install` on the command line to install all dependencies required by the Lyne Documentation Platform.
 
 ### Run dev server
 
