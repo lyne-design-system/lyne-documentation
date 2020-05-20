@@ -8,7 +8,7 @@
     "lint": "npm run lint:js && npm run lint:vue && npm run lint:yml",
     "lint:js": "eslint ./ --ext .js",
     "lint:vue": "eslint ./ --ext .vue",
-    "lint:yml": "eslint ./ --ext .yml",
+    "lint:yml": "eslint ./ --ext .yml,.yaml",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
