@@ -1,3 +1,14 @@
+## [1.9.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.6...v1.9.7) (2020-05-25)
+
+
+### Bug Fixes
+
+* add file extension .yaml to the lint command ([52395a7](https://github.com/lyne-design-system/lyne-documentation/commit/52395a70e4dd4b488d7a27cf95c2f34887bd7382))
+* add package-lock file ([ff70206](https://github.com/lyne-design-system/lyne-documentation/commit/ff702069c4422e0c4275fa6bd666c8ef8e73ef46))
+* add the yaml plugin to the eslintrc file ([1fa9bae](https://github.com/lyne-design-system/lyne-documentation/commit/1fa9baec8216a3316f9e4342c5504dcf63739b7e))
+* add yml lint plugin ([92e6d94](https://github.com/lyne-design-system/lyne-documentation/commit/92e6d94abfcbf124df2fbcc0d62f15322fc20a33))
+* remove unused comma ([9fdf0bb](https://github.com/lyne-design-system/lyne-documentation/commit/9fdf0bb8c532bcde26f485b7913cde81a8126800))
+
 ## [1.9.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.5...v1.9.6) (2020-05-18)
 
 
