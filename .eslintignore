@@ -3,3 +3,6 @@
 /git/
 /dist/
 /src/.temp
+
+# not ignored folders/files
+!.travis.yml
