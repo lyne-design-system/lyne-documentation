@@ -17,7 +17,8 @@ module.exports = {
   },
   plugins: [
     'vue',
-    'gridsome'
+    'gridsome',
+    'yaml'
   ],
   rules: {
     // ####################################################
@@ -329,6 +330,6 @@ module.exports = {
     }],
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
-    'yield-star-spacing': 'error',
-  },
+    'yield-star-spacing': 'error'
+  }
 };
