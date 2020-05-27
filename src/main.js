@@ -2,7 +2,7 @@ import DefaultLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
 
-export default function (Vue, {head}) {
+export default (Vue, {head}) => {
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
@@ -25,4 +25,4 @@ export default function (Vue, {head}) {
     href: 'https://fonts.googleapis.com/css?family=Roboto',
     rel: 'stylesheet'
   });
-}
+};
