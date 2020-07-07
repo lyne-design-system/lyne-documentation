@@ -17,7 +17,7 @@
     "@gridsome/transformer-remark": "^0.6.1",
     "axios": "^0.19.2",
     "gridsome": "^0.7.18",
-    "gridsome-plugin-i18n": "^1.4.0",
+    "gridsome-plugin-i18n": "^1.5.1",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "lyne-test": "^6.21.3"
   },
