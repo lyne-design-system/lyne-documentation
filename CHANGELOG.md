@@ -1,3 +1,10 @@
+## [1.9.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.7...v1.9.8) (2020-07-08)
+
+
+### Bug Fixes
+
+* adhere to new page query linting rules ([dff4fd4](https://github.com/lyne-design-system/lyne-documentation/commit/dff4fd4887b1001216eb2370b417ea92b539b07b))
+
 ## [1.9.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.6...v1.9.7) (2020-05-25)
 
 
