@@ -29,38 +29,38 @@
 </template>
 
 <page-query>
-  query(
-    $compId: lyneTypes_ItemId
-    $componentDistPath: String
-    $locale: lyneTypes_SiteLocale
-  ) {
-    component: lyne {
-      component(filter: { id: { eq: $compId } }) {
-        title
-        componentName
-      }
+query(
+  $compId: lyneTypes_ItemId
+  $componentDistPath: String
+  $locale: lyneTypes_SiteLocale
+) {
+  component: lyne {
+    component(filter: { id: { eq: $compId } }) {
+      title
+      componentName
     }
-    variants: lyne {
-      allComponentVariants(
-        locale: $locale
-        filter: { component: { eq: $compId } }
-      ) {
-        id
-        title
-        description
-        properties
-      }
-    }
-    mdDoc: allMdDoc(
-      filter: { fileInfo: { directory: { in: [$componentDistPath] } } }
+  }
+  variants: lyne {
+    allComponentVariants(
+      locale: $locale
+      filter: { component: { eq: $compId } }
     ) {
-      edges {
-        node {
-          content
-        }
+      id
+      title
+      description
+      properties
+    }
+  }
+  mdDoc: allMdDoc(
+    filter: { fileInfo: { directory: { in: [$componentDistPath] } } }
+  ) {
+    edges {
+      node {
+        content
       }
     }
   }
+}
 </page-query>
 
 <script>

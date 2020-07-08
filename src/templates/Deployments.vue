@@ -54,24 +54,24 @@
 </template>
 
 <page-query>
-  query {
-    allDeployments {
-      edges {
-        node {
-          production {
-            tag
-            date
-            url
-          }
-          preview {
-            tag
-            date
-            url
-          }
+query {
+  allDeployments {
+    edges {
+      node {
+        production {
+          tag
+          date
+          url
+        }
+        preview {
+          tag
+          date
+          url
         }
       }
     }
   }
+}
 </page-query>
 
 <script>
