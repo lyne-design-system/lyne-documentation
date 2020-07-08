@@ -98,75 +98,75 @@
 </template>
 
 <page-query>
-  query {
-    lyne {
-      playground {
-        testBool
-        testInt
-        testFloat
-        testPdf {
-          tags
-          title
-          alt
-          customData
-          basename
-          filename
-          format
-          url
+query {
+  lyne {
+    playground {
+      testBool
+      testInt
+      testFloat
+      testPdf {
+        tags
+        title
+        alt
+        customData
+        basename
+        filename
+        format
+        url
+      }
+      testSvg {
+        tags
+        title
+        alt
+        customData
+        basename
+        filename
+        format
+        url
+      }
+      testMedia {
+        tags
+        title
+        alt
+        customData
+        basename
+        filename
+        format
+        url
+        responsiveImage {
+          src
         }
-        testSvg {
-          tags
-          title
-          alt
-          customData
-          basename
-          filename
-          format
-          url
-        }
-        testMedia {
-          tags
-          title
-          alt
-          customData
-          basename
-          filename
-          format
-          url
+      }
+      testDateTime
+      testSeo {
+        description
+        image {
           responsiveImage {
             src
           }
         }
-        testDateTime
-        testSeo {
-          description
-          image {
-            responsiveImage {
-              src
-            }
-          }
-          title
-          twitterCard
-        }
-        testJson
-        testLink {
-          componentName
-        }
-        testText
-        testColor {
-          hex
-          alpha
-          red
-          green
-          blue
-        }
-        testLocation {
-          latitude
-          longitude
-        }
+        title
+        twitterCard
+      }
+      testJson
+      testLink {
+        componentName
+      }
+      testText
+      testColor {
+        hex
+        alpha
+        red
+        green
+        blue
+      }
+      testLocation {
+        latitude
+        longitude
       }
     }
   }
+}
 </page-query>
 
 <script>

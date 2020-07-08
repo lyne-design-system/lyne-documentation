@@ -21,15 +21,15 @@
 </template>
 
 <page-query>
-  query {
-    lyne {
-      allComponents {
-        id
-        title
-        componentName
-      }
+query {
+  lyne {
+    allComponents {
+      id
+      title
+      componentName
     }
   }
+}
 </page-query>
 
 <style>
