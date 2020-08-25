@@ -1,6 +1,36 @@
 <template>
   <Layout>
-    <p>tokens</p>
+
+    <h1>Color</h1>
+    <ul
+      v-for="(token) in $data.tokens.color"
+      :key="token.key"
+      class="list"
+    >
+      <li class="list-item">
+        <span
+          class="list-item-sample var-color"
+          :style="{ backgroundColor: token.value}"
+          ></span>
+        <span>{{token.key}}: {{token.value}}</span>
+      </li>
+    </ul>
+
+    <h1>Font Size</h1>
+    <ul
+      v-for="(token) in $data.tokens.fontSize"
+      :key="token.key"
+      class="list"
+    >
+      <li class="list-item">
+        <span
+          class="list-item-sample"
+          :style="{ fontSize: token.value}"
+        >Sample text</span>
+        <span>{{token.key}}: {{token.value}}</span>
+      </li>
+    </ul>
+
   </Layout>
 </template>
 
@@ -13,7 +43,7 @@ const designTokens = require('lyne-design-tokens/dist/js/tokens.umd.js');
 const generateTokens = (json, _finalJson) => {
 
   const keys = Object.keys(json);
-  const finalJson = _finalJson || {};
+  const finalJson = _finalJson || [];
 
   while (keys.length > 0) {
     const key = keys.pop();
@@ -25,7 +55,11 @@ const generateTokens = (json, _finalJson) => {
       const newKey = value.path.join('-');
       const newValue = value.value;
 
-      finalJson[newKey] = newValue;
+      finalJson.push({
+        key: newKey,
+        value: newValue
+      });
+
     } else {
       generateTokens(value, finalJson);
     }
@@ -48,4 +82,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 20px;
+}
+
+.list-item-sample {
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.list-item-sample.var-color {
+  width: 20px;
+  height: 20px;
+}
+
 </style>
