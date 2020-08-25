@@ -60,14 +60,16 @@ const getNavLinks = (locale) => {
     components,
     deployments,
     home,
-    playground
+    playground,
+    designTokens
   } = langObjects;
 
   return [
     home,
     components,
     deployments,
-    playground
+    playground,
+    designTokens
   ];
 };
 
@@ -128,6 +130,7 @@ export default {
 .nav-link__lang-switch {
   height: 2rem;
   margin: 0 1rem 0 auto;
+  padding: 0;
 }
 
 .nav-link.active--exact {

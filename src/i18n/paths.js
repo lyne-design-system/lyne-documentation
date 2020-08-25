@@ -10,6 +10,11 @@ module.exports = {
       template: 'Deployments',
       title: 'Veröffentlichungen'
     },
+    designTokens: {
+      path: 'tokens',
+      template: 'Tokens',
+      title: 'Design Tokens'
+    },
     home: {
       path: '',
       template: 'Index',
@@ -31,6 +36,11 @@ module.exports = {
       path: 'deployments',
       template: 'Deployments',
       title: 'Deployments'
+    },
+    designTokens: {
+      path: 'tokens',
+      template: 'Tokens',
+      title: 'Design Tokens'
     },
     home: {
       path: '',
