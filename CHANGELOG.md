@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.10.0...v1.11.0) (2020-08-25)
+
+
+### Features
+
+* render design tokens ([9b7106c](https://github.com/lyne-design-system/lyne-documentation/commit/9b7106c045ec6b887b0017c5eac3be5d80520bcd))
+
 # [1.10.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.9...v1.10.0) (2020-08-25)
 
 
