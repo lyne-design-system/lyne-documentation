@@ -1,3 +1,10 @@
+## [1.9.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.8...v1.9.9) (2020-07-10)
+
+
+### Bug Fixes
+
+* install lyne-components in separate step ([1d32be0](https://github.com/lyne-design-system/lyne-documentation/commit/1d32be080a2b4375d34b97339d7261bbfe1120ae))
+
 ## [1.9.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.7...v1.9.8) (2020-07-08)
 
 
