@@ -1,3 +1,11 @@
+# [1.10.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.9...v1.10.0) (2020-08-25)
+
+
+### Features
+
+* add empty page for design tokens ([163966b](https://github.com/lyne-design-system/lyne-documentation/commit/163966bf29df9fb6e8b8abb6232d8daa2e7ce3b5))
+* add lyne-design-tokens version to footer ([a226479](https://github.com/lyne-design-system/lyne-documentation/commit/a226479124cb46e40eeef76cb42b1ffdfc72eeb4))
+
 ## [1.9.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.9.8...v1.9.9) (2020-07-10)
 
 
