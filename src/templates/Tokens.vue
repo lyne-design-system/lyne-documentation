@@ -34,9 +34,6 @@
   </Layout>
 </template>
 
-<page-query>
-</page-query>
-
 <script>
 const designTokens = require('lyne-design-tokens/dist/js/tokens.umd.js');
 
