@@ -35,7 +35,7 @@
     "eslint-plugin-vue": "~6.2.2",
     "eslint-plugin-yaml": "^0.3.0",
     "husky": "^4.2.5",
-    "netlify-cli": "^2.59.1",
+    "netlify-cli": "^2.59.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.1",
     "semantic-release": "^17.1.1",
