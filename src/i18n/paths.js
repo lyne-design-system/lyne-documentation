@@ -20,6 +20,11 @@ module.exports = {
       template: 'Index',
       title: 'Start'
     },
+    icons: {
+      path: 'icons',
+      template: 'Icons',
+      title: 'Icons'
+    },
     playground: {
       path: 'spielwiese',
       template: 'Playground',
