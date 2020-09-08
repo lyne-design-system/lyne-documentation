@@ -18,7 +18,7 @@ jobs:
     if: branch = master
     script:
     - npm install
-    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save-dev
+    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save
     - npm run lint || travis_terminate 1
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
     after_success:
