@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.1...v1.12.2) (2020-09-08)
+
+
+### Bug Fixes
+
+* make sure margin of first item is not zeroed ([0709e06](https://github.com/lyne-design-system/lyne-documentation/commit/0709e06fbae7f10d97b45f9748f8933038dffa8c))
+
 ## [1.12.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.0...v1.12.1) (2020-09-08)
 
 
