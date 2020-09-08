@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.11.0...v1.12.0) (2020-09-08)
+
+
+### Bug Fixes
+
+* add missing path for german ([76f1002](https://github.com/lyne-design-system/lyne-documentation/commit/76f1002c0c5e43b3d43a2acb9c6d5ef10011b7fa))
+
+
+### Features
+
+* add icons page ([6409e62](https://github.com/lyne-design-system/lyne-documentation/commit/6409e620fac0debe0d66d9e1d67b3cde8cdb87ae))
+
 # [1.11.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.10.0...v1.11.0) (2020-08-25)
 
 
