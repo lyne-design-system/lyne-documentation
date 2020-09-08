@@ -20,6 +20,7 @@ jobs:
     - npm install
     - npm install lyne-test
     - npm install lyne-design-tokens
+    - npm install lyne-icons
     - npm run lint || travis_terminate 1
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
     after_success:
