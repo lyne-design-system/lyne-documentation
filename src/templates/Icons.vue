@@ -50,10 +50,6 @@ export default {
     border-radius: .5rem;
   }
 
-  .list-item:first-child {
-    margin-left: 0;
-  }
-
   .name {
     flex: 0 0 100%;
     text-align: center;
