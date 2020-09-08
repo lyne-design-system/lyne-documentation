@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.0...v1.12.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* allow minor versions of lyne packages ([3b568e4](https://github.com/lyne-design-system/lyne-documentation/commit/3b568e4742d3328ddf820c6ff07255b972677216))
+
 # [1.12.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.11.0...v1.12.0) (2020-09-08)
 
 
