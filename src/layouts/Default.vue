@@ -51,6 +51,14 @@
           >lyne-documentation {{$data.versions.lyneDocumentation}}</a>
         </li>
 
+        <li>
+          <a
+            href="https://github.com/lyne-design-system/lyne-icons"
+            target="_blank"
+            rel="noopener"
+          >lyne-icons {{$data.versions.lyneIcons}}</a>
+        </li>
+
       </ul>
     </footer>
   </div>
@@ -61,6 +69,7 @@ import LocaleSwitcher from '../components/LocaleSwitcher.vue';
 
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
+const lyneIconsVersion = require('lyne-icons/package.json').version;
 const globalConfig = require('../../global.config');
 const paths = require('../i18n/paths');
 
@@ -71,7 +80,8 @@ const getNavLinks = (locale) => {
     deployments,
     home,
     playground,
-    designTokens
+    designTokens,
+    icons
   } = langObjects;
 
   return [
@@ -79,7 +89,8 @@ const getNavLinks = (locale) => {
     components,
     deployments,
     playground,
-    designTokens
+    designTokens,
+    icons
   ];
 };
 
@@ -95,7 +106,8 @@ export default {
       versions: {
         lyneComponents: `v${lyneComponentsVersion}`,
         lyneDesignTokens: `v${lyneDesignTokensVersion}`,
-        lyneDocumentation: null
+        lyneDocumentation: null,
+        lyneIcons: lyneIconsVersion
       }
     };
   },

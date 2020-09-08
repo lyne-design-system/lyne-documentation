@@ -47,6 +47,11 @@ module.exports = {
       template: 'Index',
       title: 'Home'
     },
+    icons: {
+      path: 'icons',
+      template: 'Icons',
+      title: 'Icons'
+    },
     playground: {
       path: 'playground',
       template: 'Playground',

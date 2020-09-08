@@ -2,12 +2,12 @@
   <Layout>
 
     <h1>Color</h1>
-    <ul
-      v-for="(token) in $data.tokens.color"
-      :key="token.key"
-      class="list"
-    >
-      <li class="list-item">
+    <ul class="list">
+      <li
+        v-for="(token) in $data.tokens.color"
+        :key="token.key"
+        class="list-item"
+      >
         <span
           class="list-item-sample var-color"
           :style="{ backgroundColor: token.value}"
@@ -17,12 +17,12 @@
     </ul>
 
     <h1>Font Size</h1>
-    <ul
-      v-for="(token) in $data.tokens.fontSize"
-      :key="token.key"
-      class="list"
-    >
-      <li class="list-item">
+    <ul class="list">
+      <li
+        v-for="(token) in $data.tokens.fontSize"
+        :key="token.key"
+        class="list-item"
+      >
         <span
           class="list-item-sample"
           :style="{ fontSize: token.value}"
