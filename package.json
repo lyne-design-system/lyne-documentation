@@ -19,7 +19,7 @@
     "gridsome": "^0.7.20",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.3.1",
-    "lyne-design-tokens": "^2.7.3",
+    "lyne-design-tokens": "^3.1.0",
     "lyne-icons": "^1.2.0",
     "lyne-test": "^6.27.0"
   },
