@@ -88,8 +88,6 @@ export default {
 
     // This makes sure that components only get rendered on the client.
 
-    // TODO: enable SSR
-
     /* eslint-disable global-require */
     window.lyneComps = require('lyne-test/loader');
     /* eslint-enable global-require */

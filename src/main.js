@@ -2,11 +2,15 @@ import DefaultLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
 
-export default (Vue, {head}) => {
+export default (Vue, {
+  head
+}) => {
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
-  head.htmlAttrs = {lang: 'en'};
+  head.htmlAttrs = {
+    lang: 'en'
+  };
   /* eslint-enable no-param-reassign */
 
   // define layout component
@@ -16,9 +20,7 @@ export default (Vue, {head}) => {
   const ignoreRegex = new RegExp(`${globalConfig.lyneComponentsPrefix}w*`, 'u');
 
   /* eslint-disable no-param-reassign */
-  Vue.config.ignoredElements = [
-    ignoreRegex
-  ];
+  Vue.config.ignoredElements = [ignoreRegex];
   /* eslint-enable no-param-reassign */
 
   head.link.push({

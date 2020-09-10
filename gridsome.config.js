@@ -6,15 +6,13 @@ const globalConfig = require('./global.config');
  * add webpack use rule for global scss file using webpack
  * style-resources-loader
  */
-function addStyleResource (rule) {
+const addStyleResource = (rule) => {
   rule.use('style-resource')
     .loader('style-resources-loader')
     .options({
-      patterns: [
-        path.resolve(__dirname, './src/styles/global.scss')
-      ]
+      patterns: [path.resolve(__dirname, './src/styles/global.scss')]
     });
-}
+};
 
 module.exports = {
   chainWebpack(config) {

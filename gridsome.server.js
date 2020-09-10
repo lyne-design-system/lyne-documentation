@@ -2,9 +2,11 @@ const axios = require('axios');
 const globalConfig = require('./global.config');
 const paths = require('./src/i18n/paths');
 
-function mainFunction(api) {
+const mainFunction = (api) => {
 
-  api.createPages(async ({graphql, createPage}) => {
+  api.createPages(async ({
+    graphql, createPage
+  }) => {
 
     // get lyne-components from graph-ql
     const {
@@ -64,6 +66,6 @@ function mainFunction(api) {
 
   });
 
-}
+};
 
 module.exports = mainFunction;
