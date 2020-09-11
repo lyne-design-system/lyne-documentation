@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation) [![Depfu](https://badges.depfu.com/badges/3f26ab824adc1c0d2bce3c1c795fa74a/overview.svg)](https://depfu.com/github/lyne-design-system/lyne-documentation?project_id=12759)
+[![Build Status](https://travis-ci.org/lyne-design-system/lyne-documentation.svg?branch=master)](https://travis-ci.org/lyne-design-system/lyne-documentation) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/lyne-design-system/lyne-documentation?label=release)
 
 # Lyne Documentation Platform for Lyne Design System
 
