@@ -20,7 +20,6 @@
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "lyne-design-tokens": "^2.7.3",
-    "lyne-helper-eslint-config": "~1.0.1",
     "lyne-icons": "^1.2.0",
     "lyne-test": "^6.27.0"
   },
@@ -37,6 +36,7 @@
     "eslint-plugin-vue": "~6.2.2",
     "eslint-plugin-yaml": "^0.3.0",
     "husky": "^4.2.5",
+    "lyne-helper-eslint-config": "~1.0.1",
     "netlify-cli": "^2.59.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.1",
