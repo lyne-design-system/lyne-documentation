@@ -18,9 +18,6 @@ export default (Vue, {
   // define layout component
   Vue.component('Layout', DefaultLayout);
 
-  // Register Bulma
-  Vue.use(Buefy);
-
   // make sure that vue is not complaining about unknown custom element
   const ignoreRegex = new RegExp(`${globalConfig.lyneComponentsPrefix}w*`, 'u');
 
@@ -28,8 +25,19 @@ export default (Vue, {
   Vue.config.ignoredElements = [ignoreRegex];
   /* eslint-enable no-param-reassign */
 
+  head.link.push({
+    href: 'https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css',
+    rel: 'stylesheet'
+  });
+
   head.meta.push({
     content: 'viewport',
     name: 'width=device-width, initial-scale=1'
   });
+
+  // Register Bulma
+  Vue.use(Buefy, {
+    defaultIconPack: 'mdi'
+  });
+
 };
