@@ -1,3 +1,11 @@
+## [1.12.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.2...v1.12.3) (2020-09-13)
+
+
+### Bug Fixes
+
+* move helper from dev-deps to deps ([2e715fb](https://github.com/lyne-design-system/lyne-documentation/commit/2e715fbbeba9279df24687e845fb5ff41a7bab7f))
+* move helper from dev-deps to deps ([ad23eb9](https://github.com/lyne-design-system/lyne-documentation/commit/ad23eb9ff4e8e9ededf73d0764072baabf12e675))
+
 ## [1.12.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.1...v1.12.2) (2020-09-08)
 
 
