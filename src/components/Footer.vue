@@ -13,7 +13,7 @@
             :href="link.link"
             target="_blank"
             rel="noopener"
-          >{{link.title}} {{link.version}}</a>
+          >{{link.title}} <span class="tag is-info">{{link.version}}</span></a>
         </li>
       </ul>
 
