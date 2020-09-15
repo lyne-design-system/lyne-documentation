@@ -1,3 +1,5 @@
+import 'buefy/dist/buefy.css';
+import Buefy from 'buefy';
 import DefaultLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
@@ -16,6 +18,9 @@ export default (Vue, {
   // define layout component
   Vue.component('Layout', DefaultLayout);
 
+  // Register Bulma
+  Vue.use(Buefy);
+
   // make sure that vue is not complaining about unknown custom element
   const ignoreRegex = new RegExp(`${globalConfig.lyneComponentsPrefix}w*`, 'u');
 
@@ -23,8 +28,8 @@ export default (Vue, {
   Vue.config.ignoredElements = [ignoreRegex];
   /* eslint-enable no-param-reassign */
 
-  head.link.push({
-    href: 'https://fonts.googleapis.com/css?family=Roboto',
-    rel: 'stylesheet'
+  head.meta.push({
+    content: 'viewport',
+    name: 'width=device-width, initial-scale=1'
   });
 };
