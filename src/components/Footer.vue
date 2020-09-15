@@ -20,10 +20,10 @@
       <h2 class="title is-5">Further Ressources</h2>
       <ul>
         <li>
-          <g-link to="/deployments">Version history</g-link>
+          <g-link :to="$tp('deployments')">Version history</g-link>
         </li>
         <li>
-          <g-link to="/playground">Playground for CMS</g-link>
+          <g-link :to="$tp('playground')">Playground for CMS</g-link>
         </li>
       </ul>
 

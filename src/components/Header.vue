@@ -52,12 +52,28 @@
 <script>
 const paths = require('../i18n/paths');
 
+const getOnlyVisibleNavLinks = (elements) => {
+  const keys = Object.keys(elements);
+  const finalObject = {};
+
+  keys.forEach((key) => {
+    const path = elements[key];
+
+    if (!path.hideFromNav) {
+      finalObject[key] = path;
+    }
+  });
+
+  return finalObject;
+};
+
 export default {
   data: (comp) => {
     const locale = comp._i18n.locale.toString();
+    const navLinks = getOnlyVisibleNavLinks(paths[locale]);
 
     return {
-      navLinks: paths[locale],
+      navLinks,
       showMenu: false
     };
   },

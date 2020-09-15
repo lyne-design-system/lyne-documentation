@@ -20,6 +20,18 @@ module.exports = {
       path: 'icons',
       template: 'Icons',
       title: 'Icons'
+    },
+    deployments: {
+      path: 'veroeffentlichungen',
+      template: 'Deployments',
+      title: 'Veröffentlichungen',
+      hideFromNav: true
+    },
+    playground: {
+      path: 'spielwiese',
+      template: 'Playground',
+      title: 'Spielwiese',
+      hideFromNav: true
     }
   },
   en: {
@@ -42,6 +54,18 @@ module.exports = {
       path: 'icons',
       template: 'Icons',
       title: 'Icons'
+    },
+    deployments: {
+      path: 'deployments',
+      template: 'Deployments',
+      title: 'Deployments',
+      hideFromNav: true
+    },
+    playground: {
+      path: 'playground',
+      template: 'Playground',
+      title: 'Playground',
+      hideFromNav: true
     }
   }
 };
