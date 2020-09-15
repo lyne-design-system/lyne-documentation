@@ -1,4 +1,4 @@
-import 'buefy/dist/buefy.css';
+import './styles/bulma.scss';
 import Buefy from 'buefy';
 import DefaultLayout from './layouts/Default.vue';
 
