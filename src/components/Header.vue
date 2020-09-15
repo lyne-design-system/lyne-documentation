@@ -2,21 +2,6 @@
 
   <header>
 
-    <!--
-    <nav>
-      <g-link
-        v-for="(link) in $data.navLinks"
-        :to="$tp(link.path)"
-        :key="link.path"
-      >{{link.title}}</g-link>
-
-      <LocaleSwitcher
-        @clicked="onClickChild"
-      />
-
-    </nav>
-    -->
-
     <nav
       class="navbar"
       role="navigation"
