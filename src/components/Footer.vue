@@ -3,36 +3,15 @@
   <footer>
     Lyne Design System:
     <ul>
-      <li>
+      <li
+        v-for="(link) in $data.links"
+        :key="link.href"
+      >
         <a
-          href="https://github.com/lyne-design-system/lyne-design-tokens"
+          :href="link.href"
           target="_blank"
           rel="noopener"
-        >lyne-design-tokens {{$data.versions.lyneDesignTokens}}</a>
-      </li>
-
-      <li>
-        <a
-          href="https://github.com/lyne-design-system/lyne-components"
-          target="_blank"
-          rel="noopener"
-        >lyne-components {{$data.versions.lyneComponents}}</a>
-      </li>
-
-      <li>
-        <a
-          href="https://github.com/lyne-design-system/lyne-documentation"
-          target="_blank"
-          rel="noopener"
-        >lyne-documentation {{$data.versions.lyneDocumentation}}</a>
-      </li>
-
-      <li>
-        <a
-          href="https://github.com/lyne-design-system/lyne-icons"
-          target="_blank"
-          rel="noopener"
-        >lyne-icons {{$data.versions.lyneIcons}}</a>
+        >{{link.title}} v{{link.version}}</a>
       </li>
 
     </ul>
@@ -49,11 +28,27 @@ const globalConfig = require('../../global.config');
 export default {
   data: () => {
     const dataExport = {
-      versions: {
-        lyneComponents: `v${lyneComponentsVersion}`,
-        lyneDesignTokens: `v${lyneDesignTokensVersion}`,
-        lyneDocumentation: null,
-        lyneIcons: lyneIconsVersion
+      links: {
+        components: {
+          link: 'https://github.com/lyne-design-system/lyne-components',
+          title: 'lyne-components',
+          version: lyneComponentsVersion
+        },
+        documentation: {
+          link: 'https://github.com/lyne-design-system/lyne-documentation',
+          title: 'lyne-documentation',
+          version: ''
+        },
+        icons: {
+          link: 'https://github.com/lyne-design-system/lyne-icons',
+          title: 'lyne-icons',
+          version: lyneIconsVersion
+        },
+        tokens: {
+          link: 'https://github.com/lyne-design-system/lyne-design-tokens',
+          title: 'lyne-design-tokens',
+          version: lyneDesignTokensVersion
+        }
       }
     };
 
@@ -64,7 +59,8 @@ export default {
       const apiResult = await fetch(globalConfig.githubApiLatestRelease);
       const data = await apiResult.json();
 
-      this.versions.lyneDocumentation = data['tag_name'];
+      this.links.documentation.version = data['tag_name'];
+      console.log(this.lyneDocumentationVersion);
     } catch (err) {
       console.log('There was an error fetching latest lyne-documentation release from github api');
       console.log(err);
