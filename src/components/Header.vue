@@ -1,6 +1,8 @@
 <template>
 
   <header>
+
+    <!--
     <nav>
       <g-link
         v-for="(link) in $data.navLinks"
@@ -12,6 +14,51 @@
         @clicked="onClickChild"
       />
 
+    </nav>
+    -->
+
+    <nav
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a
+          class="navbar-item"
+          href="/"
+        >
+          <img src="../favicon.png">
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          v-bind:class="{'is-active': showMenu}"
+          aria-label="menu"
+          aria-expanded="false"
+          @click="menuClick">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div
+        class="navbar-menu"
+        v-bind:class="{'is-active': showMenu}"
+      >
+
+        <div class="navbar-start">
+
+          <g-link
+            class="navbar-item"
+            v-for="(link) in $data.navLinks"
+            :to="$tp(link.path)"
+            :key="link.path"
+          >{{link.title}}</g-link>
+
+        </div>
+      </div>
     </nav>
   </header>
 </template>
@@ -50,10 +97,14 @@ export default {
     const locale = comp._i18n.locale.toString();
 
     return {
-      navLinks: getNavLinks(locale)
+      navLinks: getNavLinks(locale),
+      showMenu: false
     };
   },
   methods: {
+    menuClick () {
+      this.showMenu = !this.showMenu;
+    },
     onClickChild (locale) {
       this.navLinks = getNavLinks(locale);
     }
