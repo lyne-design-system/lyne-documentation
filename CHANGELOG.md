@@ -1,3 +1,11 @@
+## [1.13.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.13.0...v1.13.1) (2020-09-15)
+
+
+### Bug Fixes
+
+* make sure routes for links from footer are rendered as well ([57f41f1](https://github.com/lyne-design-system/lyne-documentation/commit/57f41f16c870aab9235748af45d82284d66e1ec7))
+* remove home link ([bca5d08](https://github.com/lyne-design-system/lyne-documentation/commit/bca5d086f5f79e2184b8c41d5d3ea278ce6265e8))
+
 # [1.13.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.3...v1.13.0) (2020-09-15)
 
 
