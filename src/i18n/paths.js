@@ -1,66 +1,48 @@
+/* eslint-disable sort-keys */
 module.exports = {
   de: {
-    components: {
-      path: 'komponenten',
-      template: 'Components',
-      title: 'Komponenten'
-    },
-    deployments: {
-      path: 'veroeffentlichungen',
-      template: 'Deployments',
-      title: 'Veröffentlichungen'
-    },
-    designTokens: {
-      path: 'tokens',
-      template: 'Tokens',
-      title: 'Design Tokens'
-    },
     home: {
       path: '',
       template: 'Index',
       title: 'Start'
     },
-    icons: {
-      path: 'icons',
-      template: 'Icons',
-      title: 'Icons'
-    },
-    playground: {
-      path: 'spielwiese',
-      template: 'Playground',
-      title: 'Spielwiese'
-    }
-  },
-  en: {
     components: {
-      path: 'components',
+      path: 'komponenten',
       template: 'Components',
-      title: 'Components'
-    },
-    deployments: {
-      path: 'deployments',
-      template: 'Deployments',
-      title: 'Deployments'
+      title: 'Komponenten'
     },
     designTokens: {
       path: 'tokens',
       template: 'Tokens',
       title: 'Design Tokens'
     },
+    icons: {
+      path: 'icons',
+      template: 'Icons',
+      title: 'Icons'
+    }
+  },
+  en: {
     home: {
       path: '',
       template: 'Index',
       title: 'Home'
     },
+    components: {
+      path: 'components',
+      template: 'Components',
+      title: 'Components'
+    },
+    designTokens: {
+      path: 'tokens',
+      template: 'Tokens',
+      title: 'Design Tokens'
+    },
     icons: {
       path: 'icons',
       template: 'Icons',
       title: 'Icons'
-    },
-    playground: {
-      path: 'playground',
-      template: 'Playground',
-      title: 'Playground'
     }
   }
 };
+/* eslint-enable sort-keys */
