@@ -1,18 +1,43 @@
 <template>
 
-  <select
-    v-model="currentLocale"
-    @change="localeChanged"
+  <div
+    class="dropdown"
+    v-bind:class="{'is-active': showDropdown}"
   >
-
-    <option
-      v-for="locale in availableLocales"
-      :key="locale"
-      :value="locale"
-    >{{ locale }}</option>
-
-  </select>
-
+    <div class="dropdown-trigger">
+      <button
+        class="button"
+        aria-haspopup="true"
+        aria-controls="dropdown-menu"
+        @click="toggleDropdown"
+      >
+        <span>{{currentLocale}}</span>
+        <span class="icon is-small">
+          <b-icon
+            aria-hidden="true"
+            :icon="showDropdown ? 'menu-up' : 'menu-down'"
+          ></b-icon>
+        </span>
+      </button>
+    </div>
+    <div
+      class="dropdown-menu"
+      role="menu"
+    >
+      <div class="dropdown-content">
+        <a
+          v-for="locale in availableLocales"
+          :key="locale"
+          href="#"
+          class="dropdown-item"
+          v-bind:class="{'is-active': locale === currentLocale}"
+          @click="localeChanged(locale)"
+        >
+          {{locale}}
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -22,43 +47,24 @@ export default {
   data: (comp) => ({
     availableLocales: comp._i18n.availableLocales,
     currentLocale: comp._i18n.locale.toString(),
-    pathObject: paths[comp._i18n.locale.toString()]
+    pathObject: paths[comp._i18n.locale.toString()],
+    showDropdown: false
   }),
   methods: {
-    localeChanged () {
-      const currentPath = this.$route.path
-        .substring(this.currentLocale.length + 2, this.$route.path.length);
-      const cleanCurrentPath = currentPath.replace('/', '');
+    localeChanged (locale) {
 
-      // find path object key which has clean currentPath as path
-      let keyFound = false;
+      this.showDropdown = false;
 
-      Object.keys(this.pathObject)
-        .forEach((pathObjectKey) => {
-          const pathObject = this.pathObject[pathObjectKey];
-
-          if (pathObject.path === cleanCurrentPath) {
-            keyFound = pathObjectKey;
-          }
-        });
-
-      let desiredPath;
-
-      if (keyFound) {
-        const pathObjects = paths[this.currentLocale];
-
-        desiredPath = `/${this.currentLocale}/${pathObjects[keyFound].path}`;
-        this.pathObject = pathObjects;
-
-      } else {
-        desiredPath = this.$tp(this.$route.path, this.currentLocale, true);
+      if (locale === this.currentLocale) {
+        return;
       }
 
-      this.$router.push({
-        path: desiredPath
-      });
+      const desiredPath = this.$tp(this.$route.path, locale, true);
 
-      this.$emit('clicked', this.currentLocale);
+      window.location.replace(desiredPath);
+    },
+    toggleDropdown () {
+      this.showDropdown = !this.showDropdown;
     }
   },
   name: 'LocaleSwitcher'
