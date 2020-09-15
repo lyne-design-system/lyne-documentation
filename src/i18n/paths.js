@@ -4,7 +4,8 @@ module.exports = {
     home: {
       path: '',
       template: 'Index',
-      title: 'Start'
+      title: 'Start',
+      hideFromNav: true
     },
     components: {
       path: 'komponenten',
@@ -38,7 +39,8 @@ module.exports = {
     home: {
       path: '',
       template: 'Index',
-      title: 'Home'
+      title: 'Home',
+      hideFromNav: true
     },
     components: {
       path: 'components',
