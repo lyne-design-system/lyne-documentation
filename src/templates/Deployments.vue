@@ -1,55 +1,56 @@
 <template>
   <Layout>
-    <div class="container">
-      <div
-        id="tabs"
-        class="tabs"
-      >
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">Releases</h1>
 
-        <!-- Tab list -->
-        <ul class="tab-list">
-          <li
-            v-for="(tab, index) in $data.tabs"
-            :key="index"
-            class="tab-list-item"
-          >
-            <a
-              href="#"
+        <p>These are production releases and preview build for lyne-components.</p>
+
+        <div
+          id="tabs"
+          class="tabs"
+        >
+
+          <!-- Tab list -->
+          <ul class="tab-list">
+            <li
+              v-for="(tab, index) in $data.tabs"
+              :key="index"
+              class="tab-list-item"
+              v-bind:class="{'is-active': tab.isActive}"
               @click="selectTab(tab)"
-              :class="[tab.isActive
-                ? 'tab-list-item-link is-active'
-                : 'tab-list-item-link']"
-            >{{tab.name}}</a>
-          </li>
-        </ul>
+            >
+              <a>{{tab.name}}</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tabs content -->
+        <div
+          v-for="(tab, index) in $data.tabs"
+          :id="tab.id"
+          :key="index"
+          :class="[tab.isActive
+            ? 'tab-section is-active'
+            : 'tab-section']"
+        >
+          <ul>
+            <li
+              class="list-item"
+              v-for="(deployment) in $data.deployments[tab.id]"
+              :key="deployment.date"
+            >
+              <span class="list-item-title">Branch: {{deployment.tag}}</span>
+              <a
+                class="list-item-link"
+                :href="deployment.url"
+              >View</a>
+              <span class="list-item-date">{{formatDate(deployment.date)}}</span>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Tabs content -->
-      <section
-        v-for="(tab, index) in $data.tabs"
-        :id="tab.id"
-        :key="index"
-        :class="[tab.isActive
-          ? 'section is-active'
-          : 'section']"
-      >
-        <ul>
-          <li
-            class="list-item"
-            v-for="(deployment) in $data.deployments[tab.id]"
-            :key="deployment.date"
-          >
-            <span class="list-item-title">Branch: {{deployment.tag}}</span>
-            <a
-              class="list-item-link"
-              :href="deployment.url"
-            >View</a>
-            <span class="list-item-date">{{formatDate(deployment.date)}}</span>
-          </li>
-      </ul>
-      </section>
-
-    </div>
+    </section>
   </Layout>
 </template>
 
@@ -122,6 +123,7 @@ export default {
         month: '2-digit',
         year: 'numeric'
       };
+
       const formattedDate = dateObject.toLocaleDateString('en-US', dateOptions);
 
       return formattedDate;
@@ -129,7 +131,6 @@ export default {
 
     // handle tab click
     selectTab(selectedTab) {
-
       // set active class on tab item
       this.tabs.forEach((tab) => {
 
@@ -144,6 +145,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.tab-section:not(.is-active) {
+  display: none;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.list-item-title {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list-item-link {
+  display: block;
+  margin-left: 20px;
+}
+
+.list-item-date {
+  display: block;
+  flex: 100% 0 0;
+  padding-top: 6px;
+}
+
+/*
 body {
   margin: 20px;
 }
@@ -162,12 +192,6 @@ ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.info {
-  border-bottom: 1px solid #000;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
 }
 
 .tabs {
@@ -202,31 +226,7 @@ ul, ol {
 
 }
 
-.section:not(.is-active) {
-  display: none;
-}
 
-.list-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-bottom: 30px;
-}
 
-.list-item-title {
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.list-item-link {
-  display: block;
-  margin-left: 20px;
-}
-
-.list-item-date {
-  display: block;
-  flex: 100% 0 0;
-  padding-top: 6px;
-}
+*/
 </style>
