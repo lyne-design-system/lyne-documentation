@@ -1,19 +1,23 @@
 <template>
   <Layout>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">Icons</h1>
 
-    <h1>Icons</h1>
-
-    <ul class='list'>
-      <li
-        v-for='(icon) in $data.icons'
-        :key='icon.id'
-        class='list-item'
-      >
-          <span class='name'>{{icon.name}}</span>
-          <span v-html='icon.svg'></span>
-      </li>
-    </ul>
-
+        <div class="content">
+          <ul class='list'>
+            <li
+              v-for='(icon) in $data.icons'
+              :key='icon.id'
+              class='list-item'
+            >
+                <span class='name'>{{icon.name}}</span>
+                <span v-html='icon.svg'></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 

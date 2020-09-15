@@ -1,35 +1,43 @@
 <template>
   <Layout>
 
-    <h1>Color</h1>
-    <ul class="list">
-      <li
-        v-for="(token) in $data.tokens.color"
-        :key="token.key"
-        class="list-item"
-      >
-        <span
-          class="list-item-sample var-color"
-          :style="{ backgroundColor: token.value}"
-          ></span>
-        <span>{{token.key}}: {{token.value}}</span>
-      </li>
-    </ul>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">Design Tokens</h1>
 
-    <h1>Font Size</h1>
-    <ul class="list">
-      <li
-        v-for="(token) in $data.tokens.fontSize"
-        :key="token.key"
-        class="list-item"
-      >
-        <span
-          class="list-item-sample"
-          :style="{ fontSize: token.value}"
-        >Sample text</span>
-        <span>{{token.key}}: {{token.value}}</span>
-      </li>
-    </ul>
+        <div class="content">
+          <h2 class="title is-2">Color</h2>
+          <ul class="list">
+            <li
+              v-for="(token) in $data.tokens.color"
+              :key="token.key"
+              class="list-item"
+            >
+              <span
+                class="list-item-sample var-color"
+                :style="{ backgroundColor: token.value}"
+                ></span>
+              <span>{{token.key}}: {{token.value}}</span>
+            </li>
+          </ul>
+
+          <h2 class="title is-2">Font Size</h2>
+          <ul class="list">
+            <li
+              v-for="(token) in $data.tokens.fontSize"
+              :key="token.key"
+              class="list-item"
+            >
+              <span
+                class="list-item-sample"
+                :style="{ fontSize: token.value}"
+              >Sample text</span>
+              <span>{{token.key}}: {{token.value}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </Layout>
 </template>

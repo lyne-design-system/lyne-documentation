@@ -1,21 +1,27 @@
 <template>
   <Layout>
-    <h1>Lyne Components</h1>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">Lyne Components</h1>
 
-    <ul>
+        <div class="content">
+          <ul>
 
-      <li
-        v-for="(comp) in $page.lyne.allComponents"
-        :key="comp.id"
-      >
+            <li
+              v-for="(comp) in $page.lyne.allComponents"
+              :key="comp.id"
+            >
 
-        <g-link :to="$tp(`/components/${comp.componentName}/`)">
-          {{comp.title}} ({{comp.componentName}})
-        </g-link>
+              <g-link :to="$tp(`/components/${comp.componentName}/`)">
+                {{comp.title}} ({{comp.componentName}})
+              </g-link>
 
-      </li>
+            </li>
 
-    </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </Layout>
 </template>

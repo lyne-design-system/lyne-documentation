@@ -1,29 +1,36 @@
 <template>
   <Layout>
-    <h1>{{$page.component.component.title}}</h1>
 
-    <div
-      v-for="(comp) in $page.variants.allComponentVariants"
-      :key="comp.id"
-    >
-      <h2>Variant: {{comp.title}}</h2>
-      <p>Description: {{comp.description}}</p>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1">{{$page.component.component.title}}</h1>
 
-      <h3>Preview</h3>
-      <component
-        v-bind:is="$page.component.component.componentName"
-        v-bind="comp.properties"
-      ></component>
-      <hr>
-    </div>
+        <div class="content">
+          <div
+            v-for="(comp) in $page.variants.allComponentVariants"
+            :key="comp.id"
+          >
+            <h2>Variant: {{comp.title}}</h2>
+            <p>Description: {{comp.description}}</p>
 
-    <hr>
-    <h2><i>Readme file from stencil build</i></h2>
-    <div v-html="$page.mdDoc.edges[0].node.content"></div>
+            <h3>Preview</h3>
+            <component
+              v-bind:is="$page.component.component.componentName"
+              v-bind="comp.properties"
+            ></component>
+            <hr>
+          </div>
 
-    <hr>
-    <h2><i>JsonDocs contents from stencil bulid</i></h2>
-    <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
+          <hr>
+          <h2><i>Readme file from stencil build</i></h2>
+          <div v-html="$page.mdDoc.edges[0].node.content"></div>
+
+          <hr>
+          <h2><i>JsonDocs contents from stencil bulid</i></h2>
+          <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
+        </div>
+      </div>
+    </section>
 
   </Layout>
 </template>
