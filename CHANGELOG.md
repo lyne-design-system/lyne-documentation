@@ -1,3 +1,16 @@
+# [1.13.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.3...v1.13.0) (2020-09-15)
+
+
+### Features
+
+* add correct nav content ([97c605d](https://github.com/lyne-design-system/lyne-documentation/commit/97c605dcf9f119c4a8a204adc4556646a76b7dc7))
+* add favicon ([b11f719](https://github.com/lyne-design-system/lyne-documentation/commit/b11f71933b00545c071d0a9e25bbdf59f03cea0a))
+* include material icons ([bb2aad0](https://github.com/lyne-design-system/lyne-documentation/commit/bb2aad05e8678368c15a4021808f2818fcf75ccb))
+* integrate locale switcher and hamburger menu ([dca9178](https://github.com/lyne-design-system/lyne-documentation/commit/dca9178e352bc28705624b00b4925b61dfb34643))
+* use bulma ([a2f0fdd](https://github.com/lyne-design-system/lyne-documentation/commit/a2f0fdd1dcbe3297bfdc7d1ca14467fe96bf480c))
+* use bulma ([43c3b0e](https://github.com/lyne-design-system/lyne-documentation/commit/43c3b0ec5f7e5bc332b25012ec94872988ecfbe9))
+* use proper section and titles ([b780db1](https://github.com/lyne-design-system/lyne-documentation/commit/b780db18ba6ae67fd5b6a8bc95657d4473e6d8f4))
+
 ## [1.12.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.12.2...v1.12.3) (2020-09-13)
 
 
