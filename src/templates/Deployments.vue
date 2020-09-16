@@ -40,7 +40,7 @@
               v-for="(deployment) in $data.deployments[tab.id]"
               :key="deployment.date"
             >
-              <span class="list-item-title">Branch: {{deployment.tag}}</span>
+              <span class="list-item-title">{{tab.id === 'production' ? 'Version' : 'Branch'}}: {{deployment.tag}}</span>
               <a
                 class="list-item-link"
                 :href="deployment.url"
