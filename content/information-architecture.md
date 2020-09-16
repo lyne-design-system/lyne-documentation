@@ -1,7 +1,7 @@
 # Information architecture (IA) for the Lyne (Web) documentation platform
 
 #### Status 
-- [x] Approved as starting point by @DanTheMen @mbleuer @feerglas @sabrinaheid @4aficiona2 on 15.09.2020
+- [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
 #### Proposed IA
 <details>
