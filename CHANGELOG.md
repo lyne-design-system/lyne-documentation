@@ -1,3 +1,11 @@
+# [1.15.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.14.0...v1.15.0) (2020-09-16)
+
+
+### Features
+
+* use table to display color and font sizes ([b42526c](https://github.com/lyne-design-system/lyne-documentation/commit/b42526ca52701aac7c35bcaf7aa6f0064a445c5b))
+* use table to list icons ([4701128](https://github.com/lyne-design-system/lyne-documentation/commit/4701128ac9e975814dd5571c7c36720cbd33a3d8))
+
 # [1.14.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.13.1...v1.14.0) (2020-09-16)
 
 
