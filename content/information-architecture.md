@@ -1,7 +1,14 @@
-# Information architecture for the Lyne (Web) documentation platform
+# Proposed Information architecture for the Lyne (Web) documentation platform
+
+### Approved as starting point
+- [x] by @DanTheMen @mbleuer @feerglas @sabrinaheid @4aficiona2 on 15.09.2020
+
+Content sections of pages are hightlighted by braces `()`
 
 * All about Lyne
   * What is Lyne?
+  * Why Lyne?
+    * (What it solves, What I gain from it, Management summary)
   * How we work
   * Principles
   * Common language/vocabulary/dictionary
@@ -14,12 +21,6 @@
   * Resources
 * Writing
   * Get started
-* Promoting/Managing/Decision making
-  * Why Lyne?
-    * What it solves
-    * What I gain from it
-    * Management summary
-  * Resources
 * Contributing
   * Overview
   * Bugs and requests
@@ -45,18 +46,18 @@
   * Spacing
   * Typography
   * Motion
-  * Illustrations
-  * Icons
+  * Illustration
+  * Icon
   * Data visualization
   * Writing
   * Naming
   * Dev standards
   * ...
 * Tutorials
-  * …
   * Figma tutorial
   * Angular tutorial
   * Backend integration tutorial (AEM, Drupal)
+  * ...
 * Design Tokens
   * Color
   * Font
@@ -64,12 +65,12 @@
   * Space
   * Border radius
   * Box shadow
-  * Components
-  * ...
+* Components
+  * ... list of all components
 * Patterns
-  * ...
+  * ... list of all patterns
 * Templates
-  * ...
+  * ... list of all templates
 * System/Domain/Community contributions/extensions / Satellites 
   * Overview
   * Components
@@ -81,7 +82,7 @@
   * Support
 
 
-## Sources/influenced by:
+## Sources/IA is influenced by:
 * https://www.carbondesignsystem.com
 * https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205
 * https://www.duetds.com
