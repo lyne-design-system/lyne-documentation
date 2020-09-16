@@ -1,8 +1,9 @@
-# Information architecture for the Lyne (Web) documentation platform
+# Information architecture (IA) for the Lyne (Web) documentation platform
 
 #### Status 
 - [x] Approved as starting point by @DanTheMen @mbleuer @feerglas @sabrinaheid @4aficiona2 on 15.09.2020
 
+#### Proposed IA
 <details>
   <summary>All about Lyne</summary>
   
@@ -120,7 +121,8 @@
 </details>
 
 
-#### Content sections of pages are hightlighted by braces `()`
+#### Notes
+Content sections of pages are hightlighted by braces `()`
 
 #### Sources/IA is influenced by:
 * https://www.carbondesignsystem.com
