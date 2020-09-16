@@ -1,3 +1,11 @@
+# [1.14.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.13.1...v1.14.0) (2020-09-16)
+
+
+### Features
+
+* use bulma label for version ([2f63a48](https://github.com/lyne-design-system/lyne-documentation/commit/2f63a48ed38821182f4afa3eb60abf5fdfabcf97))
+* use bulma tabs ([6d130e1](https://github.com/lyne-design-system/lyne-documentation/commit/6d130e158eff9a033be58af0bb11fbcf90fdafdb))
+
 ## [1.13.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.13.0...v1.13.1) (2020-09-15)
 
 
