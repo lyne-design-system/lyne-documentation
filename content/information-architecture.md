@@ -37,3 +37,46 @@
   * News & articles
   * Meetups
   * Roadmap
+
+
+
+* Guidelines
+  * Accessibility
+  * Spacing
+  * Typography
+  * Motion
+  * Illustrations
+  * Icons
+  * Data visualization
+  * Writing
+  * Naming
+  * Dev standards
+  * ...
+* Tutorials
+  * …
+  * Figma tutorial
+  * Angular tutorial
+  * Backend integration tutorial (AEM, Drupal)
+* Design Tokens
+  * Color
+  * Font
+  * Font size
+  * Space
+  * Border radius
+  * Box shadow
+  * Components
+  * ...
+* Patterns
+  * ...
+* Templates
+* System/Domain/Community contributions/extensions / Satellites 
+  * Overview
+  * Components
+  * Patterns
+* Help
+  * Status page
+  * FAQs
+  * Migration guide
+  * Support
+
+
