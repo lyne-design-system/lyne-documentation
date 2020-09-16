@@ -5,16 +5,25 @@
         <h1 class="title is-1">Icons</h1>
 
         <div class="content">
-          <ul class='list'>
-            <li
-              v-for='(icon) in $data.icons'
-              :key='icon.id'
-              class='list-item'
-            >
-                <span class='name'>{{icon.name}}</span>
-                <span v-html='icon.svg'></span>
-            </li>
-          </ul>
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for='(icon) in $data.icons'
+                :key='icon.id'
+              >
+                <td>
+                  <span v-html='icon.svg'></span>
+                </td>
+                <td>{{icon.name}}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
