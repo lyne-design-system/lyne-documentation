@@ -5,7 +5,9 @@
 
 Content sections of pages are hightlighted by braces `()`
 
-* All about Lyne
+<details>
+  <summary>All about Lyne</summary>
+  
   * What is Lyne?
   * Why Lyne?
     * (What it solves, What I gain from it, Management summary)
@@ -13,15 +15,27 @@ Content sections of pages are hightlighted by braces `()`
   * Principles
   * Common language/vocabulary/dictionary
   * Gallery / Implementations/Examples based on Lyne
-* Designing
+</details>
+<details>
+  <summary>Designing</summary>
+  
   * Get started
   * Design kits
-* Developing
+</details>
+<details>
+  <summary>Developing</summary>
+  
   * Get started
   * Resources
-* Writing
+</details>
+<details>
+  <summary>Writing</summary>
+  
   * Get started
-* Contributing
+</details>
+<details>
+  <summary>Contributing</summary>
+  
   * Overview
   * Bugs and requests
   * Documentation
@@ -31,17 +45,20 @@ Content sections of pages are hightlighted by braces `()`
   * Design Tokens
   * Patterns
   * Other contributions
-* What’s happening
+</details>
+<details>
+  <summary>What’s happening</summary>
+  
   * Changelog
   * Status
-    * show work in progress (done, in progress, pending)
+    * (show progress, states: done, in progress, pending)
   * News & articles
   * Meetups
   * Roadmap
-
-
-
-* Guidelines
+</details>
+<details>
+  <summary>Guidelines</summary>
+  
   * Accessibility
   * Spacing
   * Typography
@@ -53,33 +70,58 @@ Content sections of pages are hightlighted by braces `()`
   * Naming
   * Dev standards
   * ...
-* Tutorials
+</details>
+<details>
+  <summary>Tutorials</summary>
+  
   * Figma tutorial
   * Angular tutorial
   * Backend integration tutorial (AEM, Drupal)
   * ...
-* Design Tokens
+</details>
+<details>
+  <summary>Design Tokens</summary>
+  
   * Color
   * Font
   * Font size
   * Space
   * Border radius
   * Box shadow
-* Components
+  * ...
+</details>
+<details>
+  <summary>Components</summary>
+  
   * ... list of all components
-* Patterns
+</details>
+<details>
+  <summary>Patterns</summary>
+  
   * ... list of all patterns
-* Templates
+</details>
+<details>
+  <summary>Templates</summary>
+  
   * ... list of all templates
-* System/Domain/Community contributions/extensions / Satellites 
+</details>
+<details>
+  <summary>System/Domain/Community contributions/extensions / Satellites</summary>
+  
   * Overview
   * Components
   * Patterns
-* Help
+</details>
+<details>
+  <summary>Help</summary>
+  
   * Status page
   * FAQs
   * Migration guide
   * Support
+</details>
+
+
 
 
 ## Sources/IA is influenced by:
