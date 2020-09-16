@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.1...v1.15.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* vertically center text cell ([83ead88](https://github.com/lyne-design-system/lyne-documentation/commit/83ead88578be09a83f40bc5ac13cb445610927a6))
+
 ## [1.15.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.0...v1.15.1) (2020-09-16)
 
 
