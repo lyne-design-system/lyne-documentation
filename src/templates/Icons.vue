@@ -18,7 +18,10 @@
                 :key='icon.id'
               >
                 <td>
-                  <span v-html='icon.svg'></span>
+                  <span
+                    v-html='icon.svg'
+                    class='iconToken'
+                  ></span>
                 </td>
                 <td>{{icon.name}}</td>
               </tr>
@@ -42,29 +45,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-  .list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+<style lang="scss">
+  .iconToken {
+    display: block;
+    width: 3rem;
+    height: 3rem;
   }
 
-  .list-item {
-    display: flex;
-    flex: 0 0 140px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    border: 1px solid black;
-    margin: 1rem;
-    border-radius: .5rem;
+  .iconToken svg {
+    width: 100%;
+    height: 100%;
   }
 
-  .name {
-    flex: 0 0 100%;
-    text-align: center;
-  }
 </style>
