@@ -1,9 +1,7 @@
-# Proposed Information architecture for the Lyne (Web) documentation platform
+# Information architecture for the Lyne (Web) documentation platform
 
-### Approved as starting point
-- [x] by @DanTheMen @mbleuer @feerglas @sabrinaheid @4aficiona2 on 15.09.2020
-
-Content sections of pages are hightlighted by braces `()`
+#### Status 
+- [x] Approved as starting point by @DanTheMen @mbleuer @feerglas @sabrinaheid @4aficiona2 on 15.09.2020
 
 <details>
   <summary>All about Lyne</summary>
@@ -122,9 +120,9 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 
 
+#### Content sections of pages are hightlighted by braces `()`
 
-
-## Sources/IA is influenced by:
+#### Sources/IA is influenced by:
 * https://www.carbondesignsystem.com
 * https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205
 * https://www.duetds.com
