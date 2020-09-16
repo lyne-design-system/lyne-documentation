@@ -23,7 +23,7 @@
                     class='iconToken'
                   ></span>
                 </td>
-                <td>{{icon.name}}</td>
+                <td class="textCell">{{icon.name}}</td>
               </tr>
             </tbody>
           </table>
@@ -47,6 +47,11 @@ export default {
 </script>
 
 <style lang="scss">
+  table td.textCell {
+    line-height: 100%;
+    vertical-align: middle;
+  }
+
   .iconToken {
     display: block;
     width: 3rem;

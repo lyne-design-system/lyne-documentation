@@ -27,8 +27,8 @@
                     :style="{ backgroundColor: token.value}"
                   />
                 </td>
-                <td>{{token.key}}</td>
-                <td>{{token.value}}</td>
+                <td class="textCell">{{token.key}}</td>
+                <td class="textCell">{{token.value}}</td>
               </tr>
             </tbody>
           </table>
@@ -51,8 +51,8 @@
                 <td>
                   <span :style="{ fontSize: token.value}">Sample text</span>
                 </td>
-                <td>{{token.key}}</td>
-                <td>{{token.value}}</td>
+                <td class="textCell">{{token.key}}</td>
+                <td class="textCell">{{token.value}}</td>
               </tr>
             </tbody>
           </table>
@@ -133,6 +133,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+table td.textCell {
+  line-height: 100%;
+  vertical-align: middle;
+}
 
 .list-item-sample.var-color {
   display: block;
