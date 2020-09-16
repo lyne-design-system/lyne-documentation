@@ -1,3 +1,11 @@
+## [1.15.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.2...v1.15.3) (2020-09-16)
+
+
+### Bug Fixes
+
+* change primary color ([f053f75](https://github.com/lyne-design-system/lyne-documentation/commit/f053f751db88cb6b79974bd12b9731d627ad0912))
+* remove jsonDocs from component page ([f3033ff](https://github.com/lyne-design-system/lyne-documentation/commit/f3033ffcf3af6ecb76423699aaa84026b9432c3b))
+
 ## [1.15.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.1...v1.15.2) (2020-09-16)
 
 
