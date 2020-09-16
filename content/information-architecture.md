@@ -81,3 +81,8 @@
   * Support
 
 
+## Sources/influenced by:
+* https://www.carbondesignsystem.com
+* https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205
+* https://www.duetds.com
+* https://liferay.design/lexicon
