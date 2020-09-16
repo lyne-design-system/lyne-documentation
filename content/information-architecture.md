@@ -116,7 +116,8 @@ Content sections of pages are hightlighted by braces `()`
   * ... list of all templates
 </details>
 <details>
-  <summary>System/Domain/Community contributions/extensions / Satellites</summary>
+  <summary>Community contributions</summary>
+  Other possible menu item names: System/Domain contributions/extensions, Satellites
   
   * Overview
   * Components
