@@ -66,6 +66,7 @@
 
 <script>
 const designTokens = require('lyne-design-tokens/dist/js/tokens.umd.js');
+const sortHelper = require('../helpers/sort');
 
 const generateTokens = (json, _finalJson) => {
 
@@ -112,32 +113,14 @@ const cleanPixelValues = (tokens, sourceKey, targetKey) => {
   return tokens;
 };
 
-const sortTokens = (tokens, sortKey) => {
-  tokens.sort((a, b) => {
-    const valueA = a[sortKey];
-    const valueB = b[sortKey];
-    let comparison = 0;
-
-    if (valueA > valueB) {
-      comparison = 1;
-    } else if (valueA < valueB) {
-      comparison = -1;
-    }
-
-    return comparison;
-  });
-
-  return tokens;
-};
-
 export default {
 
   data() {
     const colorTokens = generateTokens(designTokens.color);
     const fontTokens = generateTokens(designTokens.size.font);
     const cleanFontTokenPixelValues = cleanPixelValues(fontTokens, 'value', 'valueInt');
-    const sortedColorTokens = sortTokens(colorTokens, 'key');
-    const sortedFontTokens = sortTokens(cleanFontTokenPixelValues, 'valueInt');
+    const sortedColorTokens = sortHelper(colorTokens, 'key');
+    const sortedFontTokens = sortHelper(cleanFontTokenPixelValues, 'valueInt');
 
     return {
       tokens: {
