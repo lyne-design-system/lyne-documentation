@@ -18,16 +18,12 @@
               v-bind:is="$page.component.component.componentName"
               v-bind="comp.properties"
             ></component>
-            <hr>
           </div>
 
           <hr>
           <h2><i>Readme file from stencil build</i></h2>
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
-          <hr>
-          <h2><i>JsonDocs contents from stencil bulid</i></h2>
-          <pre>{{jsonDocsForComp($page.component.component.componentName)}}</pre>
         </div>
       </div>
     </section>
@@ -71,26 +67,7 @@ query(
 </page-query>
 
 <script>
-const lyneComponentDocs = require('lyne-test/dist/documentation/jsonDocs.json');
-
 export default {
-  methods: {
-
-    // Get component from jsonDocs.json
-    jsonDocsForComp(comp) {
-      const foundComponent = lyneComponentDocs
-        .components
-        .filter((lyneComponent) => lyneComponent.tag === comp);
-
-      if (foundComponent && foundComponent.length === 1) {
-        return foundComponent[0];
-      }
-
-      return {};
-    }
-
-  },
-
   mounted() {
 
     // This makes sure that components only get rendered on the client.
