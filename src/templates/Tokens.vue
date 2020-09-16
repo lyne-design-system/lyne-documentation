@@ -96,12 +96,53 @@ const generateTokens = (json, _finalJson) => {
 
 };
 
+const cleanPixelValues = (tokens, sourceKey, targetKey) => {
+  tokens.map((token) => {
+    const _token = token;
+    const split = _token[sourceKey].split('px');
+
+    if (split.length === 2) {
+      _token[targetKey] = parseInt(split[0], 10);
+    }
+
+    return _token;
+
+  });
+
+  return tokens;
+};
+
+const sortTokens = (tokens, sortKey) => {
+  tokens.sort((a, b) => {
+    const valueA = a[sortKey];
+    const valueB = b[sortKey];
+    let comparison = 0;
+
+    if (valueA > valueB) {
+      comparison = 1;
+    } else if (valueA < valueB) {
+      comparison = -1;
+    }
+
+    return comparison;
+  });
+
+  return tokens;
+};
+
 export default {
+
   data() {
+    const colorTokens = generateTokens(designTokens.color);
+    const fontTokens = generateTokens(designTokens.size.font);
+    const cleanFontTokenPixelValues = cleanPixelValues(fontTokens, 'value', 'valueInt');
+    const sortedColorTokens = sortTokens(colorTokens, 'key');
+    const sortedFontTokens = sortTokens(cleanFontTokenPixelValues, 'valueInt');
+
     return {
       tokens: {
-        color: generateTokens(designTokens.color),
-        fontSize: generateTokens(designTokens.size.font)
+        color: sortedColorTokens,
+        fontSize: sortedFontTokens
       }
     };
   }
