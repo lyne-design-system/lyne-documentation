@@ -7,34 +7,56 @@
 
         <div class="content">
           <h2 class="title is-2">Color</h2>
-          <ul class="list">
-            <li
-              v-for="(token) in $data.tokens.color"
-              :key="token.key"
-              class="list-item"
-            >
-              <span
-                class="list-item-sample var-color"
-                :style="{ backgroundColor: token.value}"
-                ></span>
-              <span>{{token.key}}: {{token.value}}</span>
-            </li>
-          </ul>
+
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>Example</th>
+                <th>Name</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="(token) in $data.tokens.color"
+                :key="token.key"
+              >
+                <td>
+                  <span
+                    class="list-item-sample var-color"
+                    :style="{ backgroundColor: token.value}"
+                  />
+                </td>
+                <td>{{token.key}}</td>
+                <td>{{token.value}}</td>
+              </tr>
+            </tbody>
+          </table>
 
           <h2 class="title is-2">Font Size</h2>
-          <ul class="list">
-            <li
-              v-for="(token) in $data.tokens.fontSize"
-              :key="token.key"
-              class="list-item"
-            >
-              <span
-                class="list-item-sample"
-                :style="{ fontSize: token.value}"
-              >Sample text</span>
-              <span>{{token.key}}: {{token.value}}</span>
-            </li>
-          </ul>
+
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>Example</th>
+                <th>Name</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="(token) in $data.tokens.fontSize"
+                :key="token.key"
+              >
+                <td>
+                  <span :style="{ fontSize: token.value}">Sample text</span>
+                </td>
+                <td>{{token.key}}</td>
+                <td>{{token.value}}</td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </section>
@@ -87,25 +109,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-item {
-  margin-bottom: 20px;
-}
-
-.list-item-sample {
-  display: block;
-  border: 1px solid black;
-  padding: 10px;
-}
 
 .list-item-sample.var-color {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 4rem;
+  height: 4rem;
 }
 
 </style>
