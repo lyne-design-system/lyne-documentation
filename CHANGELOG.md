@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.0...v1.15.1) (2020-09-16)
+
+
+### Bug Fixes
+
+* add border to color tokens ([6ffe574](https://github.com/lyne-design-system/lyne-documentation/commit/6ffe5742c40cc1568df3ddf89ead25475380d122))
+
 # [1.15.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.14.0...v1.15.0) (2020-09-16)
 
 
