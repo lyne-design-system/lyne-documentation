@@ -14,3 +14,5 @@
   - add a github webhook which is making an empty commit: `git commit --allow-empty -m "content: change in dato"`
     - if we use empty commits add `content` to commitlint.config.js
   - that way, we would get a new commit hash for every trigger
+
+- there is a rate limit on the github api. Therefore we must somehow get lyne-documentation latest version during build. 
