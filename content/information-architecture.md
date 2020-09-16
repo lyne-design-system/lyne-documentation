@@ -69,6 +69,7 @@
 * Patterns
   * ...
 * Templates
+  * ...
 * System/Domain/Community contributions/extensions / Satellites 
   * Overview
   * Components
