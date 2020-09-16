@@ -35,11 +35,12 @@
 
 <script>
 const lyneIcons = require('lyne-icons/dist/icons.json');
+const sortHelper = require('../helpers/sort');
 
 export default {
   data() {
     return {
-      icons: lyneIcons
+      icons: sortHelper(lyneIcons, 'name')
     };
   }
 };
