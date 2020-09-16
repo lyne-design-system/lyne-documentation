@@ -3,7 +3,13 @@
 #### Status 
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
-#### Proposed IA
+#### Notes
+Every menu item of the proposed IA above(⬆) the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below(⬇) the line aims to support returning users with day-to-day designing and developing activities.
+
+Content sections of pages are hightlighted by braces `()`
+
+#### Proposed IA for left side navigation
+
 <details>
   <summary>All about Lyne</summary>
   
@@ -55,6 +61,11 @@
   * Meetups
   * Roadmap
 </details>
+⬆
+
+---
+
+⬇
 <details>
   <summary>Guidelines</summary>
   
@@ -119,10 +130,6 @@
   * Migration guide
   * Support
 </details>
-
-
-#### Notes
-Content sections of pages are hightlighted by braces `()`
 
 #### Sources/IA is influenced by:
 * https://www.carbondesignsystem.com
