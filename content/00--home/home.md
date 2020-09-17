@@ -28,15 +28,14 @@ it provides ...
 #### why/for whom:
 * to help product teams work more efficiently
 * we make it easier to build products and digital experiences / services
-* to empower and unite teams
+* to empower people and to unite teams
+* to share knowledge
 * to learn from the research and experience of other teams
 * to avoid repeating work that’s already been done
 * for developers, designers, and content authors to build, maintain, and scale digital experiences
 * to make SBB’s applications more cohesive/consistent
 
 ### 1st claim draft
-
-
 
 
 ## Teasers
