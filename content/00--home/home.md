@@ -19,6 +19,7 @@ it provides ...
 
 * guidance through patterns and practices,
 * well defined processes,
+* collaboration focused workflows
 * working code / components,
 * design tools and resources / tools,
 * human interface guidelines,
@@ -26,7 +27,7 @@ it provides ...
 * (a broad community of contributors and participants) ... long-term goal
 
 #### why/for whom:
-* to help product teams work more efficiently
+* to help product teams work more efficiently 
 * we make it easier to build products and digital experiences / services
 * to empower people and to unite teams
 * to share knowledge
@@ -36,6 +37,10 @@ it provides ...
 * to make SBB’s applications more cohesive/consistent
 
 ### 1st claim draft
+
+Lyne is SBB–CFF–FFSs interconnected, collaboration focused open-source design system. We make/Lyne makes it easier for developers, designers and content authors to build, maintain, and scale products and digital experiences.
+
+We provide/Lyne provides guidance through patterns and practices, working code, a shared vocabulary and design tools to empower people and to unite teams which work more efficiently to deliver more cohesive/consistent experiences.
 
 
 ## Teasers
