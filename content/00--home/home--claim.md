@@ -1,5 +1,3 @@
-# Lyne Design System
-
 ## Claim
 
 ### Structure
@@ -50,9 +48,3 @@ The system makes it easier for developers, designers and content authors to buil
 Lyne provides guidance through patterns and practices, design tools and resources, working code and a shared vocabulary for common understanding. Everything connected with each other, in-sync and open(visible for everybody) — the Single Source of Truth.
 
 This empowers people and unites teams to work more efficiently and deliver more consistent experiences.
-
-## Teasers
-
-#### Start Designing
-
-#### Start Developing
