@@ -8,6 +8,8 @@ Every menu item of the proposed IA above the line aim's to guide users to get up
 
 Content sections of pages are hightlighted by braces `()`
 
+**Home** contains introduction text and multiple teasers to link to the *Get started* guides of the most frequent used Design System disciplines. Design and Development in the beginning.
+
 #### Proposed IA for left side navigation
 
 <details>
