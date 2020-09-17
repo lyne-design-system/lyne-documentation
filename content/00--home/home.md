@@ -1,13 +1,15 @@
 # Lyne Design System
 
+## Claim
 
-### Claim
-Lyne
-
+### Structure
 * what
 * how
 * why
 * for whom
+
+### Claim components
+Lyne
 
 #### what:
 is an interconnected, collaboration focused and well documented open-source design system of the SBB
@@ -20,9 +22,8 @@ it provides ...
 * working code / components,
 * design tools and resources / tools,
 * human interface guidelines,
-* (a vibrant community of contributors)
-
 * that works as the foundation
+* (a broad community of contributors and participants) ... long-term goal
 
 #### why/for whom:
 * to help product teams work more efficiently
@@ -30,11 +31,15 @@ it provides ...
 * to empower and unite teams
 * to learn from the research and experience of other teams
 * to avoid repeating work that’s already been done
-* developers, designers, and content authors build, maintain, and scale digital experiences
+* for developers, designers, and content authors to build, maintain, and scale digital experiences
 * to make SBB’s applications more cohesive/consistent
 
+### 1st claim draft
 
-### Teasers
+
+
+
+## Teasers
 
 #### Start Designing
 
