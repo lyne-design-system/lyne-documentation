@@ -36,11 +36,20 @@ it provides ...
 * for developers, designers, and content authors to build, maintain, and scale digital experiences
 * to make SBB’s applications more cohesive/consistent
 
-### 1st claim draft
+### 2nd claim draft
 
-Lyne is SBB–CFF–FFSs interconnected, collaboration focused open-source design system. We make/Lyne makes it easier for developers, designers and content authors to build, maintain, and scale products and digital experiences.
+What
+For whom
+How
+Why
 
-We provide/Lyne provides guidance through patterns and practices, working code, a shared vocabulary and design tools to empower people and to unite teams which work more efficiently to deliver more cohesive/consistent experiences.
+Lyne is SBB–CFF–FFSs interconnected/linked, collaboration focused open-source design system.
+
+The system makes it easier for developers, designers and content authors to build, maintain, and scale products and digital experiences.
+
+Lyne provides guidance through patterns and practices, working code, design tools and resources and a shared vocabulary for common understanding, all connected  to empower people and to unite teams. 
+
+This allows teams to work more efficiently and to deliver more cohesive/consistent experiences.
 
 
 ## Teasers
