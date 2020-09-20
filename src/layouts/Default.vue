@@ -3,11 +3,18 @@
 
     <Header />
 
-    <transition name="fade" appear>
-      <main>
-        <slot/>
-      </main>
-    </transition>
+    <div class="columns is-desktop">
+      <Navigation class="column is-narrow" />
+
+      <div class="column">
+        <transition name="fade" appear>
+          <main>
+            <slot/>
+          </main>
+        </transition>
+      </div>
+
+    </div>
 
     <Footer />
 
@@ -17,16 +24,19 @@
 <script>
 import Footer from '../components/Footer.vue';
 import Header from '../components/Header.vue';
+import Navigation from '../components/Navigation/Navigation.vue';
 
 export default {
   components: {
     Footer,
-    Header
+    Header,
+    Navigation
   }
 };
 </script>
 
 <style lang="scss" scoped>
+
 .fade-enter-active {
   transition: opacity 300ms;
 }
