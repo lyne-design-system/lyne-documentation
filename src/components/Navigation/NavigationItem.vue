@@ -44,9 +44,11 @@ export default {
     }
   },
   data: () => {
-    return {
+    const data = {
       isOpen: false
-    }
+    };
+
+    return data;
   },
   methods: {
     toggle () {
