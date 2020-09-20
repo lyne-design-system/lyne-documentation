@@ -1,37 +1,70 @@
-/* eslint-disable sort-keys */
-module.exports = {
-  home: {
-    path: '',
-    template: 'Index',
-    title: 'Home',
-    hideFromNav: true
+const navigationData = [
+  {
+    children: [
+      {
+        name: 'What is Lyne',
+        path: '/about/what'
+      },
+      {
+        name: 'Why Lyne',
+        path: '/about/why'
+      },
+      {
+        name: 'How we work',
+        path: '/about/how'
+      }
+    ],
+    name: 'About Lyne',
+    path: '/about'
   },
-  components: {
-    path: 'components',
-    template: 'Components',
-    title: 'Components'
+  {
+    children: [
+      {
+        name: 'Get started',
+        path: '/designing/getting-started'
+      },
+      {
+        children: [
+          {
+            name: 'Sketch',
+            path: '/designing/design-kits/sketch'
+          },
+          {
+            name: 'Figma',
+            path: '/designing/design-kits/figma'
+          }
+        ],
+        name: 'Design kits',
+        path: '/designing/design-kits'
+      }
+    ],
+    name: 'Designing',
+    path: '/designing/'
   },
-  designTokens: {
-    path: 'tokens',
-    template: 'Tokens',
-    title: 'Design Tokens'
+  {
+    children: [
+      {
+        name: 'Color & Font',
+        path: '/tokens/tokens'
+      },
+      {
+        name: 'Icons',
+        path: '/tokens/icons'
+      }
+    ],
+    name: 'Tokens',
+    path: '/tokens/'
   },
-  icons: {
-    path: 'icons',
-    template: 'Icons',
-    title: 'Icons'
-  },
-  deployments: {
-    path: 'deployments',
-    template: 'Deployments',
-    title: 'Deployments',
-    hideFromNav: true
-  },
-  playground: {
-    path: 'playground',
-    template: 'Playground',
-    title: 'Playground',
-    hideFromNav: true
+  {
+    children: [
+      {
+        name: 'comp1',
+        path: '/components/comp1'
+      }
+    ],
+    name: 'Components',
+    path: '/components/'
   }
-};
-/* eslint-enable sort-keys */
+];
+
+export default navigationData;
