@@ -64,31 +64,27 @@ const treeData = [
       },
       {
         name: 'How we work',
-        path: '/about/work'
+        path: '/about/how'
       }
     ],
     name: 'About Lyne',
     path: '/about'
   },
   {
-    name: 'Another Entry',
-    path: '/empty'
-  },
-  {
     children: [
       {
         name: 'Get started',
-        path: '/designing/get-started'
+        path: '/designing/getting-started'
       },
       {
         children: [
           {
             name: 'Sketch',
-            path: '/designing/sketch'
+            path: '/designing/design-kits/sketch'
           },
           {
             name: 'Figma',
-            path: '/designing/figma'
+            path: '/designing/design-kits/figma'
           }
         ],
         name: 'Design kits',
@@ -96,7 +92,7 @@ const treeData = [
       }
     ],
     name: 'Designing',
-    path: '/designing/overview'
+    path: '/designing/'
   },
   {
     children: [
