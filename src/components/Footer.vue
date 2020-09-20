@@ -20,32 +20,25 @@
       <h2 class="title is-5">Further Ressources</h2>
       <ul>
         <li>
-          <g-link :to="$tp('deployments')">Version history</g-link>
+          <g-link to="/deployments/">Version history</g-link>
         </li>
         <li>
-          <g-link :to="$tp('playground')">Playground for CMS</g-link>
+          <g-link to="/playground/">Playground for CMS</g-link>
         </li>
       </ul>
 
-      <h2 class="title is-5">Language</h2>
-      <LocaleSwitcher />
     </div>
   </footer>
 
 </template>
 
 <script>
-import LocaleSwitcher from './LocaleSwitcher.vue';
-
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
 const globalConfig = require('../../global.config');
 
 export default {
-  components: {
-    LocaleSwitcher
-  },
   data: () => {
     const dataExport = {
       links: {
