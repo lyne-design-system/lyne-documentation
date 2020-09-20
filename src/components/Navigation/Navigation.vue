@@ -110,7 +110,17 @@ const treeData = [
       }
     ],
     name: 'Tokens',
-    path: '/tokens/overview'
+    path: '/tokens/'
+  },
+  {
+    children: [
+      {
+        name: 'comp1',
+        path: '/components/comp1'
+      }
+    ],
+    name: 'Components',
+    path: '/components/'
   }
 ];
 

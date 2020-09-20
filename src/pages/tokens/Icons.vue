@@ -35,7 +35,7 @@
 
 <script>
 const lyneIcons = require('lyne-icons/dist/icons.json');
-const sortHelper = require('../helpers/sort');
+const sortHelper = require('../../helpers/sort');
 
 export default {
   data() {
