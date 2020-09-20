@@ -14,7 +14,6 @@
         >
           <img src="../favicon.png">
         </a>
-
         <a
           role="button"
           class="navbar-burger burger"
@@ -28,6 +27,7 @@
         </a>
       </div>
 
+      <!--
       <div
         class="navbar-menu"
         v-bind:class="{'is-active': showMenu}"
@@ -45,44 +45,44 @@
 
         </div>
       </div>
+    -->
     </nav>
   </header>
 </template>
 
 <script>
-const paths = require('../i18n/paths');
-
-const getOnlyVisibleNavLinks = (elements) => {
-  const keys = Object.keys(elements);
-  const finalObject = {};
-
-  keys.forEach((key) => {
-    const path = elements[key];
-
-    if (!path.hideFromNav) {
-      finalObject[key] = path;
-    }
-  });
-
-  return finalObject;
-};
+import eventBus from '../helpers/eventBus';
 
 export default {
-  data: (comp) => {
-    const locale = comp._i18n.locale.toString();
-    const navLinks = getOnlyVisibleNavLinks(paths[locale]);
-
-    return {
-      navLinks,
+  data: () => {
+    const exportData = {
       showMenu: false
     };
+
+    return exportData;
   },
   methods: {
     menuClick () {
       this.showMenu = !this.showMenu;
+
+      eventBus.dispatchEvent('toggle-menu', {
+        showMenu: this.showMenu
+      });
     }
   },
   name: 'Header'
 };
 
 </script>
+
+<style lang="scss">
+.navbar-item {
+  order: 1;
+}
+
+.navbar-burger {
+  order: 0;
+  margin-left: 0;
+}
+
+</style>
