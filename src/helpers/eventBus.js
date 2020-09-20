@@ -1,6 +1,8 @@
 class EventBus {
   constructor() {
-    this.bus = document.createElement('eventbusproxy');
+    if (process.isClient) {
+      this.bus = document.createElement('eventbusproxy');
+    }
   }
 
   addEventListener(event, callback) {
