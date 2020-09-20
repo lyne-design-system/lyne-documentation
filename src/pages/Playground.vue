@@ -1,8 +1,5 @@
 <template>
   <Layout>
-    Current locale: {{ $i18n.locale }}
-    <p>{{ $t('content.translation1') }}</p>
-
     <h1>Playground</h1>
 
     <h2>Int / Float / Bool</h2>
