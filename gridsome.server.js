@@ -1,6 +1,6 @@
 const axios = require('axios');
 const globalConfig = require('./global.config');
-const paths = require('./src/i18n/paths');
+const navigation = require('./src/navigation');
 
 const mainFunction = (api) => {
 
@@ -34,22 +34,19 @@ const mainFunction = (api) => {
         path: `/components/${comp.componentName}`
       }));
 
-    // create a page for each template and each language
-    const langKeys = Object.keys(paths);
+    // create a page for each template
+    /*
+    const navItems = Object.keys(navigation);
 
-    langKeys.forEach((langKey) => {
-      const langObject = paths[langKey];
-      const pathKeys = Object.keys(langObject);
+    navItems.forEach((langKey) => {
+      const navItem = navItems[langKey];
 
-      pathKeys.forEach((pathKey) => {
-        const pathObject = langObject[pathKey];
-
-        return createPage({
-          component: `./src/templates/${pathObject.template}.vue`,
-          path: `/${pathObject.path}`
-        });
+      return createPage({
+        component: `./src/templates/${navItem.template}.vue`,
+        path: `/${navItem.path}`
       });
     });
+    */
   });
 
   api.loadSource(async (actions) => {
