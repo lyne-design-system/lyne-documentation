@@ -20,15 +20,6 @@ export default {
   components: {
     NavigationItem
   },
-  created () {
-    eventBus.addEventListener('toggle-menu', (event) => {
-      const {
-        showMenu
-      } = event.detail;
-
-      this.showMenu = showMenu;
-    });
-  },
   data: () => {
     const data = {
       navData,
@@ -41,6 +32,15 @@ export default {
     toggle () {
       console.log('toggle');
     }
+  },
+  mounted () {
+    eventBus.addEventListener('toggle-menu', (event) => {
+      const {
+        showMenu
+      } = event.detail;
+
+      this.showMenu = showMenu;
+    });
   },
   name: 'Navigation'
 };
