@@ -1,6 +1,5 @@
 const axios = require('axios');
 const globalConfig = require('./global.config');
-const navigation = require('./src/navigation');
 
 const mainFunction = (api) => {
 
@@ -34,19 +33,6 @@ const mainFunction = (api) => {
         path: `/components/${comp.componentName}`
       }));
 
-    // create a page for each template
-    /*
-    const navItems = Object.keys(navigation);
-
-    navItems.forEach((langKey) => {
-      const navItem = navItems[langKey];
-
-      return createPage({
-        component: `./src/templates/${navItem.template}.vue`,
-        path: `/${navItem.path}`
-      });
-    });
-    */
   });
 
   api.loadSource(async (actions) => {
