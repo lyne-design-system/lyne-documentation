@@ -83,7 +83,6 @@ export default {
 
 .sub-menu {
   margin-left: 1rem;
-  line-height: 1rem;
   list-style-type: dot;
 }
 
