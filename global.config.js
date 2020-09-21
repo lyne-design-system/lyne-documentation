@@ -2,7 +2,6 @@ module.exports = {
   deploymentsJsonKeyPreview: 'preview',
   deploymentsJsonKeyProd: 'production',
   deploymentsJsonUrl: 'https://lyne-components-deployments.netlify.app/deployments.json',
-  githubApiLatestRelease: 'https://api.github.com/repos/lyne-design-system/lyne-documentation/releases/latest',
   graphqlComponentsReadmeTypeName: 'MdDoc',
   graphqlDatoFieldName: 'lyne',
   graphqlDatoTypeName: 'lyneTypes',

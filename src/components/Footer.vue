@@ -36,7 +36,7 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
-const globalConfig = require('../../global.config');
+const lyneDocumentationVersion = require('../../.version');
 
 export default {
   data() {
@@ -50,7 +50,7 @@ export default {
         documentation: {
           link: 'https://github.com/lyne-design-system/lyne-documentation',
           title: 'lyne-documentation',
-          version: ''
+          version: lyneDocumentationVersion
         },
         icons: {
           link: 'https://github.com/lyne-design-system/lyne-icons',
@@ -66,17 +66,6 @@ export default {
     };
 
     return dataExport;
-  },
-  async mounted () {
-    try {
-      const apiResult = await fetch(globalConfig.githubApiLatestRelease);
-      const data = await apiResult.json();
-
-      this.links.documentation.version = data['tag_name'];
-    } catch (err) {
-      console.log('There was an error fetching latest lyne-documentation release from github api');
-      console.log(err);
-    }
   },
   name: 'Footer'
 };
