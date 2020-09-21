@@ -1,3 +1,26 @@
+# [1.16.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.3...v1.16.0) (2020-09-20)
+
+
+### Bug Fixes
+
+* adhere to removal of i18n ([8b60a94](https://github.com/lyne-design-system/lyne-documentation/commit/8b60a94cccf6077b9d501e277594103ff3696f26))
+* fix links, remove lang switch ([25048cb](https://github.com/lyne-design-system/lyne-documentation/commit/25048cb86dbdceb69b863ee7ce027a6d14e5e93d))
+* fix linting issue ([41547b2](https://github.com/lyne-design-system/lyne-documentation/commit/41547b2fde33bb545e8111b2a9fde9b18d79c267))
+* init event bus in mounted hook ([f755764](https://github.com/lyne-design-system/lyne-documentation/commit/f755764bbe78ec8341b8faa61056598593592328))
+* make sure document is accessed on client only ([3dbc495](https://github.com/lyne-design-system/lyne-documentation/commit/3dbc4952149af20a2f1e3b655eb9dc993cedea69))
+* remove i18n ([9d25cdc](https://github.com/lyne-design-system/lyne-documentation/commit/9d25cdc6557614b03ce704d16f4196e2428ad2f6))
+* remove i18n ([1c86260](https://github.com/lyne-design-system/lyne-documentation/commit/1c862601455104d3475a6b66d4b9f7d402362a07))
+* remove lang switch ([f600a4f](https://github.com/lyne-design-system/lyne-documentation/commit/f600a4f7309351012cf6dcacfefdfafc80a138d8))
+* remove unneded page creatio ([1aa8458](https://github.com/lyne-design-system/lyne-documentation/commit/1aa8458e0060290a5b2c66b870ca46e92250e962))
+* show hamburger menu until desktop viewport ([45707ba](https://github.com/lyne-design-system/lyne-documentation/commit/45707ba65e12fd1894b1becfc4c3d182d8ed7f6f))
+
+
+### Features
+
+* add navigation as column ([870e7c0](https://github.com/lyne-design-system/lyne-documentation/commit/870e7c079f9b82b3a1e833827417c634eebd0758))
+* add nested navigation structure ([576fb70](https://github.com/lyne-design-system/lyne-documentation/commit/576fb70b09365cb8f126473504cd43fbb655b382))
+* create pages for current navigation items ([3f6456f](https://github.com/lyne-design-system/lyne-documentation/commit/3f6456f4996bf0eb8303a3c4df3146dd1b5eb155))
+
 ## [1.15.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.2...v1.15.3) (2020-09-16)
 
 
