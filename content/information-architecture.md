@@ -132,3 +132,5 @@ Content sections of pages are hightlighted by braces `()`
 * https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205
 * https://www.duetds.com
 * https://liferay.design/lexicon
+* [Bolt](https://boltdesignsystem.com)
+* [Spectrum](https://spectrum.adobe.com/)
