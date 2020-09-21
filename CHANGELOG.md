@@ -1,3 +1,10 @@
+## [1.18.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.4...v1.18.5) (2020-09-21)
+
+
+### Bug Fixes
+
+* write version before release ([c8894d5](https://github.com/lyne-design-system/lyne-documentation/commit/c8894d5b6711745fb017cc5b4efe4c2a01f87f41))
+
 ## [1.18.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.3...v1.18.4) (2020-09-21)
 
 
