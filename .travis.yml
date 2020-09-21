@@ -22,9 +22,9 @@ jobs:
     - npm run lint || travis_terminate 1
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build
     after_success:
+    - npm run semantic-release
     - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir
       ./dist/
-    - npm run semantic-release
     - |
       curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
       -H 'Content-Type: application/json' \
