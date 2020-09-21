@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.1...v1.17.2) (2020-09-21)
+
+
+### Bug Fixes
+
+* remove getting started page ([4397eb2](https://github.com/lyne-design-system/lyne-documentation/commit/4397eb28ce57dc0185ab796d45e24e14a5bf3a3f))
+
 ## [1.17.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.0...v1.17.1) (2020-09-21)
 
 
