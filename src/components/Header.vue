@@ -32,11 +32,10 @@
 
 <script>
 import eventBus from '../helpers/eventBus';
-import eventNames from '../helpers/eventNames';
 
 export default {
   created() {
-    eventBus.addEventListener(eventNames.toggleMenu, (event) => {
+    eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
       const {
         showMenu
       } = event.detail;
@@ -55,7 +54,7 @@ export default {
     menuClick () {
       this.showMenu = !this.showMenu;
 
-      eventBus.dispatchEvent(eventNames.toggleMenu, {
+      eventBus.bus.dispatchEvent(eventBus.names.toggleMenu, {
         showMenu: this.showMenu
       });
     }

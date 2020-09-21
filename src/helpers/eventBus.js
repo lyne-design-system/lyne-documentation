@@ -26,6 +26,13 @@ class EventBus {
   }
 }
 
-const eventBus = new EventBus();
+const bus = new EventBus();
 
-export default eventBus;
+const names = {
+  toggleMenu: 'toggle-menu'
+};
+
+export default {
+  bus,
+  names
+};

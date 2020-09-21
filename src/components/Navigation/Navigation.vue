@@ -25,7 +25,6 @@ query {
 
 <script>
 import eventBus from '../../helpers/eventBus';
-import eventNames from '../../helpers/eventNames';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
 
@@ -85,7 +84,7 @@ export default {
     this.navData = addComponentNavItems(this.$static.component.allComponents, navData);
     this.paths = getPathOfNavItem(this.navData, this.$route.path);
 
-    eventBus.addEventListener(eventNames.toggleMenu, (event) => {
+    eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
       const {
         showMenu
       } = event.detail;
@@ -105,7 +104,7 @@ export default {
   name: 'Navigation',
   watch: {
     $route () {
-      eventBus.dispatchEvent(eventNames.toggleMenu, {
+      eventBus.bus.dispatchEvent(eventBus.names.toggleMenu, {
         showMenu: false
       });
     }
