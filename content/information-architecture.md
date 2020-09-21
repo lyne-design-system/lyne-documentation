@@ -128,9 +128,9 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 
 #### Sources/IA is influenced by:
-* https://www.carbondesignsystem.com
-* https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205
-* https://www.duetds.com
-* https://liferay.design/lexicon
+* [Carbon](https://www.carbondesignsystem.com)
+* [Carbons new IA](https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205)
+* [Duet](https://www.duetds.com)
+* [Lexicon](https://liferay.design/lexicon)
 * [Bolt](https://boltdesignsystem.com)
 * [Spectrum](https://spectrum.adobe.com/)
