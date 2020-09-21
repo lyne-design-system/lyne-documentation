@@ -1,3 +1,10 @@
+## [1.18.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.5...v1.18.6) (2020-09-21)
+
+
+### Bug Fixes
+
+* rename version file ([ebebeac](https://github.com/lyne-design-system/lyne-documentation/commit/ebebeac65df3b07c653b3287f43a96dd3f7c13ed))
+
 ## [1.18.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.4...v1.18.5) (2020-09-21)
 
 
