@@ -1,3 +1,16 @@
+# [1.17.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.16.0...v1.17.0) (2020-09-21)
+
+
+### Bug Fixes
+
+* don't use arrow function for data hook ([602bef2](https://github.com/lyne-design-system/lyne-documentation/commit/602bef2657e8273b790d33a13b7e08e3f5d67b13))
+
+
+### Features
+
+* construct parent paths of child nav items ([3b1dd37](https://github.com/lyne-design-system/lyne-documentation/commit/3b1dd37190cfe657705e05f57a21778b8f2e574f))
+* make sidebar items expanded if appropriate ([f0a67fc](https://github.com/lyne-design-system/lyne-documentation/commit/f0a67fc4c55eee115fd0edfcb8d023b74455b5d1))
+
 # [1.16.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.15.3...v1.16.0) (2020-09-20)
 
 
