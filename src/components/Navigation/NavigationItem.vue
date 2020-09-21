@@ -39,7 +39,6 @@
 </template>
 
 <script>
-
 export default {
   computed: {
     isFolder() {
