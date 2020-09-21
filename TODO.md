@@ -7,12 +7,8 @@
 
 - [ ] currently, components are rendered client side. Enable SSR
 
-- [ ] the mechanism to generate the localized url paths is really basic an only works for root paths like `/deployments` or `/components`. It does not yet work with nested paths like `/components/lyne-cta-button`.
-
 - [ ] every published content change in dato triggers a build in travis. e.g. if you change an publish 5 content items in 1 minute, travis will have 5 jobs waiting to be run. But in such cases, only the last change should be build on travis, the other ones should be skipped/canceled. We have the option on travis to "auto cancel branch build". But that only works if every build trigger has a different commit hash. Possible solution:
   - remove the dato webhook for travis
   - add a github webhook which is making an empty commit: `git commit --allow-empty -m "content: change in dato"`
     - if we use empty commits add `content` to commitlint.config.js
   - that way, we would get a new commit hash for every trigger
-
-- there is a rate limit on the github api. Therefore we must somehow get lyne-documentation latest version during build. 
