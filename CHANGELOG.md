@@ -1,3 +1,12 @@
+## [1.17.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.0...v1.17.1) (2020-09-21)
+
+
+### Bug Fixes
+
+* better style for side-nav ([2b10ab3](https://github.com/lyne-design-system/lyne-documentation/commit/2b10ab3e715bae49668fda2a3ba0ef4b6b2dfac2))
+* make sidemenu fixed-width ([297dc04](https://github.com/lyne-design-system/lyne-documentation/commit/297dc049c139fd3bbb14c58e4b7e15a3be939487))
+* use default line height for nav ([5faf681](https://github.com/lyne-design-system/lyne-documentation/commit/5faf681fc35f6cf465ded3f021f1d86b96a6b38c))
+
 # [1.17.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.16.0...v1.17.0) (2020-09-21)
 
 
