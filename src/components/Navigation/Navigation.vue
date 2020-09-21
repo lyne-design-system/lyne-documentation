@@ -80,9 +80,12 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "~bulma/sass/utilities/_all";
+  @import "../../styles/bulma.scss";
   .menu {
     display: block;
+    margin: 0;
+    background: $background;
+    padding: 1rem 1rem;
   }
 
   .menu.hidden {

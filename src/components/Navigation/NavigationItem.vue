@@ -1,27 +1,29 @@
 <template>
   <li>
-    <div>
+    <div class="nav-item">
       <g-link
+        class="link"
         exact-active-class="is-exact-active"
         :to="item.path"
       >
         {{ item.name }}
       </g-link>
       <span
-        class="icon"
+        class="nav-icon"
         v-if="isFolder"
         @click="toggle"
       >
         <i
           class="mdi"
           v-bind:class="{
-            'mdi-menu-down': !isOpen,
-            'mdi-menu-up': isOpen
+            'mdi-chevron-down': !isOpen,
+            'mdi-chevron-up': isOpen
           }"
         ></i>
       </span>
     </div>
     <ul
+      class="sub-menu"
       v-show="isOpen"
       v-if="isFolder"
     >
@@ -76,14 +78,48 @@ export default {
 
 </script>
 
-<style>
-ul {
-  padding-left: 1em;
-  line-height: 1.5em;
+<style lang="scss">
+@import "../../styles/bulma.scss";
+
+.sub-menu {
+  margin-left: 1rem;
+  line-height: 1rem;
   list-style-type: dot;
 }
 
-.is-exact-active {
-  font-weight: bold;
+.nav-item {
+  position: relative;
 }
+
+.nav-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $link;
+}
+
+.nav-icon .mdi {
+  color: currentColor;
+}
+
+.link {
+  display: block;
+  padding: .7em 3em .7em .7em;
+}
+
+.link.is-exact-active {
+  background-color: $link;
+  color: $link-invert;
+}
+
+.link.is-exact-active ~ .nav-icon {
+  color: $link-invert;
+}
+
 </style>
