@@ -25,6 +25,7 @@ query {
 
 <script>
 import eventBus from '../../helpers/eventBus';
+import eventNames from '../../helpers/eventNames';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
 
@@ -56,30 +57,41 @@ const getPathOfNavItem = (obj, search) => {
   return false;
 };
 
+const addComponentNavItems = (components, _navData) => {
+  const navDataCopy = JSON.parse(JSON.stringify(_navData));
+  let indexOfCompNavItem = 0;
+
+  navDataCopy.forEach((navItem, index) => {
+    if (navItem.path === '/components/') {
+      indexOfCompNavItem = index;
+    }
+  });
+
+  components.forEach((comp) => {
+    navDataCopy[indexOfCompNavItem].children.push({
+      name: comp.title,
+      path: `/components/${comp.componentName}`
+    });
+  });
+
+  return navDataCopy;
+};
+
 export default {
   components: {
     NavigationItem
   },
   created() {
-    const components = this.$static.component.allComponents;
-    const navDataCopy = JSON.parse(JSON.stringify(navData));
-    let indexOfCompNavItem = 0;
+    this.navData = addComponentNavItems(this.$static.component.allComponents, navData);
+    this.paths = getPathOfNavItem(this.navData, this.$route.path);
 
-    navDataCopy.forEach((navItem, index) => {
-      if (navItem.path === '/components/') {
-        indexOfCompNavItem = index;
-      }
+    eventBus.addEventListener(eventNames.toggleMenu, (event) => {
+      const {
+        showMenu
+      } = event.detail;
+
+      this.showMenu = showMenu;
     });
-
-    components.forEach((comp) => {
-      navDataCopy[indexOfCompNavItem].children.push({
-        name: comp.title,
-        path: `/components/${comp.componentName}`
-      });
-    });
-
-    this.navData = navDataCopy;
-    this.paths = getPathOfNavItem(navDataCopy, this.$route.path);
   },
   data() {
     const data = {
@@ -89,15 +101,6 @@ export default {
     };
 
     return data;
-  },
-  mounted () {
-    eventBus.addEventListener('toggle-menu', (event) => {
-      const {
-        showMenu
-      } = event.detail;
-
-      this.showMenu = showMenu;
-    });
   },
   name: 'Navigation'
 };
