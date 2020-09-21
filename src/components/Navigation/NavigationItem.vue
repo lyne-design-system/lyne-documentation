@@ -29,6 +29,7 @@
         v-for="(child, index) in item.children"
         :key="index"
         :item="child"
+        :paths="paths"
       ></NavigationItem>
     </ul>
   </li>
@@ -43,7 +44,7 @@ export default {
       return this.item.children && this.item.children.length;
     }
   },
-  data: () => {
+  data() {
     const data = {
       isOpen: false
     };
@@ -57,8 +58,20 @@ export default {
       }
     }
   },
+  mounted () {
+    let childIsInOpenPath = false;
+
+    if (this.paths) {
+      childIsInOpenPath = this.paths.includes(this.item.path);
+    }
+
+    this.isOpen = childIsInOpenPath;
+  },
   name: 'NavigationItem',
-  props: ['item']
+  props: [
+    'item',
+    'paths'
+  ]
 };
 
 </script>
