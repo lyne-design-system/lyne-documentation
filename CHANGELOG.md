@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.0...v1.18.1) (2020-09-21)
+
+
+### Bug Fixes
+
+* fix column width for side nav on desktop ([25409f3](https://github.com/lyne-design-system/lyne-documentation/commit/25409f36ee81f7f92ae7c928a979df94f671bcc4))
+
 # [1.18.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.3...v1.18.0) (2020-09-21)
 
 
