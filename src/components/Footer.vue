@@ -36,7 +36,7 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
-const lyneDocumentationVersion = require('../../.version');
+const lyneDocumentationVersion = require('../../version');
 
 export default {
   data() {
