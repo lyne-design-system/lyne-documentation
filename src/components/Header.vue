@@ -35,6 +35,15 @@ import eventBus from '../helpers/eventBus';
 import eventNames from '../helpers/eventNames';
 
 export default {
+  created() {
+    eventBus.addEventListener(eventNames.toggleMenu, (event) => {
+      const {
+        showMenu
+      } = event.detail;
+
+      this.showMenu = showMenu;
+    });
+  },
   data() {
     const exportData = {
       showMenu: false

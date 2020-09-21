@@ -102,7 +102,14 @@ export default {
 
     return data;
   },
-  name: 'Navigation'
+  name: 'Navigation',
+  watch: {
+    $route () {
+      eventBus.dispatchEvent(eventNames.toggleMenu, {
+        showMenu: false
+      });
+    }
+  }
 };
 
 </script>
