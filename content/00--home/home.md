@@ -19,5 +19,5 @@ Lyne empowers people and unites teams to work more efficiently and deliver more 
 --> Link to [/developing](https://lyne-documentation.netlify.app/developing/)
 
 
-##### Notice:
+##### Notice
 The state of the Lyne documentation platform is *work in progress (WIP)* and is inspired by [Carbon](https://www.carbondesignsystem.com), [Duet](https://www.duetds.com), [Bolt](https://boltdesignsystem.com), [Spectrum](https://spectrum.adobe.com/). It uses their contents for the moment until Lyne will be mature enough/we have found enough contributors from different disciplines to have a more holistic view on the topic. But since we agree with their contents we list them on our documentation platform to get a feeling how the site once will look like.
