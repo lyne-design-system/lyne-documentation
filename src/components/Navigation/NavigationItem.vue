@@ -83,7 +83,6 @@ export default {
 
 .sub-menu {
   margin-left: 1rem;
-  list-style-type: dot;
 }
 
 .nav-item {
