@@ -40,7 +40,6 @@ Content sections of pages are hightlighted by braces `()`
 <details>
   <summary>Contributing</summary>
   
-  * Overview
   * Bugs and requests
   * Documentation
   * Components
@@ -116,7 +115,6 @@ Content sections of pages are hightlighted by braces `()`
   <summary>Community contributions</summary>
   Other possible menu item names: System/Domain contributions/extensions, Satellites
   
-  * Overview
   * Components
   * Patterns
 </details>
