@@ -1,3 +1,16 @@
+# [1.18.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.3...v1.18.0) (2020-09-21)
+
+
+### Bug Fixes
+
+* remove getting started from nav data ([32304c6](https://github.com/lyne-design-system/lyne-documentation/commit/32304c627331e63c6a160d1d535acf7b4993d477))
+* remove sample comp ([d151385](https://github.com/lyne-design-system/lyne-documentation/commit/d151385195aa0f9951b92ea53e9360e32fcf8545))
+
+
+### Features
+
+* render components in side nav ([b82d5ac](https://github.com/lyne-design-system/lyne-documentation/commit/b82d5acfb8ecb61d955051901ef5e82ea2d75704))
+
 ## [1.17.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.2...v1.17.3) (2020-09-21)
 
 
