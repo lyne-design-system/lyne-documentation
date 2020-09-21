@@ -1,3 +1,10 @@
+## [1.17.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.2...v1.17.3) (2020-09-21)
+
+
+### Bug Fixes
+
+* remove list-style type ([33d3c62](https://github.com/lyne-design-system/lyne-documentation/commit/33d3c621e98e66ad014905f2a5cd4790564890e7))
+
 ## [1.17.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.17.1...v1.17.2) (2020-09-21)
 
 
