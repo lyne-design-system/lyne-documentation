@@ -20,10 +20,6 @@ const navigationData = [
   {
     children: [
       {
-        name: 'Get started',
-        path: '/designing/getting-started'
-      },
-      {
         children: [
           {
             name: 'Sketch',
