@@ -90,11 +90,6 @@ export default {
 
     return data;
   },
-  methods: {
-    toggle () {
-      console.log('toggle');
-    }
-  },
   mounted () {
     eventBus.addEventListener('toggle-menu', (event) => {
       const {
@@ -111,6 +106,7 @@ export default {
 
 <style lang="scss">
   @import "../../styles/bulma.scss";
+
   .menu {
     display: block;
     margin: 0;
