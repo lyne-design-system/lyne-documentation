@@ -1,3 +1,11 @@
+## [1.18.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.2...v1.18.3) (2020-09-21)
+
+
+### Bug Fixes
+
+* insatll missing dependency ([e7b7144](https://github.com/lyne-design-system/lyne-documentation/commit/e7b7144f206b89a5d8ab45d16110d5cb6ea3aec6))
+* write version file during build and use it to show version of docu ([ab2730f](https://github.com/lyne-design-system/lyne-documentation/commit/ab2730fbd2ae5acbd34f3f8725fcc3e6babd6fa4))
+
 ## [1.18.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.1...v1.18.2) (2020-09-21)
 
 
