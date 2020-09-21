@@ -52,12 +52,7 @@ const navigationData = [
     path: '/tokens/'
   },
   {
-    children: [
-      {
-        name: 'comp1',
-        path: '/components/comp1'
-      }
-    ],
+    children: [],
     name: 'Components',
     path: '/components/'
   }
