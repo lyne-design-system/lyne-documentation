@@ -26,32 +26,13 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-
-      <!--
-      <div
-        class="navbar-menu"
-        v-bind:class="{'is-active': showMenu}"
-      >
-
-        <div class="navbar-start">
-
-          <g-link
-            class="navbar-item"
-            exact-active-class="is-active"
-            v-for="(link) in $data.navLinks"
-            :to="$tp(link.path)"
-            :key="link.path"
-          >{{link.title}}</g-link>
-
-        </div>
-      </div>
-    -->
     </nav>
   </header>
 </template>
 
 <script>
 import eventBus from '../helpers/eventBus';
+import eventNames from '../helpers/eventNames';
 
 export default {
   data() {
@@ -65,7 +46,7 @@ export default {
     menuClick () {
       this.showMenu = !this.showMenu;
 
-      eventBus.dispatchEvent('toggle-menu', {
+      eventBus.dispatchEvent(eventNames.toggleMenu, {
         showMenu: this.showMenu
       });
     }
