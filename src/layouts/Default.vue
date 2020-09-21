@@ -4,7 +4,7 @@
     <Header />
 
     <div class="columns is-desktop">
-      <Navigation class="column is-3" />
+      <Navigation class="column is-3-desktop" />
 
       <div class="column">
         <transition name="fade" appear>
