@@ -12,7 +12,7 @@ Lyne empowers people and unites teams to work more efficiently and deliver more 
 ## Teasers
 
 #### Start Designing
---> Link to /designing
+--> Link to [/designing](https://lyne-documentation.netlify.app/designing/)
 
 #### Start Developing
---> Link to /developing
+--> Link to [/developing](https://lyne-documentation.netlify.app/developing/)
