@@ -54,7 +54,7 @@
 import eventBus from '../helpers/eventBus';
 
 export default {
-  data: () => {
+  data() {
     const exportData = {
       showMenu: false
     };

@@ -39,7 +39,7 @@ const lyneIconsVersion = require('lyne-icons/package.json').version;
 const globalConfig = require('../../global.config');
 
 export default {
-  data: () => {
+  data() {
     const dataExport = {
       links: {
         components: {
