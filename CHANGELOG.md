@@ -1,3 +1,11 @@
+## [1.18.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.1...v1.18.2) (2020-09-21)
+
+
+### Bug Fixes
+
+* make sure menu always disappears on navigation ([9fc8e17](https://github.com/lyne-design-system/lyne-documentation/commit/9fc8e1792a6f9df41120f058c4466270db019413))
+* make sure that document is accessed in client mode only ([a21fd4f](https://github.com/lyne-design-system/lyne-documentation/commit/a21fd4f498504d61de802de9bededbb3eb79f83d))
+
 ## [1.18.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.0...v1.18.1) (2020-09-21)
 
 
