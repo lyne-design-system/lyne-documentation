@@ -26,19 +26,16 @@ Content sections of pages are hightlighted by braces `()`
 <details>
   <summary>Designing</summary>
   
-  * Get started
   * Design kits
 </details>
 <details>
   <summary>Developing</summary>
   
-  * Get started
   * Resources
 </details>
 <details>
   <summary>Writing</summary>
   
-  * Get started
 </details>
 <details>
   <summary>Contributing</summary>
