@@ -41,7 +41,7 @@ it provides ...
 * How
 * Why
 
-Lyne is SBB–CFF–FFSs interconnected, collaboration-focused open-source design system.
+Lyne is SBB–CFF–FFSs <span class="tag is-info">🧪experimental</span>, interconnected, collaboration-focused open-source design system.
 
 The system makes it easier for developers, designers and content authors to build, maintain, and scale products and digital experiences.
 
