@@ -12,5 +12,7 @@ Lyne empowers people and unites teams to work more efficiently and deliver more 
 ## Teasers
 
 #### Start Designing
+--> Link to /designing
 
 #### Start Developing
+--> Link to /developing
