@@ -4,7 +4,7 @@
     <Header />
 
     <div class="columns is-desktop">
-      <Navigation class="column is-narrow" />
+      <Navigation class="column is-3" />
 
       <div class="column">
         <transition name="fade" appear>
@@ -43,6 +43,10 @@ export default {
 
 .fade-enter {
   opacity: 0;
+}
+
+.columns {
+  margin: 0;
 }
 
 </style>
