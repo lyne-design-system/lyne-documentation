@@ -12,6 +12,17 @@
   </ul>
 </template>
 
+<static-query>
+query {
+  component: lyne {
+    allComponents {
+      title
+      componentName
+    }
+  }
+}
+</static-query>
+
 <script>
 import eventBus from '../../helpers/eventBus';
 import navData from '../../navigation';
@@ -49,12 +60,31 @@ export default {
   components: {
     NavigationItem
   },
-  data() {
-    const parentPathsOfCurrentRoute = getPathOfNavItem(navData, this.$route.path);
+  created() {
+    const components = this.$static.component.allComponents;
+    const navDataCopy = JSON.parse(JSON.stringify(navData));
+    let indexOfCompNavItem = 0;
 
+    navDataCopy.forEach((navItem, index) => {
+      if (navItem.path === '/components/') {
+        indexOfCompNavItem = index;
+      }
+    });
+
+    components.forEach((comp) => {
+      navDataCopy[indexOfCompNavItem].children.push({
+        name: comp.title,
+        path: `/components/${comp.componentName}`
+      });
+    });
+
+    this.navData = navDataCopy;
+    this.paths = getPathOfNavItem(navDataCopy, this.$route.path);
+  },
+  data() {
     const data = {
-      navData,
-      paths: parentPathsOfCurrentRoute,
+      navData: [],
+      paths: [],
       showMenu: false
     };
 
