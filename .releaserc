@@ -10,7 +10,7 @@
       npmPublish: false
     }],
     ["@semantic-release/exec", {
-      "prepareCmd": "echo module.exports = '${nextRelease.version}'; > dist/version.txt"
+      "prepareCmd": "echo '${nextRelease.version}'; > dist/version.txt"
     }],
     ["@semantic-release/git", {
       "assets": [
