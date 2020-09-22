@@ -1,3 +1,11 @@
+## [1.18.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.6...v1.18.7) (2020-09-22)
+
+
+### Bug Fixes
+
+* get version via async fetch ([384b320](https://github.com/lyne-design-system/lyne-documentation/commit/384b320bba34a338794747a8e775ad9845c98b99))
+* output version only to version file ([b4417ae](https://github.com/lyne-design-system/lyne-documentation/commit/b4417aedd2733a5269b52dc2427df680231fb23a))
+
 ## [1.18.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.5...v1.18.6) (2020-09-21)
 
 
