@@ -36,7 +36,8 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
-const lyneDocumentationVersion = require('../../version');
+
+const lyneDocumentationVersion = '0.0.0';
 
 export default {
   data() {
@@ -66,6 +67,19 @@ export default {
     };
 
     return dataExport;
+  },
+  async mounted() {
+    try {
+      const versionData = await fetch('/version.txt');
+
+      if (versionData.ok) {
+        const versionNumber = await versionData.text();
+
+        this.links.documentation.version = versionNumber;
+      }
+    } catch (err) {
+      console.log(`Error in getting version.txt: ${err}`);
+    }
   },
   name: 'Footer'
 };
