@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.0...v1.20.1) (2020-09-23)
+
+
+### Bug Fixes
+
+* adhere to newest changes in icons.json ([775f66a](https://github.com/lyne-design-system/lyne-documentation/commit/775f66aab0a85a7141bf73caf3767af9e20b7c4e))
+
 # [1.20.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.3...v1.20.0) (2020-09-23)
 
 
