@@ -34,7 +34,7 @@
 </template>
 
 <script>
-const lyneIcons = require('lyne-icons/dist/icons.json');
+const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 const sortHelper = require('../../helpers/sort');
 
 export default {
