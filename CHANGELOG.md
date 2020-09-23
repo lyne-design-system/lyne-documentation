@@ -1,3 +1,10 @@
+## [1.19.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.2...v1.19.3) (2020-09-23)
+
+
+### Bug Fixes
+
+* move nav burger to left until desktop ([c47d223](https://github.com/lyne-design-system/lyne-documentation/commit/c47d22323089b3d81140756a550b1138fa07cb4e))
+
 ## [1.19.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.1...v1.19.2) (2020-09-23)
 
 
