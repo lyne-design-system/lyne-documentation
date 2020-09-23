@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.8...v1.19.0) (2020-09-23)
+
+
+### Features
+
+* add stackblitz edit button for variants ([13a7332](https://github.com/lyne-design-system/lyne-documentation/commit/13a733284a3fc255574984b31578bf1d3bcda7c8))
+
 ## [1.18.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.7...v1.18.8) (2020-09-22)
 
 
