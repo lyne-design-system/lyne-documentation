@@ -1,3 +1,15 @@
+# [1.20.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.3...v1.20.0) (2020-09-23)
+
+
+### Bug Fixes
+
+* use rem instead of em ([299db80](https://github.com/lyne-design-system/lyne-documentation/commit/299db80a68094f92676d07f6ee52091825246866))
+
+
+### Features
+
+* add brand name ([2c073ed](https://github.com/lyne-design-system/lyne-documentation/commit/2c073edb2d229b82fecdd91e7c6d82bb2243adb0))
+
 ## [1.19.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.2...v1.19.3) (2020-09-23)
 
 
