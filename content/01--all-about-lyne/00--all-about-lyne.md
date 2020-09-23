@@ -1,6 +1,6 @@
 # All about Lyne
 
-Lyne is SBB–CFF–FFSs interconnected, collaboration-focused open-source design system.
+Lyne is SBB–CFF–FFSs <span class="tag is-info">🧪 experimental</span>, interconnected, collaboration-focused open-source design system.
 
 The system makes it easier for developers, designers and content authors to build, maintain, and scale products and digital experiences.
 
@@ -8,15 +8,11 @@ Lyne consists of working code, design tools, resources and documentation, but al
 
 Lyne empowers people and unites teams to work more efficiently and deliver more consistent experiences.
 
-## tl;dr – Lyne in a few words
-The reference and building blocks to create consistent experiences across SBB digital products in a sustainable fashion with long term commitment.
-
 - [What *Lyne* is and why we need it](#what-lyne-is-and-why-we-need-it)
 - [What *Lyne* consists of](#what-lyne-consists-of)
 - [What *Lyne* does](#what-lyne-does)
 - [*Lyne*'s advantages and the resulting chances](#lynes-advantages-and-the-resulting--chances)
 - [Potential which could be unlocked thanks to *Lyne*](#potential-which-could-be-unlocked-thanks-to-lyne)
-- [Risks](#risks)
 
 ## What *Lyne* is and why we need it
 The *[Lyne Design System](./TERMINOLOGY.md#lyne)* is a holistic approach towards a consistent, maintainable, cross-company design language for all SBB digital products/services for a better common understanding between stakeholders, designers and developers.
