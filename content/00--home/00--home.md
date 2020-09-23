@@ -6,7 +6,7 @@ Lyne is SBB–CFF–FFSs <span class="tag is-info">🧪 experimental</span>, int
 
 The reference and building blocks to create consistent experiences across SBB digital products in a sustainable fashion with long term commitment.
 
-[Learn more about Lyne](https://lyne-documentation.netlify.app/all-about-lyne/)
+[Learn more about Lyne](https://lyne-documentation.netlify.app/about/)
 
 ## Teasers
 
