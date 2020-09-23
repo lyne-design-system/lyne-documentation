@@ -14,9 +14,13 @@
             <p>Description: {{comp.description}}</p>
 
             <button
+              class="button"
               @click='openStackblitz(comp, $page.component.component.componentName)'
             >
-              Edit on Stackblitz
+              <span>Edit on Stackblitz</span>
+              <span class="icon is-small">
+                <i class="mdi mdi-launch"></i>
+              </span>
             </button>
 
             <h3>Preview</h3>
