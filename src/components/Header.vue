@@ -69,7 +69,7 @@ export default {
   order: 1;
 }
 
-.navbar-burger {
+.navbar-burger.burger {
   order: 0;
   margin-left: 0;
 }
