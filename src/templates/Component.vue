@@ -89,7 +89,7 @@ export default {
       const description = `Lyne Components: ${name}`;
       const element = `<${name} ${properties}"></${name}>`;
 
-      stackblitz(name, description, element);
+      stackblitz(description, element);
     }
   },
   mounted() {

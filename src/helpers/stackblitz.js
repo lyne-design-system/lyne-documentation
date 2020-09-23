@@ -1,6 +1,6 @@
 import stackblitz from '@stackblitz/sdk';
 
-const openStackblitz = (title, description, element) => {
+const openStackblitz = (description, element) => {
   /* eslint-disable no-useless-escape */
   const html = `
     <!DOCTYPE html>
