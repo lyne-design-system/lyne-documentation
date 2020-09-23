@@ -1,3 +1,11 @@
+## [1.19.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.1...v1.19.2) (2020-09-23)
+
+
+### Bug Fixes
+
+* add version file ([c07592a](https://github.com/lyne-design-system/lyne-documentation/commit/c07592a3ff1fb2a4d3511fb68a93ae837a6c9601))
+* throw error appropriately ([7514ed4](https://github.com/lyne-design-system/lyne-documentation/commit/7514ed4906553ce2e1de980de1b8a1b8556e8e29))
+
 ## [1.19.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.0...v1.19.1) (2020-09-23)
 
 
