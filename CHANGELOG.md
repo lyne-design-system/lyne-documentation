@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.19.0...v1.19.1) (2020-09-23)
+
+
+### Bug Fixes
+
+* remove version file from gitignore ([df8ea5c](https://github.com/lyne-design-system/lyne-documentation/commit/df8ea5ce5e09d5a23d74c5bfcafa702888207447))
+
 # [1.19.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.18.8...v1.19.0) (2020-09-23)
 
 
