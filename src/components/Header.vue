@@ -13,6 +13,7 @@
           href="/"
         >
           <img src="../favicon.png">
+          <span class="brand-title">Lyne Design System</span>
         </a>
         <a
           role="button"
@@ -72,6 +73,11 @@ export default {
 .navbar-burger.burger {
   order: 0;
   margin-left: 0;
+}
+
+.brand-title {
+  display: block;
+  margin-left: 1rem;
 }
 
 </style>
