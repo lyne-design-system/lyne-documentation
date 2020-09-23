@@ -107,7 +107,7 @@ export default {
 
 .link {
   display: block;
-  padding: .7em 3em .7em .7em;
+  padding: .7rem 3rem .7rem .7rem;
 }
 
 .link.is-exact-active {
