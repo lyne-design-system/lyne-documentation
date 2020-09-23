@@ -72,11 +72,13 @@ export default {
     try {
       const versionData = await fetch('/version.txt');
 
-      if (versionData.ok) {
-        const versionNumber = await versionData.text();
-
-        this.links.documentation.version = versionNumber;
+      if (!versionData.ok) {
+        throw new Error('Version file not found');
       }
+
+      const versionNumber = await versionData.text();
+
+      this.links.documentation.version = versionNumber;
     } catch (err) {
       console.log(`Error in getting version.txt: ${err}`);
     }
