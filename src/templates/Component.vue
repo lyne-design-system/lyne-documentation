@@ -13,6 +13,12 @@
             <h2>Variant: {{comp.title}}</h2>
             <p>Description: {{comp.description}}</p>
 
+            <button
+              @click='openStackblitz(comp, $page.component.component.componentName)'
+            >
+              Edit on Stackblitz
+            </button>
+
             <h3>Preview</h3>
             <component
               v-bind:is="$page.component.component.componentName"
@@ -67,7 +73,25 @@ query(
 </page-query>
 
 <script>
+import stackblitz from '../helpers/stackblitz';
+
 export default {
+  methods: {
+    openStackblitz(elem, name) {
+
+      const properties = Object.entries(elem.properties)
+        .map(([
+          key,
+          val
+        ]) => `${key}="${val}"`)
+        .join(' ');
+
+      const description = `Lyne Components: ${name}`;
+      const element = `<${name} ${properties}"></${name}>`;
+
+      stackblitz(name, description, element);
+    }
+  },
   mounted() {
 
     // This makes sure that components only get rendered on the client.
