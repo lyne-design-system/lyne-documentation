@@ -19,6 +19,8 @@ jobs:
     script:
     # prepare git for pushes
     - git remote set-url origin https://lyne-design-system:$GH_TOKEN@github.com/lyne-design-system/lyne-documentation.git || travis_terminate 1
+    - git checkout master
+    - git pull
     - npm install
     - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save
     - npm run lint || travis_terminate 1
