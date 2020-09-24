@@ -25,7 +25,7 @@ then
 
     git add package.json
     git add package-lock.json
-    git commit -m "chore: updating lyne-components, lyne-icons, lyne-design-tokens [skip-ci]"
+    git commit -m "chore: updating lyne-components, lyne-icons, lyne-design-tokens [skip ci]"
 
     git push origin master
   else
