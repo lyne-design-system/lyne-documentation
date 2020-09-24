@@ -10,7 +10,7 @@
 set -e
 
 # version file name written by .releaserc
-VERSION_FILE=version.txt
+VERSION_FILE=dist/version.txt
 
 if [ -f "$VERSION_FILE" ];
 then
