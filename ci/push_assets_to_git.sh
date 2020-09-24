@@ -14,7 +14,7 @@ VERSION_FILE=dist/version.txt
 
 if [ -f "$VERSION_FILE" ];
 then
-  VERSION="$(cat .version)"
+  VERSION="$(cat dist/version.txt)"
 
   echo "VERSION"
   echo $VERSION
