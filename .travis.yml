@@ -23,6 +23,10 @@ jobs:
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
     after_success:
     - npm run semantic-release || travis_terminate 1
+
+    # prepare git for pushes
+    - git remote set-url origin https://lyne-design-system:$GH_TOKEN@github.com/lyne-design-system/lyne-documentation.git || travis_terminate 1
+
     - ./ci/push_assets_to_git.sh || travis_terminate 1
     - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir
       ./dist/ || travis_terminate 1
