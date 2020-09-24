@@ -1,3 +1,11 @@
+## [1.20.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.1...v1.20.2) (2020-09-24)
+
+
+### Bug Fixes
+
+* fake commit to test patch release ([d43ff0d](https://github.com/lyne-design-system/lyne-documentation/commit/d43ff0d7ab9a44799c74b6c5086d7f96b2821e5e))
+* use correct skip ci flag ([8909c7b](https://github.com/lyne-design-system/lyne-documentation/commit/8909c7b07a424a8f8fa7183803de9b6cb1b9ffd5))
+
 ## [1.20.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.0...v1.20.1) (2020-09-23)
 
 
