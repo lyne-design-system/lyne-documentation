@@ -15,13 +15,18 @@ echo "VERSION_FILE"
 echo $VERSION_FILE
 if [ -f "$VERSION_FILE" ];
 then
-  echo "-->> Version file found. Semantic-release will automatically push package.json back to git"
+  VERSION="$(cat .version)"
 
-else
-  echo "-->> No version file found, therefore manually push package.json back"
+  if [ $VERSION == 0.0.0 ]
+  then
+    echo "-->> No version file found, therefore manually push package.json back"
 
-  git add package.json
-  git add package-lock.json
-  git commit -m "chore: updating lyne-components, lyne-icons, lyne-design-tokens"
-  git push origin master
+    git add package.json
+    git add package-lock.json
+    git commit -m "chore: updating lyne-components, lyne-icons, lyne-design-tokens"
+    git push origin master
+  else
+    echo "-->> Version file found. Semantic-release will automatically push package.json back to git"
+  fi
+
 fi
