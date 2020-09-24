@@ -11,7 +11,8 @@ set -e
 
 # version file name written by .releaserc
 VERSION_FILE=dist/version.txt
-
+echo "VERSION_FILE"
+echo $VERSION_FILE
 if [ -f "$VERSION_FILE" ];
 then
   echo "-->> Version file found. Semantic-release will automatically push package.json back to git"
