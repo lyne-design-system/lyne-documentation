@@ -36,6 +36,7 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
+const documentationPackageJson = require('../../package.json');
 
 const lyneDocumentationVersion = '0.0.0';
 
@@ -76,7 +77,11 @@ export default {
         throw new Error('Version file not found');
       }
 
-      const versionNumber = await versionData.text();
+      let versionNumber = await versionData.text();
+
+      if (versionNumber.trim() === '0.0.0') {
+        versionNumber = documentationPackageJson.version;
+      }
 
       this.links.documentation.version = versionNumber;
     } catch (err) {
