@@ -16,9 +16,6 @@ if [ -f "$VERSION_FILE" ];
 then
   VERSION="$(cat $VERSION_FILE)"
 
-  echo "VERSION"
-  echo $VERSION
-
   if [ $VERSION == 0.0.0 ]
   then
     echo "-->> No version file found, therefore manually push package.json back"
