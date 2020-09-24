@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.2...v1.21.0) (2020-09-24)
+
+
+### Features
+
+* add mdx files to editor config ([780623a](https://github.com/lyne-design-system/lyne-documentation/commit/780623a84d711584d3c0e7463e1e94f9dc0cf6b8))
+
 ## [1.20.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.1...v1.20.2) (2020-09-24)
 
 
