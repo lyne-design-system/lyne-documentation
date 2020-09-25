@@ -28,7 +28,16 @@ module.exports = {
       use: '@gridsome/source-graphql'
     },
 
-    // filesystem plugin for gridsome
+    // filesystem plugin for content markdown
+    {
+      options: {
+        path: 'content/*.md',
+        typeName: globalConfig.lyneDocumentationContentTypeName
+      },
+      use: '@gridsome/source-filesystem'
+    },
+
+    // filesystem plugin for components markdown
     {
       options: {
         path: `./${globalConfig.lyneComponentsDocumentationPath}/**/*.md`,
