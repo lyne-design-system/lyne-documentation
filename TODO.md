@@ -12,3 +12,4 @@
   - add a github webhook which is making an empty commit: `git commit --allow-empty -m "content: change in dato"`
     - if we use empty commits add `content` to commitlint.config.js
   - that way, we would get a new commit hash for every trigger
+- [ ] navigation.js -> children page's paths include parent path. use it. e.g. children vocabulary has path "/about/vocabulary". refactor so that we can use "vocabulary"
