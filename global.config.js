@@ -7,5 +7,6 @@ module.exports = {
   graphqlDatoTypeName: 'lyneTypes',
   graphqlDatoUrl: 'https://graphql.datocms.com',
   lyneComponentsDocumentationPath: 'node_modules/lyne-test/dist/documentation',
-  lyneComponentsPrefix: 'lyne'
+  lyneComponentsPrefix: 'lyne',
+  lyneDocumentationContentTypeName: 'LyneContent'
 };
