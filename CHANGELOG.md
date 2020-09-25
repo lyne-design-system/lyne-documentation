@@ -1,3 +1,23 @@
+# [1.22.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.21.0...v1.22.0) (2020-09-25)
+
+
+### Bug Fixes
+
+* add correct navigation for about section ([0319a2a](https://github.com/lyne-design-system/lyne-documentation/commit/0319a2a1f9c86aa38befc3e37b8fb36ed58a8d99))
+* fix config for rendering md files ([db68df9](https://github.com/lyne-design-system/lyne-documentation/commit/db68df9c294da328ef1cb34e919af4a09fb2060a))
+* remove meta ([3666883](https://github.com/lyne-design-system/lyne-documentation/commit/3666883b8b3573173b9efb5c78415e21571fba0e))
+* remove obsolete locale ([2fd9790](https://github.com/lyne-design-system/lyne-documentation/commit/2fd979033d69fe66e0466d9c9b62e6dbc6e257f3))
+* remove obsolete pages ([451ec8d](https://github.com/lyne-design-system/lyne-documentation/commit/451ec8d9dd26d5a0968eb15154a6d815ecffda3a))
+* rename content files ([4b5330c](https://github.com/lyne-design-system/lyne-documentation/commit/4b5330c120ca974ae53ff5a2b2cc19bd8106168d))
+* rename content pages ([ae1ded7](https://github.com/lyne-design-system/lyne-documentation/commit/ae1ded79201bb6c4abd3ad10fc93adb072538e46))
+
+
+### Features
+
+* add basic template for rendering md content ([4884b66](https://github.com/lyne-design-system/lyne-documentation/commit/4884b6666d2be1f3ea2a2192ea5b7a74c6a792fd))
+* add source config for docu content ([4e77751](https://github.com/lyne-design-system/lyne-documentation/commit/4e777515619fc5e0aad83c465ebf7cad9498fa5e))
+* add type name for lyne content ([c6d40b6](https://github.com/lyne-design-system/lyne-documentation/commit/c6d40b60ca881ffc6c3f779974b0495a6846265c))
+
 # [1.21.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.20.2...v1.21.0) (2020-09-24)
 
 
