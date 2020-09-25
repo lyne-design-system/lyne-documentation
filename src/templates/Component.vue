@@ -45,7 +45,6 @@
 query(
   $compId: lyneTypes_ItemId
   $componentDistPath: String
-  $locale: lyneTypes_SiteLocale
 ) {
   component: lyne {
     component(filter: { id: { eq: $compId } }) {
@@ -55,7 +54,6 @@ query(
   }
   variants: lyne {
     allComponentVariants(
-      locale: $locale
       filter: { component: { eq: $compId } }
     ) {
       id
