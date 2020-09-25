@@ -28,10 +28,14 @@ module.exports = {
       use: '@gridsome/source-graphql'
     },
 
-    // filesystem plugin for content markdown
+    /**
+     * filesystem plugin for content markdown.
+     * will use template {typeName}.vue by default
+     */
     {
       options: {
-        path: 'content/*.md',
+        baseDir: './content',
+        path: '**/*.md',
         typeName: globalConfig.lyneDocumentationContentTypeName
       },
       use: '@gridsome/source-filesystem'
