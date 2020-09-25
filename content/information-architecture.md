@@ -1,11 +1,3 @@
----
-title: First Blog!
-author: John Doe
-tags: ["quotes", "jeff goldblum", "actor"]
-dateCreated: 2019-06-22
-dateModified: 2019-06-22
----
-
 # Information architecture (IA) for the Lyne (Web) documentation platform
 
 #### Status
