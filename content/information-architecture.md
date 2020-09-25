@@ -1,6 +1,14 @@
+---
+title: First Blog!
+author: John Doe
+tags: ["quotes", "jeff goldblum", "actor"]
+dateCreated: 2019-06-22
+dateModified: 2019-06-22
+---
+
 # Information architecture (IA) for the Lyne (Web) documentation platform
 
-#### Status 
+#### Status
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
 #### Notes
@@ -14,28 +22,28 @@ Content sections of pages are hightlighted by braces `()`
 
 <details>
   <summary>All about Lyne</summary>
-  
+
   * Principles
   * Vocabulary/dictionary/common language
   * Gallery / Implementations/Examples based on Lyne
 </details>
 <details>
   <summary>Designing</summary>
-  
+
   * Design kits
 </details>
 <details>
   <summary>Developing</summary>
-  
+
   * Resources
 </details>
 <details>
   <summary>Writing</summary>
-  
+
 </details>
 <details>
   <summary>Contributing</summary>
-  
+
   * Bugs and requests
   * Documentation
   * Components
@@ -47,7 +55,7 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 <details>
   <summary>What’s happening</summary>
-  
+
   * Changelog
   * Status
     * (show progress, states: done, in progress, pending)
@@ -60,7 +68,7 @@ Content sections of pages are hightlighted by braces `()`
 
 <details>
   <summary>Guidelines</summary>
-  
+
   * Accessibility
   * Spacing
   * Typography
@@ -75,7 +83,7 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 <details>
   <summary>Tutorials</summary>
-  
+
   * Figma tutorial
   * Angular tutorial
   * Backend integration tutorial (AEM, Drupal)
@@ -83,7 +91,7 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 <details>
   <summary>Design Tokens</summary>
-  
+
   * Color
   * Font
   * Font size
@@ -94,29 +102,29 @@ Content sections of pages are hightlighted by braces `()`
 </details>
 <details>
   <summary>Components</summary>
-  
+
   * ... list of all components
 </details>
 <details>
   <summary>Patterns</summary>
-  
+
   * ... list of all patterns
 </details>
 <details>
   <summary>Templates</summary>
-  
+
   * ... list of all templates
 </details>
 <details>
   <summary>Community contributions</summary>
   Other possible menu item names: System/Domain contributions/extensions, Satellites
-  
+
   * Components
   * Patterns
 </details>
 <details>
   <summary>Help</summary>
-  
+
   * Status page
   * FAQs
   * Migration guide
