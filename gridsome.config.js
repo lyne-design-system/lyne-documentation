@@ -48,6 +48,21 @@ module.exports = {
         typeName: globalConfig.graphqlComponentsReadmeTypeName
       },
       use: '@gridsome/source-filesystem'
+    },
+
+    // flexsearch plugin
+    {
+      options: {
+        collections: [
+          {
+            fields: ['title'],
+            indexName: 'Component',
+            typeName: 'Component'
+          }
+        ],
+        searchFields: ['title']
+      },
+      use: 'gridsome-plugin-flexsearch'
     }
   ],
   siteDescription: 'Documentation for Lyne Design System',
