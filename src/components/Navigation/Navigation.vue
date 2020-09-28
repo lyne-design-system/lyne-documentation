@@ -25,36 +25,9 @@ query {
 
 <script>
 import eventBus from '../../helpers/eventBus';
+import getPathOfNavItem from '../../helpers/navigation';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
-
-const getPathOfNavItem = (obj, search) => {
-  for (const item of Object.entries(obj)) {
-    const value = item[1];
-
-    if (value === search) {
-      // return [key];
-      return [value];
-    }
-
-    if (value && typeof value === 'object') {
-      const path = getPathOfNavItem(value, search);
-
-      if (path) {
-        if (value.path) {
-          return [
-            value.path,
-            ...path
-          ];
-        }
-
-        return path;
-      }
-    }
-  }
-
-  return false;
-};
 
 const addComponentNavItems = (components, _navData) => {
   const navDataCopy = JSON.parse(JSON.stringify(_navData));
