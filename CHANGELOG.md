@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.1...v1.23.2) (2020-09-29)
+
+
+### Bug Fixes
+
+* open on focus, make size smaller ([eab4eac](https://github.com/lyne-design-system/lyne-documentation/commit/eab4eacef71e21fd906060ac042a3b762d16b6b3))
+
 ## [1.23.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.0...v1.23.1) (2020-09-29)
 
 
