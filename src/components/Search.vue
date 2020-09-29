@@ -141,7 +141,6 @@ export default {
   },
   methods: {
     handleSelect(result) {
-      console.log('SELECT');
       if (process.isClient) {
         window.location = result.url;
       }
