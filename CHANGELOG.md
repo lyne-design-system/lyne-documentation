@@ -1,3 +1,20 @@
+# [1.23.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.22.0...v1.23.0) (2020-09-29)
+
+
+### Bug Fixes
+
+* add trailing slashes ([85f29d3](https://github.com/lyne-design-system/lyne-documentation/commit/85f29d3f8c35e8fe0b8a53147c3138c6dd265bf6))
+* use buefy autocomplete ([8394978](https://github.com/lyne-design-system/lyne-documentation/commit/83949782788c1f13f89011b3ab9dd93a2defe8f9))
+
+
+### Features
+
+* add config for flex search ([c3e3d6c](https://github.com/lyne-design-system/lyne-documentation/commit/c3e3d6cb6ddb1b6ddffc5cc7173f0e51e20aa9af))
+* add sample page to showcase search component ([6f34998](https://github.com/lyne-design-system/lyne-documentation/commit/6f349980e9103af561b8f3f8172a76066e70eff9))
+* add sample search page ([d4eb10a](https://github.com/lyne-design-system/lyne-documentation/commit/d4eb10ac0bfb94b06ca23161a36448537f4119b8))
+* add search component ([880a87a](https://github.com/lyne-design-system/lyne-documentation/commit/880a87afe65964893a45cb0dab678a153498a66c))
+* integrate search ([9b37910](https://github.com/lyne-design-system/lyne-documentation/commit/9b37910b2c35a066bcf9f8cb63efa6945963311d))
+
 # [1.22.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.21.0...v1.22.0) (2020-09-25)
 
 
