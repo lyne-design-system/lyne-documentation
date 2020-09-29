@@ -1,15 +1,18 @@
 <template>
-  <ul
-    class="menu"
+  <div
     v-bind:class="{hidden: !$data.showMenu}"
+    class="menu"
   >
-    <NavigationItem
-      v-for="(item, index) in $data.navData"
-      :key="index"
-      :item="item"
-      :paths="$data.paths"
-    ></NavigationItem>
-  </ul>
+    <Search />
+    <ul>
+      <NavigationItem
+        v-for="(item, index) in $data.navData"
+        :key="index"
+        :item="item"
+        :paths="$data.paths"
+      ></NavigationItem>
+    </ul>
+  </div>
 </template>
 
 <static-query>
@@ -25,36 +28,10 @@ query {
 
 <script>
 import eventBus from '../../helpers/eventBus';
+import getPathOfNavItem from '../../helpers/navigation';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
-
-const getPathOfNavItem = (obj, search) => {
-  for (const item of Object.entries(obj)) {
-    const value = item[1];
-
-    if (value === search) {
-      // return [key];
-      return [value];
-    }
-
-    if (value && typeof value === 'object') {
-      const path = getPathOfNavItem(value, search);
-
-      if (path) {
-        if (value.path) {
-          return [
-            value.path,
-            ...path
-          ];
-        }
-
-        return path;
-      }
-    }
-  }
-
-  return false;
-};
+import Search from '../Search.vue';
 
 const addComponentNavItems = (components, _navData) => {
   const navDataCopy = JSON.parse(JSON.stringify(_navData));
@@ -78,7 +55,8 @@ const addComponentNavItems = (components, _navData) => {
 
 export default {
   components: {
-    NavigationItem
+    NavigationItem,
+    Search
   },
   created() {
     this.navData = addComponentNavItems(this.$static.component.allComponents, navData);
@@ -118,9 +96,8 @@ export default {
 
   .menu {
     display: block;
-    margin: 0;
-    background: $background;
     padding: 1rem 1rem;
+    background: $background;
   }
 
   .menu.hidden {
@@ -130,4 +107,5 @@ export default {
       display: block;
     }
   }
+
 </style>

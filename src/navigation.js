@@ -3,15 +3,15 @@ const navigationData = [
     children: [
       {
         name: 'Lyne in depth',
-        path: '/about/in-depth'
+        path: '/about/in-depth/'
       },
       {
         name: 'Vocabulary',
-        path: '/about/vocabulary'
+        path: '/about/vocabulary/'
       }
     ],
     name: 'All about Lyne',
-    path: '/about'
+    path: '/about/'
   },
   {
     children: [
@@ -19,15 +19,15 @@ const navigationData = [
         children: [
           {
             name: 'Sketch',
-            path: '/designing/design-kits/sketch'
+            path: '/designing/design-kits/sketch/'
           },
           {
             name: 'Figma',
-            path: '/designing/design-kits/figma'
+            path: '/designing/design-kits/figma/'
           }
         ],
         name: 'Design kits',
-        path: '/designing/design-kits'
+        path: '/designing/design-kits/'
       }
     ],
     name: 'Designing',
@@ -37,11 +37,11 @@ const navigationData = [
     children: [
       {
         name: 'Color & Font',
-        path: '/tokens/tokens'
+        path: '/tokens/tokens/'
       },
       {
         name: 'Icons',
-        path: '/tokens/icons'
+        path: '/tokens/icons/'
       }
     ],
     name: 'Tokens',
