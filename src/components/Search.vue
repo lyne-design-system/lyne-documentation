@@ -1,36 +1,23 @@
 <template>
-  <div>
+  <b-autocomplete
+    rounded
+    v-model="searchTerm"
+    :data="searchResults"
+    placeholder="Search"
+    icon="magnify"
+    group-field="path"
+    group-options="results"
+    @select="opt => handleSelect(opt)"
+  >
+    <template slot="group" slot-scope="props">
+      <span v-html="props.group"></span>
+    </template>
 
-    <input
-      id="search"
-      v-model="searchTerm"
-      class="input"
-      type="text"
-      placeholder="Search"
-    >
+    <template slot-scope="props">
+      <span class="result-item" v-html="props.option.text"></span>
+    </template>
 
-    <div v-if="searchResults.length > 0">
-      <div
-        v-for="(result, index) in searchResults"
-        :key="index"
-      >
-        <p v-html="result.path"></p>
-
-        <ul>
-          <li
-            v-for="(resultItem, index) in result.results"
-            :key="index"
-          >
-            <span v-html="resultItem"></span>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-
-    <div v-if="searchResults.length < 1 && isValidSearchTerm(searchTerm)">No results</div>
-
-  </div>
+  </b-autocomplete>
 </template>
 
 <static-query>
@@ -89,6 +76,11 @@ const highlightSearchTerm = (results, searchTerm) => results.map((result) => {
 
 });
 
+const addUrlToResults = (results, path) => results.map((result) => ({
+  text: result,
+  url: path
+}));
+
 const formatResults = (results, searchTerm) => {
   const returnResults = [];
 
@@ -96,6 +88,7 @@ const formatResults = (results, searchTerm) => {
     const textContent = stripHtml(result.content);
     const strippedResults = stripResultItems(textContent, searchTerm);
     const finalResults = highlightSearchTerm(strippedResults, searchTerm);
+    const addUrl = addUrlToResults(finalResults, result.path);
     const paths = getPathOfNavItem(navData, result.path, true);
 
     // means, that the page with the results is not indexed in navigation data
@@ -105,7 +98,7 @@ const formatResults = (results, searchTerm) => {
 
     returnResults.push({
       path: paths.join('<span class="breadcrump-arrow">></span>'),
-      results: finalResults
+      results: addUrl
     });
   });
 
@@ -147,8 +140,16 @@ export default {
     };
   },
   methods: {
-    isValidSearchTerm (searchTerm) {
-      return searchTerm.length > 2;
+    handleSelect(result) {
+      console.log('SELECT');
+      if (process.isClient) {
+        window.location = result.url;
+      }
+    },
+    isValidSearchTerm(searchTerm) {
+      return searchTerm
+        ? searchTerm.length > 2
+        : false;
     }
   },
   name: 'Search'
@@ -157,6 +158,11 @@ export default {
 
 <style lang="scss">
 @import "../styles/bulma.scss";
+
+.autocomplete .dropdown-menu.dropdown-menu {
+  max-width: unset;
+  width: 400px;
+}
 
 .search-highlight {
   font-weight: bold;
@@ -167,4 +173,5 @@ export default {
   color: $link;
   padding: 0 .5rem;
 }
+
 </style>
