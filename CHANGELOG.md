@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.0...v1.23.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* add search margin ([b337b36](https://github.com/lyne-design-system/lyne-documentation/commit/b337b36d0da8a416467fb395627335d800caa4a4))
+
 # [1.23.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.22.0...v1.23.0) (2020-09-29)
 
 
