@@ -3,7 +3,7 @@
     v-bind:class="{hidden: !$data.showMenu}"
     class="menu"
   >
-    <Search />
+    <Search class="search" />
     <ul>
       <NavigationItem
         v-for="(item, index) in $data.navData"
@@ -106,6 +106,10 @@ export default {
     @include desktop {
       display: block;
     }
+  }
+
+  .search {
+    margin-bottom: 1rem;
   }
 
 </style>
