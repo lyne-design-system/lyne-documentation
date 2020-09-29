@@ -7,7 +7,9 @@
     icon="magnify"
     group-field="path"
     group-options="results"
+    size="is-small"
     @select="opt => handleSelect(opt)"
+    open-on-focus
   >
     <template slot="group" slot-scope="props">
       <span v-html="props.group"></span>
