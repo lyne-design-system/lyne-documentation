@@ -3,8 +3,8 @@
     <div class="nav-item">
       <g-link
         class="link"
-        exact-active-class="is-exact-active"
         :to="item.path"
+        :class="$route.path === item.path && 'is-exact-active'"
       >
         {{ item.name }}
       </g-link>
