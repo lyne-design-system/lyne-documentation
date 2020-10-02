@@ -1,3 +1,10 @@
+## [1.23.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.3...v1.23.4) (2020-10-02)
+
+
+### Bug Fixes
+
+* fake commit to test release ([8c21e7e](https://github.com/lyne-design-system/lyne-documentation/commit/8c21e7e405bc909d8c913559e3980762ebfc66a2))
+
 ## [1.23.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.2...v1.23.3) (2020-10-01)
 
 
