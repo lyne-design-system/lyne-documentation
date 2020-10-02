@@ -1,3 +1,10 @@
+## [1.23.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.2...v1.23.3) (2020-10-01)
+
+
+### Bug Fixes
+
+* make sure that active-class is assigned even when hash is present ([44cbec3](https://github.com/lyne-design-system/lyne-documentation/commit/44cbec3685c8d5e20082cc52fb3df4574fde71a6))
+
 ## [1.23.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.1...v1.23.2) (2020-09-29)
 
 
