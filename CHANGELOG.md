@@ -1,3 +1,10 @@
+## [1.23.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.5...v1.23.6) (2020-10-05)
+
+
+### Bug Fixes
+
+* revert burger position ([9bfd017](https://github.com/lyne-design-system/lyne-documentation/commit/9bfd0172e87611a7e7210e4790f32cb3b510f0f9))
+
 ## [1.23.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.4...v1.23.5) (2020-10-05)
 
 
