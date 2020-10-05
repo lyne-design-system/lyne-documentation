@@ -15,7 +15,7 @@ Content sections of pages are hightlighted by braces `()`
 <details>
   <summary>All about Lyne</summary>
 
-  * Principles
+  * Principles (derived and formulated from the Lyne Core Team values, SBB UX values, SBB core company values)
   * Vocabulary/dictionary/common language
   * Gallery / Implementations/Examples based on Lyne
 </details>
