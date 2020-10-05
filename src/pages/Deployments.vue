@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="title is-1">Releases</h1>
 
-        <p>These are production releases and preview build for lyne-components.</p>
+        <p>Here you can find all production releases and preview builds for <code>lyne-components</code> linked with their corresponding Storybook release.</p>
 
         <div
           id="tabs"
