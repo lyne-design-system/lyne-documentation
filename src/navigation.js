@@ -2,8 +2,8 @@ const navigationData = [
   {
     children: [
       {
-        name: 'Vocabulary',
-        path: '/about/vocabulary/'
+        name: 'Glossary',
+        path: '/about/glossary/'
       },
       {
         name: 'Benefits',
