@@ -34,6 +34,14 @@ const navigationData = [
     path: '/designing/'
   },
   {
+    name: 'Coding',
+    path: '/coding/'
+  },
+  {
+    name: 'Contributing',
+    path: '/contributing/'
+  },
+  {
     children: [
       {
         name: 'Color & Font',
