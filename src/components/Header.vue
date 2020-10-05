@@ -66,14 +66,14 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar-item {
-  order: 1;
-}
+// .navbar-item {
+//   order: 1;
+// }
 
-.navbar-burger.burger {
-  order: 0;
-  margin-left: 0;
-}
+// .navbar-burger.burger {
+//   order: 0;
+//   margin-left: 0;
+// }
 
 .brand-title {
   display: block;
