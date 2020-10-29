@@ -22,7 +22,7 @@
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "lyne-design-tokens": "^3.2.6",
     "lyne-helper-eslint-config": "~1.0.1",
-    "lyne-icons": "^4.9.0",
+    "lyne-icons": "^4.9.1",
     "lyne-test": "^9.6.7"
   },
   "devDependencies": {
