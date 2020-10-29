@@ -2,12 +2,12 @@ const navigationData = [
   {
     children: [
       {
-        name: 'Lyne in depth',
-        path: '/about/in-depth/'
+        name: 'Glossary',
+        path: '/about/glossary/'
       },
       {
-        name: 'Vocabulary',
-        path: '/about/vocabulary/'
+        name: 'Benefits',
+        path: '/about/benefits/'
       }
     ],
     name: 'All about Lyne',
@@ -32,6 +32,14 @@ const navigationData = [
     ],
     name: 'Designing',
     path: '/designing/'
+  },
+  {
+    name: 'Coding',
+    path: '/coding/'
+  },
+  {
+    name: 'Contributing',
+    path: '/contributing/'
   },
   {
     children: [

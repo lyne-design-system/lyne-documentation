@@ -1,6 +1,6 @@
-## Want to know Lyne more in depth?
+# Benefits
 
-Check out the following sections to get a more in depth overview:
+Want to know Lyne more in depth? Check out the following sections to get a more in depth overview and see the benefits which Lyne delivers for different teams and the entire SBB organization:
 
 - [What *Lyne* is and why we need it](#what-lyne-is-and-why-we-need-it)
 - [What *Lyne* consists of](#what-lyne-consists-of)

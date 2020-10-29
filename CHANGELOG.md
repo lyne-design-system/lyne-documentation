@@ -1,3 +1,25 @@
+## [1.23.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.5...v1.23.6) (2020-10-05)
+
+
+### Bug Fixes
+
+* revert burger position ([9bfd017](https://github.com/lyne-design-system/lyne-documentation/commit/9bfd0172e87611a7e7210e4790f32cb3b510f0f9))
+
+## [1.23.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.4...v1.23.5) (2020-10-05)
+
+
+### Bug Fixes
+
+* add eslint max-len to paragraph ([25e6b4b](https://github.com/lyne-design-system/lyne-documentation/commit/25e6b4be14117df09c9e44ae5f2d01908cc4fd34))
+* restructure navigation ([d03a7c5](https://github.com/lyne-design-system/lyne-documentation/commit/d03a7c50e5f4241a57b84e7da5283cb7fc1ffab5))
+
+## [1.23.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.3...v1.23.4) (2020-10-02)
+
+
+### Bug Fixes
+
+* fake commit to test release ([8c21e7e](https://github.com/lyne-design-system/lyne-documentation/commit/8c21e7e405bc909d8c913559e3980762ebfc66a2))
+
 ## [1.23.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.2...v1.23.3) (2020-10-01)
 
 

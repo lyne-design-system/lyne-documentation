@@ -20,10 +20,10 @@
       <h2 class="title is-5">Further Ressources</h2>
       <ul>
         <li>
-          <g-link to="/deployments/">Version history</g-link>
+          <g-link to="/deployments/">Storybook version history of lyne-components</g-link>
         </li>
         <li>
-          <g-link to="/playground/">Playground for CMS</g-link>
+          <g-link to="/playground/">CMS playground</g-link>
         </li>
       </ul>
 
