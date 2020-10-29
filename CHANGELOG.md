@@ -1,3 +1,10 @@
+## [1.23.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.6...v1.23.7) (2020-10-29)
+
+
+### Bug Fixes
+
+* use com instead of org for travis url ([d4c5975](https://github.com/lyne-design-system/lyne-documentation/commit/d4c5975d1bf61b7a3c90242cdf2df9f82d47f336))
+
 ## [1.23.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.5...v1.23.6) (2020-10-05)
 
 
