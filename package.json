@@ -15,7 +15,7 @@
     "@gridsome/source-graphql": "^0.1.0",
     "@stackblitz/sdk": "~1.5.1",
     "axios": "^0.21.0",
-    "buefy": "~0.9.3",
+    "buefy": "~0.9.4",
     "flexsearch": "~0.6.32",
     "gridsome": "^0.7.21",
     "gridsome-plugin-i18n": "^1.6.0",
