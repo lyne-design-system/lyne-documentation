@@ -1,3 +1,10 @@
+## [1.23.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.8...v1.23.9) (2020-11-02)
+
+
+### Bug Fixes
+
+* use g-link instead of a for internal links, fix link paths for exact match ([e0f476f](https://github.com/lyne-design-system/lyne-documentation/commit/e0f476fe415cf7249cb8040133f36551fde34247))
+
 ## [1.23.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.7...v1.23.8) (2020-11-02)
 
 
