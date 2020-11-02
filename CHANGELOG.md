@@ -1,3 +1,10 @@
+## [1.23.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.7...v1.23.8) (2020-11-02)
+
+
+### Bug Fixes
+
+* revert node-sass to version 4 until sass-loader issue is fixed ([f3fedb9](https://github.com/lyne-design-system/lyne-documentation/commit/f3fedb91c68723cc348b10df319f793624e4d02d))
+
 ## [1.23.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.6...v1.23.7) (2020-10-29)
 
 
