@@ -6,12 +6,12 @@
 
         <div class="content">
           <p>Lyne Design System is <span class="tag is-info">🧪 experimental</span> at the moment — with enthusiasm. Do not use the project until it has left infancy.</p>
-          <p><a href="/about" class="button is-primary">Learn more about Lyne</a></p>
+          <p><g-link to="/about/" class="button is-primary">Learn more about Lyne</g-link></p>
           <ul>
-            <li><a href="/designing">Start designing</a></li>
-            <li><a href="/coding">Start coding</a></li>
-            <li><a href="/writing">Start writing</a></li>
-            <li><a href="/contributing">Start contributing</a></li>
+            <li><g-link to="/designing/">Start designing</g-link></li>
+            <li><g-link to="/coding/">Start coding</g-link></li>
+            <li><g-link to="/writing/">Start writing</g-link></li>
+            <li><g-link to="/contributing/">Start contributing</g-link></li>
           </ul>
           <h4>Notice</h4>
           <!-- eslint-disable-next-line max-len -->
