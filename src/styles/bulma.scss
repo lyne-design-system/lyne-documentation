@@ -7,3 +7,32 @@
 // bulma and buefy core
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+// Lyne
+// Add biz mode capability
+.is-biz-mode {
+  // Hide most of the content
+  * {
+    // But keep the headers untouched to understand the document structure
+    p, ul li, div.notification {
+      text-decoration: line-through;
+      text-decoration-thickness: 1em;
+    }
+  }
+  // Except the highlighted content snippets
+  .is-highlighted {
+    display: inline-block;
+    text-decoration: none !important;
+    // Exclude headers from tweaking
+    &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+      margin: 0 1em;
+      font-weight: bold;
+    }
+    // Highlight where the money lies
+    &.show-cash:after {
+        font-size: 1.5em;
+        margin-left: .25em;
+        content: "💸";
+    }
+  }
+}
