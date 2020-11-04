@@ -14,6 +14,7 @@
             <li><g-link to="/designing/">Start designing</g-link></li>
             <li><g-link to="/coding/">Start coding</g-link></li>
             <li><g-link to="/contributing/">Start contributing</g-link></li>
+            <li><g-link to="/guidelines/">Our guidelines</g-link></li>
           </ul>
         </div>
       </div>
