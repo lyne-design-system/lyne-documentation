@@ -5,7 +5,7 @@
         <h1 class="title is-1">Lyne Design System</h1>
 
         <div class="content">
-          <p><g-link to="/about/" class="button is-primary">Learn more about Lyne</g-link></p>
+          <p><g-link to="/about/" class="button is-primary">All about Lyne</g-link></p>
           <ul>
             <li><g-link to="/designing/">Start designing</g-link></li>
             <li><g-link to="/coding/">Start coding</g-link></li>
