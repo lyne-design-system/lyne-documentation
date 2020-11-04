@@ -1,5 +1,5 @@
 
-<h1 class="title is-1">All about the Lyne Design System</h1>
+<h1 class="title is-1">All about Lyne Design System</h1>
 
 Lyne is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.
 
