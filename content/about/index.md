@@ -9,7 +9,7 @@ Lyne consists of working code, design tools, resources and documentation, but al
 
 Lyne empowers people and unites teams to work more efficiently and deliver more consistent experiences.
 
-<div class="notification is-primary is-light">Lyne is the <strong>product name</strong> which we chose for our design system. Therefore Lyne is not a bought of the self service or product.</div>
+<div class="notification is-primary is-light">Lyne is the <strong>product name</strong> we chose for our design system. Therefore Lyne is not a derived or bought of the self service or product. We are actively building and enhancing Lyne and so can you with your <a href="/contributing">contributions</a>.</div>
 
 ## Want to know Lyne more in depth?
 
