@@ -10,7 +10,7 @@ We are aiming to reach and meet all defined user groups (design, development, wr
 
 Content sections of pages are highlighted by braces `()`
 
-`Home` contains an introduction text with a link to *All about Lyne* and multiple teasers to link to the *Get started* guides for the most present Design System disciplines. *Start designing* and *Start developing* in the beginning, but at some point also *Start writing*(TBD), *Start contributing*, *What is happening* and *Guidelines*.
+`Home` contains an introduction text with a link to *All about Lyne* and multiple teasers to link to the *Get started* guides for the most present Design System disciplines. *Start designing* and *Start coding* in the beginning, but at some point also *Start writing*(TBD), *Start contributing*, *What is happening* and *Guidelines*.
 
 #### Proposed IA for left side navigation
 
