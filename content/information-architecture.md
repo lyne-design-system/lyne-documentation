@@ -19,7 +19,9 @@ Content sections of pages are highlighted by braces `()`
 
   Essentials, goals(see benefits for more details), What you get, How Lyne works, (Who we are &)How we work (team/processes/principles/QA/metrics/what we are working on/roadmap)
 
-  * Essentials & goals(also link to `Benefits`)
+  * Essentials
+  * Goals and Benefits
+    * (Management/Executive summary)
   * What you get
     * Artifacts
       * Components
@@ -55,7 +57,6 @@ Content sections of pages are highlighted by braces `()`
     * What we are working on
     * Roadmap (Where we are going)
 
-  * Benefits (Management/Executive summary)
   * Glossary (vocabulary/dictionary/common language/terminology/jargon)
   
   ##### Not yet included

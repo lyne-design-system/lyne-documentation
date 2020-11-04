@@ -1,6 +1,6 @@
-# Benefits
+# Goals and Benefits
 
-Want to know Lyne more in depth? Check out the following sections to get a more in depth overview and see the benefits which Lyne delivers for different teams and the entire SBB organization:
+The Lyne Design System — also just called *Lyne* — addresses multiple goals and creates a multitude of benefits and chances for different teams and the entire SBB organization.
 
 - [What *Lyne* is and why we need it](#what-lyne-is-and-why-we-need-it)
 - [What *Lyne* consists of](#what-lyne-consists-of)
@@ -9,13 +9,17 @@ Want to know Lyne more in depth? Check out the following sections to get a more 
 - [Potential which could be unlocked thanks to *Lyne*](#potential-which-could-be-unlocked-thanks-to-lyne)
 
 ### What *Lyne* is and why we need it
-The *[Lyne Design System](./02-vocabulary.mdx#lyne)* is a holistic approach towards a consistent, maintainable, cross-company design language for all SBB digital products/services for a better common understanding between stakeholders, content authors, designers and developers.
+*Lyne* creates a shared workspace for designers, developers and their stakeholders.
+
+The *Lyne Design System* is a holistic approach towards a consistent, maintainable, cross-company design language for all SBB [web|digital] products/services for a better common understanding between stakeholders, content authors, designers and developers.
 
 ### What *Lyne* consists of
-The *[Lyne Design System](./02-vocabulary.mdx#lyne)* is based on an intuitive, unique — the [Single Source of Truth](./02-vocabulary.mdx#ingle-source-of-truth) — referential resource, including shared and well-documented guidelines, [vocabulary](./02-vocabulary.mdx) and processes, design decisions (so called [Design Tokens](./02-vocabulary.mdx#design-token)), as well as centralized, vendor and framework agnostic basic building blocks ([Lyne Components](./02-vocabulary.mdx#lyne-components)).
+The *Lyne Design System* is based on an intuitive, unique — the Single Source of Truth — referential resource[this very website], including shared and well-documented guidelines, vocabulary and processes, design decisions (so called Design Tokens), as well as centralized, vendor and framework agnostic basic building blocks (Lyne Components).
 
 ### What *Lyne* does
-The *[Lyne Design System](./02-vocabulary.mdx#lyne)* not only enables an optimized collaboration and integration workflow between the [Design System Core Team](./02-vocabulary.mdx#design-system-core-team) and consumers of *[Lyne Design System](./02-vocabulary.mdx#lyne)* but also accelerates the creation and development process (time to market) in a sustainable, maintainable, and long term committed fashion.
+*Lyne* documents, standardizes and streamlines the design and development process for SBB [web|digital] experiences transparently and governs the design language of the SBB brand experience.
+
+The *Lyne Design System* not only enables an optimized collaboration and integration workflow between the Design System Core Team and consumers (e.g. product teams) of *Lyne Design System* but also accelerates the creation and development process (time to market) in a sustainable, maintainable, and long term committed fashion.
 
 ### *Lyne*'s advantages and the resulting (→) chances
 - One language/terminology

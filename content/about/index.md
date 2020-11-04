@@ -13,4 +13,52 @@ Lyne empowers people and unites teams to work more efficiently and deliver more 
 
 ## Want to know Lyne more in depth?
 
-Check out the following sections to learn about Lyne more in depth.
+Check out the following sections and get to know Lyne more in depth.
+
+* Essentials & goals(also link to `Benefits`)
+
+
+* What you get
+  * Artifacts
+    * Components
+    * Design Tokens
+    * Figma Team Library (with Styles & Components)
+    * Patterns
+  * Features
+    * Framework-agnostic components
+    * In-sync experiences
+    * Component level accessibility(a11y) baked in
+    * QA gates
+    * Shared common language
+    * Performance optimized components
+  * Resources
+    * Assets & tools
+
+
+* How Lyne works
+  * Structure/architecture
+  * How is everything related 
+  * For whom? (Show the different roles which profit from Lyne)
+
+
+* How we work (team/processes/principles)
+  * Code of conduct
+  * Who we are
+    * Core
+    * Community
+  * Link to `Guiding Principles`
+  * Governance model
+    * Component contribution process
+    * Link to `Contributing`
+  * QA
+    * In ... TUNE?
+    * In ... SHAPE?
+  * Metrics
+  * What we are working on
+  * Roadmap (Where we are going)
+
+
+* Benefits (Management/Executive summary)
+
+
+* Glossary (vocabulary/dictionary/common language/terminology/jargon)
