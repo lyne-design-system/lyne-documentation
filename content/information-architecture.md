@@ -55,9 +55,10 @@ Content sections of pages are highlighted by braces `()`
     * What we are working on
     * Roadmap (Where we are going)
 
-
   * Benefits (Management/Executive summary)
   * Glossary (vocabulary/dictionary/common language/terminology/jargon)
+  
+  ##### Not yet included
   * Gallery/Implementations/Examples based on Lyne
 </details>
 <details>
