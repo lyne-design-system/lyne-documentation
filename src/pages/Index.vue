@@ -10,7 +10,6 @@
           <ul>
             <li><g-link to="/designing/">Start designing</g-link></li>
             <li><g-link to="/coding/">Start coding</g-link></li>
-            <li><g-link to="/writing/">Start writing</g-link></li>
             <li><g-link to="/contributing/">Start contributing</g-link></li>
           </ul>
           <h4>Notice</h4>
