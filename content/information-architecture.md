@@ -4,18 +4,20 @@
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
 #### Notes
-Every menu item of the proposed IA above the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below the line aims to support returning users with day-to-day activities.
+Every menu item of the proposed IA which sits above the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below the line aims to support returning users with day-to-day needs and activities.
+
+We are aiming to reach and meet all defined user groups (design, development, writing, brand, mgmt, general) through the `Home` contents/links but also through the navigation tree.
 
 Content sections of pages are highlighted by braces `()`
 
-**Home** contains an introduction text and multiple teasers to link to the *Get started* guides of the most frequent used Design System disciplines. Design and Development in the beginning, but also Start contributing, What is happening and Guidelines.
+`Home` contains an introduction text with a link to *All about Lyne* and multiple teasers to link to the *Get started* guides for the most present Design System disciplines. *Start designing* and *Start developing* in the beginning, but also *Start contributing*, *What is happening* and *Guidelines*.  
 
 #### Proposed IA for left side navigation
 
 <details>
   <summary>All about Lyne</summary>
 
-  Essentials, goals(see benefits for more details), What you get, How Lyne works, (Who we are &)How we work (team/processes/principles)
+  Essentials, goals(see benefits for more details), What you get, How Lyne works, (Who we are &)How we work (team/processes/principles/QA/metrics/what we are working on/roadmap)
 
   * Essentials & goals(also link to `Benefits`)
   * What you get
