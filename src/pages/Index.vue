@@ -6,7 +6,7 @@
 
         <div class="content">
           <p>Lyne is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.</p>
-          <p>The system makes it easier for developers, designers and content authors to build, maintain, and scale digital products and experiences.</p>
+          <p>The system makes it easier for developers, designers and content authors to build, maintain, and scale [web|digital] products and experiences.</p>
           <p>We provide a common terminology, working code, design decisions, resources and human interface guidelines which all together define our shared, common language.</p>
           <p>Lyne empowers people and unites teams to work more efficiently and deliver more consistent experiences.</p>
           <p><g-link to="/about/" class="button is-primary">All about Lyne</g-link></p>
