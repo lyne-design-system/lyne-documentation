@@ -37,7 +37,8 @@ Content sections of pages are highlighted by braces `()`
       * Assets & tools
   * How Lyne works
     * Structure/architecture
-    * How is everything related
+    * How is everything related 
+    * For whom? (Show the different roles which profit from Lyne)
   * How we work (team/processes/principles)
     * Code of conduct
     * Who we are
