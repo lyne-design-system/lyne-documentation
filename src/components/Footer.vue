@@ -29,7 +29,7 @@
 
       <h2 class="title is-5">Notice</h2>
       <!-- eslint-disable-next-line max-len -->
-      <p>The state of the Lyne documentation platform is <em>work in progress (WIP)</em> and is inspired by <a href="https://carbondesignsystem.com">Carbon</a>, <a href="https://duetds.com">Duet</a>, <a href="https://boltdesignsystem.com">Bolt</a>, <a href="https://spectrum.adobe.com">Spectrum</a>. The documentation platform uses some of their content until Lyne will be mature enough/we are enough contributors from different disciplines to provide a more holistic perspective on the topic and the necessary resources get provided to document them accordingly.</p>
+      <p>We intend to build the Lyne documentation platform based on the <a href="https://github.com/lyne-design-system/lyne-documentation/blob/master/content/information-architecture.md">here documented Information Architecture(IA)</a> and will enhance the documentation platform once we have the content available. The state of the Lyne documentation platform is, and will always be — like the entire system, <em>work in progress (WIP)</em> — inspired by <a href="https://carbondesignsystem.com">Carbon</a>, <a href="https://duetds.com">Duet</a>, <a href="https://boltdesignsystem.com">Bolt</a>, <a href="https://spectrum.adobe.com">Spectrum</a>. The documentation platform uses some of their content until Lyne will be mature enough/we are enough contributors from different disciplines to provide a more holistic perspective on the topic and the necessary resources get provided to document them accordingly.</p>
       <p>Lyne Design System is <span class="tag is-info">🧪 experimental</span> at the moment — with enthusiasm. Do not use the project until it has left infancy.</p>
 
     </div>
