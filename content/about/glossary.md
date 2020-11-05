@@ -1,7 +1,7 @@
 # Glossary
 
 ## A-Z
-This glossary defines our common vocabulary used throughout [Lyne Design System](#lyne) for a better common understanding for and between all disciplines. We try to list just the necessary terms to get you started and to help you to have better understanding of [Lyne](#lyne). If you miss something important please let us know and open a new [documentation issue](https://github.com/lyne-design-system/lyne/issues/new?template=00-documentation-issue.md).
+This glossary defines our common vocabulary used throughout [Lyne Design System](#lyne) for a better common understanding between all disciplines. We try to list just the necessary terms to get you started and to help you to have better understanding of [Lyne](#lyne). If you miss something important please let us know and open a new [documentation issue](https://github.com/lyne-design-system/lyne/issues/new?template=00-documentation-issue.md).
 
 ### Component
 We define a *Component* as the smallest possible functional building block. *Components* are reusable and can be composed to [Composed Components](#composed-components). A *Component* is not a [Design Token](#design-token) but a *Component* can be built based on one or multiple Design Tokens. Within the [Lyne](#lyne) Design System a component is  always represented [Lyne Component](#lyne-component) — a [Web Component](#web-component) technically speaking. An example of a *Component* is a button which uses different Design Tokens for it's visual representation.
