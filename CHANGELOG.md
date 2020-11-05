@@ -1,3 +1,11 @@
+# [1.24.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.9...v1.24.0) (2020-11-05)
+
+
+### Features
+
+* add biz mode ([4438bb5](https://github.com/lyne-design-system/lyne-documentation/commit/4438bb56a517745b55863bc00b9f150e60961e40))
+* rename biz mode into beeeep mode, add 2 more gains ([7e32cd1](https://github.com/lyne-design-system/lyne-documentation/commit/7e32cd1bb43e699565d89bc61171013a35d93bdd))
+
 ## [1.23.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.8...v1.23.9) (2020-11-02)
 
 

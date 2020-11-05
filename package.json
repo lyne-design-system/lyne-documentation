@@ -1,6 +1,6 @@
 {
   "name": "lyne-documentation",
-  "version": "1.23.9",
+  "version": "1.24.0",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
