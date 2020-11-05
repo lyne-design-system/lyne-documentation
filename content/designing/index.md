@@ -1,10 +1,12 @@
 
-To fulfill our vision, we are building and maintaining [Lyne](./02-vocabulary.mdx#lyne), our [Design System](./02-vocabulary.mdx#design-system). For this purpose we use [Design Tokens](./02-vocabulary.mdx#design-token) as our design abstractions. Those Design Tokens are defined and maintained within Figma, transformed to multiple formats, published and are then consumed by [Lyne Components](./02-vocabulary.mdx#lyne-components) via our [Design (Token) API](./02-vocabulary.mdx#design-token-api) and are integrated within our documentation platform.
+<h1 class="title is-1">Designing with Lyne</h1>
 
-- Figma Team Library
-- Lyne Design Tokens are defined and modified within the Figma and published as Styles to the Team Lib. but also published to npm 
-- Lyne Components
-...
+Lyne provides certain artifacts for designer to get you up and running, namely:
 
-Lyne Design Tokens and Lyne Components are available for designer on Figma.
+* Design Patterns
+* Design Tokens (as Figma Styles within the Figma Team Library)
+* Components (as Figma Components within the Figma Team Library)
 
+Lyne Design Tokens are defined and modified within Figma and published as Styles to the Figma Team Lib. and also published to npm to be consumed through code. See [How everything is related](/about/how-lyne-works#how-everything-is-related).
+
+Check out our [Design Kits](/designing/design-kits).

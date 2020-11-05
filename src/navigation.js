@@ -2,8 +2,20 @@ const navigationData = [
   {
     children: [
       {
-        name: 'Benefits',
+        name: 'Goals and Benefits',
         path: '/about/goals-and-benefits/'
+      },
+      {
+        name: 'What you get',
+        path: '/about/what-you-get/'
+      },
+      {
+        name: 'How Lyne works',
+        path: '/about/how-lyne-works/'
+      },
+      {
+        name: 'How we work',
+        path: '/about/how-we-work/'
       },
       {
         name: 'Glossary',
@@ -38,8 +50,28 @@ const navigationData = [
     path: '/coding/'
   },
   {
+    children: [
+      {
+        name: 'Component',
+        path: '/contributing/component/'
+      }
+    ],
     name: 'Contributing',
     path: '/contributing/'
+  },
+  {
+    children: [
+      {
+        name: 'Guiding Principles',
+        path: '/guidelines/principles/'
+      },
+      {
+        name: 'Naming',
+        path: '/guidelines/naming/'
+      }
+    ],
+    name: 'Guidelines',
+    path: '/guidelines/'
   },
   {
     children: [
@@ -52,7 +84,7 @@ const navigationData = [
         path: '/tokens/icons/'
       }
     ],
-    name: 'Tokens',
+    name: 'Design Tokens',
     path: '/tokens/'
   },
   {
