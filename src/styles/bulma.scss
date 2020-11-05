@@ -9,8 +9,8 @@
 @import "~buefy/src/scss/buefy";
 
 // Lyne
-// Add biz mode capability
-.is-biz-mode {
+// Add biz or beeeep mode capability
+.is-beep-mode {
   // Hide most of the content
   * {
     // But keep the headers untouched to understand the document structure
@@ -28,11 +28,25 @@
       margin: 0 1em;
       font-weight: bold;
     }
-    // Highlight where the money lies
+    &:after {
+      //font-size: 1.5em;
+      margin-left: .25em;
+    }
+    // Highlight where to save money
     &.show-cash:after {
-        font-size: 1.5em;
-        margin-left: .25em;
         content: "💸";
     }
+    // Highlight where to save time
+    &.show-rocket:after {
+      content: "🚀";
+    }
+    // Highlight where to save time and money
+    &.show-rocket-and-cash:after {
+      content: "🚀 💸";
+    }
+    // Highlight where to celebrate
+    &.show-party:after {
+      content: "🥳";
+    } 
   }
 }
