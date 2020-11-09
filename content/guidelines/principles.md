@@ -4,11 +4,10 @@ Lyne's Guiding Principles are derived from the SBB brand values and SBB UX princ
 
 **Lyne is user-centered and empowering**.
 
-**Lyne is holistic and flexible**.
+**Lyne is holistic and inclusive**.
 
 **Lyne encourages performance & sustainability**.
 
 **Lyne is modular and flexible**.
 
 **Lyne fosters consistency and cohesiveness**.
-
