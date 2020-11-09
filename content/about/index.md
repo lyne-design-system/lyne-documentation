@@ -47,7 +47,7 @@ See the [How we work](/about/how-we-work/) section to meet our processes, our te
 ### Glossary
 A Design System is a complex topic and introduces many new concepts, new tools and has its very distinct vocabulary, terminology and jargon.
 
-Due to that we created a [glossary](/about/glossary/). Its the base of our shared language for a better common understanding a clear communication.
+Due to that we created a [glossary](/about/glossary/). It's the base of our shared language for a better common understanding and a clear communication.
 
 The glossary acts as our dictionary since people from different disciplines are participating within the Lyne Design System.
 
