@@ -17,7 +17,7 @@
     "axios": "^0.21.0",
     "buefy": "~0.9.4",
     "flexsearch": "~0.6.32",
-    "gridsome": "^0.7.21",
+    "gridsome": "^0.7.22",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.5.0",
     "lyne-design-tokens": "^3.2.6",
