@@ -1,3 +1,15 @@
+# [1.25.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.24.0...v1.25.0) (2020-11-11)
+
+
+### Bug Fixes
+
+* ternary linting ([f0bed17](https://github.com/lyne-design-system/lyne-documentation/commit/f0bed1716911cff2748ed06492c831eb12c697e2))
+
+
+### Features
+
+* add beep mode toggle ([4d14043](https://github.com/lyne-design-system/lyne-documentation/commit/4d14043095406e580e2dd687454b4f4780f3ce32))
+
 # [1.24.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.23.9...v1.24.0) (2020-11-05)
 
 
