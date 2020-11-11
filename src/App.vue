@@ -18,7 +18,9 @@ export default {
   },
   methods: {
     toggleMode() {
-      this.mode = this.mode === 'is-mode-detail' ? 'is-mode-beep' : 'is-mode-detail'
+      this.mode = this.mode === 'is-mode-detail'
+        ? 'is-mode-beep'
+        : 'is-mode-detail';
     }
   }
 };
