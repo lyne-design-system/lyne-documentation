@@ -45,7 +45,7 @@
     "node-sass": "~5.0.0",
     "sass-loader": "^10.1.0",
     "semantic-release": "^17.2.3",
-    "semantic-release-slack-bot": "^1.6.2",
+    "semantic-release-slack-bot": "^1.7.0",
     "style-resources-loader": "^1.4.1",
     "vue-eslint-parser": "^7.1.1",
     "vue-svg-loader": "^0.16.0"
