@@ -44,7 +44,7 @@
     "netlify-cli": "^2.70.0",
     "node-sass": "~5.0.0",
     "sass-loader": "^10.1.0",
-    "semantic-release": "^17.3.1",
+    "semantic-release": "^17.3.4",
     "semantic-release-slack-bot": "^1.7.0",
     "style-resources-loader": "^1.4.1",
     "vue-eslint-parser": "^7.3.0",
