@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.26.0...v1.27.0) (2021-01-29)
+
+
+### Features
+
+* add mermaid config ([b63f780](https://github.com/lyne-design-system/lyne-documentation/commit/b63f7805c683d3a09c16a1af88021dab05e54a8c))
+
 # [1.26.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.25.0...v1.26.0) (2021-01-29)
 
 
