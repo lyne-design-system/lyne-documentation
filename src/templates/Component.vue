@@ -13,15 +13,11 @@
             <h2>Variant: {{comp.title}}</h2>
             <p>Description: {{comp.description}}</p>
 
-            <button
-              class="button"
-              @click='openStackblitz(comp, $page.component.component.componentName)'
-            >
-              <span>Edit on Stackblitz</span>
-              <span class="icon is-small">
-                <i class="mdi mdi-launch"></i>
-              </span>
-            </button>
+            <Codepen :contents='{
+              "title": `Lyne Components Sandbox: ${$page.component.component.componentName}`,
+              "html": codepenHtml(comp, $page.component.component.componentName)
+              }'
+            />
 
             <h3>Preview</h3>
             <component
@@ -75,23 +71,16 @@ query(
 </page-query>
 
 <script>
-import stackblitz from '../helpers/stackblitz';
+import Codepen from '../components/Codepen.vue';
+import codepen from '../helpers/codepen';
 
 export default {
+  components: {
+    Codepen
+  },
   methods: {
-    openStackblitz(elem, name) {
-
-      const properties = Object.entries(elem.properties)
-        .map(([
-          key,
-          val
-        ]) => `${key}="${val}"`)
-        .join(' ');
-
-      const description = `Lyne Components: ${name}`;
-      const element = `<${name} ${properties}"></${name}>`;
-
-      stackblitz(description, element);
+    codepenHtml(elem, name) {
+      return codepen(elem, name);
     }
   },
   mounted() {
