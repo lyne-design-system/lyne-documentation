@@ -57,6 +57,12 @@ module.exports = {
     remark: {
       plugins: [
         [
+          'gridsome-plugin-remark-mermaid',
+          {
+            theme: 'default'
+          }
+        ],
+        [
           'gridsome-plugin-remark-shiki',
           {
             skipInline: false
