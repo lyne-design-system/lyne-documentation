@@ -1,3 +1,17 @@
+# [1.26.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.25.0...v1.26.0) (2021-01-29)
+
+
+### Bug Fixes
+
+* remove stackblitz helper ([5d85a7d](https://github.com/lyne-design-system/lyne-documentation/commit/5d85a7df276ab7cb51ebd72ea60edfe889c4050c))
+
+
+### Features
+
+* add codepen button, remove stackblitz button ([664c424](https://github.com/lyne-design-system/lyne-documentation/commit/664c424c5b199bc9c841dec7109da7dea83dfc91))
+* add component for codepen button ([eb34782](https://github.com/lyne-design-system/lyne-documentation/commit/eb34782200dab3c441910e837efe7bc12314800e))
+* add helper to generate codepen html ([3a0eb44](https://github.com/lyne-design-system/lyne-documentation/commit/3a0eb4482f89bbf684f763ed63db20c78557cb1d))
+
 # [1.25.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.24.0...v1.25.0) (2020-11-11)
 
 
