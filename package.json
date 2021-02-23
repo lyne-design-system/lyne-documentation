@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "~0.6.2",
     "@gridsome/transformer-remark": "~0.6.4",
