@@ -1,3 +1,11 @@
+## [1.27.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.0...v1.27.1) (2021-03-02)
+
+
+### Bug Fixes
+
+* add previous package-lock as backup ([e88493f](https://github.com/lyne-design-system/lyne-documentation/commit/e88493f60dcc38315f2b6bb861ac6e674be7242b))
+* install node-sass 4.14 ([87e1d23](https://github.com/lyne-design-system/lyne-documentation/commit/87e1d234fb9807b1d18183651467affeca67b043))
+
 # [1.27.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.26.0...v1.27.0) (2021-01-29)
 
 
