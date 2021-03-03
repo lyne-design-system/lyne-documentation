@@ -1,6 +1,6 @@
 {
   "name": "lyne-documentation",
-  "version": "1.27.1",
+  "version": "1.27.2",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
@@ -22,7 +22,7 @@
     "lyne-design-tokens": "^3.3.20",
     "lyne-helper-eslint-config": "~1.0.4",
     "lyne-icons": "^4.10.1",
-    "lyne-test": "^9.9.17"
+    "lyne-test": "^9.9.18"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
