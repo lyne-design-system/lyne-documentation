@@ -25,7 +25,7 @@
     "lyne-test": "^9.9.18"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
+    "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^11.0.0",
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "~0.6.2",
