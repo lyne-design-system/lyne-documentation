@@ -42,7 +42,7 @@
     "gridsome-plugin-remark-mermaid": "~1.0.1",
     "husky": "^4.3.8",
     "netlify-cli": "^3.10.3",
-    "node-sass": "~4.14.1",
+    "node-sass": "~5.0.0",
     "sass-loader": "^10.1.1",
     "semantic-release": "^17.3.7",
     "semantic-release-slack-bot": "^2.1.0",
