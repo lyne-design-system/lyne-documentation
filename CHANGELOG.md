@@ -1,3 +1,10 @@
+## [1.27.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.1...v1.27.2) (2021-03-03)
+
+
+### Bug Fixes
+
+* enable dependabot after demo ([11a4707](https://github.com/lyne-design-system/lyne-documentation/commit/11a470746b29f95306936c7a5eb205ba8b66e117))
+
 ## [1.27.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.0...v1.27.1) (2021-03-02)
 
 
