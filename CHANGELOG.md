@@ -1,3 +1,10 @@
+## [1.27.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.2...v1.27.3) (2021-05-06)
+
+
+### Bug Fixes
+
+* set node-sass fixed version 4.14.1 ([a511a21](https://github.com/lyne-design-system/lyne-documentation/commit/a511a2124cc976fd5d986e001ad0ce7718479495))
+
 ## [1.27.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.1...v1.27.2) (2021-03-03)
 
 
