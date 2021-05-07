@@ -1,3 +1,10 @@
+## [1.27.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.3...v1.27.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* install node-sass latest ([a73081b](https://github.com/lyne-design-system/lyne-documentation/commit/a73081b62c61049b0287ab3099f189ab2d20c303))
+
 ## [1.27.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.2...v1.27.3) (2021-05-06)
 
 
