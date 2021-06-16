@@ -65,7 +65,7 @@
 </template>
 
 <script>
-const designTokens = require('lyne-design-tokens/dist/js/tokens.umd.js');
+const designTokens = require('lyne-design-tokens/dist/js/tokens.umd');
 const sortHelper = require('../../helpers/sort');
 
 const generateTokens = (json, _finalJson) => {
