@@ -1,3 +1,10 @@
+## [1.27.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.4...v1.27.5) (2021-06-16)
+
+
+### Bug Fixes
+
+* fix linting issue ([10d6301](https://github.com/lyne-design-system/lyne-documentation/commit/10d6301edb5dd3f931656dd637a76d8f5e1f585b))
+
 ## [1.27.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.3...v1.27.4) (2021-05-07)
 
 
