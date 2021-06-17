@@ -38,7 +38,7 @@
     "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-vue": "~7.9.0",
-    "eslint-plugin-yaml": "^0.4.2",
+    "eslint-plugin-yaml": "^0.5.0",
     "gridsome-plugin-remark-mermaid": "~1.0.1",
     "husky": "^6.0.0",
     "netlify-cli": "^3.28.0",
