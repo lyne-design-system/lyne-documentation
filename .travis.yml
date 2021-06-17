@@ -23,10 +23,10 @@ jobs:
     script:
     # prepare git for pushes
     - git remote set-url origin https://lyne-design-system:$GH_TOKEN@github.com/lyne-design-system/lyne-documentation.git || travis_terminate 1
-    - git checkout master
-    - git pull
-    - npm install
-    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save
+    - git checkout master || travis_terminate 1
+    - git pull || travis_terminate 1
+    - npm install || travis_terminate 1
+    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
     - npm run lint || travis_terminate 1
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
     after_success:
