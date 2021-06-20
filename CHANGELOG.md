@@ -1,3 +1,12 @@
+## [1.27.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.5...v1.27.6) (2021-06-20)
+
+
+### Bug Fixes
+
+* disable graviton ([09f68c6](https://github.com/lyne-design-system/lyne-documentation/commit/09f68c6b75bfab1190d319bf044bfddebfe8856c))
+* fail build if step fails ([27d46ea](https://github.com/lyne-design-system/lyne-documentation/commit/27d46ea4c2416f2c79e0ba096f912dd1b42a6aa4))
+* manually update semantic-release ([9d48c9b](https://github.com/lyne-design-system/lyne-documentation/commit/9d48c9b5301aff707d572ccc247feccc46910760))
+
 ## [1.27.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.4...v1.27.5) (2021-06-16)
 
 
