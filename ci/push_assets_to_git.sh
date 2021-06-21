@@ -16,6 +16,9 @@ then
   then
     echo "-->> No version file found, therefore manually push package.json back"
 
+    git config user.email "lyne-design-system@sbb.ch"
+    git config user.name "Lyne Design System Bot"
+
     git add package.json
     git add package-lock.json
     git commit -m "chore: updating lyne-components, lyne-icons, lyne-design-tokens [skip ci]"
