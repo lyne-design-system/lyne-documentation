@@ -1,3 +1,10 @@
+## [1.27.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.7...v1.27.8) (2021-07-01)
+
+
+### Bug Fixes
+
+* size icons correctly ([4822445](https://github.com/lyne-design-system/lyne-documentation/commit/48224459cbd78c6cce464405e100d45e488d5894))
+
 ## [1.27.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.6...v1.27.7) (2021-07-01)
 
 
