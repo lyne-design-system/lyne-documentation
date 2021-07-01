@@ -95,7 +95,7 @@
                 v-for='(icon) in $data.icons'
                 :key='icon.id'
               >
-                <td>
+                <td class="iconCell">
                   <span
                     v-html='icon.svg'
                     class='iconToken'
@@ -103,12 +103,12 @@
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
-                <td>{{icon.description}}</td>
-                <td>{{icon.id}}</td>
-                <td>{{icon.name}}</td>
-                <td>{{icon.variant}}</td>
-                <td>{{icon.type}}</td>
-                <td>{{icon.category}}</td>
+                <td class="textCell">{{icon.description}}</td>
+                <td class="textCell">{{icon.id}}</td>
+                <td class="textCell">{{icon.name}}</td>
+                <td class="textCell">{{icon.variant}}</td>
+                <td class="textCell">{{icon.type}}</td>
+                <td class="textCell">{{icon.category}}</td>
 
               </tr>
             </tbody>
@@ -265,8 +265,16 @@ export default {
     vertical-align: middle;
   }
 
+  table td.iconCell {
+    vertical-align: middle;
+    padding: 0;
+  }
+
   .iconToken {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .iconToken.small {
@@ -284,18 +292,17 @@ export default {
     height: 48px;
   }
 
-  .iconToken svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-  }
-
   .iconToken.color-black {
     color: black;
   }
 
   .iconToken.color-primary {
     color: red;
+  }
+
+  .iconToken svg {
+    display: block;
+    fill: currentColor;
   }
 
 </style>
