@@ -4,44 +4,80 @@
       <div class="container">
         <h1 class="title is-1">Icons</h1>
 
+        <!-- Color switch -->
+        <div class="block">
+          <p>Color:</p>
+
+          <b-radio
+            v-for="(colorVariant, index) in $data.colorOptions"
+            :key="index"
+            v-model="color"
+            name="color"
+            :native-value="colorVariant.value"
+          >
+            {{colorVariant.name}}
+          </b-radio>
+        </div>
+
+        <!-- Filter size -->
         <div class="block">
             <p>Size variant:</p>
-            <b-radio v-model="size"
-                @change.native="handleSizeChange('small')"
-                name="size"
-                native-value="small">
-                Small
-            </b-radio>
-            <b-radio v-model="size"
-                @change.native="handleSizeChange('medium')"
-                name="size"
-                native-value="medium">
-                Medium
-            </b-radio>
-            <b-radio v-model="size"
-                @change.native="handleSizeChange('large')"
-                name="size"
-                native-value="large">
-                Large
+
+            <b-radio
+              v-for="(variantSize, index) in $data.filterOptions.size"
+              :key="index"
+              v-model="filterValues.size"
+              @change.native="handleFilterChange(variantSize.value)"
+              name="size"
+              :native-value="variantSize.value"
+            >
+              {{variantSize.name}}
             </b-radio>
         </div>
 
+        <!-- Filter type -->
         <div class="block">
-            <p>Color:</p>
-            <b-radio v-model="color"
-                name="color"
-                native-value="color-black">
-                Black
-            </b-radio>
-            <b-radio v-model="color"
-                name="color"
-                native-value="color-primary">
-                Primary Color
-            </b-radio>
+          <p>Icon Type:</p>
+
+          <b-select
+            v-model="filterValues.type"
+            @change.native="handleFilterChange"
+            placeholder="Choose a type"
+          >
+            <option
+              v-for="(typeVariant, index) in $data.filterOptions.type"
+              :value="typeVariant"
+              :key="index"
+            >
+              {{ typeVariant }}
+            </option>
+
+          </b-select>
+        </div>
+
+        <!-- Filter category -->
+        <div class="block">
+          <p>Icon Category:</p>
+
+          <b-select
+            v-model="filterValues.category"
+            @change.native="handleFilterChange"
+            placeholder="Choose a category"
+          >
+            <option
+              v-for="(categoryVariant, index) in $data.filterOptions.category"
+              :value="categoryVariant"
+              :key="index"
+            >
+              {{ categoryVariant }}
+            </option>
+
+          </b-select>
         </div>
 
         <div class="content">
-          <table class="table is-fullwidth">
+          <p v-if="$data.icons.length === 0">No icons to display</p>
+          <table class="table is-fullwidth" v-if="$data.icons.length > 0">
             <thead>
               <tr>
                 <th>Icon</th>
@@ -87,29 +123,137 @@
 const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 const sortHelper = require('../../helpers/sort');
 
-const defaultVariant = 'small';
-const filterIconsBySizeVariant = (size) => lyneIcons.filter((icon) => icon.variant === size);
+/**
+ * Filter icons
+ */
+const filterIconsBySizeVariant = (size, icons) => {
+  if (!size) {
+    return icons;
+  }
 
-const getIcons = (size) => {
-  const iconsForVariant = filterIconsBySizeVariant(size);
-  const sortedIcons = sortHelper(iconsForVariant, 'name');
+  return icons.filter((icon) => icon.variant === size);
+};
+
+const filterIconsByCategory = (category, icons) => {
+  if (category === 'All') {
+    return icons;
+  }
+
+  return icons.filter((icon) => icon.category === category);
+};
+
+const filterIconsByType = (type, icons) => {
+  if (type === 'All') {
+    return icons;
+  }
+
+  return icons.filter((icon) => icon.type === type);
+};
+
+const filterIcons = (filterValues, icons) => {
+  const _size = filterIconsBySizeVariant(filterValues.size, icons);
+  const _type = filterIconsByType(filterValues.type, _size);
+  const _category = filterIconsByCategory(filterValues.category, _type);
+  const sortedIcons = sortHelper(_category, 'name');
 
   return sortedIcons;
 };
 
-const icons = getIcons(defaultVariant);
+/**
+ * Filter options
+ */
+
+const sizeOptions = [
+  {
+    name: 'All',
+    value: false
+  },
+  {
+    name: 'Small',
+    value: 'small'
+  },
+  {
+    name: 'Medium',
+    value: 'medium'
+  },
+  {
+    name: 'Large',
+    value: 'large'
+  }
+];
+
+const colorOptions = [
+  {
+    name: 'Default color',
+    value: 'color-black'
+  },
+  {
+    name: 'Primary color',
+    value: 'color-primary'
+  }
+];
+
+const typeOptions = () => {
+  const options = ['All'];
+
+  lyneIcons.forEach((icon) => {
+    const {
+      type
+    } = icon;
+
+    if (options.indexOf(type) < 0) {
+      options.push(type);
+    }
+
+  });
+
+  return options;
+};
+
+const categoryOptions = () => {
+  const options = ['All'];
+
+  lyneIcons.forEach((icon) => {
+    const {
+      category
+    } = icon;
+
+    if (options.indexOf(category) < 0) {
+      options.push(category);
+    }
+
+  });
+
+  return options;
+};
+
+const filterOptions = {
+  category: categoryOptions(),
+  size: sizeOptions,
+  type: typeOptions()
+};
+
+const filterValues = {
+  category: categoryOptions()[0],
+  size: sizeOptions[1].value,
+  type: typeOptions()[0]
+};
+
+const icons = filterIcons(filterValues, lyneIcons);
 
 export default {
   data() {
     return {
       color: 'color-black',
-      icons,
-      size: defaultVariant
+      colorOptions,
+      filterOptions,
+      filterValues,
+      icons
     };
   },
   methods: {
-    handleSizeChange(size) {
-      this.$data.icons = getIcons(size);
+    handleFilterChange() {
+      this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
     }
   }
 };
