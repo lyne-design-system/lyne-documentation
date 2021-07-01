@@ -42,6 +42,7 @@
                   <span
                     v-html='icon.svg'
                     class='iconToken'
+                    :class="$data.size"
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
@@ -93,8 +94,21 @@ export default {
 
   .iconToken {
     display: block;
-    width: 3rem;
-    height: 3rem;
+  }
+
+  .iconToken.small {
+    width: 24px;
+    height: 24px;
+  }
+
+  .iconToken.medium {
+    width: 36px;
+    height: 36px;
+  }
+
+  .iconToken.large {
+    width: 48px;
+    height: 48px;
   }
 
   .iconToken svg {
