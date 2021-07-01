@@ -26,7 +26,7 @@ export default (Vue, {
   /* eslint-enable no-param-reassign */
 
   head.link.push({
-    href: 'https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css',
+    href: 'https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css',
     rel: 'stylesheet'
   });
 
