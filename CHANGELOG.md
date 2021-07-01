@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.28.0...v1.29.0) (2021-07-01)
+
+
+### Features
+
+* add color switch for icons ([a85d665](https://github.com/lyne-design-system/lyne-documentation/commit/a85d66504d35942cf209760041b306cd07a6cf95))
+
 # [1.28.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.8...v1.28.0) (2021-07-01)
 
 
