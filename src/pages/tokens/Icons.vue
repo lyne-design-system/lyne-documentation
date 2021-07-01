@@ -30,7 +30,13 @@
             <thead>
               <tr>
                 <th>Icon</th>
-                <th>Name</th>
+                <th>fullName</th>
+                <th>description</th>
+                <th>id</th>
+                <th>name</th>
+                <th>variant</th>
+                <th>type</th>
+                <th>category</th>
               </tr>
             </thead>
             <tbody>
@@ -46,6 +52,13 @@
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
+                <td>{{icon.description}}</td>
+                <td>{{icon.id}}</td>
+                <td>{{icon.name}}</td>
+                <td>{{icon.variant}}</td>
+                <td>{{icon.type}}</td>
+                <td>{{icon.category}}</td>
+
               </tr>
             </tbody>
           </table>
