@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.29.0...v1.30.0) (2021-07-01)
+
+
+### Features
+
+* add filters for category and type ([9558e37](https://github.com/lyne-design-system/lyne-documentation/commit/9558e379b6fad5f26d9c390f4dc60c6bcfb3bb99))
+
 # [1.29.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.28.0...v1.29.0) (2021-07-01)
 
 
