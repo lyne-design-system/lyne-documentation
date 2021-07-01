@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.8...v1.28.0) (2021-07-01)
+
+
+### Features
+
+* add all meta info ([70b9312](https://github.com/lyne-design-system/lyne-documentation/commit/70b9312d956a1f78b3a9e18e33b815795c249cf2))
+
 ## [1.27.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.7...v1.27.8) (2021-07-01)
 
 
