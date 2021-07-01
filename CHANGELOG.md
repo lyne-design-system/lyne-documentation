@@ -1,3 +1,10 @@
+## [1.27.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.6...v1.27.7) (2021-07-01)
+
+
+### Bug Fixes
+
+* add radios to switch icon variants ([edcaf4a](https://github.com/lyne-design-system/lyne-documentation/commit/edcaf4a37c697ab93b830f076b46d040cec82fcc))
+
 ## [1.27.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.27.5...v1.27.6) (2021-06-20)
 
 
