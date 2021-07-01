@@ -5,23 +5,38 @@
         <h1 class="title is-1">Icons</h1>
 
         <div class="block">
+            <p>Size variant:</p>
             <b-radio v-model="size"
-                @change.native="handleRadioChange('small')"
+                @change.native="handleSizeChange('small')"
                 name="size"
                 native-value="small">
                 Small
             </b-radio>
             <b-radio v-model="size"
-                @change.native="handleRadioChange('medium')"
+                @change.native="handleSizeChange('medium')"
                 name="size"
                 native-value="medium">
                 Medium
             </b-radio>
             <b-radio v-model="size"
-                @change.native="handleRadioChange('large')"
+                @change.native="handleSizeChange('large')"
                 name="size"
                 native-value="large">
                 Large
+            </b-radio>
+        </div>
+
+        <div class="block">
+            <p>Color:</p>
+            <b-radio v-model="color"
+                name="color"
+                native-value="color-black">
+                Black
+            </b-radio>
+            <b-radio v-model="color"
+                name="color"
+                native-value="color-primary">
+                Primary Color
             </b-radio>
         </div>
 
@@ -48,7 +63,7 @@
                   <span
                     v-html='icon.svg'
                     class='iconToken'
-                    :class="$data.size"
+                    :class="[$data.size ? $data.size : null, $data.color ? $data.color : null]"
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
@@ -87,12 +102,13 @@ const icons = getIcons(defaultVariant);
 export default {
   data() {
     return {
+      color: 'color-black',
       icons,
       size: defaultVariant
     };
   },
   methods: {
-    handleRadioChange(size) {
+    handleSizeChange(size) {
       this.$data.icons = getIcons(size);
     }
   }
@@ -127,6 +143,15 @@ export default {
   .iconToken svg {
     width: 100%;
     height: 100%;
+    fill: currentColor;
+  }
+
+  .iconToken.color-black {
+    color: black;
+  }
+
+  .iconToken.color-primary {
+    color: red;
   }
 
 </style>
