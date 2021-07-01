@@ -1,3 +1,10 @@
+## [1.30.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.0...v1.30.1) (2021-07-01)
+
+
+### Bug Fixes
+
+* align icons inside table ([df9e55c](https://github.com/lyne-design-system/lyne-documentation/commit/df9e55c873d88526dae7188b3f1a163ea18858eb))
+
 # [1.30.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.29.0...v1.30.0) (2021-07-01)
 
 
