@@ -1,3 +1,10 @@
+## [1.30.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.1...v1.30.2) (2021-07-01)
+
+
+### Bug Fixes
+
+* reorder columns ([43b6360](https://github.com/lyne-design-system/lyne-documentation/commit/43b63604fc9140fa09cbbae9eb4acd3f99bd5985))
+
 ## [1.30.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.0...v1.30.1) (2021-07-01)
 
 
