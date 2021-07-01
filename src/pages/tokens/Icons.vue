@@ -81,13 +81,13 @@
             <thead>
               <tr>
                 <th>Icon</th>
-                <th>fullName</th>
-                <th>description</th>
-                <th>id</th>
                 <th>name</th>
                 <th>variant</th>
+                <th>fullName</th>
                 <th>type</th>
                 <th>category</th>
+                <th>description</th>
+                <th>id</th>
               </tr>
             </thead>
             <tbody>
@@ -102,13 +102,13 @@
                     :class="[$data.size ? $data.size : null, $data.color ? $data.color : null]"
                   ></span>
                 </td>
-                <td class="textCell">{{icon.fullName}}</td>
-                <td class="textCell">{{icon.description}}</td>
-                <td class="textCell">{{icon.id}}</td>
                 <td class="textCell">{{icon.name}}</td>
                 <td class="textCell">{{icon.variant}}</td>
+                <td class="textCell">{{icon.fullName}}</td>
                 <td class="textCell">{{icon.type}}</td>
                 <td class="textCell">{{icon.category}}</td>
+                <td class="textCell">{{icon.description}}</td>
+                <td class="textCell">{{icon.id}}</td>
 
               </tr>
             </tbody>
