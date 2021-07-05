@@ -22,7 +22,7 @@
     "lyne-design-tokens": "^3.4.1",
     "lyne-helper-eslint-config": "~1.0.4",
     "lyne-icons": "^4.12.7",
-    "lyne-test": "^9.21.4"
+    "lyne-test": "^9.21.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
