@@ -1,3 +1,10 @@
+## [1.30.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.2...v1.30.3) (2021-07-05)
+
+
+### Bug Fixes
+
+* add count for icons ([bac3135](https://github.com/lyne-design-system/lyne-documentation/commit/bac313532fe4b2c727510d49d738215f035822f6))
+
 ## [1.30.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.1...v1.30.2) (2021-07-01)
 
 
