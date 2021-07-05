@@ -76,6 +76,7 @@
         </div>
 
         <div class="content">
+          {{$data.icons.length}} Icons
           <p v-if="$data.icons.length === 0">No icons to display</p>
           <table class="table is-fullwidth" v-if="$data.icons.length > 0">
             <thead>
