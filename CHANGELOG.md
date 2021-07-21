@@ -1,3 +1,10 @@
+## [1.30.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.3...v1.30.4) (2021-07-21)
+
+
+### Bug Fixes
+
+* adopt latest changes of lyne icons json ([c0d915b](https://github.com/lyne-design-system/lyne-documentation/commit/c0d915b727c4937d9d59f95b376cddcc7b2f50d9))
+
 ## [1.30.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.2...v1.30.3) (2021-07-05)
 
 
