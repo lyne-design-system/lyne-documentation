@@ -1,3 +1,10 @@
+## [1.30.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.4...v1.30.5) (2021-07-21)
+
+
+### Bug Fixes
+
+* minor improvements for icons table ([126539f](https://github.com/lyne-design-system/lyne-documentation/commit/126539f9e278b8752dea397372e389cbda540f1a))
+
 ## [1.30.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.3...v1.30.4) (2021-07-21)
 
 
