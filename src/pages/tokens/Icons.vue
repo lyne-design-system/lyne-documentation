@@ -56,7 +56,10 @@
         </div>
 
         <!-- Filter category -->
-        <div class="block">
+        <div
+          class="block"
+          v-if="!hideCategoryFilter"
+        >
           <p>Icon Category:</p>
 
           <b-select
@@ -75,7 +78,7 @@
           </b-select>
         </div>
 
-        <div class="content">
+        <div class="table-wrapper">
           {{$data.icons.length}} Icons
           <p v-if="$data.icons.length === 0">No icons to display</p>
           <table class="table is-fullwidth" v-if="$data.icons.length > 0">
@@ -83,12 +86,11 @@
               <tr>
                 <th>Icon</th>
                 <th>name</th>
-                <th>variant</th>
-                <th>fullName</th>
                 <th>type</th>
                 <th>category</th>
-                <th>description</th>
-                <th>id</th>
+                <th>colorizable</th>
+                <th>scalable</th>
+                <th>keywords</th>
               </tr>
             </thead>
             <tbody>
@@ -103,13 +105,12 @@
                     :class="[$data.size ? $data.size : null, $data.color ? $data.color : null]"
                   ></span>
                 </td>
-                <td class="textCell">{{icon.name}}</td>
-                <td class="textCell">{{icon.variant}}</td>
                 <td class="textCell">{{icon.fullName}}</td>
                 <td class="textCell">{{icon.type}}</td>
                 <td class="textCell">{{icon.category}}</td>
-                <td class="textCell">{{icon.properties}}</td>
-                <td class="textCell">{{icon.id}}</td>
+                <td class="textCell">{{icon.properties.color}}</td>
+                <td class="textCell">{{icon.properties.scalable}}</td>
+                <td class="textCell">{{icon.properties.keywords}}</td>
 
               </tr>
             </tbody>
@@ -249,18 +250,30 @@ export default {
       colorOptions,
       filterOptions,
       filterValues,
+      hideCategoryFilter: true,
       icons
     };
   },
   methods: {
     handleFilterChange() {
       this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
+
+      if (this.$data.filterValues.type === 'All') {
+        this.$data.hideCategoryFilter = true;
+        this.$data.filterValues.category = 'All';
+      } else {
+        this.$data.hideCategoryFilter = false;
+      }
     }
   }
 };
 </script>
 
 <style lang="scss">
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+
   table td.textCell {
     line-height: 100%;
     vertical-align: middle;
