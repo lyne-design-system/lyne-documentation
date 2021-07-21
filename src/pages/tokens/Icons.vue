@@ -108,7 +108,7 @@
                 <td class="textCell">{{icon.fullName}}</td>
                 <td class="textCell">{{icon.type}}</td>
                 <td class="textCell">{{icon.category}}</td>
-                <td class="textCell">{{icon.description}}</td>
+                <td class="textCell">{{icon.properties}}</td>
                 <td class="textCell">{{icon.id}}</td>
 
               </tr>
@@ -132,7 +132,7 @@ const filterIconsBySizeVariant = (size, icons) => {
     return icons;
   }
 
-  return icons.filter((icon) => icon.variant === size);
+  return icons.filter((icon) => icon.variants.size === size);
 };
 
 const filterIconsByCategory = (category, icons) => {
