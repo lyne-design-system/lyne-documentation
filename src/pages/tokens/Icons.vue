@@ -78,6 +78,19 @@
           </b-select>
         </div>
 
+        <!-- Search field -->
+        <div class="block">
+          <p>Search Keywords and name:</p>
+          <b-input
+            v-model="search"
+            class="search-field"
+            placeholder="Search..."
+            type="search"
+            icon="magnify"
+            @input.native="handleFilterChange"
+            ></b-input>
+        </div>
+
         <div class="table-wrapper">
           {{$data.icons.length}} Icons
           <p v-if="$data.icons.length === 0">No icons to display</p>
@@ -102,7 +115,11 @@
                   <span
                     v-html='icon.svg'
                     class='iconToken'
-                    :class="[$data.size ? $data.size : null, $data.color ? $data.color : null]"
+                    :class="[
+                      $data.size ? $data.size : null,
+                      $data.color ? $data.color : null,
+                      icon.properties.color === true ? 'colorizable' : 'noncolorizable'
+                    ]"
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
@@ -152,11 +169,31 @@ const filterIconsByType = (type, icons) => {
   return icons.filter((icon) => icon.type === type);
 };
 
-const filterIcons = (filterValues, icons) => {
+const searchIcons = (search, icons) => {
+  if (!search || search.length < 1) {
+    return icons;
+  }
+
+  const results = [];
+
+  icons.forEach((icon) => {
+    const foundInKeywords = icon.properties.keywords && icon.properties.keywords.indexOf(search) !== -1;
+    const foundInName = icon.fullName && icon.fullName.indexOf(search) !== -1;
+
+    if (foundInName || foundInKeywords) {
+      results.push(icon);
+    }
+  });
+
+  return results;
+};
+
+const filterIcons = (filterValues, searchTerm, icons) => {
   const _size = filterIconsBySizeVariant(filterValues.size, icons);
   const _type = filterIconsByType(filterValues.type, _size);
   const _category = filterIconsByCategory(filterValues.category, _type);
-  const sortedIcons = sortHelper(_category, 'name');
+  const _search = searchIcons(searchTerm, _category);
+  const sortedIcons = sortHelper(_search, 'fullName');
 
   return sortedIcons;
 };
@@ -237,11 +274,11 @@ const filterOptions = {
 
 const filterValues = {
   category: categoryOptions()[0],
-  size: sizeOptions[1].value,
+  size: sizeOptions[0].value,
   type: typeOptions()[0]
 };
 
-const icons = filterIcons(filterValues, lyneIcons);
+const icons = filterIcons(filterValues, '', lyneIcons);
 
 export default {
   data() {
@@ -251,12 +288,13 @@ export default {
       filterOptions,
       filterValues,
       hideCategoryFilter: true,
-      icons
+      icons,
+      search: ''
     };
   },
   methods: {
     handleFilterChange() {
-      this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
+      this.$data.icons = filterIcons(this.$data.filterValues, this.$data.search, lyneIcons);
 
       if (this.$data.filterValues.type === 'All') {
         this.$data.hideCategoryFilter = true;
@@ -270,6 +308,10 @@ export default {
 </script>
 
 <style lang="scss">
+  .search-field {
+
+  }
+
   .table-wrapper {
     overflow-x: scroll;
   }
@@ -310,7 +352,7 @@ export default {
     color: black;
   }
 
-  .iconToken.color-primary {
+  .iconToken.color-primary.colorizable {
     color: red;
   }
 
