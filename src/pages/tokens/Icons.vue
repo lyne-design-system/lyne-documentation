@@ -130,7 +130,9 @@
                 <td class="textCell">{{icon.properties.scalable}}</td>
                 <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
                 <td class="textCell">
-                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>Download</a>
+                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
+                    <i class="mdi mdi-download"></i>
+                  </a>
                 </td>
               </tr>
             </tbody>
