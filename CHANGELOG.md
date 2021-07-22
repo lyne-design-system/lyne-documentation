@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.6...v1.31.0) (2021-07-22)
+
+
+### Features
+
+* add search field ([c5755aa](https://github.com/lyne-design-system/lyne-documentation/commit/c5755aa7f81a6938304f15a6f1383403b645bb40))
+
 ## [1.30.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.5...v1.30.6) (2021-07-22)
 
 
