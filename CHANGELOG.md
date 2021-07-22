@@ -1,3 +1,10 @@
+## [1.30.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.5...v1.30.6) (2021-07-22)
+
+
+### Bug Fixes
+
+* make sure main column on desktop does not overflow ([230b388](https://github.com/lyne-design-system/lyne-documentation/commit/230b388dda776ea9b961ee9c638670e226c3eb12))
+
 ## [1.30.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.4...v1.30.5) (2021-07-21)
 
 
