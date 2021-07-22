@@ -6,7 +6,7 @@
     <div class="columns is-desktop">
       <Navigation class="column is-3-desktop" />
 
-      <div class="column">
+      <div class="column is-9-desktop">
         <transition name="fade" appear>
           <main>
             <slot/>
