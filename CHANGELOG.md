@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.31.0...v1.32.0) (2021-07-22)
+
+
+### Features
+
+* add download button for icons ([ccabf16](https://github.com/lyne-design-system/lyne-documentation/commit/ccabf165ee9ed06265e046203d82620727a52cea))
+
 # [1.31.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.30.6...v1.31.0) (2021-07-22)
 
 
