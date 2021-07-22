@@ -104,6 +104,7 @@
                 <th>colorizable</th>
                 <th>scalable</th>
                 <th>keywords</th>
+                <th>download</th>
               </tr>
             </thead>
             <tbody>
@@ -127,8 +128,10 @@
                 <td class="textCell">{{icon.category}}</td>
                 <td class="textCell">{{icon.properties.color}}</td>
                 <td class="textCell">{{icon.properties.scalable}}</td>
-                <td class="textCell">{{icon.properties.keywords}}</td>
-
+                <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
+                <td class="textCell">
+                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>Download</a>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -293,6 +296,15 @@ export default {
     };
   },
   methods: {
+    downloadFile(icon) {
+      const text = icon.svg;
+      const data = new Blob([text], {
+        type: 'text/plain'
+      });
+      const url = window.URL.createObjectURL(data);
+
+      document.getElementById(icon.id).href = url;
+    },
     handleFilterChange() {
       this.$data.icons = filterIcons(this.$data.filterValues, this.$data.search, lyneIcons);
 
@@ -319,6 +331,10 @@ export default {
   table td.textCell {
     line-height: 100%;
     vertical-align: middle;
+  }
+
+  table td.textCell.cell-keywords {
+    max-width: 150px;
   }
 
   table td.iconCell {
