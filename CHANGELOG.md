@@ -1,3 +1,10 @@
+## [1.33.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.0...v1.33.1) (2021-07-23)
+
+
+### Bug Fixes
+
+* is adding .idea to .gitignore ([acc5fd5](https://github.com/lyne-design-system/lyne-documentation/commit/acc5fd5d79c023b4b401c32987485d2549db2052))
+
 # [1.33.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.32.0...v1.33.0) (2021-07-22)
 
 
