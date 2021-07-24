@@ -1,3 +1,15 @@
+## [1.33.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.1...v1.33.2) (2021-07-24)
+
+
+### Bug Fixes
+
+* fake commit to trigger branch build ([9d3fe48](https://github.com/lyne-design-system/lyne-documentation/commit/9d3fe486be3628edd0a81108cdaaf6fde202c438))
+* make sure modules are installed ([3905dc8](https://github.com/lyne-design-system/lyne-documentation/commit/3905dc820636ce6f473ddb6642432088e1ba6672))
+* remove after_success block ([c7b59b3](https://github.com/lyne-design-system/lyne-documentation/commit/c7b59b3a2d4c89025523bc18866ac370f1112d87))
+* remove unneeded scripts from non master stage ([8eacf03](https://github.com/lyne-design-system/lyne-documentation/commit/8eacf0313642bde59d37ea5af1e31517fa3d75a3))
+* remove unneeded scripts from non master stage ([5942e2d](https://github.com/lyne-design-system/lyne-documentation/commit/5942e2d9a1ccc74bd01366a9c96489572f630541))
+* test remove stage ([5bad8c0](https://github.com/lyne-design-system/lyne-documentation/commit/5bad8c0b0df45da411c50175ed9ecc8fb3a60c4f))
+
 ## [1.33.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.0...v1.33.1) (2021-07-23)
 
 
