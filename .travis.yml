@@ -39,9 +39,3 @@ jobs:
       curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
       -H 'Content-Type: application/json' \
       -d '{ "status": "error" }'
-
-  - stage: non-master build and deploy
-    if: ((branch != master OR type = pull_request) AND fork = false)
-    script:
-    - npm run lint || travis_terminate 1
-    - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
