@@ -18,6 +18,7 @@ jobs:
     if: branch = master
     script:
     # prepare git for pushes
+
     - git remote set-url origin https://lyne-design-system:$GH_TOKEN@github.com/lyne-design-system/lyne-documentation.git || travis_terminate 1
     - git checkout master || travis_terminate 1
     - git pull || travis_terminate 1
