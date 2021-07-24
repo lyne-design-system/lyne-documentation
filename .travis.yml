@@ -45,4 +45,3 @@ jobs:
     script:
     - npm run lint || travis_terminate 1
     - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
-    after_success:
