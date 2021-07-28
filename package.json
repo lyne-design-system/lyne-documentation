@@ -16,7 +16,7 @@
     "@gridsome/source-graphql": "^0.1.0",
     "axios": "^0.21.1",
     "buefy": "~0.9.7",
-    "flexsearch": "~0.7.2",
+    "flexsearch": "~0.6.32",
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
