@@ -1,3 +1,11 @@
+## [1.33.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.2...v1.33.3) (2021-07-28)
+
+
+### Bug Fixes
+
+* fix linting issue ([e4cc2ae](https://github.com/lyne-design-system/lyne-documentation/commit/e4cc2ae7b5959beaf3b5c4f5e3e825bb2575adb5))
+* ignore font-tokens for now ([5bd844f](https://github.com/lyne-design-system/lyne-documentation/commit/5bd844f7aae0183a153f654436f5dbc05c3c39ad))
+
 ## [1.33.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.1...v1.33.2) (2021-07-24)
 
 
