@@ -97,35 +97,43 @@ const generateTokens = (json, _finalJson) => {
 
 };
 
-const cleanPixelValues = (tokens, sourceKey, targetKey) => {
-  tokens.map((token) => {
-    const _token = token;
-    const split = _token[sourceKey].split('px');
-
-    if (split.length === 2) {
-      _token[targetKey] = parseInt(split[0], 10);
-    }
-
-    return _token;
-
-  });
-
-  return tokens;
-};
+/**
+ *
+ * const cleanPixelValues = (tokens, sourceKey, targetKey) => {
+ *   tokens.map((token) => {
+ *     const _token = token;
+ *     const split = _token[sourceKey].split('px');
+ *
+ *     if (split.length === 2) {
+ *       _token[targetKey] = parseInt(split[0], 10);
+ *     }
+ *
+ *     return _token;
+ *
+ *   });
+ *
+ *   return tokens;
+ * };
+ */
 
 export default {
 
   data() {
     const colorTokens = generateTokens(designTokens.color);
-    const fontTokens = generateTokens(designTokens.size.font);
-    const cleanFontTokenPixelValues = cleanPixelValues(fontTokens, 'value', 'valueInt');
+
+    // const fontTokens = generateTokens(designTokens.size.font);
+
+    // const cleanFontPixelValues = cleanPixelValues(fontTokens, 'value', 'valueInt');
+
     const sortedColorTokens = sortHelper(colorTokens, 'key');
-    const sortedFontTokens = sortHelper(cleanFontTokenPixelValues, 'valueInt');
+
+    // const sortedFontTokens = sortHelper(cleanFontPixelValues, 'valueInt');
 
     return {
       tokens: {
-        color: sortedColorTokens,
-        fontSize: sortedFontTokens
+        color: sortedColorTokens
+
+        // fontSize: sortedFontTokens
       }
     };
   }
