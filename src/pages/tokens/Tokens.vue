@@ -123,7 +123,9 @@ export default {
 
     // const fontTokens = generateTokens(designTokens.size.font);
 
-    // const cleanFontPixelValues = cleanPixelValues(fontTokens, 'value', 'valueInt');
+    // const cleanFontPixelValues =
+
+    // cleanPixelValues(fontTokens, 'value', 'valueInt');
 
     const sortedColorTokens = sortHelper(colorTokens, 'key');
 
