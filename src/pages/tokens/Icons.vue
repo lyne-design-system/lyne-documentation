@@ -75,6 +75,7 @@
                       v-html='icon.svg'
                       class='iconToken'
                       :class="[
+                        icon.variants.size ? icon.variants.size : '',
                         icon.properties.color === true ? 'colorizable' : 'noncolorizable'
                       ]"
                     ></span>
