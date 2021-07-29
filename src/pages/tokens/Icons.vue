@@ -15,8 +15,16 @@
           <b-tab-item
             v-for="(type, index) in $data.filterOptions.type"
             :key="index"
-            :label="type"
           >
+
+          <template #header>
+              {{type}}
+              <b-tag
+                class="tag-count"
+                type="is-info"
+                rounded
+              >{{$data.iconsCount[type]}}</b-tag>
+          </template>
 
           <!-- Filter category -->
           <div class="block">
@@ -51,7 +59,10 @@
           </div>
 
           <div class="table-wrapper">
-            {{$data.icons.length}} Icons
+            <p v-if="!$data.filterIsPristine">
+              {{$data.icons.length}} Icons
+            </p>
+
             <p v-if="$data.icons.length === 0">No icons to display</p>
             <table class="table is-fullwidth" v-if="$data.icons.length > 0">
               <thead>
@@ -211,9 +222,23 @@ const filterIcons = (filterValues, icons) => {
   return sortedIcons;
 };
 
+/**
+ * Other helpers
+ */
+const iconsCountForTypes = (icons, types) => {
+  const counts = {};
+
+  types.forEach((type) => {
+    counts[type] = genericFilter('type', type, icons).length;
+  });
+
+  return counts;
+};
+
 export default {
   data() {
     return {
+      filterIsPristine: true,
       filterOptions: {
         category: allCategories,
         type: typeOptions
@@ -223,12 +248,18 @@ export default {
         search: '',
         type: 0
       },
-      icons: []
+      icons: [],
+      iconsCount: iconsCountForTypes(lyneIcons, typeOptions)
     };
   },
   methods: {
     handleFilterChange() {
       this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
+
+      const searchIsEmpty = this.$data.filterValues.search.length === 0;
+      const categoryIsAll = this.$data.filterValues.category === 'All';
+
+      this.$data.filterIsPristine = searchIsEmpty && categoryIsAll;
     },
     handleTypeChange() {
 
@@ -256,6 +287,10 @@ export default {
 </script>
 
 <style lang="scss">
+  .tag-count {
+    margin-left: .5rem;
+  }
+
   .search-field {
 
   }
@@ -286,17 +321,14 @@ export default {
   }
 
   .iconToken.small {
-    width: 24px;
     height: 24px;
   }
 
   .iconToken.medium {
-    width: 36px;
     height: 36px;
   }
 
   .iconToken.large {
-    width: 48px;
     height: 48px;
   }
 
