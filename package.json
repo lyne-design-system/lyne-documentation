@@ -20,10 +20,10 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
-    "lyne-design-tokens": "^3.10.0",
+    "lyne-design-tokens": "^3.11.0",
     "lyne-helper-eslint-config": "~1.0.4",
-    "lyne-icons": "^4.15.11",
-    "lyne-test": "^9.26.7"
+    "lyne-icons": "^4.15.13",
+    "lyne-test": "^9.26.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
