@@ -1,3 +1,15 @@
+# [1.34.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.3...v1.34.0) (2021-07-29)
+
+
+### Bug Fixes
+
+* add size class to icons ([82bc295](https://github.com/lyne-design-system/lyne-documentation/commit/82bc295709bcf0f26af6f17c2613a6695f9ae371))
+
+
+### Features
+
+* improve icon filter, use tabs for icon types, select for icon categories ([fba65db](https://github.com/lyne-design-system/lyne-documentation/commit/fba65db1f556399a9afc7feb2dd67debfb48808a))
+
 ## [1.33.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.2...v1.33.3) (2021-07-28)
 
 
