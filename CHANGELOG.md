@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.34.0...v1.35.0) (2021-07-29)
+
+
+### Features
+
+* add count to tabs, show results count only if filter is not pristine, css issues ([6c44a52](https://github.com/lyne-design-system/lyne-documentation/commit/6c44a5267d0b99d543cd3a579ec580bcce9ee2a9))
+
 # [1.34.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.33.3...v1.34.0) (2021-07-29)
 
 
