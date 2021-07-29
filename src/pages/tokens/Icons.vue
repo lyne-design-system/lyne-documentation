@@ -4,140 +4,99 @@
       <div class="container">
         <h1 class="title is-1">Icons</h1>
 
-        <!-- Color switch -->
-        <div class="block">
-          <p>Color:</p>
-
-          <b-radio
-            v-for="(colorVariant, index) in $data.colorOptions"
-            :key="index"
-            v-model="color"
-            name="color"
-            :native-value="colorVariant.value"
-          >
-            {{colorVariant.name}}
-          </b-radio>
-        </div>
-
-        <!-- Filter size -->
-        <div class="block">
-            <p>Size variant:</p>
-
-            <b-radio
-              v-for="(variantSize, index) in $data.filterOptions.size"
-              :key="index"
-              v-model="filterValues.size"
-              @change.native="handleFilterChange(variantSize.value)"
-              name="size"
-              :native-value="variantSize.value"
-            >
-              {{variantSize.name}}
-            </b-radio>
-        </div>
-
-        <!-- Filter type -->
-        <div class="block">
-          <p>Icon Type:</p>
-
-          <b-select
-            v-model="filterValues.type"
-            @change.native="handleFilterChange"
-            placeholder="Choose a type"
-          >
-            <option
-              v-for="(typeVariant, index) in $data.filterOptions.type"
-              :value="typeVariant"
-              :key="index"
-            >
-              {{ typeVariant }}
-            </option>
-
-          </b-select>
-        </div>
-
-        <!-- Filter category -->
-        <div
-          class="block"
-          v-if="!hideCategoryFilter"
+        <!-- Type switch -->
+        <b-tabs
+          v-model="$data.filterValues.type"
+          type="is-boxed"
+          :animated="false"
+          @input="handleTypeChange"
         >
-          <p>Icon Category:</p>
 
-          <b-select
-            v-model="filterValues.category"
-            @change.native="handleFilterChange"
-            placeholder="Choose a category"
+          <b-tab-item
+            v-for="(type, index) in $data.filterOptions.type"
+            :key="index"
+            :label="type"
           >
-            <option
-              v-for="(categoryVariant, index) in $data.filterOptions.category"
-              :value="categoryVariant"
-              :key="index"
+
+          <!-- Filter category -->
+          <div class="block">
+            <p>Icon Category:</p>
+            <b-select
+              v-model="$data.filterValues.category"
+              @change.native="handleFilterChange"
+              placeholder="Choose a category"
             >
-              {{ categoryVariant }}
-            </option>
-
-          </b-select>
-        </div>
-
-        <!-- Search field -->
-        <div class="block">
-          <p>Search Keywords and name:</p>
-          <b-input
-            v-model="search"
-            class="search-field"
-            placeholder="Search..."
-            type="search"
-            icon="magnify"
-            @input.native="handleFilterChange"
-            ></b-input>
-        </div>
-
-        <div class="table-wrapper">
-          {{$data.icons.length}} Icons
-          <p v-if="$data.icons.length === 0">No icons to display</p>
-          <table class="table is-fullwidth" v-if="$data.icons.length > 0">
-            <thead>
-              <tr>
-                <th>Icon</th>
-                <th>name</th>
-                <th>type</th>
-                <th>category</th>
-                <th>colorizable</th>
-                <th>scalable</th>
-                <th>keywords</th>
-                <th>download</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for='(icon) in $data.icons'
-                :key='icon.id'
+              <option
+                v-for="(category, index) in $data.filterOptions.category"
+                :value="category"
+                :key="index"
               >
-                <td class="iconCell">
-                  <span
-                    v-html='icon.svg'
-                    class='iconToken'
-                    :class="[
-                      $data.size ? $data.size : null,
-                      $data.color ? $data.color : null,
-                      icon.properties.color === true ? 'colorizable' : 'noncolorizable'
-                    ]"
-                  ></span>
-                </td>
-                <td class="textCell">{{icon.fullName}}</td>
-                <td class="textCell">{{icon.type}}</td>
-                <td class="textCell">{{icon.category}}</td>
-                <td class="textCell">{{icon.properties.color}}</td>
-                <td class="textCell">{{icon.properties.scalable}}</td>
-                <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
-                <td class="textCell">
-                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
-                    <i class="mdi mdi-download"></i>
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                {{ category }}
+              </option>
+
+            </b-select>
+          </div>
+
+          <!-- Search field -->
+          <div class="block">
+            <p>Search Keywords and name:</p>
+            <b-input
+              v-model="$data.filterValues.search"
+              class="search-field"
+              placeholder="Search..."
+              type="search"
+              icon="magnify"
+              @input.native="handleFilterChange"
+              ></b-input>
+          </div>
+
+          <div class="table-wrapper">
+            {{$data.icons.length}} Icons
+            <p v-if="$data.icons.length === 0">No icons to display</p>
+            <table class="table is-fullwidth" v-if="$data.icons.length > 0">
+              <thead>
+                <tr>
+                  <th>Icon</th>
+                  <th>name</th>
+                  <th>category</th>
+                  <th>colorizable</th>
+                  <th>scalable</th>
+                  <th>keywords</th>
+                  <th>download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for='(icon) in $data.icons'
+                  :key='icon.id'
+                >
+                  <td class="iconCell">
+                    <span
+                      v-html='icon.svg'
+                      class='iconToken'
+                      :class="[
+                        icon.properties.color === true ? 'colorizable' : 'noncolorizable'
+                      ]"
+                    ></span>
+                  </td>
+                  <td class="textCell">{{icon.fullName}}</td>
+                  <td class="textCell">{{icon.category}}</td>
+                  <td class="textCell">{{icon.properties.color}}</td>
+                  <td class="textCell">{{icon.properties.scalable}}</td>
+                  <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
+                  <td class="textCell">
+                    <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
+                      <i class="mdi mdi-download"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          </b-tab-item>
+        </b-tabs>
+
       </div>
     </section>
   </Layout>
@@ -148,33 +107,81 @@ const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 const sortHelper = require('../../helpers/sort');
 
 /**
- * Filter icons
+ * Types
  */
-const filterIconsBySizeVariant = (size, icons) => {
-  if (!size) {
+const _typeOptions = (icons) => {
+  const options = ['All'];
+
+  icons.forEach((icon) => {
+    const {
+      type
+    } = icon;
+
+    if (options.indexOf(type) < 0) {
+      options.push(type);
+    }
+
+  });
+
+  return options;
+};
+
+const typeOptions = _typeOptions(lyneIcons);
+
+/**
+ * Categories
+ */
+const _categoriesForAllTypes = (icons, types) => {
+  const categories = {};
+
+  types.forEach((type) => {
+    categories[type] = ['All'];
+  });
+
+  icons.forEach((icon) => {
+    if (categories[icon.type].indexOf(icon.category) === -1) {
+      categories[icon.type].push(icon.category);
+    }
+  });
+
+  // sort
+  types.forEach((type) => {
+    categories[type] = categories[type].sort();
+  });
+
+  return categories;
+};
+
+const _allCategories = (typesWithCategories) => {
+  const categories = ['All'];
+
+  Object.keys(typesWithCategories)
+    .forEach((type) => {
+      typesWithCategories[type].forEach((category) => {
+        if (categories.indexOf(category) === -1 && category !== 'All') {
+          categories.push(category);
+        }
+      });
+    });
+
+  return categories.sort();
+};
+
+const categoriesForAllTypes = _categoriesForAllTypes(lyneIcons, typeOptions);
+const allCategories = _allCategories(categoriesForAllTypes);
+
+/**
+ * Filtering
+ */
+const genericFilter = (property, value, icons) => {
+  if (value === 'All') {
     return icons;
   }
 
-  return icons.filter((icon) => icon.variants.size === size);
+  return icons.filter((icon) => icon[property] === value);
 };
 
-const filterIconsByCategory = (category, icons) => {
-  if (category === 'All') {
-    return icons;
-  }
-
-  return icons.filter((icon) => icon.category === category);
-};
-
-const filterIconsByType = (type, icons) => {
-  if (type === 'All') {
-    return icons;
-  }
-
-  return icons.filter((icon) => icon.type === type);
-};
-
-const searchIcons = (search, icons) => {
+const filterBySearchTerm = (search, icons) => {
   if (!search || search.length < 1) {
     return icons;
   }
@@ -193,130 +200,56 @@ const searchIcons = (search, icons) => {
   return results;
 };
 
-const filterIcons = (filterValues, searchTerm, icons) => {
-  const _size = filterIconsBySizeVariant(filterValues.size, icons);
-  const _type = filterIconsByType(filterValues.type, _size);
-  const _category = filterIconsByCategory(filterValues.category, _type);
-  const _search = searchIcons(searchTerm, _category);
+const filterIcons = (filterValues, icons) => {
+  const currentTypeName = typeOptions[filterValues.type];
+  const _type = genericFilter('type', currentTypeName, icons);
+  const _category = genericFilter('category', filterValues.category, _type);
+  const _search = filterBySearchTerm(filterValues.search, _category);
   const sortedIcons = sortHelper(_search, 'fullName');
 
   return sortedIcons;
 };
 
-/**
- * Filter options
- */
-
-const sizeOptions = [
-  {
-    name: 'All',
-    value: false
-  },
-  {
-    name: 'Small',
-    value: 'small'
-  },
-  {
-    name: 'Medium',
-    value: 'medium'
-  },
-  {
-    name: 'Large',
-    value: 'large'
-  }
-];
-
-const colorOptions = [
-  {
-    name: 'Default color',
-    value: 'color-black'
-  },
-  {
-    name: 'Primary color',
-    value: 'color-primary'
-  }
-];
-
-const typeOptions = () => {
-  const options = ['All'];
-
-  lyneIcons.forEach((icon) => {
-    const {
-      type
-    } = icon;
-
-    if (options.indexOf(type) < 0) {
-      options.push(type);
-    }
-
-  });
-
-  return options;
-};
-
-const categoryOptions = () => {
-  const options = ['All'];
-
-  lyneIcons.forEach((icon) => {
-    const {
-      category
-    } = icon;
-
-    if (options.indexOf(category) < 0) {
-      options.push(category);
-    }
-
-  });
-
-  return options;
-};
-
-const filterOptions = {
-  category: categoryOptions(),
-  size: sizeOptions,
-  type: typeOptions()
-};
-
-const filterValues = {
-  category: categoryOptions()[0],
-  size: sizeOptions[0].value,
-  type: typeOptions()[0]
-};
-
-const icons = filterIcons(filterValues, '', lyneIcons);
-
 export default {
   data() {
     return {
-      color: 'color-black',
-      colorOptions,
-      filterOptions,
-      filterValues,
-      hideCategoryFilter: true,
-      icons,
-      search: ''
+      filterOptions: {
+        category: allCategories,
+        type: typeOptions
+      },
+      filterValues: {
+        category: 'All',
+        search: '',
+        type: 0
+      },
+      icons: []
     };
   },
   methods: {
-    downloadFile(icon) {
-      const text = icon.svg;
-      const data = new Blob([text], {
-        type: 'text/plain'
-      });
-      const url = window.URL.createObjectURL(data);
-
-      document.getElementById(icon.id).href = url;
-    },
     handleFilterChange() {
-      this.$data.icons = filterIcons(this.$data.filterValues, this.$data.search, lyneIcons);
+      this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
+    },
+    handleTypeChange() {
 
-      if (this.$data.filterValues.type === 'All') {
-        this.$data.hideCategoryFilter = true;
-        this.$data.filterValues.category = 'All';
+      // set categories for type
+      const currentType = typeOptions[this.$data.filterValues.type];
+
+      if (currentType === 'All') {
+        this.$data.filterOptions.category = allCategories;
       } else {
-        this.$data.hideCategoryFilter = false;
+        this.$data.filterOptions.category = categoriesForAllTypes[currentType];
       }
+
+      // reset filter values
+      this.$data.filterValues.category = 'All';
+      this.$data.filterValues.search = '';
+
+      // filter icons
+      this.handleFilterChange();
     }
+  },
+  mounted() {
+    this.handleFilterChange();
   }
 };
 </script>
