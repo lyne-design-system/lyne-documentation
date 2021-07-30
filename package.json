@@ -22,8 +22,8 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "lyne-design-tokens": "^3.11.1",
     "lyne-helper-eslint-config": "~1.0.4",
-    "lyne-icons": "^4.15.15",
-    "lyne-test": "^9.26.10"
+    "lyne-icons": "^4.15.16",
+    "lyne-test": "^9.26.11"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
