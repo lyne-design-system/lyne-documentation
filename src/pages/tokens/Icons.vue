@@ -17,97 +17,115 @@
             :key="index"
           >
 
-          <template #header>
-              {{type}}
-              <b-tag
-                class="tag-count"
-                type="is-info"
-                rounded
-              >{{$data.iconsCount[type]}}</b-tag>
-          </template>
+            <template #header>
+                {{type}}
+                <b-tag
+                  class="tag-count"
+                  type="is-info"
+                  rounded
+                >{{$data.iconsCount[type]}}</b-tag>
+            </template>
 
-          <!-- Filter category -->
-          <div class="block">
-            <p>Icon Category:</p>
-            <b-select
-              v-model="$data.filterValues.category"
-              @change.native="handleFilterChange"
-              placeholder="Choose a category"
-            >
-              <option
-                v-for="(category, index) in $data.filterOptions.category"
-                :value="category"
-                :key="index"
+            <!-- Filter category -->
+            <div class="block">
+              <p>Icon Category:</p>
+              <b-select
+                v-model="$data.filterValues.category"
+                @change.native="handleFilterChange"
+                placeholder="Choose a category"
               >
-                {{ category }}
-              </option>
-
-            </b-select>
-          </div>
-
-          <!-- Search field -->
-          <div class="block">
-            <p>Search Keywords and name:</p>
-            <b-input
-              v-model="$data.filterValues.search"
-              class="search-field"
-              placeholder="Search..."
-              type="search"
-              icon="magnify"
-              @input.native="handleFilterChange"
-              ></b-input>
-          </div>
-
-          <div class="table-wrapper">
-            <p v-if="!$data.filterIsPristine">
-              {{$data.icons.length}} Icons
-            </p>
-
-            <p v-if="$data.icons.length === 0">No icons to display</p>
-            <table class="table is-fullwidth" v-if="$data.icons.length > 0">
-              <thead>
-                <tr>
-                  <th>Icon</th>
-                  <th>name</th>
-                  <th>category</th>
-                  <th>colorizable</th>
-                  <th>scalable</th>
-                  <th>keywords</th>
-                  <th>download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  v-for='(icon) in $data.icons'
-                  :key='icon.id'
+                <option
+                  v-for="(category, index) in $data.filterOptions.category"
+                  :value="category"
+                  :key="index"
                 >
-                  <td class="iconCell">
-                    <span
-                      v-html='icon.svg'
-                      class='iconToken'
-                      :class="[
-                        icon.variants.size ? icon.variants.size : '',
-                        icon.properties.color === true ? 'colorizable' : 'noncolorizable'
-                      ]"
-                    ></span>
-                  </td>
-                  <td class="textCell">{{icon.fullName}}</td>
-                  <td class="textCell">{{icon.category}}</td>
-                  <td class="textCell">{{icon.properties.color}}</td>
-                  <td class="textCell">{{icon.properties.scalable}}</td>
-                  <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
-                  <td class="textCell">
-                    <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
-                      <i class="mdi mdi-download"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                  {{ category }}
+                </option>
 
+              </b-select>
+            </div>
+
+            <!-- Search field -->
+            <div class="block">
+              <p>Search Keywords and name:</p>
+              <b-input
+                v-model="$data.filterValues.search"
+                class="search-field"
+                placeholder="Search..."
+                type="search"
+                icon="magnify"
+                @input.native="handleFilterChange"
+                ></b-input>
+            </div>
+
+            <!-- Color switch -->
+            <div
+              class="block"
+              v-if="$data.showColorOptions"
+            >
+              <p>Color:</p>
+
+              <b-radio
+                v-for="(colorVariant, index) in $data.colorOptions"
+                :key="index"
+                v-model="color"
+                :name="'color' + type"
+                :native-value="colorVariant.value"
+              >
+                {{colorVariant.name}}
+              </b-radio>
+            </div>
           </b-tab-item>
         </b-tabs>
+
+        <div class="table-wrapper">
+          <p v-if="!$data.filterIsPristine">
+            {{$data.icons.length}} Icons
+          </p>
+
+          <p v-if="$data.icons.length === 0">No icons to display</p>
+          <table class="table is-fullwidth" v-if="$data.icons.length > 0">
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>name</th>
+                <th>category</th>
+                <th>colorizable</th>
+                <th>scalable</th>
+                <th>keywords</th>
+                <th>download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for='(icon) in $data.icons'
+                :key='icon.id'
+              >
+                <td class="iconCell">
+                  <span
+                    v-html='icon.svg'
+                    class='iconToken'
+                    :class="[
+                      icon.variants.size ? icon.variants.size : '',
+                      icon.properties.color === true ? 'colorizable' : 'noncolorizable',
+                      icon.properties.color === true ? $data.color : ''
+                    ]"
+                  ></span>
+                </td>
+                <td class="textCell">{{icon.fullName}}</td>
+                <td class="textCell">{{icon.category}}</td>
+                <td class="textCell">{{icon.properties.color}}</td>
+                <td class="textCell">{{icon.properties.scalable}}</td>
+                <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
+                <td class="textCell">
+                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
+                    <i class="mdi mdi-download"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       </div>
     </section>
@@ -235,9 +253,24 @@ const iconsCountForTypes = (icons, types) => {
   return counts;
 };
 
+const colorOptions = [
+  {
+    name: 'Default color',
+    value: 'color-black'
+  },
+  {
+    name: 'Primary color',
+    value: 'color-primary'
+  }
+];
+
+const currentIconsHaveColorizableIcons = (icons) => icons.filter((icon) => icon.properties.color === true).length > 0;
+
 export default {
   data() {
     return {
+      color: colorOptions[0].value,
+      colorOptions,
       filterIsPristine: true,
       filterOptions: {
         category: allCategories,
@@ -249,7 +282,8 @@ export default {
         type: 0
       },
       icons: [],
-      iconsCount: iconsCountForTypes(lyneIcons, typeOptions)
+      iconsCount: iconsCountForTypes(lyneIcons, typeOptions),
+      showColorOptions: false
     };
   },
   methods: {
@@ -260,6 +294,7 @@ export default {
       const categoryIsAll = this.$data.filterValues.category === 'All';
 
       this.$data.filterIsPristine = searchIsEmpty && categoryIsAll;
+      this.$data.showColorOptions = currentIconsHaveColorizableIcons(this.$data.icons);
     },
     handleTypeChange() {
 
@@ -275,6 +310,9 @@ export default {
       // reset filter values
       this.$data.filterValues.category = 'All';
       this.$data.filterValues.search = '';
+
+      // reset color
+      this.$data.color = colorOptions[0].value;
 
       // filter icons
       this.handleFilterChange();
