@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.35.0...v1.36.0) (2021-07-30)
+
+
+### Features
+
+* add radio buttons to colorize icons, move table outside tabs ([9c8d0cb](https://github.com/lyne-design-system/lyne-documentation/commit/9c8d0cbb514688afb6ee71ae15372a49f0816067))
+
 # [1.35.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.34.0...v1.35.0) (2021-07-29)
 
 
