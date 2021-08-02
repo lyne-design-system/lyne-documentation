@@ -289,6 +289,15 @@ export default {
     };
   },
   methods: {
+    downloadFile(icon) {
+      const text = icon.svg;
+      const data = new Blob([text], {
+        type: 'text/plain'
+      });
+      const url = window.URL.createObjectURL(data);
+
+      document.getElementById(icon.id).href = url;
+    },
     handleFilterChange() {
       this.$data.icons = filterIcons(this.$data.filterValues, lyneIcons);
 
