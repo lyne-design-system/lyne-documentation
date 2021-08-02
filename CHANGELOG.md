@@ -1,3 +1,11 @@
+## [1.36.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.0...v1.36.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* add download method again ([fdc6cb4](https://github.com/lyne-design-system/lyne-documentation/commit/fdc6cb48d51161d4c019e554b84ff11c3ef1b032))
+* use new icon json files to try to improve performance ([5f6a92c](https://github.com/lyne-design-system/lyne-documentation/commit/5f6a92c7258162dc036afe0ac2f450756e72ac51))
+
 # [1.36.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.35.0...v1.36.0) (2021-07-30)
 
 

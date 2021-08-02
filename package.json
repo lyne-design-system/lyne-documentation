@@ -1,6 +1,6 @@
 {
   "name": "lyne-documentation",
-  "version": "1.36.0",
+  "version": "1.36.1",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
@@ -22,7 +22,7 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "lyne-design-tokens": "^3.11.1",
     "lyne-helper-eslint-config": "~1.0.4",
-    "lyne-icons": "~4.16.0",
+    "lyne-icons": "^4.16.0",
     "lyne-test": "^9.26.12"
   },
   "devDependencies": {
