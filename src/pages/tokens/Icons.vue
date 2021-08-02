@@ -103,7 +103,7 @@
               >
                 <td class="iconCell">
                   <span
-                    v-html='icon.svg'
+                    v-html='$data.iconsSvgs[icon.fullName]'
                     class='iconToken'
                     :class="[
                       icon.variants.size ? icon.variants.size : '',
@@ -133,7 +133,8 @@
 </template>
 
 <script>
-const lyneIcons = require('lyne-icons/dist/icons.json').icons;
+const lyneIcons = require('lyne-icons/dist/iconsMeta.json').icons;
+const lyneIconsSvgs = require('lyne-icons/dist/icons.json').icons;
 const sortHelper = require('../../helpers/sort');
 
 /**
@@ -283,6 +284,7 @@ export default {
       },
       icons: [],
       iconsCount: iconsCountForTypes(lyneIcons, typeOptions),
+      iconsSvgs: lyneIconsSvgs,
       showColorOptions: false
     };
   },
