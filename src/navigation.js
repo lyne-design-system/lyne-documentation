@@ -76,12 +76,36 @@ const navigationData = [
   {
     children: [
       {
-        name: 'Color & Font',
-        path: '/tokens/tokens/'
+        name: 'Breakpoint',
+        path: '/tokens/breakpoint/'
+      },
+      {
+        name: 'Color',
+        path: '/tokens/color/'
       },
       {
         name: 'Icons',
         path: '/tokens/icons/'
+      },
+      {
+        name: 'Icon Size',
+        path: '/tokens/icon-size/'
+      },
+      {
+        name: 'Shadow',
+        path: '/tokens/shadow/'
+      },
+      {
+        name: 'Spacing',
+        path: '/tokens/spacing/'
+      },
+      {
+        name: 'Touch',
+        path: '/tokens/touch/'
+      },
+      {
+        name: 'Typography',
+        path: '/tokens/typo/'
       }
     ],
     name: 'Design Tokens',
