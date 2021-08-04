@@ -3,10 +3,8 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Design Tokens</h1>
-
         <div class="content">
-          <h2 class="title is-2">Color</h2>
+          <h1 class="title is-1">Color</h1>
 
           <table class="table is-fullwidth">
             <thead>
@@ -26,30 +24,6 @@
                     class="list-item-sample var-color"
                     :style="{ backgroundColor: token.value}"
                   />
-                </td>
-                <td class="textCell">{{token.key}}</td>
-                <td class="textCell">{{token.value}}</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2 class="title is-2">Font Size</h2>
-
-          <table class="table is-fullwidth">
-            <thead>
-              <tr>
-                <th>Example</th>
-                <th>Name</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for="(token) in $data.tokens.fontSize"
-                :key="token.key"
-              >
-                <td>
-                  <span :style="{ fontSize: token.value}">Sample text</span>
                 </td>
                 <td class="textCell">{{token.key}}</td>
                 <td class="textCell">{{token.value}}</td>
@@ -97,45 +71,15 @@ const generateTokens = (json, _finalJson) => {
 
 };
 
-/**
- *
- * const cleanPixelValues = (tokens, sourceKey, targetKey) => {
- *   tokens.map((token) => {
- *     const _token = token;
- *     const split = _token[sourceKey].split('px');
- *
- *     if (split.length === 2) {
- *       _token[targetKey] = parseInt(split[0], 10);
- *     }
- *
- *     return _token;
- *
- *   });
- *
- *   return tokens;
- * };
- */
-
 export default {
 
   data() {
     const colorTokens = generateTokens(designTokens.color);
-
-    // const fontTokens = generateTokens(designTokens.size.font);
-
-    // const cleanFontPixelValues =
-
-    // cleanPixelValues(fontTokens, 'value', 'valueInt');
-
     const sortedColorTokens = sortHelper(colorTokens, 'key');
-
-    // const sortedFontTokens = sortHelper(cleanFontPixelValues, 'valueInt');
 
     return {
       tokens: {
         color: sortedColorTokens
-
-        // fontSize: sortedFontTokens
       }
     };
   }
