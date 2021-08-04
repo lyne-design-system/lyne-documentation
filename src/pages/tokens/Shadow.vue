@@ -8,7 +8,7 @@
           v-for="(key, index) in Object.keys($data.tokens)"
           :key="index"
         >
-          <h2 class="title is-2">{{$data.tokenPrefix}}{{key}}</h2>
+          <h2 class="title is-2">Elevation Level {{key}}</h2>
 
           <h3 class="title is-3">Soft</h3>
           <TokenShadowBlock
