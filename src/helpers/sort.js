@@ -1,4 +1,4 @@
-module.exports = (items, sortKey) => {
+const sortByKey = (items, sortKey) => {
   items.sort((a, b) => {
     const valueA = a[sortKey];
     const valueB = b[sortKey];
@@ -15,3 +15,5 @@ module.exports = (items, sortKey) => {
 
   return items;
 };
+
+export default sortByKey;
