@@ -344,11 +344,7 @@ export default {
     margin-left: .5rem;
   }
 
-  .search-field {
-
-  }
-
-  .table-wrapper {
+.table-wrapper {
     overflow-x: scroll;
   }
 
