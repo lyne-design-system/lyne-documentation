@@ -1,3 +1,14 @@
+# [1.38.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.37.0...v1.38.0) (2021-08-04)
+
+
+### Features
+
+*  add tokens for icon size ([7644862](https://github.com/lyne-design-system/lyne-documentation/commit/7644862a5d50e3fc421afca2e90f9fe7b1fdcae2))
+* add breakpoint tokens ([91dee08](https://github.com/lyne-design-system/lyne-documentation/commit/91dee0849b1e2748f1b034e27bbc261751fe0f22))
+* add component to render shadow block ([3b1e977](https://github.com/lyne-design-system/lyne-documentation/commit/3b1e9773c7d857947a0f32609aa9af909f31d8c3))
+* add property to hide example column ([6fd2643](https://github.com/lyne-design-system/lyne-documentation/commit/6fd264319e16d3d8c4afff05a570e95f5d14cf6e))
+* add shadows ([51a7b65](https://github.com/lyne-design-system/lyne-documentation/commit/51a7b6507230c619d60eb2a42e542335d50b7042))
+
 # [1.37.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.2...v1.37.0) (2021-08-04)
 
 
