@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <section class="section">
       <div class="container">
         <div class="content">
@@ -9,24 +8,24 @@
           <table class="table is-fullwidth">
             <thead>
               <tr>
-                <th>Example</th>
                 <th>Name</th>
                 <th>Value</th>
+                <th>Example</th>
               </tr>
             </thead>
             <tbody>
               <tr
-                v-for="(token) in $data.tokens.color"
+                v-for="(token) in $data.tokens"
                 :key="token.key"
               >
+                <td class="textCell">{{token.fullName}}</td>
+                <td class="textCell">{{token.value}}</td>
                 <td>
                   <span
                     class="list-item-sample var-color"
                     :style="{ backgroundColor: token.value}"
                   />
                 </td>
-                <td class="textCell">{{token.key}}</td>
-                <td class="textCell">{{token.value}}</td>
               </tr>
             </tbody>
           </table>
@@ -39,48 +38,17 @@
 </template>
 
 <script>
-const designTokens = require('lyne-design-tokens/dist/js/tokens.umd');
-const sortHelper = require('../../helpers/sort');
-
-const generateTokens = (json, _finalJson) => {
-
-  const keys = Object.keys(json);
-  const finalJson = _finalJson || [];
-
-  while (keys.length > 0) {
-    const key = keys.pop();
-    const value = json[key];
-    const hasPathKey = Object.keys(value)
-      .includes('path');
-
-    if (hasPathKey) {
-      const newKey = value.path.join('-');
-      const newValue = value.value;
-
-      finalJson.push({
-        key: newKey,
-        value: newValue
-      });
-
-    } else {
-      generateTokens(value, finalJson);
-    }
-  }
-
-  return finalJson;
-
-};
+import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
+import findTokens from '../../helpers/designToken';
+import sortByKey from '../../helpers/sort';
 
 export default {
-
   data() {
-    const colorTokens = generateTokens(designTokens.color);
-    const sortedColorTokens = sortHelper(colorTokens, 'key');
+    const colorTokens = findTokens(tokens.color);
+    const sortedColorTokens = sortByKey(colorTokens, 'fullName');
 
     return {
-      tokens: {
-        color: sortedColorTokens
-      }
+      tokens: sortedColorTokens
     };
   }
 };
