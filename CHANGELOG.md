@@ -1,3 +1,10 @@
+## [1.36.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.1...v1.36.2) (2021-08-04)
+
+
+### Bug Fixes
+
+* fix icon download issue ([4975092](https://github.com/lyne-design-system/lyne-documentation/commit/49750920c6a8c0fa015b1dc4ff28a791610047d6))
+
 ## [1.36.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.0...v1.36.1) (2021-08-02)
 
 
