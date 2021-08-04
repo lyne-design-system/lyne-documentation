@@ -290,7 +290,8 @@ export default {
   },
   methods: {
     downloadFile(icon) {
-      const text = icon.svg;
+      console.log();
+      const text = lyneIconsSvgs[icon.fullName];
       const data = new Blob([text], {
         type: 'text/plain'
       });
