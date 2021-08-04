@@ -7,11 +7,9 @@
         <TokensTable :tokens="tokens">
           <template v-slot="slotProps">
             <span
-              class="token"
-              :style="{
-                height: slotProps.token.value,
-                width: slotProps.token.value
-              }"
+              class="icon-size-token"
+              v-html='getSampleIconForToken(slotProps.token)'
+              :style="{height: slotProps.token.value}"
             />
           </template>
         </TokensTable>
@@ -25,6 +23,8 @@ import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
 import findTokens from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
+const lyneIcons = require('lyne-icons/dist/icons.json').icons;
+
 export default {
   components: {
     TokensTable
@@ -33,20 +33,50 @@ export default {
     const sizeTokens = findTokens(tokens.iconSize);
 
     return {
+      iconUiSmall: lyneIcons['arrow-change-horizontal-small'],
       tokens: sizeTokens.reverse()
     };
+  },
+  methods: {
+    getSampleIconForToken(token) {
+      if (token.attributes.type === 'ui') {
+        return lyneIcons[`armchair-profile-user-${token.attributes.item}`];
+      }
+
+      if (token.attributes.type === 'timetable') {
+        if (token.attributes.item === 'attribute') {
+          return lyneIcons['sa-sk'];
+        }
+
+        if (token.attributes.item === 'him-cus') {
+          return lyneIcons['cancellation'];
+        }
+
+        return lyneIcons['ic-11'];
+      }
+
+      if (token.attributes.type === 'pictograms') {
+        return lyneIcons['accessibility-barrierefrei-left'];
+      }
+
+      return '';
+    }
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-.token {
+.icon-size-token {
   display: block;
-  width: 4rem;
-  height: 4rem;
-  background-color: black;
-  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-size-token svg {
+  display: block;
+  height: 100%;
 }
 
 </style>
