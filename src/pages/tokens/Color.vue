@@ -8,7 +8,7 @@
           <TokensTable :tokens="$data.tokens">
             <template v-slot="slotProps">
               <span
-                class="list-item-sample var-color"
+                class="token"
                 :style="{
                   backgroundColor: slotProps.token.value
                 }"
@@ -46,12 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 
-table td.textCell {
-  line-height: 100%;
-  vertical-align: middle;
-}
-
-.list-item-sample.var-color {
+.token {
   display: block;
   width: 4rem;
   height: 4rem;
