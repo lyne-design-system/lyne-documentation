@@ -41,7 +41,9 @@ const getDesignTokens = (json, _finalJson) => {
     const isTokenObject = isDesignTokenObject(value);
 
     if (isTokenObject) {
-      value['fullName'] = value.path.join('-');
+      const fullName = value.path.join('-');
+
+      value['fullName'] = fullName;
       finalJson.push(value);
     } else {
       getDesignTokens(value, finalJson);
