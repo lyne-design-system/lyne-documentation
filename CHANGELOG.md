@@ -1,3 +1,24 @@
+# [1.37.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.2...v1.37.0) (2021-08-04)
+
+
+### Bug Fixes
+
+* rename page to color, remove font specific stuff ([f656826](https://github.com/lyne-design-system/lyne-documentation/commit/f6568260b770eed784edaa4f1fb176a1c3480a7e))
+* use helpers, reorder table columns ([9380501](https://github.com/lyne-design-system/lyne-documentation/commit/9380501f1eb9801a5d813ee9d51bcf186ed34c9b))
+* use tokens table and add appropriate stylings ([d8c3d47](https://github.com/lyne-design-system/lyne-documentation/commit/d8c3d4748e74a20c0f8955cc0df8a3290be75299))
+
+
+### Features
+
+*  add empty page for breakpoint ([5826c9b](https://github.com/lyne-design-system/lyne-documentation/commit/5826c9bb56f499c69919f72ceb7b800d4b98b4f4))
+*  add empty page for icon size ([4848f9b](https://github.com/lyne-design-system/lyne-documentation/commit/4848f9bcdf0f7bb88b8db5fcd4eab987e0c4b772))
+*  add empty page for shadow ([1406e38](https://github.com/lyne-design-system/lyne-documentation/commit/1406e38cf9080a159f40781451086d0512f834a2))
+*  add empty page for spacing ([c9399e6](https://github.com/lyne-design-system/lyne-documentation/commit/c9399e67cad8bd83a6021fa4f8c103f79fb6b508))
+*  add empty page for touch ([2c66591](https://github.com/lyne-design-system/lyne-documentation/commit/2c66591baa709bc0563c1b33a08532b5ca2b5322))
+*  add empty page for typo ([52069d4](https://github.com/lyne-design-system/lyne-documentation/commit/52069d4b7bdfcd38ddc3536ba515fc86bad27842))
+* add paths to new token pages ([b9d7e29](https://github.com/lyne-design-system/lyne-documentation/commit/b9d7e29853932eb7567e63b05b71c2493c6393dc))
+* render spacing tokens ([38bc1f3](https://github.com/lyne-design-system/lyne-documentation/commit/38bc1f37fa464f883bb29927c21801ac20c5ed4e))
+
 ## [1.36.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.36.1...v1.36.2) (2021-08-04)
 
 
