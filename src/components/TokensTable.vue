@@ -4,7 +4,7 @@
       <tr>
         <th>Name</th>
         <th>Value</th>
-        <th>Example</th>
+        <th v-if="!hideExampleColumn">Example</th>
       </tr>
     </thead>
     <tbody>
@@ -14,7 +14,7 @@
       >
         <td class="textCell">{{ token.fullName }}</td>
         <td class="textCell">{{ token.value }}</td>
-        <td>
+        <td v-if="!hideExampleColumn">
           <slot v-bind:token="token"></slot>
         </td>
       </tr>
@@ -25,7 +25,10 @@
 <script>
 export default {
   name: 'TokensTable',
-  props: ['tokens']
+  props: [
+    'hideExampleColumn',
+    'tokens'
+  ]
 };
 </script>
 
