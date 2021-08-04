@@ -5,30 +5,16 @@
         <div class="content">
           <h1 class="title is-1">Color</h1>
 
-          <table class="table is-fullwidth">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Value</th>
-                <th>Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                v-for="(token) in $data.tokens"
-                :key="token.key"
-              >
-                <td class="textCell">{{token.fullName}}</td>
-                <td class="textCell">{{token.value}}</td>
-                <td>
-                  <span
-                    class="list-item-sample var-color"
-                    :style="{ backgroundColor: token.value}"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <TokensTable :tokens="$data.tokens">
+            <template v-slot="slotProps">
+              <span
+                class="list-item-sample var-color"
+                :style="{
+                  backgroundColor: slotProps.token.value
+                }"
+              />
+            </template>
+          </TokensTable>
 
         </div>
       </div>
@@ -41,8 +27,12 @@
 import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
 import findTokens from '../../helpers/designToken';
 import sortByKey from '../../helpers/sort';
+import TokensTable from '../../components/TokensTable.vue';
 
 export default {
+  components: {
+    TokensTable
+  },
   data() {
     const colorTokens = findTokens(tokens.color);
     const sortedColorTokens = sortByKey(colorTokens, 'fullName');
