@@ -1,3 +1,16 @@
+# [1.39.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.38.0...v1.39.0) (2021-08-04)
+
+
+### Bug Fixes
+
+* add readable titles ([93122c6](https://github.com/lyne-design-system/lyne-documentation/commit/93122c6543c71d7ffc5346f02195fd30218c905e))
+* render context based sample icons, add styles ([1d47554](https://github.com/lyne-design-system/lyne-documentation/commit/1d475545d81cbb4f9457ae941bf5e5bc3d8c2480))
+
+
+### Features
+
+* add tokens for touch ([f8cd6c7](https://github.com/lyne-design-system/lyne-documentation/commit/f8cd6c7544048243183cfa1a44b4f3dd8d80a064))
+
 # [1.38.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.37.0...v1.38.0) (2021-08-04)
 
 
