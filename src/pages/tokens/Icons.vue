@@ -133,9 +133,12 @@
 </template>
 
 <script>
-const lyneIcons = require('lyne-icons/dist/iconsMeta.json').icons;
-const lyneIconsSvgs = require('lyne-icons/dist/icons.json').icons;
-const sortHelper = require('../../helpers/sort');
+import * as lyneIconsRaw from 'lyne-icons/dist/iconsMeta.json';
+import * as lyneIconsSvgsRaw from 'lyne-icons/dist/icons.json';
+import sortByKey from '../../helpers/sort';
+
+const lyneIcons = lyneIconsRaw.icons;
+const lyneIconsSvgs = lyneIconsSvgsRaw.icons;
 
 /**
  * Types
@@ -236,7 +239,7 @@ const filterIcons = (filterValues, icons) => {
   const _type = genericFilter('type', currentTypeName, icons);
   const _category = genericFilter('category', filterValues.category, _type);
   const _search = filterBySearchTerm(filterValues.search, _category);
-  const sortedIcons = sortHelper(_search, 'fullName');
+  const sortedIcons = sortByKey(_search, 'fullName');
 
   return sortedIcons;
 };
