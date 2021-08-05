@@ -1,3 +1,17 @@
+## [1.39.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.39.0...v1.39.1) (2021-08-05)
+
+
+### Bug Fixes
+
+* remove recursion method to find tokens, add new helper to group tokens ([e11c477](https://github.com/lyne-design-system/lyne-documentation/commit/e11c477ef03052d9b0256ece32aed642a335776d))
+* use name instead of full name ([cc6d043](https://github.com/lyne-design-system/lyne-documentation/commit/cc6d043236c94acca6ab6efb1fb21e0b87da0887))
+* use new helper and import json instead of umd file ([a9e47e4](https://github.com/lyne-design-system/lyne-documentation/commit/a9e47e48efebb85fadf8530ff9787f4c8975461f))
+* use new helper and import json instead of umd file ([0b19176](https://github.com/lyne-design-system/lyne-documentation/commit/0b191768624ca3391a9cd5cb6f3ac1940e4c021d))
+* use new helper and import json instead of umd file ([683012d](https://github.com/lyne-design-system/lyne-documentation/commit/683012dd4a511a08da0ceac663ebf7401d4b88da))
+* use new helper and import json instead of umd file ([c3151ba](https://github.com/lyne-design-system/lyne-documentation/commit/c3151baebcfa7081f5d63604088709dea0751504))
+* use new helper and import json instead of umd file ([8db74aa](https://github.com/lyne-design-system/lyne-documentation/commit/8db74aa7112939288fb78918d3665f6a4edc233e))
+* use new helper, adopt to new json token structure ([fe96b6c](https://github.com/lyne-design-system/lyne-documentation/commit/fe96b6ca326581910f58388af67f3979680ae71b))
+
 # [1.39.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.38.0...v1.39.0) (2021-08-04)
 
 
