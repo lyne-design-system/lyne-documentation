@@ -12,7 +12,7 @@
         v-for="(token, index) in tokens"
         :key="index"
       >
-        <td class="textCell">{{ token.fullName }}</td>
+        <td class="textCell">{{ token.name }}</td>
         <td class="textCell">{{ token.value }}</td>
         <td v-if="!hideExampleColumn">
           <slot v-bind:token="token"></slot>
