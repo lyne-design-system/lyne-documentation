@@ -24,18 +24,21 @@
 </template>
 
 <script>
-import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
-import findTokens from '../../helpers/designToken';
+import { designTokensByCategory } from '../../helpers/designToken';
 import sortByKey from '../../helpers/sort';
 import TokensTable from '../../components/TokensTable.vue';
+
+const {
+  tokens
+} = require('lyne-design-tokens/dist/js/tokens-raw.json');
 
 export default {
   components: {
     TokensTable
   },
   data() {
-    const colorTokens = findTokens(tokens.color);
-    const sortedColorTokens = sortByKey(colorTokens, 'fullName');
+    const colorTokens = designTokensByCategory(tokens, 'color');
+    const sortedColorTokens = sortByKey(colorTokens, 'name');
 
     return {
       tokens: sortedColorTokens
