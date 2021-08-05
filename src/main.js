@@ -31,8 +31,13 @@ export default (Vue, {
   });
 
   head.meta.push({
-    content: 'viewport',
-    name: 'width=device-width, initial-scale=1'
+    content: 'noindex, nofollow',
+    name: 'robots'
+  });
+
+  head.meta.push({
+    content: 'width=device-width, initial-scale=1',
+    name: 'viewport'
   });
 
   // Register Bulma
