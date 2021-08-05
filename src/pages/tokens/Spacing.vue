@@ -29,16 +29,19 @@
 </template>
 
 <script>
-import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
-import findTokens from '../../helpers/designToken';
+import { designTokensByCategory } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
+
+const {
+  tokens
+} = require('lyne-design-tokens/dist/js/tokens-raw.json');
 
 export default {
   components: {
     TokensTable
   },
   data() {
-    const spacingTokens = findTokens(tokens.spacing);
+    const spacingTokens = designTokensByCategory(tokens, 'spacing');
     const tokensFixed = spacingTokens.filter((token) => token.attributes.type === 'fixed');
     const tokensResponsive = spacingTokens.filter((token) => token.attributes.type === 'responsive');
     const data = [
