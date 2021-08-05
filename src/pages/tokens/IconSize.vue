@@ -19,10 +19,12 @@
 </template>
 
 <script>
-import * as tokens from 'lyne-design-tokens/dist/js/tokens.umd';
-import findTokens from '../../helpers/designToken';
+import { designTokensByCategory } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
+const {
+  tokens
+} = require('lyne-design-tokens/dist/js/tokens-raw.json');
 const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 
 export default {
@@ -30,7 +32,7 @@ export default {
     TokensTable
   },
   data() {
-    const sizeTokens = findTokens(tokens.iconSize);
+    const sizeTokens = designTokensByCategory(tokens, 'iconSize');
 
     return {
       iconUiSmall: lyneIcons['arrow-change-horizontal-small'],
