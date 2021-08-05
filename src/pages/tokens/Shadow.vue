@@ -8,26 +8,26 @@
           v-for="(key, index) in Object.keys($data.tokens)"
           :key="index"
         >
-          <h2 class="title is-2">Elevation Level {{key}}</h2>
 
+          <h2 class="title is-2">Elevation Level {{key}}</h2>
           <h3 class="title is-3">Soft</h3>
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
             type="soft"
             :shadows="{
               '1': {
-                blur: $data.tokens[key].shadow['1'].blur,
-                spread: $data.tokens[key].shadow['1'].spread,
-                'offset-x': $data.tokens[key].shadow['1'].offset.x,
-                'offset-y': $data.tokens[key].shadow['1'].offset.y,
-                color: $data.tokens[key].soft['1'].color
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`],
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`],
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`],
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`],
+                color: $data.tokens[key][`${$data.tokenPrefix}${key}-soft-1-color`]
               },
               '2': {
-                blur: $data.tokens[key].shadow['2'].blur,
-                spread: $data.tokens[key].shadow['2'].spread,
-                'offset-x': $data.tokens[key].shadow['2'].offset.x,
-                'offset-y': $data.tokens[key].shadow['2'].offset.y,
-                color: $data.tokens[key].soft['2'].color
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`],
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`],
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`],
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`],
+                color: $data.tokens[key][`${$data.tokenPrefix}${key}-soft-2-color`]
               }
             }"
           />
@@ -38,18 +38,18 @@
             type="hard"
             :shadows="{
               '1': {
-                blur: $data.tokens[key].shadow['1'].blur,
-                spread: $data.tokens[key].shadow['1'].spread,
-                'offset-x': $data.tokens[key].shadow['1'].offset.x,
-                'offset-y': $data.tokens[key].shadow['1'].offset.y,
-                color: $data.tokens[key].hard['1'].color
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`],
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`],
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`],
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`],
+                color: $data.tokens[key][`${$data.tokenPrefix}${key}-hard-1-color`]
               },
               '2': {
-                blur: $data.tokens[key].shadow['2'].blur,
-                spread: $data.tokens[key].shadow['2'].spread,
-                'offset-x': $data.tokens[key].shadow['2'].offset.x,
-                'offset-y': $data.tokens[key].shadow['2'].offset.y,
-                color: $data.tokens[key].hard['2'].color
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`],
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`],
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`],
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`],
+                color: $data.tokens[key][`${$data.tokenPrefix}${key}-hard-2-color`]
               }
             }"
           />
@@ -63,19 +63,47 @@
 </template>
 
 <script>
-import * as tokens from 'lyne-design-tokens/dist/js/tokens.nested.json';
+import {
+  designTokensByCategory,
+  groupedTokens
+} from '../../helpers/designToken';
 import TokenShadowBlock from '../../components/TokenShadowBlock.vue';
+
+const {
+  tokens
+} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+
+const getNamedGroupedTokens = (_tokens) => {
+  const keys = Object.keys(_tokens);
+  const finalTokens = {};
+
+  keys.forEach((key) => {
+    const tokenGroup = _tokens[key];
+    const tokensObject = {};
+
+    tokenGroup.forEach((token) => {
+      tokensObject[token.name] = token.value;
+    });
+
+    finalTokens[key] = tokensObject;
+  });
+
+  return finalTokens;
+};
 
 export default {
   components: {
     TokenShadowBlock
   },
   data() {
-    const shadowTokens = tokens.shadow.elevation.level;
+
+    const shadowTokens = designTokensByCategory(tokens, 'shadow');
+    const _groupedTokens = groupedTokens(shadowTokens, 'group');
+    const namedTokenGroups = getNamedGroupedTokens(_groupedTokens);
 
     return {
       tokenPrefix: 'shadow-elevation-level-',
-      tokens: shadowTokens
+      tokens: namedTokenGroups
     };
   }
 };
