@@ -1,7 +1,111 @@
 <template>
   <Layout>
-    <div>
-      Overview Page for Design Tokens
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+
+          <h1 class="title is-1">Design Tokens</h1>
+
+          <h2>Access</h2>
+
+          <p>Our managed system of Design Tokens can be either accessed via npm or our cdn:</p>
+          <ul>
+            <li
+              v-for="(link, index) in $data.accessLinks"
+              :key="index"
+            >
+              <a
+                :href="link.url"
+                target="_blank"
+                rel="noopener"
+              >{{link.name}}</a>
+            </li>
+          </ul>
+
+          <h2>Source</h2>
+
+          <p>The source repository (where design tokens are defined and generated) can be found on GitHub:</p>
+          <a
+            href="https://github.com/lyne-design-system/lyne-design-tokens"
+            target="_blank"
+            rel="noopener"
+          >lyne-design-tokens</a>
+
+          <h2>Categories</h2>
+
+          <p>We define and provide information for Design Tokens in the following Categories</p>
+          <ul>
+            <li
+              v-for="(link, index) in $data.categories"
+              :key="index"
+            >
+              <g-link :to="'tokens/' + link.url">{{link.name}}</g-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
+
+<script>
+
+const accessLinks = [
+  {
+    name: 'CDN',
+    url: 'https://lyne-design-tokens.netlify.app/'
+  },
+  {
+    name: 'NPM',
+    url: 'https://www.npmjs.com/package/lyne-design-tokens'
+  }
+];
+
+const categories = [
+  {
+    name: 'Breakpoint',
+    url: 'breakpoint'
+  },
+  {
+    name: 'Color',
+    url: 'color'
+  },
+  {
+    name: 'Icons',
+    url: 'icons'
+  },
+  {
+    name: 'IconSize',
+    url: 'icon-size'
+  },
+  {
+    name: 'Shadow',
+    url: 'shadow'
+  },
+  {
+    name: 'Spacing',
+    url: 'spacing'
+  },
+  {
+    name: 'Touch',
+    url: 'touch'
+  },
+  {
+    name: 'Typo',
+    url: 'typo'
+  }
+];
+
+export default {
+  data() {
+    return {
+      accessLinks,
+      categories
+    };
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+
+</style>
