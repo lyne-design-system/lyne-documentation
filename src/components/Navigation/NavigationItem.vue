@@ -13,7 +13,6 @@
       <span
         class="nav-icon"
         v-if="isFolder"
-        @click="toggle"
       >
         <i
           class="mdi"
