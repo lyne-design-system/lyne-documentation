@@ -1,3 +1,12 @@
+## [1.40.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.2...v1.40.3) (2021-08-06)
+
+
+### Bug Fixes
+
+* increase download button touch size ([8d3fed8](https://github.com/lyne-design-system/lyne-documentation/commit/8d3fed887bc63ac909786f4af6960c669a2efaa7))
+* move column forward ([f8f36f3](https://github.com/lyne-design-system/lyne-documentation/commit/f8f36f38b225e04d85e913c07f66dff5a6a4c233))
+* remove toggle event handler from icon ([e888a75](https://github.com/lyne-design-system/lyne-documentation/commit/e888a755d679c5f387eeb0ca948693f92513ebbe))
+
 ## [1.40.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.1...v1.40.2) (2021-08-06)
 
 
