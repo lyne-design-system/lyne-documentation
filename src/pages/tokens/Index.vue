@@ -39,7 +39,7 @@
               v-for="(link, index) in $data.categories"
               :key="index"
             >
-              <g-link :to="'tokens/' + link.url">{{link.name}}</g-link>
+              <g-link :to="'tokens/' + link.url + '/'">{{link.name}}</g-link>
             </li>
           </ul>
         </div>
