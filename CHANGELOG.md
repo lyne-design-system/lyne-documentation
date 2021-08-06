@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.39.1...v1.40.0) (2021-08-06)
+
+
+### Features
+
+* add contents to design tokens overview page ([d25e311](https://github.com/lyne-design-system/lyne-documentation/commit/d25e31152ab0cf27bb94b1c6b7d1e7ac752ab216))
+
 ## [1.39.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.39.0...v1.39.1) (2021-08-05)
 
 
