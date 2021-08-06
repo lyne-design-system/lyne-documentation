@@ -1,3 +1,11 @@
+## [1.40.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.0...v1.40.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* imporve nav items highlighting ([0d4fd7f](https://github.com/lyne-design-system/lyne-documentation/commit/0d4fd7fcd54ccfcdcf7f06dbaa047ff24895326a))
+* make sure path gets rendered correctly by adding trailing slash ([79e6e9e](https://github.com/lyne-design-system/lyne-documentation/commit/79e6e9e2e8ce2f54aa16534ab25307e8b856d78f))
+
 # [1.40.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.39.1...v1.40.0) (2021-08-06)
 
 
