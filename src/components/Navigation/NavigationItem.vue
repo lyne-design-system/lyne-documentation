@@ -1,6 +1,9 @@
 <template>
   <li>
-    <div class="nav-item">
+    <div
+      class="nav-item"
+      @click="toggle"
+    >
       <g-link
         class="link"
         :to="item.path"
