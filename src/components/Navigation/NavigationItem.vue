@@ -4,7 +4,6 @@
       <g-link
         class="link"
         :to="item.path"
-        :class="$route.path === item.path && 'is-exact-active'"
       >
         {{ item.name }}
       </g-link>
@@ -108,15 +107,16 @@ export default {
 
 .link {
   display: block;
-  padding: .7rem 3rem .7rem .7rem;
+  padding: .3rem;
+  margin: .4rem 0;
 }
 
-.link.is-exact-active {
+.link.active {
   background-color: $link;
   color: $link-invert;
 }
 
-.link.is-exact-active ~ .nav-icon {
+.link.active ~ .nav-icon {
   color: $link-invert;
 }
 
