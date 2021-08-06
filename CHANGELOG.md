@@ -1,3 +1,10 @@
+## [1.40.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.1...v1.40.2) (2021-08-06)
+
+
+### Bug Fixes
+
+* add toggle event handler to nav-item as well ([0066a1b](https://github.com/lyne-design-system/lyne-documentation/commit/0066a1ba8734d97e30b953fa6501f10b42fb1244))
+
 ## [1.40.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.0...v1.40.1) (2021-08-06)
 
 
