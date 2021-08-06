@@ -118,7 +118,13 @@
                 <td class="textCell">{{icon.properties.scalable}}</td>
                 <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
                 <td class="textCell">
-                  <a v-on:click="downloadFile(icon)" :id='icon.id' :download='icon.fullName + ".svg"' href=””>
+                  <a
+                    v-on:click="downloadFile(icon)"
+                    :id='icon.id'
+                    :download='icon.fullName + ".svg"'
+                    href=””
+                    class="download-button"
+                  >
                     <i class="mdi mdi-download"></i>
                   </a>
                 </td>
@@ -392,6 +398,15 @@ export default {
   .iconToken svg {
     display: block;
     fill: currentColor;
+  }
+
+  .download-button {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
   }
 
 </style>
