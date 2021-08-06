@@ -89,11 +89,11 @@
               <tr>
                 <th>Icon</th>
                 <th>name</th>
+                <th>download</th>
                 <th>category</th>
                 <th>colorizable</th>
                 <th>scalable</th>
                 <th>keywords</th>
-                <th>download</th>
               </tr>
             </thead>
             <tbody>
@@ -113,10 +113,6 @@
                   ></span>
                 </td>
                 <td class="textCell">{{icon.fullName}}</td>
-                <td class="textCell">{{icon.category}}</td>
-                <td class="textCell">{{icon.properties.color}}</td>
-                <td class="textCell">{{icon.properties.scalable}}</td>
-                <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
                 <td class="textCell">
                   <a
                     v-on:click="downloadFile(icon)"
@@ -128,6 +124,10 @@
                     <i class="mdi mdi-download"></i>
                   </a>
                 </td>
+                <td class="textCell">{{icon.category}}</td>
+                <td class="textCell">{{icon.properties.color}}</td>
+                <td class="textCell">{{icon.properties.scalable}}</td>
+                <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
               </tr>
             </tbody>
           </table>
