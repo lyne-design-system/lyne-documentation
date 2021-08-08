@@ -1,17 +1,16 @@
 <template>
   <li>
-    <div
-      class="nav-item"
-      @click="toggle"
+
+    <g-link
+      class="link"
+      :class="'link--level-' + item.level"
+      :to="item.path"
+      @click.native="toggle"
     >
-      <g-link
-        class="link"
-        :to="item.path"
-      >
-        {{ item.name }}
-      </g-link>
+      {{ item.name }}
+
       <span
-        class="nav-icon"
+        class="link__icon"
         v-if="isFolder"
       >
         <i
@@ -22,7 +21,8 @@
           }"
         ></i>
       </span>
-    </div>
+    </g-link>
+
     <ul
       class="sub-menu"
       v-show="isOpen"
@@ -56,6 +56,8 @@ export default {
   },
   methods: {
     toggle () {
+      console.log('yup');
+      console.log(this);
       if (this.isFolder) {
         this.isOpen = !this.isOpen;
       }
@@ -86,11 +88,15 @@ export default {
   margin-left: 1rem;
 }
 
-.nav-item {
+.link {
   position: relative;
+  display: block;
+  padding: .3rem 2.5rem .3rem .3rem;
+  margin: .4rem 0;
+  color: $info;
 }
 
-.nav-icon {
+.link__icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -100,26 +106,32 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $link;
-}
-
-.nav-icon .mdi {
   color: currentColor;
 }
 
-.link {
-  display: block;
-  padding: .3rem;
-  margin: .4rem 0;
+.link__icon .mdi {
+  color: currentColor;
+}
+
+.link--level-1 {
+  // font-weight: bold;
+  // color: currentColor;
+}
+
+.link--level-2 {
+  // color: currentColor;
+}
+
+.link--level-3 {
+  // color: currentColor;
 }
 
 .link.active {
-  background-color: $link;
-  color: $link-invert;
+  background-color: $grey-lighter;
 }
 
-.link.active ~ .nav-icon {
-  color: $link-invert;
+.link.active ~ .link__icon {
+  //  color: $link-invert;
 }
 
 </style>
