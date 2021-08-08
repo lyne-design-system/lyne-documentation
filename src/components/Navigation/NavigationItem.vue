@@ -113,25 +113,8 @@ export default {
   color: currentColor;
 }
 
-.link--level-1 {
-  // font-weight: bold;
-  // color: currentColor;
-}
-
-.link--level-2 {
-  // color: currentColor;
-}
-
-.link--level-3 {
-  // color: currentColor;
-}
-
 .link.active {
   background-color: $grey-lighter;
-}
-
-.link.active ~ .link__icon {
-  //  color: $link-invert;
 }
 
 </style>
