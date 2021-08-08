@@ -1,3 +1,16 @@
+# [1.41.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.3...v1.41.0) (2021-08-08)
+
+
+### Bug Fixes
+
+* use explicit import ([ed47d5c](https://github.com/lyne-design-system/lyne-documentation/commit/ed47d5c659e8e53749ac809f4ac8626093a3e1f7))
+
+
+### Features
+
+* add  method to add navlevels to navitems ([e25781b](https://github.com/lyne-design-system/lyne-documentation/commit/e25781b9aa82a0a2cad26c6626598e8909a2e390))
+* use method to add navlevels ([5a90a1b](https://github.com/lyne-design-system/lyne-documentation/commit/5a90a1b265598f3c1de3f80980c176360983e912))
+
 ## [1.40.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.2...v1.40.3) (2021-08-06)
 
 
