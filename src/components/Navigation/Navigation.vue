@@ -27,8 +27,11 @@ query {
 </static-query>
 
 <script>
+import {
+  addLevelsToNavItems,
+  getPathOfNavItem
+} from '../../helpers/navigation';
 import eventBus from '../../helpers/eventBus';
-import getPathOfNavItem from '../../helpers/navigation';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
 import Search from '../Search.vue';
@@ -59,7 +62,9 @@ export default {
     Search
   },
   created() {
-    this.navData = addComponentNavItems(this.$static.component.allComponents, navData);
+    const navWithComps = addComponentNavItems(this.$static.component.allComponents, navData);
+
+    this.navData = addLevelsToNavItems(navWithComps);
     this.paths = getPathOfNavItem(this.navData, this.$route.path);
 
     eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
