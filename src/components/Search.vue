@@ -39,7 +39,7 @@
 
 <script>
 import Flexsearch from 'flexsearch';
-import getPathOfNavItem from '../helpers/navigation';
+import { getPathOfNavItem } from '../helpers/navigation';
 import navData from '../navigation';
 
 const stripHtml = (htmlString) => {
