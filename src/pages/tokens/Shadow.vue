@@ -16,17 +16,17 @@
             type="soft"
             :shadows="{
               '1': {
-                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`],
-                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`],
-                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`],
-                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`],
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`] + 'px',
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`] + 'px',
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`] + 'px',
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`] + 'px',
                 color: $data.tokens[key][`${$data.tokenPrefix}${key}-soft-1-color`]
               },
               '2': {
-                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`],
-                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`],
-                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`],
-                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`],
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`] + 'px',
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`] + 'px',
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`] + 'px',
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`] + 'px',
                 color: $data.tokens[key][`${$data.tokenPrefix}${key}-soft-2-color`]
               }
             }"
@@ -38,17 +38,17 @@
             type="hard"
             :shadows="{
               '1': {
-                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`],
-                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`],
-                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`],
-                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`],
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-blur`] + 'px',
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-spread`] + 'px',
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-x`] + 'px',
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-1-offset-y`] + 'px',
                 color: $data.tokens[key][`${$data.tokenPrefix}${key}-hard-1-color`]
               },
               '2': {
-                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`],
-                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`],
-                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`],
-                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`],
+                blur: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-blur`] + 'px',
+                spread: $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-spread`] + 'px',
+                'offset-x': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-x`] + 'px',
+                'offset-y': $data.tokens[key][`${$data.tokenPrefix}${key}-shadow-2-offset-y`] + 'px',
                 color: $data.tokens[key][`${$data.tokenPrefix}${key}-hard-2-color`]
               }
             }"
@@ -91,16 +91,15 @@ const getNamedGroupedTokens = (_tokens) => {
   return finalTokens;
 };
 
+const shadowTokens = designTokensByCategory(tokens, 'shadow');
+const _groupedTokens = groupedTokens(shadowTokens, 'group');
+const namedTokenGroups = getNamedGroupedTokens(_groupedTokens);
+
 export default {
   components: {
     TokenShadowBlock
   },
   data() {
-
-    const shadowTokens = designTokensByCategory(tokens, 'shadow');
-    const _groupedTokens = groupedTokens(shadowTokens, 'group');
-    const namedTokenGroups = getNamedGroupedTokens(_groupedTokens);
-
     return {
       tokenPrefix: 'shadow-elevation-level-',
       tokens: namedTokenGroups
