@@ -28,13 +28,21 @@ const {
   tokens
 } = require('lyne-design-tokens/dist/js/tokens-raw.json');
 
+const touchTokens = designTokensByCategory(tokens, 'touch');
+
+touchTokens.map((_token) => {
+  const token = _token;
+
+  token.value = `${token.value}px`;
+
+  return token;
+});
+
 export default {
   components: {
     TokensTable
   },
   data() {
-    const touchTokens = designTokensByCategory(tokens, 'touch');
-
     return {
       tokens: touchTokens
     };
