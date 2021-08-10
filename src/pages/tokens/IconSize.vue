@@ -27,13 +27,21 @@ const {
 } = require('lyne-design-tokens/dist/js/tokens-raw.json');
 const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 
+const sizeTokens = designTokensByCategory(tokens, 'iconSize');
+
+sizeTokens.map((_token) => {
+  const token = _token;
+
+  token.value = `${token.value}px`;
+
+  return token;
+});
+
 export default {
   components: {
     TokensTable
   },
   data() {
-    const sizeTokens = designTokensByCategory(tokens, 'iconSize');
-
     return {
       iconUiSmall: lyneIcons['arrow-change-horizontal-small'],
       tokens: sizeTokens.reverse()
