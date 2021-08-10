@@ -56,8 +56,6 @@ export default {
   },
   methods: {
     toggle () {
-      console.log('yup');
-      console.log(this);
       if (this.isFolder) {
         this.isOpen = !this.isOpen;
       }
