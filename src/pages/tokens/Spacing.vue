@@ -36,25 +36,34 @@ const {
   tokens
 } = require('lyne-design-tokens/dist/js/tokens-raw.json');
 
+const spacingTokens = designTokensByCategory(tokens, 'spacing');
+
+spacingTokens.map((_token) => {
+  const token = _token;
+
+  token.value = `${token.value}px`;
+
+  return token;
+});
+
+const tokensFixed = spacingTokens.filter((token) => token.attributes.type === 'fixed');
+const tokensResponsive = spacingTokens.filter((token) => token.attributes.type === 'responsive');
+const data = [
+  {
+    title: 'Fixed',
+    values: tokensFixed.reverse()
+  },
+  {
+    title: 'Responsive',
+    values: tokensResponsive.reverse()
+  }
+];
+
 export default {
   components: {
     TokensTable
   },
   data() {
-    const spacingTokens = designTokensByCategory(tokens, 'spacing');
-    const tokensFixed = spacingTokens.filter((token) => token.attributes.type === 'fixed');
-    const tokensResponsive = spacingTokens.filter((token) => token.attributes.type === 'responsive');
-    const data = [
-      {
-        title: 'Fixed',
-        values: tokensFixed.reverse()
-      },
-      {
-        title: 'Responsive',
-        values: tokensResponsive.reverse()
-      }
-    ];
-
     return {
       tokens: data
     };
