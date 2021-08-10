@@ -32,14 +32,14 @@ const {
   tokens
 } = require('lyne-design-tokens/dist/js/tokens-raw.json');
 
+const colorTokens = designTokensByCategory(tokens, 'color');
+const sortedColorTokens = sortByKey(colorTokens, 'name');
+
 export default {
   components: {
     TokensTable
   },
   data() {
-    const colorTokens = designTokensByCategory(tokens, 'color');
-    const sortedColorTokens = sortByKey(colorTokens, 'name');
-
     return {
       tokens: sortedColorTokens
     };
