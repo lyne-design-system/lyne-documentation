@@ -13,10 +13,12 @@ const groupedTokens = (tokens, attribute) => {
     const currentGroupKeys = Object.keys(tokensByGroups);
     const tokenGroup = token.attributes[attribute];
 
-    if (currentGroupKeys.indexOf(tokenGroup.toString()) === -1) {
-      tokensByGroups[tokenGroup] = [token];
-    } else {
-      tokensByGroups[tokenGroup].push(token);
+    if (tokenGroup) {
+      if (currentGroupKeys.indexOf(tokenGroup.toString()) === -1) {
+        tokensByGroups[tokenGroup] = [token];
+      } else {
+        tokensByGroups[tokenGroup].push(token);
+      }
     }
   });
 
