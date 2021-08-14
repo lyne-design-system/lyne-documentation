@@ -51,11 +51,11 @@ const tokensResponsive = spacingTokens.filter((token) => token.attributes.type =
 const data = [
   {
     title: 'Fixed',
-    values: tokensFixed.reverse()
+    values: tokensFixed
   },
   {
     title: 'Responsive',
-    values: tokensResponsive.reverse()
+    values: tokensResponsive
   }
 ];
 
