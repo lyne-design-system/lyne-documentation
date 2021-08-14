@@ -108,10 +108,6 @@ const navigationData = [
         path: '/tokens/spacing/'
       },
       {
-        name: 'Touch',
-        path: '/tokens/touch/'
-      },
-      {
         name: 'Typography',
         path: '/tokens/typo/'
       }
