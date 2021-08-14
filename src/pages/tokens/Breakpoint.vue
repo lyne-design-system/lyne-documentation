@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      tokens: breakpointTokens.reverse()
+      tokens: breakpointTokens
     };
   }
 };
