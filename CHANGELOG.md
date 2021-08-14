@@ -1,3 +1,16 @@
+## [1.41.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.41.0...v1.41.1) (2021-08-10)
+
+
+### Bug Fixes
+
+* only add token if group attribute is defined ([8667b58](https://github.com/lyne-design-system/lyne-documentation/commit/8667b5882b973fdbc75dca305b9c37acca9652a0))
+* render px values ([a4ed72b](https://github.com/lyne-design-system/lyne-documentation/commit/a4ed72b629735ddbc03a5e0aa4874574b92c9671))
+* render px values ([a16e7d2](https://github.com/lyne-design-system/lyne-documentation/commit/a16e7d2896f5d616b0daf5e6ca2dc6a324c4a7a2))
+* render px values ([dce6a12](https://github.com/lyne-design-system/lyne-documentation/commit/dce6a12080ec7c2f876cdf3972de61a052baad6e))
+* render px values ([604513c](https://github.com/lyne-design-system/lyne-documentation/commit/604513c75658bb904560cf9e3f6406a974204450))
+* render px values ([a2c57e5](https://github.com/lyne-design-system/lyne-documentation/commit/a2c57e5655deaa70c02e8f399fa11adcfaa0b6e7))
+* render px values ([2e51056](https://github.com/lyne-design-system/lyne-documentation/commit/2e5105636bd0bfd3aa3d1ccc196ca72ffb19329a))
+
 # [1.41.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.40.3...v1.41.0) (2021-08-08)
 
 
