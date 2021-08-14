@@ -88,8 +88,8 @@ const navigationData = [
         path: '/tokens/icons/'
       },
       {
-        name: 'Icon Size',
-        path: '/tokens/icon-size/'
+        name: 'Size',
+        path: '/tokens/size/'
       },
       {
         name: 'Shadow',
