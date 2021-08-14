@@ -76,6 +76,14 @@ const navigationData = [
   {
     children: [
       {
+        name: 'Animation',
+        path: '/tokens/animation/'
+      },
+      {
+        name: 'Border',
+        path: '/tokens/border/'
+      },
+      {
         name: 'Breakpoint',
         path: '/tokens/breakpoint/'
       },
