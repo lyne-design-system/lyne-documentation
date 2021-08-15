@@ -1,3 +1,21 @@
+# [1.42.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.41.1...v1.42.0) (2021-08-15)
+
+
+### Bug Fixes
+
+* don't reverse order ([47c7334](https://github.com/lyne-design-system/lyne-documentation/commit/47c7334a9ae5db6244a78f2aebb138e30546771f))
+* don't reverse order ([6046541](https://github.com/lyne-design-system/lyne-documentation/commit/6046541f1d3331243a07bf8c4987d60e04fc7044))
+* remove navigation entry for touch tokens ([00b5c4d](https://github.com/lyne-design-system/lyne-documentation/commit/00b5c4dcd2fe5f89f86d66683d4c637fe5884cdd))
+* remove obsolete touch page ([872fae4](https://github.com/lyne-design-system/lyne-documentation/commit/872fae48527eaac6128f7fed8a9edbdb92f58409))
+
+
+### Features
+
+*  add page for border tokens ([16c4cea](https://github.com/lyne-design-system/lyne-documentation/commit/16c4ceaa289cb09a24fe7d69ece7703ac6c7bc2e))
+* add navigation routes  for animation and border tokens ([ac8dcbd](https://github.com/lyne-design-system/lyne-documentation/commit/ac8dcbd7ebd5747e53828ad111c9d8ff4a607da8))
+* add new size tokens ([d892e0b](https://github.com/lyne-design-system/lyne-documentation/commit/d892e0b0fa0b8a581d89811c6e40f7baf29c47b2))
+* add page for animation  tokens ([6a59b07](https://github.com/lyne-design-system/lyne-documentation/commit/6a59b07bf8e8b49ee95682d24f82b35cc2761e97))
+
 ## [1.41.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.41.0...v1.41.1) (2021-08-10)
 
 
