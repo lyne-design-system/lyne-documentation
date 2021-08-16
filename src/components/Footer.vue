@@ -22,9 +22,6 @@
         <li>
           <g-link to="/deployments/">Storybook version history of lyne-components</g-link>
         </li>
-        <li>
-          <g-link to="/playground/">CMS playground</g-link>
-        </li>
       </ul>
 
       <h2 class="title is-5">Notice</h2>
