@@ -15,19 +15,6 @@ module.exports = {
   },
   plugins: [
 
-    // source-graphql plugin for gridsome
-    {
-      options: {
-        fieldName: globalConfig.graphqlDatoFieldName,
-        headers: {
-          Authorization: `Bearer ${process.env.DATO_API_TOKEN}`
-        },
-        typeName: globalConfig.graphqlDatoTypeName,
-        url: globalConfig.graphqlDatoUrl
-      },
-      use: '@gridsome/source-graphql'
-    },
-
     /**
      * filesystem plugin for content markdown.
      * will use template {typeName}.vue by default
