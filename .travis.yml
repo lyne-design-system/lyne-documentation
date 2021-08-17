@@ -30,15 +30,6 @@ jobs:
     - npm run semantic-release || travis_terminate 1
     - ./ci/push_assets_to_git.sh || travis_terminate 1
     - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/ || travis_terminate 1
-    - |
-      curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
-      -H 'Content-Type: application/json' \
-      -d '{ "status": "success" }'
-    after_failure:
-    - |
-      curl -n -X POST https://webhooks.datocms.com/c11ab978efe05ef897a2/deploy-results \
-      -H 'Content-Type: application/json' \
-      -d '{ "status": "error" }'
 
   - stage: non-master build and deploy
     if: ((branch != master OR type = pull_request) AND fork = false)
