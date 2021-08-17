@@ -9,24 +9,9 @@ https://lyne-documentation.netlify.app/
 
 First of all run `npm install` on the command line to install all dependencies required by the Lyne Documentation Platform.
 
-### Run dev server
-
-You must provide an API token for the Dato CMS GraphQL Endpoint. There are **two** possibilities:
-
-#### First — .env file
-
-Add a `.env` file with the following content to the project root
+Then you can run the dev server with the following command:
 ```bash
-DATO_API_TOKEN=PASTE_TOKEN_HERE
-```
-
-After adding the `.env` file, you can run the dev server with `npm run develop`
-
-#### Second — Pass token with npm command
-
-You can pass the token directly in the npm command
-```bash
-DATO_API_TOKEN=PASTE_TOKEN_HERE npm run develop
+npm run develop
 ```
 
 ### Linting
