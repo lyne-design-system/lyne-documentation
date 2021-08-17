@@ -13,6 +13,7 @@ const componentsData = [
       },
       {
         attrs: {
+          icon: true,
           label: 'Button',
           variant: 'primary'
         },
