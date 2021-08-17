@@ -3,31 +3,34 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">{{$page.component.component.title}}</h1>
+        <h1 class="title is-1">{{$data.title}}</h1>
 
         <div class="content">
           <div
-            v-for="(comp) in $page.variants.allComponentVariants"
+            v-for="(comp) in $data.variants"
             :key="comp.id"
           >
-            <h2>Variant: {{comp.title}}</h2>
-            <p>Description: {{comp.description}}</p>
+            <h2 class="title is-2">Variant: {{comp.title}}</h2>
 
+            <h3>Preview</h3>
+
+            <component
+              v-bind:is="$data.title"
+              v-bind="comp.attrs"
+              v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join() : ""'
+            ></component>
+
+            <h3>Sandbox</h3>
             <Codepen :contents='{
-              "title": `Lyne Components Sandbox: ${$page.component.component.componentName}`,
-              "html": codepenHtml(comp, $page.component.component.componentName)
+              "title": `Lyne Components Sandbox: ${$data.title}`,
+              "html": codepenHtml(comp, $data.title)
               }'
             />
 
-            <h3>Preview</h3>
-            <component
-              v-bind:is="$page.component.component.componentName"
-              v-bind="comp.properties"
-            ></component>
+            <hr>
           </div>
 
-          <hr>
-          <h2><i>Readme file from stencil build</i></h2>
+          <h2>Documentation</h2>
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
         </div>
@@ -39,25 +42,8 @@
 
 <page-query>
 query(
-  $compId: lyneTypes_ItemId
   $componentDistPath: String
 ) {
-  component: lyne {
-    component(filter: { id: { eq: $compId } }) {
-      title
-      componentName
-    }
-  }
-  variants: lyne {
-    allComponentVariants(
-      filter: { component: { eq: $compId } }
-    ) {
-      id
-      title
-      description
-      properties
-    }
-  }
   mdDoc: allMdDoc(
     filter: { fileInfo: { directory: { in: [$componentDistPath] } } }
   ) {
@@ -73,10 +59,17 @@ query(
 <script>
 import Codepen from '../components/Codepen.vue';
 import codepen from '../helpers/codepen';
+import components from '../components';
 
 export default {
   components: {
     Codepen
+  },
+  data() {
+    return {
+      title: '',
+      variants: []
+    };
   },
   methods: {
     codepenHtml(elem, name) {
@@ -91,7 +84,16 @@ export default {
     window.lyneComps = require('lyne-test/loader');
     /* eslint-enable global-require */
 
-    window.lyneComps.defineCustomElements();
+    window.lyneComps.defineCustomElements()
+      .then(() => {
+        const componentsForName = components.filter((comp) => comp.name === this.$context.compId);
+
+        if (componentsForName.length === 1) {
+          this.$data.variants = componentsForName[0].variants;
+        }
+
+        this.$data.title = this.$context.compId;
+      });
   },
   name: 'LyneComponent'
 };
