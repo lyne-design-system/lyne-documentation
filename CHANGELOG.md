@@ -1,3 +1,16 @@
+# [1.44.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.43.0...v1.44.0) (2021-08-17)
+
+
+### Bug Fixes
+
+* remove call to dato webhooks after success and failure ([0254e39](https://github.com/lyne-design-system/lyne-documentation/commit/0254e3963ab4597b2a9fdab6fae8fc4adf7e370f))
+* remove dato token parameter ([f950faf](https://github.com/lyne-design-system/lyne-documentation/commit/f950fafdab9e624ce5032daf1fb2126143f2bb17))
+
+
+### Features
+
+* render links to components ([22b45e7](https://github.com/lyne-design-system/lyne-documentation/commit/22b45e77f7493f32ff81c1f2cd5fa1a36cb6638f))
+
 # [1.43.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.42.0...v1.43.0) (2021-08-17)
 
 
