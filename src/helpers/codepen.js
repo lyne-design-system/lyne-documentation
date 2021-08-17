@@ -1,12 +1,19 @@
 const codepenHtml = (element, name) => {
-  const properties = Object.entries(element.properties)
+  const properties = Object.entries(element.attrs)
     .map(([
       key,
       val
     ]) => `${key}="${val}"`)
     .join(' ');
 
-  const comp = `<${name} ${properties}></${name}>`;
+  const {
+    slots
+  } = element;
+  const slotsString = slots && slots.length > 0
+    ? slots.join()
+    : '';
+
+  const comp = `<${name} ${properties}>${slotsString}</${name}>`;
 
   /* eslint-disable no-useless-escape */
   const html = `

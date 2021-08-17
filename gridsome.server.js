@@ -1,37 +1,23 @@
 const axios = require('axios');
+const componentsData = require('./src/components');
 const globalConfig = require('./global.config');
 
 const mainFunction = (api) => {
 
-  api.createPages(async ({
-    graphql, createPage
+  api.createPages(({
+    createPage
   }) => {
 
-    // get lyne-components from graph-ql
-    const {
-      data
-    } = await graphql(`
-      {
-        ${globalConfig.graphqlDatoFieldName} {
-          allComponents {
-            id
-            componentName
-          }
-        }
-      }
-    `);
-
-    // create a page for each lyne-component
-    data[globalConfig.graphqlDatoFieldName]
-      .allComponents
-      .forEach((comp) => createPage({
+    componentsData.forEach((component) => {
+      createPage({
         component: './src/templates/Component.vue',
         context: {
-          compId: comp.id,
-          componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${comp.componentName}`
+          compId: component.name,
+          componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${component.name}`
         },
-        path: `/components/${comp.componentName}`
-      }));
+        path: `/components/${component.name}`
+      });
+    });
 
   });
 

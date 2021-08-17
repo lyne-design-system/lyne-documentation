@@ -15,22 +15,12 @@
   </div>
 </template>
 
-<static-query>
-query {
-  component: lyne {
-    allComponents {
-      title
-      componentName
-    }
-  }
-}
-</static-query>
-
 <script>
 import {
   addLevelsToNavItems,
   getPathOfNavItem
 } from '../../helpers/navigation';
+import componentItems from '../../components';
 import eventBus from '../../helpers/eventBus';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
@@ -48,8 +38,8 @@ const addComponentNavItems = (components, _navData) => {
 
   components.forEach((comp) => {
     navDataCopy[indexOfCompNavItem].children.push({
-      name: comp.title,
-      path: `/components/${comp.componentName}`
+      name: comp.name,
+      path: `/components/${comp.name}`
     });
   });
 
@@ -62,7 +52,7 @@ export default {
     Search
   },
   created() {
-    const navWithComps = addComponentNavItems(this.$static.component.allComponents, navData);
+    const navWithComps = addComponentNavItems(componentItems, navData);
 
     this.navData = addLevelsToNavItems(navWithComps);
     this.paths = getPathOfNavItem(this.navData, this.$route.path);
