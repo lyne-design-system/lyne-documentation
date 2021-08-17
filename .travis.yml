@@ -24,7 +24,7 @@ jobs:
     - npm install || travis_terminate 1
     - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
     - npm run lint || travis_terminate 1
-    - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
+    -  npm run build || travis_terminate 1
 
     after_success:
     - npm run semantic-release || travis_terminate 1
@@ -37,4 +37,4 @@ jobs:
     - npm install || travis_terminate 1
     - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
     - npm run lint || travis_terminate 1
-    - DATO_API_TOKEN=$DATO_API_TOKEN npm run build || travis_terminate 1
+    - npm run build || travis_terminate 1
