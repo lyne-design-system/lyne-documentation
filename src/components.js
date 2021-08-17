@@ -23,7 +23,16 @@ const componentsData = [
     ]
   },
   {
-    name: 'lyne-link'
+    name: 'lyne-link',
+    variants: [
+      {
+        attrs: {
+          link: '#',
+          text: 'Link text'
+        },
+        title: 'default'
+      }
+    ]
   }
 ];
 
