@@ -94,7 +94,6 @@ export default {
     }
   },
   mounted() {
-    console.log('MOUNTED');
     // This makes sure that components only get rendered on the client.
 
     /* eslint-disable global-require */
