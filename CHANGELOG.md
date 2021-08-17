@@ -1,3 +1,22 @@
+# [1.43.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.42.0...v1.43.0) (2021-08-17)
+
+
+### Bug Fixes
+
+* add data from local components file instead of graphql ([aa490cf](https://github.com/lyne-design-system/lyne-documentation/commit/aa490cfb84df4929daee538c57bb5428921e5e6a))
+* add title to variant ([dd881d3](https://github.com/lyne-design-system/lyne-documentation/commit/dd881d34a6014e7f1382e08270ec67b522a4048a))
+* include slot as well ([6872f3a](https://github.com/lyne-design-system/lyne-documentation/commit/6872f3a45e58aa2415ff848c1120cb98f8948d83))
+* make sure data get's set on mounted and on update ([ca57b68](https://github.com/lyne-design-system/lyne-documentation/commit/ca57b6844f7125c8f77c683b367d9db6a3d0e162))
+* pass components data from local files instead of graphql ([454a9e3](https://github.com/lyne-design-system/lyne-documentation/commit/454a9e3eaf07b149d283700ed1a04f051b7391a6))
+* render component variants from file instead of dato ([6f627c9](https://github.com/lyne-design-system/lyne-documentation/commit/6f627c93af6223902cc525a4e9de836800048bea))
+* set icon to true ([12fb174](https://github.com/lyne-design-system/lyne-documentation/commit/12fb174eb79004eae4195546a1c4cd6d8eff9e92))
+
+
+### Features
+
+* add components file with components meta-data ([4d8da04](https://github.com/lyne-design-system/lyne-documentation/commit/4d8da0482008f9fb729bc8f99681274153f48a7d))
+* add variant for button ([72f72cf](https://github.com/lyne-design-system/lyne-documentation/commit/72f72cffeb1040861dc248a78bec3bf6faa9631b))
+
 # [1.42.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.41.1...v1.42.0) (2021-08-15)
 
 
