@@ -4,16 +4,16 @@
     <section class="section">
       <div class="container">
         <h1 class="title is-1">{{$data.title}}</h1>
-
         <div class="content">
+          <h2 class="title is-2">Variants</h2>
           <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
           <div
             v-for="(comp) in $data.variants"
             :key="comp.id"
           >
-            <h2 class="title is-2">Variant: {{comp.title}}</h2>
+            <h3 class="title is-3">Variant: {{comp.title}}</h3>
 
-            <h3>Preview</h3>
+            <h4 class="title is-4">Preview</h4>
 
             <div
               class="variant-container"
@@ -26,7 +26,7 @@
               ></component>
             </div>
 
-            <h3>Sandbox</h3>
+            <h4 class="title is-4">Sandbox</h4>
             <Codepen :contents='{
               "title": `Lyne Components Sandbox: ${$data.title}`,
               "html": codepenHtml(comp, $data.title)
@@ -125,5 +125,6 @@ export default {
 .variant-container {
   border: 1px solid black;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 </style>
