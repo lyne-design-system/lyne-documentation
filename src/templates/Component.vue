@@ -6,6 +6,7 @@
         <h1 class="title is-1">{{$data.title}}</h1>
 
         <div class="content">
+          <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
           <div
             v-for="(comp) in $data.variants"
             :key="comp.id"
@@ -14,11 +15,16 @@
 
             <h3>Preview</h3>
 
-            <component
-              v-bind:is="$data.title"
-              v-bind="comp.attrs"
-              v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join() : ""'
-            ></component>
+            <div
+              class="variant-container"
+              :style="comp.containerStyle ? comp.containerStyle : ''"
+            >
+              <component
+                v-bind:is="$data.title"
+                v-bind="comp.attrs"
+                v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join() : ""'
+              ></component>
+            </div>
 
             <h3>Sandbox</h3>
             <Codepen :contents='{
@@ -72,7 +78,10 @@ const setLocalData = (context, _data) => {
   const componentsForName = components.filter((comp) => comp.name === context.compId);
 
   if (componentsForName.length === 1) {
-    data.variants = componentsForName[0].variants;
+    const comp = componentsForName[0];
+
+    data.variants = comp.variants;
+    data.storybook = comp.storybook;
   }
 
   data.title = context.compId;
@@ -84,6 +93,7 @@ export default {
   },
   data() {
     return {
+      storybook: '',
       title: '',
       variants: []
     };
@@ -112,4 +122,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.variant-container {
+  border: 1px solid black;
+  padding: 1rem;
+}
 </style>
