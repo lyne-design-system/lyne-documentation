@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.44.0...v1.45.0) (2021-08-23)
+
+
+### Features
+
+* add clock to components ([5b53b9d](https://github.com/lyne-design-system/lyne-documentation/commit/5b53b9d1a3a9b358cb933ada3c1543280c3b1959))
+
 # [1.44.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.43.0...v1.44.0) (2021-08-17)
 
 
