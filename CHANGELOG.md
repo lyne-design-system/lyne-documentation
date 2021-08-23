@@ -1,3 +1,16 @@
+# [1.46.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.45.0...v1.46.0) (2021-08-23)
+
+
+### Bug Fixes
+
+* add all basic variants for button, add storybook links ([63b02ce](https://github.com/lyne-design-system/lyne-documentation/commit/63b02cedc5c933e67f6c224bce63b19aacc1eb09))
+* more logical headings structure ([6bdefa1](https://github.com/lyne-design-system/lyne-documentation/commit/6bdefa134586fe3b0f8157f8dad374d90792d0b6))
+
+
+### Features
+
+* render storybook link, style container for component preview ([cfff95d](https://github.com/lyne-design-system/lyne-documentation/commit/cfff95d833d5d80a43af13b79bec5a2b285d46ba))
+
 # [1.45.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.44.0...v1.45.0) (2021-08-23)
 
 
