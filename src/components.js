@@ -33,6 +33,17 @@ const componentsData = [
         title: 'default'
       }
     ]
+  },
+  {
+    name: 'lyne-clock',
+    variants: [
+      {
+        attrs: {
+          'initial-time': 'now'
+        },
+        title: 'default'
+      }
+    ]
   }
 ];
 
