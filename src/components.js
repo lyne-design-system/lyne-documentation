@@ -84,18 +84,6 @@ const componentsData = [
     ]
   },
   {
-    name: 'lyne-link',
-    variants: [
-      {
-        attrs: {
-          link: '#',
-          text: 'Link text'
-        },
-        title: 'default'
-      }
-    ]
-  },
-  {
     name: 'lyne-clock',
     storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/brand-elements-clock--clock',
     variants: [
@@ -104,6 +92,100 @@ const componentsData = [
           'initial-time': 'now'
         },
         title: 'default'
+      }
+    ]
+  },
+  {
+    name: 'lyne-panel',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-panel--lyne-panel',
+    variants: [
+      {
+        attrs: {
+          'button-text': 'Panel Button',
+          'text': 'Panel Title Text'
+        },
+        title: 'default'
+      }
+    ]
+  },
+  {
+    name: 'lyne-pearl-chain',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-pearl-chain--no-stops',
+    variants: [
+      {
+        attrs: {
+          legs: '{"legs": [{"cancellation": false, "duration": 100}]}',
+          status: '33'
+        },
+        title: 'no stops'
+      },
+      {
+        attrs: {
+          legs: '{"legs":[{"cancellation":false,"duration":10},{"cancellation":false,"duration":5},{"cancellation":false,"duration":5},{"cancellation":false,"duration":10},{"cancellation":false,"duration":10},{"cancellation":false,"duration":5},{"cancellation":false,"duration":5},{"cancellation":false,"duration":10},{"cancellation":false,"duration":15},{"cancellation":false,"duration":25}]}',
+          status: '33'
+        },
+        title: '9 stops'
+      },
+      {
+        attrs: {
+          legs: '{"legs":[{"cancellation":false,"duration":10},{"cancellation":false,"duration":5},{"cancellation":false,"duration":5},{"cancellation":true,"duration":10},{"cancellation":false,"duration":10},{"cancellation":false,"duration":5},{"cancellation":false,"duration":5},{"cancellation":true,"duration":10},{"cancellation":false,"duration":15},{"cancellation":true,"duration":25}]}',
+          status: '33'
+        },
+        title: '9 stops with cancellations'
+      }
+    ]
+  },
+  {
+    name: 'lyne-sbb-logo',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/brand-elements-sbb-logo--sbb-logo',
+    variants: [
+      {
+        attrs: {
+          'protective-room': 'none',
+          'variant': 'default'
+        },
+        containerStyle: 'max-width: 500px',
+        title: 'default'
+      },
+      {
+        attrs: {
+          'protective-room': 'ideal',
+          'variant': 'default'
+        },
+        containerStyle: 'max-width: 500px;',
+        title: 'ideal protective room'
+      },
+      {
+        attrs: {
+          'protective-room': 'ideal',
+          'variant': 'negative'
+        },
+        containerStyle: 'max-width: 500px;background-color: gray',
+        title: 'negative'
+      },
+      {
+        attrs: {
+          'protective-room': 'ideal',
+          'variant': 'on-red'
+        },
+        containerStyle: 'max-width: 500px;background-color: #eb0000',
+        title: 'on red'
+      },
+      {
+        attrs: {
+          'protective-room': 'ideal',
+          'variant': 'black-on-white'
+        },
+        containerStyle: 'max-width: 500px',
+        title: 'black on white'
+      },
+      {
+        attrs: {
+          'protective-room': 'ideal',
+          'variant': 'white-on-black'
+        },
+        containerStyle: 'max-width: 500px;background-color: black',
+        title: 'white-on-black'
       }
     ]
   }
