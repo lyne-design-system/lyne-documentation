@@ -1,3 +1,10 @@
+# [1.47.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.46.0...v1.47.0) (2021-08-28)
+
+
+### Features
+
+* components remove link, add pear-chain, sbb-logo and panel ([21ec58c](https://github.com/lyne-design-system/lyne-documentation/commit/21ec58cb7da5d1eebc4493ad5866b81f35999ef2))
+
 # [1.46.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.45.0...v1.46.0) (2021-08-23)
 
 
