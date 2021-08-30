@@ -13,8 +13,6 @@
           >
             <h3 class="title is-3">Variant: {{comp.title}}</h3>
 
-            <h4 class="title is-4">Preview</h4>
-
             <div
               class="variant-container"
               :style="comp.containerStyle ? comp.containerStyle : ''"
@@ -26,14 +24,14 @@
               ></component>
             </div>
 
-            <h4 class="title is-4">Sandbox</h4>
-            <Codepen :contents='{
-              "title": `Lyne Components Sandbox: ${$data.title}`,
-              "html": codepenHtml(comp, $data.title)
+            <Codepen
+              :contents='{
+                "title": `Lyne Components Sandbox: ${$data.title}`,
+                "html": codepenHtml(comp, $data.title)
               }'
+              class="variant-codepen"
             />
 
-            <hr>
           </div>
 
           <h2 class="title is-2">Documentation</h2>
@@ -114,9 +112,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
+
 .variant-container {
-  border: 1px solid black;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 36px;
+  margin-bottom: 16px;
+  background-color: $color-milk-default;
+  border-radius: 8px;
+}
+
+.variant-codepen {
+  margin-bottom: 80px;
 }
 </style>

@@ -16,6 +16,7 @@
       variant="secondary"
       type="submit"
       icon="true"
+      size="small"
       v-on="{'lyne-button_click': buttonClick}"
     >
       <LinkIcon />
