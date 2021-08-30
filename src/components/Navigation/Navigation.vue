@@ -87,7 +87,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../../styles/styles.scss";
 
   .menu {
     display: block;
