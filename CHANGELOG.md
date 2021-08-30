@@ -1,3 +1,19 @@
+# [1.48.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.47.0...v1.48.0) (2021-08-30)
+
+
+### Bug Fixes
+
+* fake commit to trigger release ([3144920](https://github.com/lyne-design-system/lyne-documentation/commit/31449204fc69e4fa65b7120babac18aa7169fdda))
+* globally load lyne comps ([cb329ad](https://github.com/lyne-design-system/lyne-documentation/commit/cb329ad7a6554269cf133d14189c8115ce904a2a))
+* make link to about section instead of button ([d1837a8](https://github.com/lyne-design-system/lyne-documentation/commit/d1837a8d2129177b6e98b0fd7abcf7a28b2fcbf3))
+* make some first design adjustments ([0644db3](https://github.com/lyne-design-system/lyne-documentation/commit/0644db3953c5d88c03dd00e80c5eafd19b3cbc05))
+* use lyne button instead of bulma button ([b01e907](https://github.com/lyne-design-system/lyne-documentation/commit/b01e907198ca6f51f7c47d8a55feb10416308688))
+
+
+### Features
+
+* add logo and styling for header ([f1d78bd](https://github.com/lyne-design-system/lyne-documentation/commit/f1d78bd32761871bda5b686f5c4da8017f4b5be5))
+
 # [1.47.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.46.0...v1.47.0) (2021-08-28)
 
 
