@@ -3,7 +3,7 @@
   <header>
 
     <nav
-      class="navbar is-info"
+      class="navbar is-white"
       role="navigation"
       aria-label="main navigation"
     >
@@ -12,8 +12,7 @@
           class="navbar-item"
           href="/"
         >
-          <img src="../favicon.png">
-          <span class="brand-title">Lyne Design System</span>
+          <lyne-sbb-logo protecitve-room="minimal" />
         </a>
         <a
           role="button"
@@ -66,17 +65,44 @@ export default {
 </script>
 
 <style lang="scss">
-// .navbar-item {
-//   order: 1;
-// }
+@import "../styles/bulma.scss";
 
-// .navbar-burger.burger {
-//   order: 0;
-//   margin-left: 0;
-// }
+.navbar {
+  align-items: center;
+}
 
-.brand-title {
+.navbar .navbar-brand {
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+
+  @include from($desktop) {
+    justify-content: flex-end;
+  }
+}
+
+.navbar .navbar-item {
+
+}
+
+.navbar .navbar-item {
+  order: 2;
+  flex-basis: 190px;
+  padding: 0;
+}
+
+.navbar .navbar-item lyne-sbb-logo {
   display: block;
+  width: 100%;
+}
+
+.navbar .brand-title {
+  display: block;
+  margin-left: 1rem;
+}
+
+.navbar .navbar-burger.burger {
+  order: 1;
   margin-left: 1rem;
 }
 
