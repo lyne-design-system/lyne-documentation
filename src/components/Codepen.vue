@@ -3,6 +3,7 @@
     action="https://codepen.io/pen/define"
     method="POST"
     target="_blank"
+    ref="form"
   >
     <input
       type="hidden"
@@ -10,21 +11,31 @@
       :value="JSON.stringify(contents)"
     >
 
-    <span class="button">
-      <input
-        class="input-button"
-        type="submit"
-        value="Edit on Codepen.io"
-      >
-      <span class="icon is-small">
-        <i class="mdi mdi-launch"></i>
-      </span>
-    </span>
+    <lyne-button
+      label="Edit on Codepen.io"
+      variant="secondary"
+      type="submit"
+      icon="true"
+      v-on="{'lyne-button_click': buttonClick}"
+    >
+      <LinkIcon />
+    </lyne-button>
+
   </form>
 </template>
 
 <script>
+import LinkIcon from 'lyne-icons/dist/icons/link-external-small.svg';
+
 export default {
+  components: {
+    LinkIcon
+  },
+  methods: {
+    buttonClick() {
+      this.$refs.form.submit();
+    }
+  },
   name: 'Codepen',
   props: ['contents']
 };
