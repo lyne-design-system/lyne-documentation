@@ -299,7 +299,6 @@ export default {
   },
   methods: {
     downloadFile(icon) {
-      console.log();
       const text = lyneIconsSvgs[icon.fullName];
       const data = new Blob([text], {
         type: 'text/plain'
