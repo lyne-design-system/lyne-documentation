@@ -1,4 +1,3 @@
-import './styles/styles.scss';
 import Buefy from 'buefy';
 import { defineCustomElements } from 'lyne-test/loader';
 import DefLayout from './layouts/Default.vue';
