@@ -82,10 +82,6 @@ export default {
 }
 
 .navbar .navbar-item {
-
-}
-
-.navbar .navbar-item {
   order: 2;
   flex-basis: 190px;
   padding: 0;
