@@ -1,4 +1,14 @@
+const path = require('path');
 const globalConfig = require('./global.config');
+
+// style-ressource-loader
+const addStyleResource = (rule) => {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [path.resolve(__dirname, './src/styles/styles.scss')]
+    });
+};
 
 module.exports = {
   chainWebpack(config) {
@@ -12,6 +22,19 @@ module.exports = {
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
+
+    // style-ressource-loader for all modules
+    const types = [
+      'vue-modules',
+      'vue',
+      'normal-modules',
+      'normal'
+    ];
+
+    types.forEach((type) => {
+      addStyleResource(config.module.rule('scss')
+        .oneOf(type));
+    });
   },
   plugins: [
 
