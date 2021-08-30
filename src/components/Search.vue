@@ -158,7 +158,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/bulma.scss";
+@import "../styles/styles.scss";
 
 .autocomplete .dropdown-menu.dropdown-menu {
   max-width: unset;
