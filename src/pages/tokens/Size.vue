@@ -71,7 +71,6 @@ export default {
   },
   methods: {
     getSampleIconForToken(token) {
-      console.log(token.attributes);
       if (token.attributes.item === 'ui') {
         return lyneIcons[`armchair-profile-user-${token.attributes.subitem}`];
       }
