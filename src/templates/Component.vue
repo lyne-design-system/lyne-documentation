@@ -104,14 +104,6 @@ export default {
     }
   },
   mounted() {
-    // This makes sure that components only get rendered on the client.
-
-    /* eslint-disable global-require */
-    window.lyneComps = require('lyne-test/loader');
-    /* eslint-enable global-require */
-
-    window.lyneComps.defineCustomElements();
-
     setLocalData(this.$context, this.$data);
   },
   name: 'LyneComponent',
