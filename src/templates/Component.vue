@@ -112,7 +112,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
 
 .variant-container {
   padding: 36px;
