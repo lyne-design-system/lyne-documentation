@@ -20,7 +20,7 @@
               <component
                 v-bind:is="$data.title"
                 v-bind="comp.attrs"
-                v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join() : ""'
+                v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join("") : ""'
               ></component>
             </div>
 
