@@ -1,3 +1,17 @@
+# [1.50.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.49.0...v1.50.0) (2021-08-31)
+
+
+### Bug Fixes
+
+* fix linting issue ([88553b6](https://github.com/lyne-design-system/lyne-documentation/commit/88553b617ab157225a629a13d547c60229d5e095))
+* handle component variants without attributes ([ab19c41](https://github.com/lyne-design-system/lyne-documentation/commit/ab19c4181ea60d2e026275cd5c62b1ce0690d3a5))
+* use proper join ([be84a20](https://github.com/lyne-design-system/lyne-documentation/commit/be84a2020025e0baf7cc0cffb3647ce9efd57de7))
+
+
+### Features
+
+* add accordion and accordion-item ([8cdaf00](https://github.com/lyne-design-system/lyne-documentation/commit/8cdaf0013fd1a043fece2f6aecf01155e98cefc9))
+
 # [1.49.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.48.0...v1.49.0) (2021-08-31)
 
 
