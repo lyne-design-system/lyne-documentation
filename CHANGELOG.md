@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.48.0...v1.49.0) (2021-08-31)
+
+
+### Features
+
+* add title ([9f5b63a](https://github.com/lyne-design-system/lyne-documentation/commit/9f5b63aad2905570415a53ec579bdac46cc45056))
+
 # [1.48.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.47.0...v1.48.0) (2021-08-30)
 
 
