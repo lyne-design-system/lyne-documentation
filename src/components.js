@@ -188,6 +188,60 @@ const componentsData = [
         title: 'white-on-black'
       }
     ]
+  },
+  {
+    name: 'lyne-title',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/brand-elements-clock--clock',
+    variants: [
+      {
+        attrs: {
+          'level': '1',
+          'text': 'Title level 1',
+          'visual-level': '1'
+        },
+        title: 'level 1'
+      },
+      {
+        attrs: {
+          'level': '2',
+          'text': 'Title level 2',
+          'visual-level': '2'
+        },
+        title: 'level 2'
+      },
+      {
+        attrs: {
+          'level': '3',
+          'text': 'Title level 3',
+          'visual-level': '3'
+        },
+        title: 'level 3'
+      },
+      {
+        attrs: {
+          'level': '4',
+          'text': 'Title level 4',
+          'visual-level': '4'
+        },
+        title: 'level 4'
+      },
+      {
+        attrs: {
+          'level': '5',
+          'text': 'Title level 5',
+          'visual-level': '5'
+        },
+        title: 'level 5'
+      },
+      {
+        attrs: {
+          'level': '6',
+          'text': 'Title level 6',
+          'visual-level': '6'
+        },
+        title: 'level 6'
+      }
+    ]
   }
 ];
 
