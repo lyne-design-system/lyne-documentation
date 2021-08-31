@@ -61,7 +61,7 @@ const componentsData = [
           accordionItemContent,
           accordionItemArrow
         ],
-        title: 'with icon',
+        title: 'with icon'
       }
     ]
   },
