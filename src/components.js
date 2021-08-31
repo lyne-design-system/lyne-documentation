@@ -1,6 +1,70 @@
 const arrowIcon = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m17.8436,12.1382-3.99-3.99196-.7072.70693,3.1366,3.13823H5v1h11.287l-3.1413,3.1555.7086.7056,3.99-4.008.3519-.3535-.3526-.3528z"></path></svg>';
 
+const accordionItemContent = '<p slot="content">Donec sed odio operae, eu vulputate felis rhoncus. Curabitur est gravida et libero vitae dictum. Me non paenitet nullum festiviorem excogitasse ad hoc.</p><p slot="content">2 Donec sed odio operae, eu vulputate felis rhoncus. Curabitur est gravida et libero vitae dictum. Me non paenitet nullum festiviorem excogitasse ad hoc.</p><p slot="content">3 Quis aute iure reprehenderit in voluptate velit esse. Ab illo tempore, ab est sed immemorabili. Non equidem invideo, lit aliquet. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>';
+
+const accordionItemArrow = '<svg slot="icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m17.8436,12.1382-3.99-3.99196-.7072.70693,3.1366,3.13823H5v1h11.287l-3.1413,3.1555.7086.7056,3.99-4.008.3519-.3535-.3526-.3528z"></path></svg>';
+
 const componentsData = [
+  {
+    name: 'lyne-accordion',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-accordion--default',
+    variants: [
+      {
+        slots: [
+          `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
+          `<lyne-accordion-item heading="Accordion Item 2" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`
+        ],
+        title: 'default'
+      },
+      {
+        attrs: {
+          'non-white-background': true
+        },
+        slots: [
+          `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
+          `<lyne-accordion-item heading="Accordion Item 2" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`
+        ],
+        title: 'for non-white backgrounds'
+      },
+      {
+        attrs: {
+          'non-white-background': true,
+          'only-one-open': true
+        },
+        slots: [
+          `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
+          `<lyne-accordion-item heading="Accordion Item 2" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`
+        ],
+        title: 'only one item open at a time'
+      }
+    ]
+  },
+  {
+    name: 'lyne-accordion-item',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-accordion-item--default',
+    variants: [
+      {
+        attrs: {
+          'heading': 'Accordion Item',
+          'hedaing-level': '2'
+        },
+        slots: [accordionItemContent],
+        title: 'default'
+      },
+      {
+        attrs: {
+          'heading': 'Accordion Item',
+          'hedaing-level': '2',
+          'icon': true
+        },
+        slots: [
+          accordionItemContent,
+          accordionItemArrow
+        ],
+        title: 'with icon',
+      }
+    ]
+  },
   {
     name: 'lyne-button',
     storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-button--lyne-button',
