@@ -1,10 +1,14 @@
 const codepenHtml = (element, name) => {
-  const properties = Object.entries(element.attrs)
-    .map(([
-      key,
-      val
-    ]) => `${key}="${val}"`)
-    .join(' ');
+  let properties = {};
+
+  if (element.attrs) {
+    properties = Object.entries(element.attrs)
+      .map(([
+        key,
+        val
+      ]) => `${key}="${val}"`)
+      .join(' ');
+  }
 
   const {
     slots
