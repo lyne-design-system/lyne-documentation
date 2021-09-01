@@ -63,6 +63,14 @@ const accessLinks = [
 
 const categories = [
   {
+    name: 'Animation',
+    url: 'animation'
+  },
+  {
+    name: 'Border',
+    url: 'border'
+  },
+  {
     name: 'Breakpoint',
     url: 'breakpoint'
   },
@@ -75,20 +83,16 @@ const categories = [
     url: 'icons'
   },
   {
-    name: 'IconSize',
-    url: 'icon-size'
-  },
-  {
     name: 'Shadow',
     url: 'shadow'
   },
   {
-    name: 'Spacing',
-    url: 'spacing'
+    name: 'Size',
+    url: 'size'
   },
   {
-    name: 'Touch',
-    url: 'touch'
+    name: 'Spacing',
+    url: 'spacing'
   },
   {
     name: 'Typo',
