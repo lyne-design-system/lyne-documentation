@@ -4,9 +4,9 @@
       <div class="container">
         <div class="content">
 
-          <h1 class="title is-1">Design Tokens</h1>
+          <lyne-title level="1" text="Design Tokens"></lyne-title>
 
-          <h2>Access</h2>
+          <lyne-title level="2" text="Access"></lyne-title>
 
           <p>Our managed system of Design Tokens can be either accessed via npm or our cdn:</p>
           <ul>
@@ -22,7 +22,7 @@
             </li>
           </ul>
 
-          <h2>Source</h2>
+          <lyne-title level="2" text="Source"></lyne-title>
 
           <p>The source repository (where design tokens are defined and generated) can be found on GitHub:</p>
           <a
@@ -31,7 +31,7 @@
             rel="noopener"
           >lyne-design-tokens</a>
 
-          <h2>Categories</h2>
+          <lyne-title level="2" text="Categories"></lyne-title>
 
           <p>We define and provide information for Design Tokens in the following Categories</p>
           <ul>
