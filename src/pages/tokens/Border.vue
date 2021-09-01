@@ -3,13 +3,13 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h1 class="title is-1">Border</h1>
+          <lyne-title level="1" text="Border"></lyne-title>
 
           <div
             v-for="(group, index) in $data.tokensGroups"
             :key="index"
           >
-            <h2>{{group.name}}</h2>
+            <lyne-title level="2" :text="group.name"></lyne-title>
 
             <TokensTable
               :tokens="group.tokens"
