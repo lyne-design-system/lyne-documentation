@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Typo</h1>
+        <lyne-title level="1" text="Typo"></lyne-title>
       </div>
     </section>
   </Layout>
