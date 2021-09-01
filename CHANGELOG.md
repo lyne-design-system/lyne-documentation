@@ -1,3 +1,11 @@
+## [1.50.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.0...v1.50.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* add scope to fix open navigation which should be hidden ([d0284ce](https://github.com/lyne-design-system/lyne-documentation/commit/d0284ceecaf9c253ab0277f9128b3ca762d13147))
+* better style for accordions that need to be an white background ([c1ae0d0](https://github.com/lyne-design-system/lyne-documentation/commit/c1ae0d08c1e78b9aa2451131b6c3e5f07978b4b0))
+
 # [1.50.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.49.0...v1.50.0) (2021-08-31)
 
 
