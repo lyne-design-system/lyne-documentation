@@ -2,13 +2,13 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Size</h1>
+        <lyne-title level="1" text="Size"></lyne-title>
 
         <div
           v-for="(key, index) in Object.keys($data.tokens)"
           :key="index"
         >
-          <h2 class="title is-2">{{key}}</h2>
+          <lyne-title level="2" :text="key"></lyne-title>
 
           <TokensTable :tokens="$data.tokens[key]">
             <template v-slot="slotProps">
