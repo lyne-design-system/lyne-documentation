@@ -1,4 +1,4 @@
-<h1 class="title is-1">Guidelines</h1>
+<lyne-title level="1" text="Guidelines"></lyne-title>
 
 * [Guiding Principles](/guidelines/principles)
 * [Naming](/guidelines/naming)
