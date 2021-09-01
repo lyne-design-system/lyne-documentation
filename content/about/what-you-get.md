@@ -1,4 +1,4 @@
-<h1 class="title is-1">What you get</h1>
+<lyne-title level="1" text="What you get"></lyne-title>
 
   * Artifacts
     * Components
