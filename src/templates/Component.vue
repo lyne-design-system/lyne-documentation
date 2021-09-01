@@ -15,6 +15,7 @@
 
             <div
               class="variant-container"
+              :class="comp.containerClass ? comp.containerClass : ''"
               :style="comp.containerStyle ? comp.containerStyle : ''"
             >
               <component
@@ -118,6 +119,11 @@ export default {
   margin-bottom: 16px;
   background-color: $color-milk-default;
   border-radius: 8px;
+}
+
+.variant-container.white-bg {
+  background-color: $color-white-default;
+  border: 2px solid $color-milk-default;
 }
 
 .variant-codepen {

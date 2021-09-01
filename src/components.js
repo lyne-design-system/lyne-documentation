@@ -10,6 +10,7 @@ const componentsData = [
     storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/lyne-accordion--default',
     variants: [
       {
+        containerClass: 'white-bg',
         slots: [
           `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
           `<lyne-accordion-item heading="Accordion Item 2" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`
@@ -48,6 +49,7 @@ const componentsData = [
           'heading': 'Accordion Item',
           'hedaing-level': '2'
         },
+        containerClass: 'white-bg',
         slots: [accordionItemContent],
         title: 'default'
       },
@@ -57,6 +59,7 @@ const componentsData = [
           'hedaing-level': '2',
           'icon': true
         },
+        containerClass: 'white-bg',
         slots: [
           accordionItemContent,
           accordionItemArrow
