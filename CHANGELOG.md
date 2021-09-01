@@ -1,3 +1,15 @@
+# [1.51.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.2...v1.51.0) (2021-09-01)
+
+
+### Bug Fixes
+
+* add missing token categories links to index ([8817870](https://github.com/lyne-design-system/lyne-documentation/commit/8817870ec2a2c39ac32c6cfeabcf4d1f2584c373))
+
+
+### Features
+
+* add typo tokens ([c484597](https://github.com/lyne-design-system/lyne-documentation/commit/c4845974073220076656ab98579d115aeea0543c))
+
 ## [1.50.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.1...v1.50.2) (2021-09-01)
 
 
