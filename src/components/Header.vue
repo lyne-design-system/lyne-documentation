@@ -3,37 +3,51 @@
   <header>
 
     <nav
-      class="navbar is-white"
+      class="navigation"
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
-        <a
-          class="navbar-item"
-          href="/"
-        >
-          <lyne-sbb-logo protecitve-room="minimal" />
-        </a>
-        <a
-          role="button"
-          class="navbar-burger burger"
-          v-bind:class="{'is-active': showMenu}"
-          aria-label="menu"
-          :aria-expanded="showMenu"
-          @click="menuClick">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+      <button
+        class="navigation-menu-button"
+        v-bind:class="{'is-active': showMenu}"
+        aria-label="menu"
+        :aria-expanded="showMenu"
+        @click="menuClick"
+      >
+
+          <ButtonIcon
+            v-if="!showMenu"
+            class="button-icon"
+          />
+
+          <CloseIcon
+            v-if="showMenu"
+            class="button-icon"
+          />
+
+          <span class="button-text">Menu</span>
+      </button>
+
+      <a
+        class="navigation-logo"
+        href="/"
+      >
+        <lyne-sbb-logo protective-room="none" />
+      </a>
     </nav>
   </header>
 </template>
 
 <script>
+import ButtonIcon from 'lyne-icons/dist/icons/hamburger-menu-small.svg';
+import CloseIcon from 'lyne-icons/dist/icons/cross-small.svg';
 import eventBus from '../helpers/eventBus';
 
 export default {
+  components: {
+    ButtonIcon,
+    CloseIcon
+  },
   created() {
     eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
       const {
@@ -64,41 +78,62 @@ export default {
 
 </script>
 
-<style lang="scss">
-
-.navbar {
+<style lang="scss" scoped>
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-}
-
-.navbar .navbar-brand {
   justify-content: space-between;
-  align-items: center;
-  flex: 1;
+  width: 100%;
+  height: 72px;
 
   @include from($desktop) {
+    height: 79px;
     justify-content: flex-end;
   }
 }
 
-.navbar .navbar-item {
-  order: 2;
-  flex-basis: 190px;
-  padding: 0;
-}
-
-.navbar .navbar-item lyne-sbb-logo {
+.navigation-logo {
   display: block;
-  width: 100%;
+  flex-basis: 213px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 12px;
+  padding: 12px;
 }
 
-.navbar .brand-title {
+.navigation-logo:hover {
+  background-color: $color-milk-default;
+}
+
+.navigation-menu-button {
+  @include buttonReset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  padding: 12px;
+  font-size: 14px;
+
+  @include from($desktop) {
+    display: none;
+  }
+}
+
+.navigation-menu-button:hover {
+  background-color: $color-milk-default;
+}
+
+.button-text {
   display: block;
-  margin-left: 1rem;
+  height: 24px;
+  line-height: 24px;
 }
 
-.navbar .navbar-burger.burger {
-  order: 1;
-  margin-left: 1rem;
+.button-icon {
+  flex-basis: 24px;
+  height: 24px;
+  margin-right: 4px;
 }
 
 </style>
