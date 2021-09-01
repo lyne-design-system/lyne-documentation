@@ -1,13 +1,11 @@
 <template>
   <b-autocomplete
-    rounded
     v-model="searchTerm"
     :data="searchResults"
     placeholder="Search"
     icon="magnify"
     group-field="path"
     group-options="results"
-    size="is-small"
     @select="opt => handleSelect(opt)"
     open-on-focus
   >

@@ -88,10 +88,9 @@ export default {
 
 <style lang="scss" scoped>
 
-  .menu {
+  .menu.column {
     display: block;
-    padding: 1rem 1rem;
-    background: $background;
+    padding: 1.5rem .5rem 1rem;
   }
 
   .menu.hidden {

@@ -88,9 +88,10 @@ export default {
 .link {
   position: relative;
   display: block;
-  padding: .3rem 2.5rem .3rem .3rem;
+  padding: .3rem 2.5rem .3rem 1rem;
   margin: .4rem 0;
-  color: $info;
+  color: $color-black-default;
+  border-radius: 100px;
 }
 
 .link__icon {
@@ -111,7 +112,8 @@ export default {
 }
 
 .link.active {
-  background-color: $grey-lighter;
+  background-color: $color-milk-default;
+  color: $color-granite-default;
 }
 
 </style>
