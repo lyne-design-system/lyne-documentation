@@ -1,3 +1,9 @@
 $primary: #8c67ef;
 
 $link: $primary;
+
+section.section {
+  @include from($desktop) {
+    padding-top: 0;
+  }
+}
