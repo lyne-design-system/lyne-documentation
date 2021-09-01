@@ -3,15 +3,18 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">{{$data.title}}</h1>
+        <h1 class="title is-1"></h1>
+        <lyne-title level="1" :text="$data.title"></lyne-title>
+
         <div class="content">
-          <h2 class="title is-2">Variants</h2>
+          <lyne-title level="2" text="Variants"></lyne-title>
+
           <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
           <div
             v-for="(comp) in $data.variants"
             :key="comp.id"
           >
-            <h3 class="title is-3">Variant: {{comp.title}}</h3>
+            <lyne-title level="3" :text="`Variant: ${comp.title}`"></lyne-title>
 
             <div
               class="variant-container"
@@ -35,7 +38,8 @@
 
           </div>
 
-          <h2 class="title is-2">Documentation</h2>
+          <lyne-title level="2" text="Documentation"></lyne-title>
+
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
         </div>
