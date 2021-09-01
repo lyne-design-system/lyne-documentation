@@ -1,9 +1,11 @@
-# Information architecture (IA) for the Lyne (Web) documentation platform
+<lyne-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform"></lyne-title>
 
-#### Status
+<lyne-title level="4" text="Status"></lyne-title>
+
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
-#### Notes
+<lyne-title level="4" text="Notes"></lyne-title>
+
 Every menu item of the proposed IA which sits above the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below the line aims to support returning users with day-to-day needs and activities.
 
 We are aiming to reach and meet all defined user groups (design, development, writing, brand, mgmt, general) through the `Home` contents/links but also through the navigation tree.
@@ -12,7 +14,8 @@ Content sections of pages are highlighted by braces `()`
 
 `Home` contains an introduction text with a link to *All about Lyne* and multiple teasers to link to the *Get started* guides for the most present Design System disciplines. *Start designing* and *Start coding* in the beginning, but at some point also *Start writing*(TBD), *Start contributing*, *What is happening* and *Guidelines*.
 
-#### Proposed IA for left side navigation
+<lyne-title level="4" text="Proposed IA for left side navigation"></lyne-title>
+
 
 <details>
   <summary>All about Lyne</summary>
@@ -59,7 +62,8 @@ Content sections of pages are highlighted by braces `()`
 
   * Glossary (vocabulary/dictionary/common language/terminology/jargon)
   
-  ##### Not yet included
+  <lyne-title level="4" text="Not yet included"></lyne-title>
+
   * Gallery/Implementations/Examples based on Lyne
 </details>
 <details>
@@ -179,7 +183,8 @@ Content sections of pages are highlighted by braces `()`
   * Support (& contact)
 </details>
 
-#### Sources/IA is influenced by:
+<lyne-title level="4" text="Sources/IA is influenced by:"></lyne-title>
+
 * [Carbon](https://www.carbondesignsystem.com)
 * [Carbons new IA](https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205)
 * [Duet](https://www.duetds.com)
