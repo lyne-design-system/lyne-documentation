@@ -1,25 +1,29 @@
-<h1 class="title is-1">How we work</h1>
+<lyne-title level="1" text="How we work"></lyne-title>
 
-## Code of conduct
+<lyne-title level="2" text="Code of conduct"></lyne-title>
 
-## Who we are
+<lyne-title level="2" text="Who we are"></lyne-title>
+
   * Core Team
   * Community
 
-## Guiding Principles
+<lyne-title level="2" text="Guiding Principles"></lyne-title>
 
 [Guiding Principles](/guidelines/principles/)
 
-## Governance model
+<lyne-title level="2" text="Governance model"></lyne-title>
+
   * Component contribution process
   * [Contributing](/contributing/)
 
-## QA
+<lyne-title level="2" text="QA"></lyne-title>
+
   * In ... TUNE?
   * In ... SHAPE?
 
-## Metrics
+<lyne-title level="2" text="Metrics"></lyne-title>
 
-## What we are working on
 
-## Roadmap (Where we are going)
+<lyne-title level="2" text="What we are working on"></lyne-title>
+
+<lyne-title level="2" text="Roadmap (Where we are going)"></lyne-title>
