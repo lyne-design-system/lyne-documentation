@@ -1,5 +1,4 @@
-
-<h1 class="title is-1">Designing with Lyne</h1>
+<lyne-title level="1" text="Designing with Lyne"></lyne-title>
 
 Lyne provides certain artifacts for designer to get you up and running, namely:
 
