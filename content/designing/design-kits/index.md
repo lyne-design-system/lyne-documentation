@@ -1,4 +1,4 @@
-<h1 class="title is-1">Design Kits for Lyne</h1>
+<lyne-title level="1" text="Design Kits for Lyne"></lyne-title>
 
 * [Figma](/designing/design-kits/figma)
 * [Sketch](/designing/design-kits/sketch)
