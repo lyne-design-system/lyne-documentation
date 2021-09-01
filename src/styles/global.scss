@@ -2,7 +2,7 @@ lyne-title {
   margin: 3rem 0 1rem;
 }
 
-.content > lyne-title {
+.content lyne-title:first-of-type {
   margin-bottom: 4rem;
   margin-top: 0;
 }
