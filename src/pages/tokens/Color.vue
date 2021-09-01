@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h1 class="title is-1">Color</h1>
+          <lyne-title level="1" text="Color"></lyne-title>
 
           <TokensTable :tokens="$data.tokens">
             <template v-slot="slotProps">
