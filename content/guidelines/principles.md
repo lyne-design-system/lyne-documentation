@@ -1,4 +1,4 @@
-<h1 class="title is-1">Guiding Principles</h1>
+<lyne-title level="1" text="Guiding Principles"></lyne-title>
 
 Lyne's Guiding Principles are derived from the SBB brand values and SBB UX principles and are enhanced through our context and focus.
 
