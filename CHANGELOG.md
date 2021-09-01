@@ -1,3 +1,11 @@
+## [1.50.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.1...v1.50.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* remove bulma from navigation-bar, use own stylings ([c9c6dd0](https://github.com/lyne-design-system/lyne-documentation/commit/c9c6dd083e25173bc7dc9ce5d010307499767d36))
+* remove obsolete title query tag ([564d44e](https://github.com/lyne-design-system/lyne-documentation/commit/564d44e7cab5879b94c0a85688ad8e39a1cdd5af))
+
 ## [1.50.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.0...v1.50.1) (2021-09-01)
 
 
