@@ -3,7 +3,7 @@
   <footer class="footer">
     <div class="content">
 
-      <h2 class="title is-5">Packages by Lyne Design System</h2>
+      <lyne-title level="2" visual-level="5" text="Packages by Lyne Design System"></lyne-title>
       <ul>
         <li
           v-for="(link) in $data.links"
@@ -17,14 +17,14 @@
         </li>
       </ul>
 
-      <h2 class="title is-5">Further Ressources</h2>
+      <lyne-title level="2" visual-level="5" text="Further Ressources"></lyne-title>
       <ul>
         <li>
           <g-link to="/deployments/">Storybook version history of lyne-components</g-link>
         </li>
       </ul>
 
-      <h2 class="title is-5">Notice</h2>
+      <lyne-title level="2" visual-level="5" text="Notice"></lyne-title>
       <!-- eslint-disable-next-line max-len -->
       <p>We intend to build the Lyne documentation platform based on the <a href="https://github.com/lyne-design-system/lyne-documentation/blob/master/content/information-architecture.md">here documented Information Architecture(IA)</a> and will enhance the documentation platform once we have the content available. The state of the Lyne documentation platform is, and will always be — like the entire system, <em>work in progress (WIP)</em> — inspired by <a href="https://carbondesignsystem.com">Carbon</a>, <a href="https://duetds.com">Duet</a>, <a href="https://boltdesignsystem.com">Bolt</a>, <a href="https://spectrum.adobe.com">Spectrum</a>. The documentation platform uses some of their content until Lyne will be mature enough/we are enough contributors from different disciplines to provide a more holistic perspective on the topic and the necessary resources get provided to document them accordingly.</p>
       <p>Lyne Design System is <span class="tag is-info">🧪 experimental</span> at the moment — with enthusiasm. Do not use the project until it has left infancy.</p>
