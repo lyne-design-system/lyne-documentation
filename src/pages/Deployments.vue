@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Releases</h1>
+        <lyne-title level="1" text="Components">Releases</lyne-title>
 
         <p>Here you can find all production releases and preview builds for <code>lyne-components</code> linked with their corresponding Storybook release.</p>
 
