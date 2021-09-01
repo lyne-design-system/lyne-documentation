@@ -1,4 +1,4 @@
-<h1 class="title is-1">How to Contribute a component?</h1>
+<lyne-title level="1" text="How to Contribute a component?"></lyne-title>
 
 PROCESS PREVIEW IMAGE COMING
 
