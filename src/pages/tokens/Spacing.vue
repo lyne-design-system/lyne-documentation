@@ -2,14 +2,14 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Spacing</h1>
+        <lyne-title level="1" text="Spacing"></lyne-title>
 
         <div
           class="content"
           v-for="(category, index) in $data.tokens"
           :key="index"
         >
-          <h2>{{category.title}}</h2>
+          <lyne-title level="2" :text="category.title"></lyne-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span
