@@ -1,9 +1,10 @@
-<h1 class="title is-1">How Lyne works</h1>
+<lyne-title level="1" text="How Lyne works"></lyne-title>
 
-## Structure/architecture
+<lyne-title level="2" text="Structure/architecture"></lyne-title>
+
 ARCHITECTURE IMAGE COMING
 
-## How everything is related 
+<lyne-title level="2" text="How everything is related "></lyne-title>
 
 Our Design Tokens(design abstractions) are defined and maintained within Figma, transformed to multiple formats, published and are then consumed by Lyne Components via our Design Token API and finally integrated within our documentation platform(this very website).
 
@@ -11,7 +12,8 @@ Check out the [Lyne Design Token Workflow](https://coggle.it/diagram/X37SjtnGNne
 
 PROCESS PREVIEW IMAGE COMING
 
-## For whom?
+<lyne-title level="2" text="For whom?"></lyne-title>
+
 <span class="is-highlighted">Which roles profit from Lyne?</span> Design and development roles are definitely the main user groups of a Design System and profit the most of Lyne. Content and brand roles are an important target audience too but also <span class="is-highlighted">management roles like product owner, decision maker and leader</span> profit from Lyne Design System. And this is not restricted to the organisation itself, this applies also to outside collaborators or agencies since everything is open-source.
 
 Who exactly profits?
