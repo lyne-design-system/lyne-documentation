@@ -30,7 +30,6 @@
           id
           path
           content
-          title
         }
       }
     }
