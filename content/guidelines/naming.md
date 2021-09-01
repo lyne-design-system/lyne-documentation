@@ -1,1 +1,1 @@
-<h1 class="title is-1">Naming Guidelines</h1>
+<lyne-title level="1" text="Naming Guidelines"></lyne-title>
