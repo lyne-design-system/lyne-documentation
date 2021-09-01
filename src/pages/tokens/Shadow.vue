@@ -2,15 +2,17 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Shadow</h1>
+        <lyne-title level="1" text="Shadow"></lyne-title>
 
         <div
           v-for="(key, index) in Object.keys($data.tokens)"
           :key="index"
         >
 
-          <h2 class="title is-2">Elevation Level {{key}}</h2>
-          <h3 class="title is-3">Soft</h3>
+          <lyne-title level="2" :text="`Elevation Level ${key}`"></lyne-title>
+
+          <lyne-title level="3" text="Soft"></lyne-title>
+
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
             type="soft"
@@ -32,7 +34,8 @@
             }"
           />
 
-          <h3 class="title is-3">Hard</h3>
+          <lyne-title level="3" text="Hard"></lyne-title>
+
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
             type="hard"
