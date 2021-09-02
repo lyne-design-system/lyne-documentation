@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Icons"></lyne-title>
+        <lyne-title level="1" text="Icons" class="page-title"></lyne-title>
 
         <!-- Type switch -->
         <b-tabs
