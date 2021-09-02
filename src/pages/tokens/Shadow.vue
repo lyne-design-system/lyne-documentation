@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Shadow"></lyne-title>
+        <lyne-title level="1" text="Shadow" class="page-title"></lyne-title>
 
         <div
           v-for="(key, index) in Object.keys($data.tokens)"
