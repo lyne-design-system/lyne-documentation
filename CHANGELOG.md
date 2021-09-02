@@ -1,3 +1,12 @@
+## [1.51.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.51.0...v1.51.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* improve title spacing ([3523985](https://github.com/lyne-design-system/lyne-documentation/commit/35239851002a0963f870b5a4cc231b62010aa0d7))
+* optimize design for nav column ([084f4fc](https://github.com/lyne-design-system/lyne-documentation/commit/084f4fc16b107dc389831654ec7537314be8e819))
+* use correct selector for page title ([277faa0](https://github.com/lyne-design-system/lyne-documentation/commit/277faa00097554ae7f4cb545cded58ebd8f37fda))
+
 # [1.51.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.50.2...v1.51.0) (2021-09-01)
 
 
