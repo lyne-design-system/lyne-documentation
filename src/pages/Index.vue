@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Lyne Design System"></lyne-title>
+        <lyne-title level="1" text="Lyne Design System" class="page-title"></lyne-title>
 
         <div class="content">
           <p class="is-size-4">Lyne is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.</p>
