@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Spacing"></lyne-title>
+        <lyne-title level="1" text="Spacing" class="page-title"></lyne-title>
 
         <div
           class="content"
