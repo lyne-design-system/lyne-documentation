@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Goals and Benefits"></lyne-title>
+<lyne-title level="1" text="Goals and Benefits" class="page-title"></lyne-title>
 
 The <span class="is-highlighted">Lyne Design System – also just called *Lyne*</span> – addresses multiple goals and creates a multitude of benefits and chances for different teams and in the long run entire SBB organization.
 
