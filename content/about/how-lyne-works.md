@@ -1,4 +1,4 @@
-<lyne-title level="1" text="How Lyne works"></lyne-title>
+<lyne-title level="1" text="How Lyne works" class="page-title"></lyne-title>
 
 <lyne-title level="2" text="Structure/architecture"></lyne-title>
 
