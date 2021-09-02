@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Border"></lyne-title>
+          <lyne-title level="1" text="Border" class="page-title"></lyne-title>
 
           <div
             v-for="(group, index) in $data.tokensGroups"
