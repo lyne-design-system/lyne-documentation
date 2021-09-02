@@ -4,7 +4,7 @@
       <div class="container">
         <div class="content">
 
-          <lyne-title level="1" text="Design Tokens"></lyne-title>
+          <lyne-title level="1" text="Design Tokens" class="page-title"></lyne-title>
 
           <lyne-title level="2" text="Access"></lyne-title>
 
