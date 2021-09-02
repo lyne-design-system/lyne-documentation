@@ -3,8 +3,7 @@
 
     <section class="section">
       <div class="container">
-        <h1 class="title is-1"></h1>
-        <lyne-title level="1" :text="$data.title"></lyne-title>
+        <lyne-title level="1" :text="$data.title" class="page-title"></lyne-title>
 
         <div class="content">
           <lyne-title level="2" text="Variants"></lyne-title>
