@@ -3,7 +3,7 @@
 
     <section class="section">
       <div class="content">
-        <lyne-title level="1" text="Components"></lyne-title>
+        <lyne-title level="1" text="Components" class="page-title"></lyne-title>
 
         <ul>
           <li
