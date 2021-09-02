@@ -1,4 +1,4 @@
-<lyne-title level="1" text="All about Lyne Design System"></lyne-title>
+<lyne-title level="1" text="All about Lyne Design System" class="page-title"></lyne-title>
 
 Lyne Design System <span class="is-highlighted">– also just called *Lyne* –</span> is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.
 
