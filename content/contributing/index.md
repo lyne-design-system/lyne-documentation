@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Start Contributing"></lyne-title>
+<lyne-title level="1" text="Start Contributing" class="page-title"></lyne-title>
 
 We value all of our community members and thus want to foster a positive contribution environment. Please take a look at
 [Lyne's Code of Conduct](https://github.com/lyne-design-system/lyne/blob/master/CODE_OF_CONDUCT.md) before engaging in our workspaces. All contributors and participants agree to abide by its terms.
