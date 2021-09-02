@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Glossary"></lyne-title>
+<lyne-title level="1" text="Glossary" class="page-title"></lyne-title>
 
 <lyne-title level="2" text="A-Z"></lyne-title>
 
