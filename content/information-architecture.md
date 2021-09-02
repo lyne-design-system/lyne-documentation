@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform"></lyne-title>
+<lyne-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform" class="page-title"></lyne-title>
 
 <lyne-title level="4" text="Status"></lyne-title>
 
