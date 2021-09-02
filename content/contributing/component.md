@@ -1,4 +1,4 @@
-<lyne-title level="1" text="How to Contribute a component?"></lyne-title>
+<lyne-title level="1" text="How to Contribute a component?" class="page-title"></lyne-title>
 
 PROCESS PREVIEW IMAGE COMING
 
