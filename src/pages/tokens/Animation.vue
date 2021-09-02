@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Animation"></lyne-title>
+          <lyne-title level="1" text="Animation" class="page-title"></lyne-title>
 
           <TokensTable
             :tokens="$data.tokens"
