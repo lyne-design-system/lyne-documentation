@@ -1,3 +1,46 @@
+# [1.52.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.51.1...v1.52.0) (2021-09-02)
+
+
+### Bug Fixes
+
+* style page title explicitly ([325e438](https://github.com/lyne-design-system/lyne-documentation/commit/325e4388ca9b43a34fb605b708ec4d48dd33e60b))
+
+
+### Features
+
+* add page title class ([6663238](https://github.com/lyne-design-system/lyne-documentation/commit/66632389e911ec1b55accd8f87f476c9f5a430b8))
+* add page title class ([ef5655f](https://github.com/lyne-design-system/lyne-documentation/commit/ef5655f8347442a45f32b8d354211c8e8b48d831))
+* add page title class ([fda1639](https://github.com/lyne-design-system/lyne-documentation/commit/fda163979d49a97ab4ca43e4f6f252d5b55d3c67))
+* add page title class ([8d08a0c](https://github.com/lyne-design-system/lyne-documentation/commit/8d08a0c5083239318b8428bc8c857fc6b8856b31))
+* add page title class ([64ac98c](https://github.com/lyne-design-system/lyne-documentation/commit/64ac98c546a6429eb6a5f977d685742789a9405c))
+* add page title class ([93fbf4e](https://github.com/lyne-design-system/lyne-documentation/commit/93fbf4ee34c26b73ef151519dd07104bc740421e))
+* add page title class ([1642259](https://github.com/lyne-design-system/lyne-documentation/commit/1642259b3a9451b42660decd1f9b8f75bb4920a8))
+* add page title class ([d152ea0](https://github.com/lyne-design-system/lyne-documentation/commit/d152ea0af3fa2360d44a062258710bf2c24671f9))
+* add page title class ([a301586](https://github.com/lyne-design-system/lyne-documentation/commit/a3015863384cb8a8059fad9dba46c6338b87dd1e))
+* add page title class ([8ec9224](https://github.com/lyne-design-system/lyne-documentation/commit/8ec9224cf5260a10006fb1d099b207b1ae62a8b2))
+* add page title class ([1cd8520](https://github.com/lyne-design-system/lyne-documentation/commit/1cd8520f56173c6eb9e86e7d44c7646ac7790a9e))
+* add page title class ([a1b00c8](https://github.com/lyne-design-system/lyne-documentation/commit/a1b00c868f75056960e41b3b14be618d26bccdcb))
+* add page title class ([f3066e9](https://github.com/lyne-design-system/lyne-documentation/commit/f3066e997b42954bba09110ddc89a8985674428a))
+* add page title class ([b4bdcf1](https://github.com/lyne-design-system/lyne-documentation/commit/b4bdcf184cf1888bf5253c873402ace70393bc9d))
+* add page title class ([bbb99cf](https://github.com/lyne-design-system/lyne-documentation/commit/bbb99cf8ad2993197d4354a3788bca5709b86100))
+* add page title class ([a69ac31](https://github.com/lyne-design-system/lyne-documentation/commit/a69ac312ff9e67a7ec9f54c9d74b3bdc0d179322))
+* add page title class ([1b47e59](https://github.com/lyne-design-system/lyne-documentation/commit/1b47e595d72ad53fd34376dcae23edb82530f9b7))
+* add page title class ([732410a](https://github.com/lyne-design-system/lyne-documentation/commit/732410a8a940f4eb289ccece80a31177e3d73980))
+* add page title class ([bd77fe6](https://github.com/lyne-design-system/lyne-documentation/commit/bd77fe6247464d2eb7c7d75f877cce27cb427a86))
+* add page title class ([df73368](https://github.com/lyne-design-system/lyne-documentation/commit/df733686e41c3e57aae02c09b9e2186eb0b0727f))
+* add page title class ([9e7a2c3](https://github.com/lyne-design-system/lyne-documentation/commit/9e7a2c38801339ab159f0e9221020bccce44dc97))
+* add page title class ([3832336](https://github.com/lyne-design-system/lyne-documentation/commit/383233629360468942ceaa126c481fd3cd39a636))
+* add page title class ([a6b8028](https://github.com/lyne-design-system/lyne-documentation/commit/a6b80283ad5494b7a30582edf144bbdf5a66d29b))
+* add page title class ([cfa9537](https://github.com/lyne-design-system/lyne-documentation/commit/cfa9537d59e2e6520e1db0f34f069ee18be588a8))
+* add page title class ([5c455c3](https://github.com/lyne-design-system/lyne-documentation/commit/5c455c3f309bf4368e00a7af750307e8ee09413e))
+* add page title class ([45d81c4](https://github.com/lyne-design-system/lyne-documentation/commit/45d81c414d4ec6c13c24e9ec0f331bff918c7230))
+* add page title class ([c1e7015](https://github.com/lyne-design-system/lyne-documentation/commit/c1e7015ff0ff70fc698cd55ff1d66769200d5bb0))
+* add page title class ([6fe9a56](https://github.com/lyne-design-system/lyne-documentation/commit/6fe9a56df2d7e5bd0aadf570b31edb30796f5e69))
+* add page title class ([a76ed9f](https://github.com/lyne-design-system/lyne-documentation/commit/a76ed9fd110285125376f824bb018817c139cf53))
+* add page title class ([c12c2b1](https://github.com/lyne-design-system/lyne-documentation/commit/c12c2b1c6483c25583b4875b600567a35d1987e6))
+* add page title class ([2720666](https://github.com/lyne-design-system/lyne-documentation/commit/272066648c39086d922f07b4ca79e8ae9a9c3e06))
+* add page title class ([044f574](https://github.com/lyne-design-system/lyne-documentation/commit/044f574fbd641ce936b83ee331cc468c56aae742))
+
 ## [1.51.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.51.0...v1.51.1) (2021-09-01)
 
 
