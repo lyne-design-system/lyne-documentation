@@ -1,23 +1,48 @@
-const codepenHtml = (element, name) => {
-  let properties = {};
+import prettier from 'prettier/standalone';
+import parserHtml from 'prettier/parser-html';
+
+export const componentHtml = (element, name) => {
+  let properties;
 
   if (element.attrs) {
     properties = Object.entries(element.attrs)
       .map(([
         key,
         val
-      ]) => `${key}="${val}"`)
-      .join(' ');
+      ]) => {
+
+        // replace quotes with &quot; entity
+        const escapedVal = val.replace(/["']/gu, '&quot;');
+
+        return ` ${key}="${escapedVal}"`;
+      })
+      .join('');
+  } else {
+    properties = '';
   }
 
   const {
     slots
   } = element;
   const slotsString = slots && slots.length > 0
-    ? slots.join()
+    ? slots.join('')
     : '';
 
-  const comp = `<${name} ${properties}>${slotsString}</${name}>`;
+  const comp = `<${name}${properties}>${slotsString}</${name}>`;
+
+  const formatted = prettier.format(comp, {
+    htmlWhitespaceSensitivity: 'ignore',
+    parser: 'html',
+    plugins: [parserHtml],
+    printWidth: 80,
+    semi: false,
+    useTabs: false
+  });
+
+  return formatted;
+};
+
+export const codepenHtml = (element, name) => {
 
   /* eslint-disable no-useless-escape */
   const html = `
@@ -29,7 +54,7 @@ const codepenHtml = (element, name) => {
     <script src='https://unpkg.com/lyne-test/dist/lyne-components/lyne-components.js'><\/script>
   </head>
   <body>
-    ${comp}
+    ${componentHtml(element, name)}
   </body>
 </html>
   `;
@@ -37,5 +62,3 @@ const codepenHtml = (element, name) => {
 
   return html;
 };
-
-export default codepenHtml;
