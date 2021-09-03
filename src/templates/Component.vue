@@ -27,26 +27,31 @@
               ></component>
             </div>
 
-            <lyne-button
-              variant="secondary"
-              label="Copy"
-              :value="`code-sample-${index}`"
-              v-on="{
-                'lyne-button_click': copyClick.bind(false, rawComponentHtml(comp, $data.title))
-              }"
-            />
-
             <code>
               <pre v-html="componentHtml(comp, $data.title)" />
             </code>
 
-            <Codepen
-              :contents='{
-                "title": `Lyne Components Sandbox: ${$data.title}`,
-                "html": codepenHtml(comp, $data.title)
-              }'
-              class="variant-codepen"
-            />
+            <div class="code-buttons">
+              <Codepen
+                :contents='{
+                  "title": `Lyne Components Sandbox: ${$data.title}`,
+                  "html": codepenHtml(comp, $data.title)
+                }'
+                class="variant-codepen"
+              />
+
+              <lyne-button
+                variant="secondary"
+                label="Copy"
+                size="small"
+                icon
+                v-on="{
+                  'lyne-button_click': copyClick.bind(false, rawComponentHtml(comp, $data.title))
+                }"
+              >
+                <CopyIcon />
+              </lyne-button>
+            </div>
 
           </div>
 
@@ -80,6 +85,7 @@ query(
 <script>
 import * as pjs from 'prismjs';
 import 'prismjs/themes/prism.css';
+import CopyIcon from 'lyne-icons/dist/icons/form-small.svg';
 
 import {
   codepenHtml,
@@ -110,7 +116,8 @@ const setLocalData = (context, _data) => {
 
 export default {
   components: {
-    Codepen
+    Codepen,
+    CopyIcon
   },
   data() {
     return {
@@ -162,8 +169,12 @@ export default {
   border: 2px solid $color-milk-default;
 }
 
-.variant-codepen {
+.code-buttons {
+  display: flex;
   margin-bottom: 80px;
+}
+.variant-codepen {
+  margin-right: 1rem;
 }
 
 </style>
