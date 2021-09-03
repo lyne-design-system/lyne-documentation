@@ -27,6 +27,19 @@
               ></component>
             </div>
 
+            <lyne-button
+              variant="secondary"
+              label="Copy"
+              :value="`code-sample-${index}`"
+              v-on="{
+                'lyne-button_click': copyClick.bind(false, rawComponentHtml(comp, $data.title))
+              }"
+            />
+
+            <code>
+              <pre v-html="componentHtml(comp, $data.title)" />
+            </code>
+
             <Codepen
               :contents='{
                 "title": `Lyne Components Sandbox: ${$data.title}`,
@@ -65,8 +78,14 @@ query(
 </page-query>
 
 <script>
+import * as pjs from 'prismjs';
+import 'prismjs/themes/prism.css';
+
+import {
+  codepenHtml,
+  componentHtml
+} from '../helpers/codepen';
 import Codepen from '../components/Codepen.vue';
-import codepen from '../helpers/codepen';
 import components from '../components';
 
 const setLocalData = (context, _data) => {
@@ -102,7 +121,21 @@ export default {
   },
   methods: {
     codepenHtml(elem, name) {
-      return codepen(elem, name);
+      return codepenHtml(elem, name);
+    },
+    componentHtml(elem, name) {
+      const rawHtml = componentHtml(elem, name);
+      const tokenized = pjs.highlight(rawHtml, pjs.languages.html, 'html');
+
+      return tokenized;
+    },
+    copyClick(content) {
+      navigator.clipboard.writeText(content);
+    },
+    rawComponentHtml(elem, name) {
+      const rawHtml = componentHtml(elem, name);
+
+      return rawHtml;
     }
   },
   mounted() {
