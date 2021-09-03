@@ -1,3 +1,19 @@
+# [1.53.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.52.0...v1.53.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* align buttons ([ae5c15f](https://github.com/lyne-design-system/lyne-documentation/commit/ae5c15f1e8d0315ca4e46f3385ea9c73f9a63cca))
+* make sure we get strings only as values ([a1e86ad](https://github.com/lyne-design-system/lyne-documentation/commit/a1e86ad7b8990102f6139cf253475ab533fde381))
+* style tag ([4a75091](https://github.com/lyne-design-system/lyne-documentation/commit/4a7509136f4cbde1cf99bc598f01545d947e27d9))
+* use correct tags ([c72f57f](https://github.com/lyne-design-system/lyne-documentation/commit/c72f57fb23c9dbeab41777a65fae892ab0587068))
+
+
+### Features
+
+* display code for variants, add button to copy code ([19b7095](https://github.com/lyne-design-system/lyne-documentation/commit/19b7095247f7026372f444be9b4575a3e1eb4514))
+* export new method to get component html only, prettified ([8afb1c6](https://github.com/lyne-design-system/lyne-documentation/commit/8afb1c695ce27a4bd790071930e8607a395eb55f))
+
 # [1.52.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.51.1...v1.52.0) (2021-09-02)
 
 
