@@ -19,7 +19,7 @@ const componentsData = [
       },
       {
         attrs: {
-          'non-white-background': true
+          'non-white-background': 'true'
         },
         slots: [
           `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
@@ -29,8 +29,8 @@ const componentsData = [
       },
       {
         attrs: {
-          'non-white-background': true,
-          'only-one-open': true
+          'non-white-background': 'true',
+          'only-one-open': 'true'
         },
         slots: [
           `<lyne-accordion-item heading="Accordion Item 1" heading-level="2" icon >${accordionItemContent}${accordionItemArrow}</lyne-accordion-item>`,
@@ -57,7 +57,7 @@ const componentsData = [
         attrs: {
           'heading': 'Accordion Item',
           'hedaing-level': '2',
-          'icon': true
+          'icon': 'true'
         },
         containerClass: 'white-bg',
         slots: [
@@ -74,7 +74,7 @@ const componentsData = [
     variants: [
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'primary'
         },
@@ -83,7 +83,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'secondary'
         },
@@ -92,7 +92,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'tertiary'
         },
@@ -101,7 +101,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'transparent'
         },
@@ -110,7 +110,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'primary-negative'
         },
@@ -120,7 +120,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'secondary-negative'
         },
@@ -130,7 +130,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'tertiary-negative'
         },
@@ -140,7 +140,7 @@ const componentsData = [
       },
       {
         attrs: {
-          icon: true,
+          icon: 'true',
           label: 'Button',
           variant: 'transparent-negative'
         },
