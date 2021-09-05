@@ -119,6 +119,9 @@ export default {
     Codepen,
     CopyIcon
   },
+  created() {
+    setLocalData(this.$context, this.$data);
+  },
   data() {
     return {
       storybook: '',
@@ -144,9 +147,6 @@ export default {
 
       return rawHtml;
     }
-  },
-  mounted() {
-    setLocalData(this.$context, this.$data);
   },
   name: 'LyneComponent',
   updated() {
