@@ -1,3 +1,10 @@
+## [1.53.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.0...v1.53.1) (2021-09-05)
+
+
+### Bug Fixes
+
+* move data init to `created` ([01f291f](https://github.com/lyne-design-system/lyne-documentation/commit/01f291fca0d65151bd6bab8abfef4785d9db1f0b))
+
 # [1.53.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.52.0...v1.53.0) (2021-09-03)
 
 
