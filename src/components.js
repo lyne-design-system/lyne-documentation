@@ -151,8 +151,8 @@ const componentsData = [
     ]
   },
   {
-    name: 'lyne-clock',
-    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/brand-elements-clock--clock',
+    name: 'lyne-sbb-clock',
+    storybook: 'https://lyne-components-storybook.netlify.app/?path=/story/brand-elements-sbb-clock--sbb-clock',
     variants: [
       {
         attrs: {
