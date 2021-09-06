@@ -1,3 +1,10 @@
+## [1.53.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.1...v1.53.2) (2021-09-06)
+
+
+### Bug Fixes
+
+* use correct name for clock ([7a8ab9d](https://github.com/lyne-design-system/lyne-documentation/commit/7a8ab9dc6b21cc847b63c47845089daccec7e8e8))
+
 ## [1.53.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.0...v1.53.1) (2021-09-05)
 
 
