@@ -47,53 +47,6 @@
             </div>
           </div>
 
-          <!--
-          <div
-            v-for="(comp) in $data.variants"
-            :key="comp.id"
-          >
-
-            <div
-              class="variant-container"
-              :class="comp.containerClass ? comp.containerClass : ''"
-              :style="comp.containerStyle ? comp.containerStyle : ''"
-            >
-              <component
-                v-bind:is="$data.title"
-                v-bind="comp.attrs"
-                v-html='comp.slots && comp.slots.length > 0 ? comp.slots.join("") : ""'
-              ></component>
-            </div>
-
-            <code>
-              <pre v-html="componentHtml(comp, $data.title)" />
-            </code>
-
-            <div class="code-buttons">
-              <Codepen
-                :contents='{
-                  "title": `Lyne Components Sandbox: ${$data.title}`,
-                  "html": codepenHtml(comp, $data.title)
-                }'
-                class="variant-codepen"
-              />
-
-              <lyne-button
-                variant="secondary"
-                label="Copy"
-                size="small"
-                icon
-                v-on="{
-                  'lyne-button_click': copyClick.bind(false, rawComponentHtml(comp, $data.title))
-                }"
-              >
-                <CopyIcon />
-              </lyne-button>
-            </div>
-
-          </div>
-          -->
-
           <lyne-title level="2" text="Documentation"></lyne-title>
 
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
