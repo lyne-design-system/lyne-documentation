@@ -83,7 +83,6 @@ import globalConfig from '../../global.config';
 import codepenHtml from '../helpers/codepen';
 import prettier from '../helpers/prettier';
 import Codepen from '../components/Codepen.vue';
-import components from '../components';
 
 const lyneStories = require('lyne-test/dist/collection/storybundle');
 
