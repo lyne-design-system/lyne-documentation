@@ -134,9 +134,9 @@ const setLocalData = (context, _data) => {
           stories.push(storyObject);
         }
       });
-  }
 
-  data.stories = stories;
+    data.stories = stories;
+  }
 
 };
 
