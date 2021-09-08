@@ -104,35 +104,37 @@ const setLocalData = (context, _data) => {
   const rawStories = lyneStories[context.compId];
   const stories = [];
 
-  Object.keys(rawStories)
-    .forEach((key) => {
-      if (key !== 'default') {
-        const storyObject = {};
-        const story = rawStories[key];
-        const storyKeys = Object.keys(story);
+  if (process.isClient) {
+    Object.keys(rawStories)
+      .forEach((key) => {
+        if (key !== 'default') {
+          const storyObject = {};
+          const story = rawStories[key];
+          const storyKeys = Object.keys(story);
 
-        storyObject.documentation = story.documentation;
+          storyObject.documentation = story.documentation;
 
-        if (storyKeys.includes('decorators')) {
-          const decorator = story.decorators[0](story.args);
-          const decoratorElement = document.createRange()
-            .createContextualFragment(decorator.outerHTML);
-          const placeholder = document.createElement('div');
-          const rawElement = story(story.args);
+          if (storyKeys.includes('decorators')) {
+            const decorator = story.decorators[0](story.args);
+            const decoratorElement = document.createRange()
+              .createContextualFragment(decorator.outerHTML);
+            const placeholder = document.createElement('div');
+            const rawElement = story(story.args);
 
-          decoratorElement.firstChild.appendChild(rawElement);
-          placeholder.appendChild(decoratorElement);
+            decoratorElement.firstChild.appendChild(rawElement);
+            placeholder.appendChild(decoratorElement);
 
-          storyObject.element = placeholder.outerHTML;
-          storyObject.elementRaw = rawElement.outerHTML;
-        } else {
-          storyObject.element = story(story.args).outerHTML;
-          storyObject.elementRaw = storyObject.element;
+            storyObject.element = placeholder.outerHTML;
+            storyObject.elementRaw = rawElement.outerHTML;
+          } else {
+            storyObject.element = story(story.args).outerHTML;
+            storyObject.elementRaw = storyObject.element;
+          }
+
+          stories.push(storyObject);
         }
-
-        stories.push(storyObject);
-      }
-    });
+      });
+  }
 
   data.stories = stories;
 
