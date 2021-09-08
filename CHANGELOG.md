@@ -1,3 +1,19 @@
+# [1.54.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.2...v1.54.0) (2021-09-08)
+
+
+### Bug Fixes
+
+* move dataInit from created to mounted ([0e46028](https://github.com/lyne-design-system/lyne-documentation/commit/0e460288cbba0b6f09d6fc2a40382fa642bc8387))
+* remove obsolete import ([81458ef](https://github.com/lyne-design-system/lyne-documentation/commit/81458efa0a894e37984e8cf3251cc19a73038840))
+* use package info about components to create pages ([d1b154c](https://github.com/lyne-design-system/lyne-documentation/commit/d1b154c1c9564a4db69af3173cec552f2c330e2a))
+* use package info about components to render components ([605d7f8](https://github.com/lyne-design-system/lyne-documentation/commit/605d7f82c6c540234e969681ca4e34987ebcc018))
+* use package info about components to render components ([08459a2](https://github.com/lyne-design-system/lyne-documentation/commit/08459a2fd16e2f99f21c43f2cff840b721435355))
+
+
+### Features
+
+* automatically render components and variants from storybook ([9bd4f28](https://github.com/lyne-design-system/lyne-documentation/commit/9bd4f28bd372c752f33cfec92ef7fd7a16a2673d))
+
 ## [1.53.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.1...v1.53.2) (2021-09-06)
 
 
