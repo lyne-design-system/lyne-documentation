@@ -16,11 +16,11 @@
 </template>
 
 <script>
+import componentItems from 'lyne-test/dist/collection/storybundle/components.json';
 import {
   addLevelsToNavItems,
   getPathOfNavItem
 } from '../../helpers/navigation';
-import componentItems from '../../components';
 import eventBus from '../../helpers/eventBus';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
@@ -38,8 +38,8 @@ const addComponentNavItems = (components, _navData) => {
 
   components.forEach((comp) => {
     navDataCopy[indexOfCompNavItem].children.push({
-      name: comp.name,
-      path: `/components/${comp.name}`
+      name: comp,
+      path: `/components/${comp}`
     });
   });
 
@@ -52,7 +52,7 @@ export default {
     Search
   },
   created() {
-    const navWithComps = addComponentNavItems(componentItems, navData);
+    const navWithComps = addComponentNavItems(componentItems.components, navData);
 
     this.navData = addLevelsToNavItems(navWithComps);
     this.paths = getPathOfNavItem(this.navData, this.$route.path);
