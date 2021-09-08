@@ -1,5 +1,5 @@
 const axios = require('axios');
-const componentsData = require('./src/components');
+const componentsData = require('lyne-test/dist/collection/storybundle/components.json');
 const globalConfig = require('./global.config');
 
 const mainFunction = (api) => {
@@ -8,14 +8,14 @@ const mainFunction = (api) => {
     createPage
   }) => {
 
-    componentsData.forEach((component) => {
+    componentsData.components.forEach((component) => {
       createPage({
         component: './src/templates/Component.vue',
         context: {
-          compId: component.name,
-          componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${component.name}`
+          compId: component,
+          componentDistPath: `./${globalConfig.lyneComponentsDocumentationPath}/components/${component}`
         },
-        path: `/components/${component.name}`
+        path: `/components/${component}`
       });
     });
 
