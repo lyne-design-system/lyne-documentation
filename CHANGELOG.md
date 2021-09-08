@@ -1,3 +1,12 @@
+## [1.54.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.0...v1.54.1) (2021-09-08)
+
+
+### Bug Fixes
+
+* make sure that storybundle only gets loaded on client ([822fddf](https://github.com/lyne-design-system/lyne-documentation/commit/822fddf0056d0b685711e5ce869e13567b9d6fb2))
+* move import of storybundle to client condition ([d38852c](https://github.com/lyne-design-system/lyne-documentation/commit/d38852cc93e05d35cea8f99f6eef20bf807e2ff7))
+* move stories save to client condition ([1e133fc](https://github.com/lyne-design-system/lyne-documentation/commit/1e133fc190fbe15d65bb35b50a60fdbaad137176))
+
 # [1.54.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.53.2...v1.54.0) (2021-09-08)
 
 
