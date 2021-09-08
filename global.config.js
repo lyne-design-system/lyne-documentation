@@ -5,5 +5,6 @@ module.exports = {
   graphqlComponentsReadmeTypeName: 'MdDoc',
   lyneComponentsDocumentationPath: 'node_modules/lyne-test/dist/documentation',
   lyneComponentsPrefix: 'lyne',
-  lyneDocumentationContentTypeName: 'LyneContent'
+  lyneDocumentationContentTypeName: 'LyneContent',
+  storybookBaseUrl: 'https://lyne-components-storybook.netlify.app'
 };
