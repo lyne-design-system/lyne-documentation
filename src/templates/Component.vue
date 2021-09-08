@@ -3,17 +3,55 @@
 
     <section class="section">
       <div class="container">
+
         <lyne-title level="1" :text="$data.title" class="page-title"></lyne-title>
 
         <div class="content">
           <lyne-title level="2" text="Variants"></lyne-title>
 
           <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
+
+          <div
+            v-for="(story, index) in $data.stories"
+            :key="index"
+          >
+            <lyne-title level="3" :text="`Variant: ${story.documentation && story.documentation.title ? story.documentation.title : '(no title)'}`"></lyne-title>
+
+            <div v-html="story.element" />
+
+            <code>
+              <pre v-html="componentHtml(story.elementRaw)" />
+            </code>
+
+            <div class="code-buttons">
+              <Codepen
+                :contents='{
+                  "title": `Lyne Components Sandbox: ${$data.title}`,
+                  "html": codepenHtml(story.elementRaw, $data.title)
+                }'
+                class="variant-codepen"
+              />
+
+              <lyne-button
+                variant="secondary"
+                label="Copy"
+                size="small"
+                icon
+                v-on="{
+                  'lyne-button_click': copyClick.bind(false, story.elementRaw)
+                }"
+              >
+                <CopyIcon />
+              </lyne-button>
+
+            </div>
+          </div>
+
+          <!--
           <div
             v-for="(comp) in $data.variants"
             :key="comp.id"
           >
-            <lyne-title level="3" :text="`Variant: ${comp.title}`"></lyne-title>
 
             <div
               class="variant-container"
@@ -54,6 +92,7 @@
             </div>
 
           </div>
+          -->
 
           <lyne-title level="2" text="Documentation"></lyne-title>
 
@@ -86,13 +125,14 @@ query(
 import * as pjs from 'prismjs';
 import 'prismjs/themes/prism.css';
 import CopyIcon from 'lyne-icons/dist/icons/form-small.svg';
+import globalConfig from '../../global.config';
 
-import {
-  codepenHtml,
-  componentHtml
-} from '../helpers/codepen';
+import codepenHtml from '../helpers/codepen';
+import prettier from '../helpers/prettier';
 import Codepen from '../components/Codepen.vue';
 import components from '../components';
+
+const lyneStories = require('lyne-test/dist/collection/storybundle');
 
 const setLocalData = (context, _data) => {
 
@@ -100,18 +140,50 @@ const setLocalData = (context, _data) => {
     return;
   }
 
-  const data = _data;
-
-  const componentsForName = components.filter((comp) => comp.name === context.compId);
-
-  if (componentsForName.length === 1) {
-    const comp = componentsForName[0];
-
-    data.variants = comp.variants;
-    data.storybook = comp.storybook;
+  if (context.compId === _data.title) {
+    return;
   }
 
+  const data = _data;
+
   data.title = context.compId;
+  data.storybook = `${globalConfig.storybookBaseUrl}/?path=/story/${context.compId}`;
+
+  const rawStories = lyneStories[context.compId];
+  const stories = [];
+
+  Object.keys(rawStories)
+    .forEach((key) => {
+      if (key !== 'default') {
+        const storyObject = {};
+        const story = rawStories[key];
+        const storyKeys = Object.keys(story);
+
+        storyObject.documentation = story.documentation;
+
+        if (storyKeys.includes('decorators')) {
+          const decorator = story.decorators[0](story.args);
+          const decoratorElement = document.createRange()
+            .createContextualFragment(decorator.outerHTML);
+          const placeholder = document.createElement('div');
+          const rawElement = story(story.args);
+
+          decoratorElement.firstChild.appendChild(rawElement);
+          placeholder.appendChild(decoratorElement);
+
+          storyObject.element = placeholder.outerHTML;
+          storyObject.elementRaw = rawElement.outerHTML;
+        } else {
+          storyObject.element = story(story.args).outerHTML;
+          storyObject.elementRaw = storyObject.element;
+        }
+
+        stories.push(storyObject);
+      }
+    });
+
+  data.stories = stories;
+
 };
 
 export default {
@@ -124,28 +196,23 @@ export default {
   },
   data() {
     return {
+      stories: [],
       storybook: '',
-      title: '',
-      variants: []
+      title: ''
     };
   },
   methods: {
     codepenHtml(elem, name) {
       return codepenHtml(elem, name);
     },
-    componentHtml(elem, name) {
-      const rawHtml = componentHtml(elem, name);
-      const tokenized = pjs.highlight(rawHtml, pjs.languages.html, 'html');
+    componentHtml(elem) {
+      const prettified = prettier(elem);
+      const tokenized = pjs.highlight(prettified, pjs.languages.html, 'html');
 
       return tokenized;
     },
     copyClick(content) {
       navigator.clipboard.writeText(content);
-    },
-    rawComponentHtml(elem, name) {
-      const rawHtml = componentHtml(elem, name);
-
-      return rawHtml;
     }
   },
   name: 'LyneComponent',
