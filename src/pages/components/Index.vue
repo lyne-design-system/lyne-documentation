@@ -7,10 +7,10 @@
 
         <ul>
           <li
-            v-for="(comp) in $data.components"
-            :key="comp.name"
+            v-for="(comp) in $data.components.components"
+            :key="comp"
           >
-            <g-link :to="'components/' + comp.name">{{comp.name}}</g-link>
+            <g-link :to="'components/' + comp">{{comp}}</g-link>
           </li>
         </ul>
 
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import components from '../../components';
+import components from 'lyne-test/dist/collection/storybundle/components.json';
 
 export default {
   data() {
