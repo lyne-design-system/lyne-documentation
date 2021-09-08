@@ -143,9 +143,6 @@ export default {
     Codepen,
     CopyIcon
   },
-  created() {
-    setLocalData(this.$context, this.$data);
-  },
   data() {
     return {
       stories: [],
@@ -166,6 +163,9 @@ export default {
     copyClick(content) {
       navigator.clipboard.writeText(content);
     }
+  },
+  mounted() {
+    setLocalData(this.$context, this.$data);
   },
   name: 'LyneComponent',
   updated() {
