@@ -1,3 +1,10 @@
+## [1.54.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.1...v1.54.2) (2021-09-09)
+
+
+### Bug Fixes
+
+* render styles from docu object in storybundle ([99de261](https://github.com/lyne-design-system/lyne-documentation/commit/99de261615d9536137b154b6cd2d2c99636ed044))
+
 ## [1.54.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.0...v1.54.1) (2021-09-08)
 
 
