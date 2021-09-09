@@ -17,17 +17,21 @@
           >
             <lyne-title level="3" :text="`Variant: ${story.documentation && story.documentation.title ? story.documentation.title : '(no title)'}`"></lyne-title>
 
-            <div v-html="story.element" />
+            <div
+              v-html="story.element"
+              class="variant-container"
+              :style="story.documentation.container.styles"
+            />
 
             <code>
-              <pre v-html="componentHtml(story.elementRaw)" />
+              <pre v-html="componentHtml(story.element)" />
             </code>
 
             <div class="code-buttons">
               <Codepen
                 :contents='{
                   "title": `Lyne Components Sandbox: ${$data.title}`,
-                  "html": codepenHtml(story.elementRaw, $data.title)
+                  "html": codepenHtml(story.element, $data.title)
                 }'
                 class="variant-codepen"
               />
@@ -38,7 +42,7 @@
                 size="small"
                 icon
                 v-on="{
-                  'lyne-button_click': copyClick.bind(false, story.elementRaw)
+                  'lyne-button_click': copyClick.bind(false, story.element)
                 }"
               >
                 <CopyIcon />
@@ -112,24 +116,43 @@ const setLocalData = (context, _data) => {
           const story = rawStories[key];
           const storyKeys = Object.keys(story);
 
-          storyObject.documentation = story.documentation;
-
-          if (storyKeys.includes('decorators')) {
-            const decorator = story.decorators[0](story.args);
-            const decoratorElement = document.createRange()
-              .createContextualFragment(decorator.outerHTML);
-            const placeholder = document.createElement('div');
-            const rawElement = story(story.args);
-
-            decoratorElement.firstChild.appendChild(rawElement);
-            placeholder.appendChild(decoratorElement);
-
-            storyObject.element = placeholder.outerHTML;
-            storyObject.elementRaw = rawElement.outerHTML;
+          // handle documentation key
+          if (storyKeys.includes('documentation')) {
+            storyObject.documentation = story.documentation;
           } else {
-            storyObject.element = story(story.args).outerHTML;
-            storyObject.elementRaw = storyObject.element;
+            storyObject.documentation = {};
           }
+
+          // handle container key
+          const docuKeys = Object.keys(story.documentation);
+
+          if (docuKeys.includes('container')) {
+            storyObject.documentation.container = story.documentation.container;
+          } else {
+            storyObject.documentation.container = {};
+          }
+
+          // adobt styles
+          const containerKeys = Object.keys(story.documentation.container);
+
+          if (containerKeys.includes('styles')) {
+            const rawStyles = storyObject.documentation.container.styles;
+            const stylesKeys = Object.keys(rawStyles);
+            let styles = '';
+
+            stylesKeys.forEach((styleKey) => {
+              const style = rawStyles[styleKey];
+
+              styles += `${styleKey}: ${style};`;
+            });
+
+            storyObject.documentation.container.styles = styles;
+          } else {
+            storyObject.documentation.container.styles = '';
+          }
+
+          // set html
+          storyObject.element = story(story.args).outerHTML;
 
           stories.push(storyObject);
         }
@@ -183,11 +206,6 @@ export default {
   margin-bottom: 16px;
   background-color: $color-milk-default;
   border-radius: 8px;
-}
-
-.variant-container.white-bg {
-  background-color: $color-white-default;
-  border: 2px solid $color-milk-default;
 }
 
 .code-buttons {
