@@ -1,3 +1,10 @@
+# [1.55.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.2...v1.55.0) (2021-09-09)
+
+
+### Features
+
+* add suport for removing attributes based on story information ([90deea4](https://github.com/lyne-design-system/lyne-documentation/commit/90deea4dfd82e9f21afadbe1c9a05ac0b169bf11))
+
 ## [1.54.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.1...v1.54.2) (2021-09-09)
 
 
