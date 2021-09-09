@@ -24,14 +24,14 @@
             />
 
             <code>
-              <pre v-html="componentHtml(story.element)" />
+              <pre v-html="componentHtml(story.elementRaw)" />
             </code>
 
             <div class="code-buttons">
               <Codepen
                 :contents='{
                   "title": `Lyne Components Sandbox: ${$data.title}`,
-                  "html": codepenHtml(story.element, $data.title)
+                  "html": codepenHtml(story.elementRaw, $data.title)
                 }'
                 class="variant-codepen"
               />
@@ -42,7 +42,7 @@
                 size="small"
                 icon
                 v-on="{
-                  'lyne-button_click': copyClick.bind(false, story.element)
+                  'lyne-button_click': copyClick.bind(false, story.elementRaw)
                 }"
               >
                 <CopyIcon />
@@ -103,63 +103,85 @@ const setLocalData = (context, _data) => {
   data.title = context.compId;
   data.storybook = `${globalConfig.storybookBaseUrl}/?path=/story/${context.compId}`;
 
-  if (process.isClient) {
-    const lyneStories = require('lyne-test/dist/collection/storybundle');
+  const lyneStories = require('lyne-test/dist/collection/storybundle');
 
-    const rawStories = lyneStories[context.compId];
-    const stories = [];
+  const rawStories = lyneStories[context.compId];
+  const stories = [];
+  let ignoreArgs = [];
 
-    Object.keys(rawStories)
-      .forEach((key) => {
-        if (key !== 'default') {
-          const storyObject = {};
-          const story = rawStories[key];
-          const storyKeys = Object.keys(story);
+  const defaultExport = rawStories.default;
+  const defaultExportKeys = Object.keys(defaultExport);
 
-          // handle documentation key
-          if (storyKeys.includes('documentation')) {
-            storyObject.documentation = story.documentation;
-          } else {
-            storyObject.documentation = {};
-          }
+  if (defaultExportKeys.includes('documentation')) {
+    const docu = defaultExport.documentation;
+    const docuKeys = Object.keys(docu);
 
-          // handle container key
-          const docuKeys = Object.keys(story.documentation);
+    if (docuKeys.includes('disableArgs')) {
+      ignoreArgs = docu.disableArgs;
+    }
 
-          if (docuKeys.includes('container')) {
-            storyObject.documentation.container = story.documentation.container;
-          } else {
-            storyObject.documentation.container = {};
-          }
-
-          // adobt styles
-          const containerKeys = Object.keys(story.documentation.container);
-
-          if (containerKeys.includes('styles')) {
-            const rawStyles = storyObject.documentation.container.styles;
-            const stylesKeys = Object.keys(rawStyles);
-            let styles = '';
-
-            stylesKeys.forEach((styleKey) => {
-              const style = rawStyles[styleKey];
-
-              styles += `${styleKey}: ${style};`;
-            });
-
-            storyObject.documentation.container.styles = styles;
-          } else {
-            storyObject.documentation.container.styles = '';
-          }
-
-          // set html
-          storyObject.element = story(story.args).outerHTML;
-
-          stories.push(storyObject);
-        }
-      });
-
-    data.stories = stories;
   }
+
+  Object.keys(rawStories)
+    .forEach((key) => {
+      if (key !== 'default') {
+        const storyObject = {};
+        const story = rawStories[key];
+        const storyKeys = Object.keys(story);
+
+        // handle documentation key
+        if (storyKeys.includes('documentation')) {
+          storyObject.documentation = story.documentation;
+        } else {
+          storyObject.documentation = {};
+        }
+
+        // handle container key
+        const docuKeys = Object.keys(story.documentation);
+
+        if (docuKeys.includes('container')) {
+          storyObject.documentation.container = story.documentation.container;
+        } else {
+          storyObject.documentation.container = {};
+        }
+
+        // adobt styles
+        const containerKeys = Object.keys(story.documentation.container);
+
+        if (containerKeys.includes('styles')) {
+          const rawStyles = storyObject.documentation.container.styles;
+          const stylesKeys = Object.keys(rawStyles);
+          let styles = '';
+
+          stylesKeys.forEach((styleKey) => {
+            const style = rawStyles[styleKey];
+
+            styles += `${styleKey}: ${style};`;
+          });
+
+          storyObject.documentation.container.styles = styles;
+        } else {
+          storyObject.documentation.container.styles = '';
+        }
+
+        // set html
+        storyObject.element = story(story.args).outerHTML;
+        const rawElement = story(story.args);
+
+        // remove attributes that are defined in disableArgs
+        if (ignoreArgs.length > 0) {
+          ignoreArgs.forEach((arg) => {
+            rawElement.removeAttribute(arg);
+          });
+        }
+
+        storyObject.elementRaw = rawElement.outerHTML;
+
+        stories.push(storyObject);
+      }
+    });
+
+  data.stories = stories;
 
 };
 
