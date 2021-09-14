@@ -80,6 +80,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/src/styles/index";
 
 .sub-menu {
   margin-left: 1rem;
