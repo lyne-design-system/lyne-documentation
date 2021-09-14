@@ -1,3 +1,14 @@
+## [1.55.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.0...v1.55.1) (2021-09-14)
+
+
+### Bug Fixes
+
+* import index styles file ([dd3bbb7](https://github.com/lyne-design-system/lyne-documentation/commit/dd3bbb7c6e2283626e95643335a3e456810084b4))
+* import index styles file ([66c5be5](https://github.com/lyne-design-system/lyne-documentation/commit/66c5be5f5635c0556e3c8506e66dca8c5049a27d))
+* import index styles file ([afc2626](https://github.com/lyne-design-system/lyne-documentation/commit/afc26267a2aa43f7384c73a5707d0481084a337d))
+* import index styles file ([d27f3ed](https://github.com/lyne-design-system/lyne-documentation/commit/d27f3edd688e321d26c4ed6bacc885ff14deded4))
+* import index styles file ([b29d437](https://github.com/lyne-design-system/lyne-documentation/commit/b29d43798f61b958997b5417bb0c9ed4a3bd41aa))
+
 # [1.55.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.54.2...v1.55.0) (2021-09-09)
 
 
