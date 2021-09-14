@@ -155,6 +155,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/src/styles/index";
 
 .autocomplete .dropdown-menu.dropdown-menu {
   max-width: unset;
