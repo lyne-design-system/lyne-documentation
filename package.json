@@ -50,7 +50,7 @@
     "semantic-release": "~17.4.7",
     "semantic-release-slack-bot": "~2.1.1",
     "style-resources-loader": "^1.4.1",
-    "vue-eslint-parser": "^7.10.0",
+    "vue-eslint-parser": "^7.11.0",
     "vue-svg-loader": "^0.16.0"
   },
   "author": "Lyne Team",
