@@ -79,6 +79,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/src/styles/index";
+
 .navigation {
   display: flex;
   flex-wrap: nowrap;
