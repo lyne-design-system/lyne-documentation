@@ -222,6 +222,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/src/styles/index";
 
 .variant-container {
   padding: 36px;
