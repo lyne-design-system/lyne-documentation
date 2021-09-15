@@ -23,9 +23,7 @@
               :style="story.documentation.container.styles"
             />
 
-            <code>
-              <pre v-html="componentHtml(story.elementRaw)" />
-            </code>
+            <pre v-html="componentHtml(story.elementRaw)" />
 
             <div class="code-buttons">
               <Codepen
