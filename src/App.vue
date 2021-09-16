@@ -26,3 +26,11 @@ export default {
 };
 
 </script>
+
+<style lang="scss">
+@import "~/src/styles/bulma";
+@import "~/src/styles/fonts";
+@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
+@import "~/src/styles/global";
+@import "~/src/styles/mixins";
+</style>
