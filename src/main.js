@@ -1,5 +1,5 @@
-import Buefy from 'buefy';
 import { defineCustomElements } from 'lyne-test/loader';
+import CustomBuefy from './customBuefy';
 import DefLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
@@ -42,9 +42,7 @@ export default (Vue, {
     name: 'viewport'
   });
 
-  // Register Bulma
-  Vue.use(Buefy, {
-    defaultIconPack: 'mdi'
-  });
+  // Init buefy
+  Vue.use(CustomBuefy);
 
 };
