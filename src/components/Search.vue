@@ -155,7 +155,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~/src/styles/index";
+@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
 
 .autocomplete .dropdown-menu.dropdown-menu {
   max-width: unset;
@@ -164,11 +164,11 @@ export default {
 
 .search-highlight {
   font-weight: bold;
-  color: $link;
+  color: $color-red-default;
 }
 
 .breadcrump-arrow {
-  color: $link;
+  color: $color-black-default;
   padding: 0 .5rem;
 }
 
