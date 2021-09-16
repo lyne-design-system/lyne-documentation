@@ -16,7 +16,7 @@ query LyneContent ($path: String){
 }
 </page-query>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
   .icon.icon-link {
     display: none !important;
