@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
+@import "~/src/styles/index";
 
 .sub-menu {
   margin-left: 1rem;
