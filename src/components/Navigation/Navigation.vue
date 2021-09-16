@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "~/src/styles/index";
+  @import "~/src/styles/bulma";
 
   .menu.column {
     display: block;
