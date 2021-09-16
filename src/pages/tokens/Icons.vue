@@ -344,7 +344,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .tag-count {
     margin-left: .5rem;
   }
