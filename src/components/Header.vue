@@ -79,9 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/src/styles/bulma";
-@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
-@import "~/src/styles/mixins";
+@import "~/src/styles/index";
 
 .navigation {
   display: flex;
