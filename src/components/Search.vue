@@ -154,8 +154,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "~/node_modules/lyne-design-tokens/dist/scss/variables.scss";
+<style lang="scss" scoped>
+@import "~/src/styles/index";
 
 .autocomplete .dropdown-menu.dropdown-menu {
   max-width: unset;
