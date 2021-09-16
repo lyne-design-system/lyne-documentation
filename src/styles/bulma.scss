@@ -1,50 +1,28 @@
-// bulma core
-@import "~bulma/sass/utilities/_all";
+// Bulma utilities
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+@import "~bulma/sass/utilities/mixins";
+@import "~bulma/sass/utilities/controls";
+@import "~bulma/sass/utilities/extends";
 
-// custom overrides
-@import "./bulmaOverrides";
+// Bulma base
+// nothing needed here
 
-// bulma and buefy core
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+// Bulma elements
+@import "~bulma/sass/elements/tag";
 
-// Lyne
-// Add biz or beeeep mode capability
-.is-mode-beep {
-  // Hide most of the content
-  * {
-    // But keep the headers untouched to understand the document structure
-    p, ul li, div.notification {
-      text-decoration: line-through;
-      text-decoration-thickness: 1em;
-    }
-  }
-  // Except the highlighted content snippets
-  .is-highlighted {
-    display: inline-block;
-    text-decoration: none !important;
-    // Exclude headers from tweaking
-    &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-      margin: 0 1em;
-    }
-    &:after {
-      margin-left: .25em;
-    }
-    // Highlight where to save money
-    &.show-cash:after {
-        content: "💸";
-    }
-    // Highlight where to save time
-    &.show-rocket:after {
-      content: "🚀";
-    }
-    // Highlight where to save time and money
-    &.show-rocket-and-cash:after {
-      content: "🚀 💸";
-    }
-    // Highlight where to celebrate
-    &.show-party:after {
-      content: "🥳";
-    } 
-  }
-}
+// Bulma form
+@import "~bulma/sass/form/shared";
+
+// Components
+@import "~bulma/sass/components/breadcrumb";
+@import "~bulma/sass/components/tabs";
+
+// Grid
+// nothing needed here
+
+// Bulma helpers
+// nothing needed here
+
+// Bulma layout
+// nothing needed here
