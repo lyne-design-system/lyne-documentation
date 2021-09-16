@@ -344,12 +344,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .tag-count {
     margin-left: .5rem;
   }
 
-.table-wrapper {
+  .table-wrapper {
     overflow-x: scroll;
   }
 
