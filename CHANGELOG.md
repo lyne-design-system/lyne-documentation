@@ -1,3 +1,10 @@
+## [1.55.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.3...v1.55.4) (2021-09-17)
+
+
+### Bug Fixes
+
+* add max-width to content ([4d86a1a](https://github.com/lyne-design-system/lyne-documentation/commit/4d86a1a9586a849140a9a94452a9b86ecbf4bc07))
+
 ## [1.55.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.2...v1.55.3) (2021-09-17)
 
 
