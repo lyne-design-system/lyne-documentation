@@ -1,3 +1,20 @@
+## [1.55.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.2...v1.55.3) (2021-09-17)
+
+
+### Bug Fixes
+
+* add content container ([efdace8](https://github.com/lyne-design-system/lyne-documentation/commit/efdace853abfdc1a51249de786a0036cac51e776))
+* add content container ([01df522](https://github.com/lyne-design-system/lyne-documentation/commit/01df522b1eba0ac96c380b6d7c007fae5d5f6507))
+* add dark background to codeview ([d0fb6a7](https://github.com/lyne-design-system/lyne-documentation/commit/d0fb6a7fb63797c0bef49bb85e168d4a9bb01519))
+* add missing imports ([d374121](https://github.com/lyne-design-system/lyne-documentation/commit/d37412172e5f13d3755419d78888568901299bb9))
+* add missing imports ([322ace8](https://github.com/lyne-design-system/lyne-documentation/commit/322ace8888f914afc7c99f13c4acffe817246aef))
+* add own class for tag ([49c0b26](https://github.com/lyne-design-system/lyne-documentation/commit/49c0b264362ac3f2d3ad776bb25c71a9699ac5b3))
+* add tabs component ([58e4e6b](https://github.com/lyne-design-system/lyne-documentation/commit/58e4e6b04c00c01d9ff3207b54b0f28211700208))
+* override autocomplete and dropdown styles from buefy ([dbe2adf](https://github.com/lyne-design-system/lyne-documentation/commit/dbe2adfea7a7ef3ab83c2f6f3ed5e5813180bbc8))
+* use own tags ([ba3a827](https://github.com/lyne-design-system/lyne-documentation/commit/ba3a827f8edb4a9d284940a41a9b42fe611dab4f))
+* use own tags ([0f99fbf](https://github.com/lyne-design-system/lyne-documentation/commit/0f99fbfa96da72ba0ea33555ad39ab146ba9e621))
+* use own tags ([8b6685b](https://github.com/lyne-design-system/lyne-documentation/commit/8b6685bf020adf6eedb6619f0c4cdb65cdddb973))
+
 ## [1.55.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.1...v1.55.2) (2021-09-16)
 
 
