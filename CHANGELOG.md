@@ -1,3 +1,10 @@
+## [1.55.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.4...v1.55.5) (2021-09-17)
+
+
+### Bug Fixes
+
+* switch prism theme for better contrast ([e42b731](https://github.com/lyne-design-system/lyne-documentation/commit/e42b731df249906eae452f221480f17b487f1f07))
+
 ## [1.55.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.3...v1.55.4) (2021-09-17)
 
 
