@@ -37,7 +37,8 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
-const documentationPackageJson = require('../../package.json');
+
+// const documentationPackageJson = require('../../package.json');
 
 const lyneDocumentationVersion = '0.0.0';
 
