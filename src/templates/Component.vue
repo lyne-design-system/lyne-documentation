@@ -23,7 +23,10 @@
               :style="story.documentation.container.styles"
             />
 
-            <pre v-html="componentHtml(story.elementRaw)" />
+            <pre
+              v-html="componentHtml(story.elementRaw)"
+              class="code-view"
+            />
 
             <div class="code-buttons">
               <Codepen
@@ -235,6 +238,11 @@ export default {
 }
 .variant-codepen {
   margin-right: 1rem;
+}
+
+.code-view {
+  background-color: $color-black-default;
+  border-radius: 8px;
 }
 
 </style>
