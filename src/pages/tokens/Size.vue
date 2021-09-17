@@ -2,33 +2,35 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Size" class="page-title"></lyne-title>
+        <div class="content">
+          <lyne-title level="1" text="Size" class="page-title"></lyne-title>
 
-        <div
-          v-for="(key, index) in Object.keys($data.tokens)"
-          :key="index"
-        >
-          <lyne-title level="2" :text="key"></lyne-title>
+          <div
+            v-for="(key, index) in Object.keys($data.tokens)"
+            :key="index"
+          >
+            <lyne-title level="2" :text="key"></lyne-title>
 
-          <TokensTable :tokens="$data.tokens[key]">
-            <template v-slot="slotProps">
-              <span
-                v-if="key === 'icon'"
-                class="icon-size-token"
-                v-html='getSampleIconForToken(slotProps.token)'
-                :style="{height: slotProps.token.value}"
-              />
+            <TokensTable :tokens="$data.tokens[key]">
+              <template v-slot="slotProps">
+                <span
+                  v-if="key === 'icon'"
+                  class="icon-size-token"
+                  v-html='getSampleIconForToken(slotProps.token)'
+                  :style="{height: slotProps.token.value}"
+                />
 
-              <span
-                v-if="key !== 'icon'"
-                class="default-size-token"
-                :style="{
-                  height: slotProps.token.value,
-                  width: slotProps.token.value
-                }"
-              />
-            </template>
-          </TokensTable>
+                <span
+                  v-if="key !== 'icon'"
+                  class="default-size-token"
+                  :style="{
+                    height: slotProps.token.value,
+                    width: slotProps.token.value
+                  }"
+                />
+              </template>
+            </TokensTable>
+          </div>
         </div>
 
       </div>
