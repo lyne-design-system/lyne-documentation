@@ -1,3 +1,9 @@
+body {
+  font-family: 'SBBWeb Roman';
+}
+
+// title styles
+
 lyne-title {
   margin: 3rem 0 1rem;
 }
@@ -11,6 +17,8 @@ lyne-title.page-title {
   margin-top: 0;
 }
 
+// custom tag
+
 .tag-mark {
   background-color: $color-red-default;
   color: $color-white-default;
@@ -19,6 +27,16 @@ lyne-title.page-title {
   font-size: 12px;
 }
 
-body {
-  font-family: 'SBBWeb Roman';
+// buefy overrides
+
+.autocomplete .icon,
+.search-field .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu .dropdown-content .dropdown-item .breadcrump-arrow {
+  color: $color-cement-default;
+  padding: 0 4px;
 }
