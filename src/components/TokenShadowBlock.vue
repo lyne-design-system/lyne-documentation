@@ -16,14 +16,14 @@
           v-for="(key2, index2) in Object.keys(shadows[key])"
           :key="index2"
         >
-          <b-taglist attached>
-            <b-tag type="is-light">
+          <div>
+            <span>
               {{baseName}}-{{key2 === 'color' ? type : 'shadow'}}-{{key}}-{{key2}}
-            </b-tag>
-            <b-tag type="is-info is-light">
+            </span>
+            <span class="tag-mark">
               {{shadows[key][key2]}}
-            </b-tag>
-          </b-taglist>
+            </span>
+          </div>
         </div>
       </b-field>
 
