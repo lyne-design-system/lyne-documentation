@@ -1,3 +1,11 @@
+## [1.55.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.5...v1.55.6) (2021-09-17)
+
+
+### Bug Fixes
+
+* fix linting issue ([7a65a8e](https://github.com/lyne-design-system/lyne-documentation/commit/7a65a8ea4aad6e7ebffb30ad6a6a604dfe1c4ac1))
+* remove fetch in async mounted and hardcode version to try to fix performance issue ([b8713d2](https://github.com/lyne-design-system/lyne-documentation/commit/b8713d23786e5e3782964c8a066e4be34ec4c96b))
+
 ## [1.55.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.4...v1.55.5) (2021-09-17)
 
 
