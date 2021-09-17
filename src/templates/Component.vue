@@ -81,7 +81,7 @@ query(
 
 <script>
 import * as pjs from 'prismjs';
-import 'prismjs/themes/prism.css';
+import 'prismjs/themes/prism-tomorrow.css';
 import CopyIcon from 'lyne-icons/dist/icons/form-small.svg';
 import globalConfig from '../../global.config';
 
