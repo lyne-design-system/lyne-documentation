@@ -49,4 +49,8 @@ export default {
   margin: 0;
 }
 
+.column.is-9-desktop {
+  max-width: 900px;
+}
+
 </style>
