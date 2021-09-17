@@ -1,3 +1,25 @@
+## [1.55.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.1...v1.55.2) (2021-09-16)
+
+
+### Bug Fixes
+
+* define body font ([be20afa](https://github.com/lyne-design-system/lyne-documentation/commit/be20afae84f4749846feff3701b5f5a5404b8251))
+* make scss scoped ([1b7322f](https://github.com/lyne-design-system/lyne-documentation/commit/1b7322ffd57a822173146d4582166f4ed7857e81))
+* make scss scoped ([6a916e6](https://github.com/lyne-design-system/lyne-documentation/commit/6a916e6fe1a5ee7be531d8310913eccde7733098))
+* make scss scoped ([b078087](https://github.com/lyne-design-system/lyne-documentation/commit/b0780879dbfeaeb4b2a348bf4b41cd12081b44f9))
+* make scss scoped ([0875a96](https://github.com/lyne-design-system/lyne-documentation/commit/0875a9614cebe72b6fd36c48247d5b86bbecf857))
+* move variables to separate file ([a199774](https://github.com/lyne-design-system/lyne-documentation/commit/a199774f98094973459552bd78f92ae9c9be2ce7))
+* only import bulma stuff that we actually need ([34bbe7f](https://github.com/lyne-design-system/lyne-documentation/commit/34bbe7fce74ef80ef547dadacd9cdd3f1bf7a838))
+* only import necessary scss files ([c9682e2](https://github.com/lyne-design-system/lyne-documentation/commit/c9682e2f30cbdf269dfb157198e29594ea332e1d))
+* only import necessary scss files ([a164871](https://github.com/lyne-design-system/lyne-documentation/commit/a164871401fded75bd7716f40f5c6f76989e9afe))
+* only import necessary scss files ([237401e](https://github.com/lyne-design-system/lyne-documentation/commit/237401eebade3d4e7fb57031fed0d68df22f4e05))
+* only import necessary scss files ([14222c4](https://github.com/lyne-design-system/lyne-documentation/commit/14222c4b0b068753b1387d358f733b9b640d4a10))
+* only import used buefy components ([8a678ab](https://github.com/lyne-design-system/lyne-documentation/commit/8a678ab091e6f3d63eef7baf4e4143ac49c68d77))
+* remove code block around pre-tag ([ff4258c](https://github.com/lyne-design-system/lyne-documentation/commit/ff4258c63dc83b8c42c5b8639135e2daca7f3751))
+* remove unnecessary styles ([c399e1f](https://github.com/lyne-design-system/lyne-documentation/commit/c399e1fbc12a569fa63d14393a7ddb794d76f2ac))
+* reset margin for titles in component preview page ([abfe03b](https://github.com/lyne-design-system/lyne-documentation/commit/abfe03b4896c04d4eecc931772f25bbf964c3605))
+* use scoped styles ([cd27c01](https://github.com/lyne-design-system/lyne-documentation/commit/cd27c01707f86a1486fc80f17348411e0c2ca8b9))
+
 ## [1.55.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.0...v1.55.1) (2021-09-14)
 
 
