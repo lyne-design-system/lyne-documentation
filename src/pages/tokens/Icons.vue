@@ -19,11 +19,7 @@
 
             <template #header>
                 {{type}}
-                <b-tag
-                  class="tag-count"
-                  type="is-info"
-                  rounded
-                >{{$data.iconsCount[type]}}</b-tag>
+                <span class="tag-mark tag-count">{{$data.iconsCount[type]}}</span>
             </template>
 
             <!-- Filter category -->
