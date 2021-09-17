@@ -70,21 +70,25 @@ export default {
 
     return dataExport;
   },
-  async mounted() {
+  mounted() {
     try {
-      const versionData = await fetch('/version.txt');
+      // const versionData = await fetch('/version.txt');
 
-      if (!versionData.ok) {
-        throw new Error('Version file not found');
-      }
+      /**
+       * if (!versionData.ok) {
+       *   throw new Error('Version file not found');
+       * }
+       *
+       * let versionNumber = await versionData.text();
+       *
+       * if (versionNumber.trim() === '0.0.0') {
+       *   versionNumber = documentationPackageJson.version;
+       * }
+       *
+       * this.links.documentation.version = versionNumber;
+       */
 
-      let versionNumber = await versionData.text();
-
-      if (versionNumber.trim() === '0.0.0') {
-        versionNumber = documentationPackageJson.version;
-      }
-
-      this.links.documentation.version = versionNumber;
+      this.links.documentation.version = '0.0.0';
     } catch (err) {
       console.log(`Error in getting version.txt: ${err}`);
     }
