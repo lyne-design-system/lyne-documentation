@@ -89,21 +89,6 @@ export default {
           });
       });
 
-    /**
-     * try {
-     *   const versionData = await fetch('/version.txt');
-     *   if (!versionData.ok) {
-     *     throw new Error('Version file not found');
-     *   }
-     *   let versionNumber = await versionData.text();
-     *   if (versionNumber.trim() === '0.0.0') {
-     *     versionNumber = documentationPackageJson.version;
-     *   }
-     *   this.links.documentation.version = versionNumber;
-     * } catch (err) {
-     *   console.log(`Error in getting version.txt: ${err}`);
-     * }
-     */
   },
   name: 'Footer'
 };
