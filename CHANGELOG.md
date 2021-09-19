@@ -1,3 +1,10 @@
+## [1.55.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.6...v1.55.7) (2021-09-19)
+
+
+### Bug Fixes
+
+* try not to use async mounted method ([24a0422](https://github.com/lyne-design-system/lyne-documentation/commit/24a0422183f2dbcbc2ae914e32cb0067842c42ad))
+
 ## [1.55.6](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.5...v1.55.6) (2021-09-17)
 
 
