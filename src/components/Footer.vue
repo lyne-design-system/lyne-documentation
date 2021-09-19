@@ -37,8 +37,7 @@
 const lyneComponentsVersion = require('lyne-test/package.json').version;
 const lyneDesignTokensVersion = require('lyne-design-tokens/package.json').version;
 const lyneIconsVersion = require('lyne-icons/package.json').version;
-
-// const documentationPackageJson = require('../../package.json');
+const documentationPackageJson = require('../../package.json');
 
 const lyneDocumentationVersion = '0.0.0';
 
@@ -72,27 +71,39 @@ export default {
     return dataExport;
   },
   mounted() {
-    try {
-      // const versionData = await fetch('/version.txt');
+    fetch('/version.txt')
+      .then((versionData) => {
+        if (!versionData.ok) {
+          throw new Error('Version file not found');
+        }
 
-      /**
-       * if (!versionData.ok) {
-       *   throw new Error('Version file not found');
-       * }
-       *
-       * let versionNumber = await versionData.text();
-       *
-       * if (versionNumber.trim() === '0.0.0') {
-       *   versionNumber = documentationPackageJson.version;
-       * }
-       *
-       * this.links.documentation.version = versionNumber;
-       */
+        versionData.text()
+          .then((versionNumber) => {
+            let _versionNumber = versionNumber;
 
-      this.links.documentation.version = '0.0.0';
-    } catch (err) {
-      console.log(`Error in getting version.txt: ${err}`);
-    }
+            if (versionNumber.trim() === '0.0.0') {
+              _versionNumber = documentationPackageJson.version;
+            }
+
+            this.links.documentation.version = _versionNumber;
+          });
+      });
+
+    /**
+     * try {
+     *   const versionData = await fetch('/version.txt');
+     *   if (!versionData.ok) {
+     *     throw new Error('Version file not found');
+     *   }
+     *   let versionNumber = await versionData.text();
+     *   if (versionNumber.trim() === '0.0.0') {
+     *     versionNumber = documentationPackageJson.version;
+     *   }
+     *   this.links.documentation.version = versionNumber;
+     * } catch (err) {
+     *   console.log(`Error in getting version.txt: ${err}`);
+     * }
+     */
   },
   name: 'Footer'
 };
