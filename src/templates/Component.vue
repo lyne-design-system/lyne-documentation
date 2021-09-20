@@ -104,6 +104,10 @@ const setLocalData = (context, _data) => {
   data.title = context.compId;
   data.storybook = `${globalConfig.storybookBaseUrl}/?path=/story/${context.compId}`;
 
+  /**
+   * window object is required in storybundle, therefore we should only do it
+   * when the component get's mounted in the client context or is updated
+   */
   const lyneStories = require('lyne-test/dist/collection/storybundle');
 
   const rawStories = lyneStories[context.compId];
@@ -181,7 +185,6 @@ const setLocalData = (context, _data) => {
         stories.push(storyObject);
       }
     });
-  console.log(data);
   data.stories = stories;
 
 };
