@@ -89,6 +89,8 @@ import codepenHtml from '../helpers/codepen';
 import prettier from '../helpers/prettier';
 import Codepen from '../components/Codepen.vue';
 
+const lyneStories = require('lyne-test/dist/collection/storybundle');
+
 const setLocalData = (context, _data) => {
 
   if (!context) {
@@ -103,8 +105,6 @@ const setLocalData = (context, _data) => {
 
   data.title = context.compId;
   data.storybook = `${globalConfig.storybookBaseUrl}/?path=/story/${context.compId}`;
-
-  const lyneStories = require('lyne-test/dist/collection/storybundle');
 
   const rawStories = lyneStories[context.compId];
   const stories = [];
