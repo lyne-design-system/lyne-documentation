@@ -24,7 +24,7 @@
     "lyne-helper-eslint-config": "~1.0.5",
     "lyne-icons": "^4.18.0",
     "lyne-test": "^9.50.0",
-    "prettier": "~2.4.0",
+    "prettier": "~2.4.1",
     "prismjs": "~1.24.1"
   },
   "devDependencies": {
