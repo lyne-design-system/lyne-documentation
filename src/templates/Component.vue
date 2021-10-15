@@ -124,7 +124,6 @@ const setLocalData = (context, _data) => {
     if (docuKeys.includes('disableArgs')) {
       ignoreArgs = docu.disableArgs;
     }
-
   }
 
   Object.keys(rawStories)
@@ -142,7 +141,7 @@ const setLocalData = (context, _data) => {
         }
 
         // handle container key
-        const docuKeys = Object.keys(story.documentation);
+        const docuKeys = Object.keys(storyObject.documentation);
 
         if (docuKeys.includes('container')) {
           storyObject.documentation.container = story.documentation.container;
@@ -151,7 +150,7 @@ const setLocalData = (context, _data) => {
         }
 
         // adobt styles
-        const containerKeys = Object.keys(story.documentation.container);
+        const containerKeys = Object.keys(storyObject.documentation.container);
 
         if (containerKeys.includes('styles')) {
           const rawStyles = storyObject.documentation.container.styles;
@@ -170,17 +169,20 @@ const setLocalData = (context, _data) => {
         }
 
         // set html
-        storyObject.element = story(story.args).outerHTML;
-        const rawElement = story(story.args);
+        if (story && Object.keys(story)
+          .includes('args')) {
+          storyObject.element = story(story.args).outerHTML;
+          const rawElement = story(story.args);
 
-        // remove attributes that are defined in disableArgs
-        if (ignoreArgs.length > 0) {
-          ignoreArgs.forEach((arg) => {
-            rawElement.removeAttribute(arg);
-          });
+          // remove attributes that are defined in disableArgs
+          if (ignoreArgs.length > 0) {
+            ignoreArgs.forEach((arg) => {
+              rawElement.removeAttribute(arg);
+            });
+          }
+
+          storyObject.elementRaw = rawElement.outerHTML;
         }
-
-        storyObject.elementRaw = rawElement.outerHTML;
 
         stories.push(storyObject);
       }
