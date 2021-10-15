@@ -1,3 +1,10 @@
+## [1.55.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.8...v1.55.9) (2021-10-15)
+
+
+### Bug Fixes
+
+* make sure stories are rendered even if no doc props are present in storybundle ([dfec2bb](https://github.com/lyne-design-system/lyne-documentation/commit/dfec2bbc803baabff22203c410d4d9fa870bbc0a))
+
 ## [1.55.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.7...v1.55.8) (2021-09-24)
 
 
