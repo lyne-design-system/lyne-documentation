@@ -1,3 +1,10 @@
+## [1.55.11](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.10...v1.55.11) (2021-10-20)
+
+
+### Bug Fixes
+
+* adding preload links and fixed asset location to avoid re-directs ([ecc6e02](https://github.com/lyne-design-system/lyne-documentation/commit/ecc6e026f5ee7af5175f2be8dd65882fe77d21fc))
+
 ## [1.55.10](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.9...v1.55.10) (2021-10-20)
 
 
