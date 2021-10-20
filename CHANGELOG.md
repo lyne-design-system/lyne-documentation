@@ -1,3 +1,26 @@
+## [1.55.10](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.9...v1.55.10) (2021-10-20)
+
+
+### Bug Fixes
+
+* add font-face declaration for codepen snippets ([9b9ecfb](https://github.com/lyne-design-system/lyne-documentation/commit/9b9ecfb52f228b3216e8ecde6fc4b2c3f9189974))
+
+## [1.55.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.8...v1.55.9) (2021-10-15)
+
+
+### Bug Fixes
+
+* make sure stories are rendered even if no doc props are present in storybundle ([dfec2bb](https://github.com/lyne-design-system/lyne-documentation/commit/dfec2bbc803baabff22203c410d4d9fa870bbc0a))
+
+## [1.55.8](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.7...v1.55.8) (2021-09-24)
+
+
+### Bug Fixes
+
+* add comment ([bd7928e](https://github.com/lyne-design-system/lyne-documentation/commit/bd7928e0583233d849ed42c6e5aebaa791c7b698))
+* move require back to mounted method ([05ca1a1](https://github.com/lyne-design-system/lyne-documentation/commit/05ca1a17e199c0e27f12fd941b93ebb849baaf8a))
+* move require outside of update method ([0e2ec6e](https://github.com/lyne-design-system/lyne-documentation/commit/0e2ec6e05787f1bef051335a3595bfb58cce4f6e))
+
 ## [1.55.7](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.6...v1.55.7) (2021-09-19)
 
 
