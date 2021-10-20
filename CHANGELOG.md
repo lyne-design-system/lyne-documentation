@@ -1,3 +1,10 @@
+## [1.55.10](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.9...v1.55.10) (2021-10-20)
+
+
+### Bug Fixes
+
+* add font-face declaration for codepen snippets ([9b9ecfb](https://github.com/lyne-design-system/lyne-documentation/commit/9b9ecfb52f228b3216e8ecde6fc4b2c3f9189974))
+
 ## [1.55.9](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.8...v1.55.9) (2021-10-15)
 
 
