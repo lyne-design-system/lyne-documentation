@@ -13,7 +13,8 @@ export default (Vue, {
   // add <html> attributes
   /* eslint-disable no-param-reassign */
   head.htmlAttrs = {
-    lang: 'en'
+    lang: 'en',
+    mode: 'shared'
   };
   /* eslint-enable no-param-reassign */
 
@@ -29,6 +30,11 @@ export default (Vue, {
 
   head.link.push({
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.9.95/css/materialdesignicons.min.css',
+    rel: 'stylesheet'
+  });
+
+  head.link.push({
+    href: 'lyne-test/dist/collection/storybundle/components.json',
     rel: 'stylesheet'
   });
 
