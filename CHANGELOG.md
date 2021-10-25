@@ -1,3 +1,15 @@
+# [1.56.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.11...v1.56.0) (2021-10-25)
+
+
+### Bug Fixes
+
+* remove tests ([11247c6](https://github.com/lyne-design-system/lyne-documentation/commit/11247c67a40f13e3e45b014596ad5568b293e200))
+
+
+### Features
+
+* add shared CSS styles from lyne-components, enable shared mode for documentation platform ([762025c](https://github.com/lyne-design-system/lyne-documentation/commit/762025cee7092aad0b0eef7b7b5a8afc89a33e60))
+
 ## [1.55.11](https://github.com/lyne-design-system/lyne-documentation/compare/v1.55.10...v1.55.11) (2021-10-20)
 
 
