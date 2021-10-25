@@ -34,11 +34,6 @@ export default (Vue, {
   });
 
   head.link.push({
-    href: 'lyne-test/dist/collection/storybundle/components.json',
-    rel: 'stylesheet'
-  });
-
-  head.link.push({
     as: 'font',
     crossOrigin: '',
     href: 'https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2',
