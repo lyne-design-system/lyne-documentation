@@ -13,7 +13,8 @@ export default (Vue, {
   // add <html> attributes
   /* eslint-disable no-param-reassign */
   head.htmlAttrs = {
-    lang: 'en'
+    lang: 'en',
+    mode: 'shared'
   };
   /* eslint-enable no-param-reassign */
 
