@@ -1,3 +1,10 @@
+## [1.56.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.1...v1.56.2) (2021-11-05)
+
+
+### Bug Fixes
+
+* update figma.md (corret list formatting) ([2eb96d3](https://github.com/lyne-design-system/lyne-documentation/commit/2eb96d3f964db8a81b836fbd0e164ec85d7af70f))
+
 ## [1.56.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.0...v1.56.1) (2021-11-05)
 
 
