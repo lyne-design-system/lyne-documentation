@@ -28,7 +28,7 @@
     "prismjs": "~1.24.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
+    "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^13.2.0",
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "~0.6.2",
