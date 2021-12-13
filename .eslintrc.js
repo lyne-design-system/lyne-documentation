@@ -31,4 +31,6 @@ baseConfig.rules['sort-imports'] = [
   }
 ];
 
+baseConfig.rules['vue/multi-word-component-names'] = 'off';
+
 module.exports = baseConfig;
