@@ -1,3 +1,10 @@
+## [1.56.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.2...v1.56.3) (2021-12-13)
+
+
+### Bug Fixes
+
+* disable multi-word-component-name rule ([7341d51](https://github.com/lyne-design-system/lyne-documentation/commit/7341d51b7c1319b4a07c121b5710b00eef1d0fd1))
+
 ## [1.56.2](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.1...v1.56.2) (2021-11-05)
 
 
