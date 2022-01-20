@@ -22,8 +22,8 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "lyne-design-tokens": "^3.17.0",
     "lyne-helper-eslint-config": "~1.0.5",
-    "lyne-icons": "^4.26.1",
-    "lyne-test": "^9.72.1",
+    "lyne-icons": "^4.26.2",
+    "lyne-test": "^9.72.2",
     "prettier": "~2.5.1",
     "prismjs": "~1.26.0"
   },
