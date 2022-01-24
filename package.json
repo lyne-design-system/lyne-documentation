@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@gridsome/source-graphql": "^0.1.0",
-    "axios": "^0.24.0",
+    "axios": "^0.25.0",
     "buefy": "~0.9.14",
     "flexsearch": "~0.6.32",
     "gridsome": "^0.7.23",
@@ -28,7 +28,7 @@
     "prismjs": "~1.26.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
+    "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "~0.6.2",
@@ -44,13 +44,13 @@
     "eslint-plugin-yaml": "^0.5.0",
     "gridsome-plugin-remark-mermaid": "~1.0.1",
     "husky": "^7.0.4",
-    "netlify-cli": "^8.9.2",
+    "netlify-cli": "^8.13.0",
     "node-sass": "~6.0.1",
     "sass-loader": "^10.1.1",
     "semantic-release": "~18.0.1",
-    "semantic-release-slack-bot": "~3.4.1",
+    "semantic-release-slack-bot": "~3.5.0",
     "style-resources-loader": "^1.5.0",
-    "vue-eslint-parser": "^8.0.1",
+    "vue-eslint-parser": "^8.1.0",
     "vue-svg-loader": "^0.16.0"
   },
   "author": "Lyne Team",
