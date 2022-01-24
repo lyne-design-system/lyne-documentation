@@ -1,3 +1,10 @@
+## [1.56.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.3...v1.56.4) (2022-01-24)
+
+
+### Bug Fixes
+
+* resolving merge conflict ([307f9d8](https://github.com/lyne-design-system/lyne-documentation/commit/307f9d8c7d9ec0fd07afc8e38674623be7dac33a))
+
 ## [1.56.3](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.2...v1.56.3) (2021-12-13)
 
 
