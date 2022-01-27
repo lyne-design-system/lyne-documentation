@@ -23,7 +23,7 @@
     "lyne-design-tokens": "^3.17.1",
     "lyne-helper-eslint-config": "~1.0.5",
     "lyne-icons": "^4.26.4",
-    "lyne-test": "^9.73.0",
+    "lyne-test": "^9.73.1",
     "prettier": "~2.5.1",
     "prismjs": "~1.26.0"
   },
