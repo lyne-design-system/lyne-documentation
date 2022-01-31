@@ -230,6 +230,10 @@ export default {
 <style lang="scss" scoped>
 @import "~/src/styles/index";
 
+lyne-button {
+  z-index: -1;
+}
+
 .variant-container {
   padding: 36px;
   margin-bottom: 16px;
