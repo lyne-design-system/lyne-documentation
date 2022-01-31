@@ -4,7 +4,6 @@
     method="POST"
     target="_blank"
     ref="form"
-    class="codepen-form"
   >
     <input
       type="hidden"
@@ -42,22 +41,3 @@ export default {
   props: ['contents']
 };
 </script>
-
-<style lang="scss" scoped>
-
-.codepen-form {
-  z-index: -1;
-}
-
-.input-button {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  background: none;
-  border: none;
-  outline: none;
-  padding: 0;
-  color: currentColor;
-  font: inherit;
-  cursor: pointer;
-
-}
-</style>

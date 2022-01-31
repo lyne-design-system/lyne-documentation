@@ -12,6 +12,7 @@
           <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
 
           <div
+            class="variants"
             v-for="(story, index) in $data.stories"
             :key="index"
           >
@@ -230,11 +231,13 @@ export default {
 <style lang="scss" scoped>
 @import "~/src/styles/index";
 
-lyne-button {
-  z-index: -1;
+.variants {
+  position: relative;
 }
 
 .variant-container {
+  position: relative;
+  z-index: 1;
   padding: 36px;
   margin-bottom: 16px;
   background-color: $color-milk-default;
