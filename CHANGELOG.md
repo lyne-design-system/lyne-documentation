@@ -1,3 +1,11 @@
+## [1.56.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.4...v1.56.5) (2022-01-31)
+
+
+### Bug Fixes
+
+* fix z-index for codepen and copy buttons ([5aac5d4](https://github.com/lyne-design-system/lyne-documentation/commit/5aac5d40fca66a25983df0ef98475e12086311e0))
+* use better fix for component preview overlapping codepen buttons ([aa9aab3](https://github.com/lyne-design-system/lyne-documentation/commit/aa9aab313f090ddd439de756c1521b29a43141e9))
+
 ## [1.56.4](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.3...v1.56.4) (2022-01-24)
 
 
