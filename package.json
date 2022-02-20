@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@gridsome/source-graphql": "^0.1.0",
-    "axios": "^0.25.0",
+    "axios": "^0.26.0",
     "buefy": "~0.9.14",
     "flexsearch": "~0.6.32",
     "gridsome": "^0.7.23",
