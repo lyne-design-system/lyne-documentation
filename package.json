@@ -44,7 +44,7 @@
     "eslint-plugin-yaml": "^0.5.0",
     "gridsome-plugin-remark-mermaid": "~1.0.1",
     "husky": "^7.0.4",
-    "netlify-cli": "^9.8.3",
+    "netlify-cli": "^9.12.3",
     "node-sass": "~6.0.1",
     "sass-loader": "^10.1.1",
     "semantic-release": "~19.0.2",
