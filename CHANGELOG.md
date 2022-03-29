@@ -1,3 +1,17 @@
+# [1.57.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.5...v1.57.0) (2022-03-29)
+
+
+### Bug Fixes
+
+* linting issues ([5b9d95a](https://github.com/lyne-design-system/lyne-documentation/commit/5b9d95a1b470b8aa8d0b2bab5dd3e0f5a08e7dd7))
+
+
+### Features
+
+* layout design tokens ([646df5a](https://github.com/lyne-design-system/lyne-documentation/commit/646df5abe9f77339b824e00b72e169011b8648f7))
+* link layout tokens ([137714b](https://github.com/lyne-design-system/lyne-documentation/commit/137714b49df464a6da1df94468e365f5058a3bef))
+* update be(ep) mode ([699bfce](https://github.com/lyne-design-system/lyne-documentation/commit/699bfce75c53da89cff4e44bc3aade20d3076ba4))
+
 ## [1.56.5](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.4...v1.56.5) (2022-01-31)
 
 
