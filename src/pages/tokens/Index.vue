@@ -95,7 +95,7 @@ const categories = [
     url: 'spacing'
   },
   {
-    name: 'Typo',
+    name: 'Typography',
     url: 'typo'
   }
 ];
