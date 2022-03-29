@@ -61,9 +61,10 @@ const {
 
 const layoutTokens = designTokensByCategory(tokens, 'layout');
 
-let baseGridColumns = layoutTokens.filter((token) => token.attributes.group === 'base-grid-columns');
+const baseGridColumns = layoutTokens.filter((token) => token.attributes.group === 'base-grid-columns');
 
-let baseGridGutterResponsive = layoutTokens.filter((token) => token.attributes.group === 'base-grid-gutter-responsive');
+const baseGridGutterResponsive = layoutTokens.filter((token) => token.attributes.group === 'base-grid-gutter-responsive');
+
 baseGridGutterResponsive.map((_token) => {
   const token = _token;
 
@@ -72,7 +73,8 @@ baseGridGutterResponsive.map((_token) => {
   return token;
 });
 
-let baseOffsetResponsive = layoutTokens.filter((token) => token.attributes.group === 'base-offset-responsive');
+const baseOffsetResponsive = layoutTokens.filter((token) => token.attributes.group === 'base-offset-responsive');
+
 baseOffsetResponsive.map((_token) => {
   const token = _token;
 
