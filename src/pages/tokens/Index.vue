@@ -97,6 +97,10 @@ const categories = [
   {
     name: 'Typography',
     url: 'typo'
+  },
+  {
+    name: 'Layout',
+    url: 'layout'
   }
 ];
 
