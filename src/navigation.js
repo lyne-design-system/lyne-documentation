@@ -110,6 +110,10 @@ const navigationData = [
       {
         name: 'Typography',
         path: '/tokens/typo/'
+      },
+      {
+        name: 'Layout',
+        path: '/tokens/layout/'
       }
     ],
     name: 'Design Tokens',
