@@ -54,7 +54,7 @@ const data = [
     values: tokensFixed
   },
   {
-    title: 'Responsive',
+    title: 'Responsive (grouped by type, by breakpoint)',
     values: tokensResponsive
   }
 ];
