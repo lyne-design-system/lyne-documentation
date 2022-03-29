@@ -9,11 +9,11 @@
       }
     }
     // Except the highlighted content snippets
-    .is-highlighted {
+    .is-highlighted, p lyne-title {
       display: inline-block;
       text-decoration: none !important;
       // Exclude headers from tweaking
-      &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+      &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(lyne-title) {
         margin: 0 1em;
       }
       &:after {
@@ -34,6 +34,6 @@
       // Highlight where to celebrate
       &.show-party:after {
         content: "🥳";
-      } 
+      }
     }
   }

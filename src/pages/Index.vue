@@ -14,7 +14,7 @@
           <p>Lyne empowers people and unites teams to <span class="is-highlighted show-cash">work more efficiently</span> and <span class="is-highlighted show-cash">deliver more consistent experiences</span>.</p>
 
           <ul>
-            <li><g-link to="/about/">All about Lyne</g-link></li>
+            <li><g-link to="/about/" class="is-highlighted">All about Lyne</g-link></li>
             <li><g-link to="/designing/">Start designing</g-link></li>
             <li><g-link to="/coding/">Start coding</g-link></li>
             <li><g-link to="/contributing/">Start contributing</g-link></li>
