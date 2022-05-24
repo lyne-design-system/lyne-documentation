@@ -41,7 +41,7 @@
               <lyne-button
                 variant="secondary"
                 label="Copy"
-                size="small"
+                size="m"
                 icon
                 v-on="{
                   'lyne-button_click': copyClick.bind(false, story.elementRaw)
