@@ -1,3 +1,10 @@
+## [1.57.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.57.0...v1.57.1) (2022-05-24)
+
+
+### Bug Fixes
+
+* use new button size m (former small variant) ([#625](https://github.com/lyne-design-system/lyne-documentation/issues/625)) ([7b1f136](https://github.com/lyne-design-system/lyne-documentation/commit/7b1f136133f19fb5612af01f90e3a587c44425b2))
+
 # [1.57.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.56.5...v1.57.0) (2022-03-29)
 
 
