@@ -20,7 +20,7 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
-    "lyne-design-tokens": "^3.20.3",
+    "lyne-design-tokens": "^3.21.0",
     "lyne-helper-eslint-config": "~1.0.7",
     "lyne-icons": "^4.34.2",
     "lyne-test": "^10.8.0",
