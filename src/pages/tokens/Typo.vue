@@ -53,7 +53,7 @@ import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
 
 const typoTokens = designTokensByCategory(tokens, 'typo');
 const typeFaceTokens = typoTokens.filter((token) => token.attributes.type === 'typeFace');

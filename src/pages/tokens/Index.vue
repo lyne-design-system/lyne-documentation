@@ -57,7 +57,7 @@ const accessLinks = [
   },
   {
     name: 'NPM',
-    url: 'https://www.npmjs.com/package/lyne-design-tokens'
+    url: 'https://www.npmjs.com/package/@sbb-esta/lyne-design-tokens'
   }
 ];
 

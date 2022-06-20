@@ -74,7 +74,7 @@ import TokenShadowBlock from '../../components/TokenShadowBlock.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
 
 const getNamedGroupedTokens = (_tokens) => {
   const keys = Object.keys(_tokens);

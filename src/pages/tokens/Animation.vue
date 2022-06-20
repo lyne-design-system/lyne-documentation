@@ -23,7 +23,7 @@ import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
 
 const animationTokens = designTokensByCategory(tokens, 'animation');
 
