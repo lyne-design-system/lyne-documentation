@@ -3,13 +3,13 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Border" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Border" class="page-title"></sbb-title>
 
           <div
             v-for="(group, index) in $data.tokensGroups"
             :key="index"
           >
-            <lyne-title level="2" :text="group.name"></lyne-title>
+            <sbb-title level="2" :text="group.name"></sbb-title>
 
             <TokensTable
               :tokens="group.tokens"
@@ -37,22 +37,17 @@
 </template>
 
 <script>
-import { designTokensByCategory } from '../../helpers/designToken';
+import {
+  addUnitToTokenValue, designTokensByPath
+} from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
-const borderTokens = designTokensByCategory(tokens, 'border');
-
-borderTokens.map((_token) => {
-  const token = _token;
-
-  token.value = `${token.value}px`;
-
-  return token;
-});
+const borderTokens = designTokensByPath(tokens, 'border')
+  .map((token) => addUnitToTokenValue(token, 'px'));
 
 const widthTokens = borderTokens.filter((token) => token.attributes.type === 'width');
 const radiusTokens = borderTokens.filter((token) => token.attributes.type === 'radius');

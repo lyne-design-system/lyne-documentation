@@ -2,16 +2,16 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Shadow" class="page-title"></lyne-title>
+        <sbb-title level="1" text="Shadow" class="page-title"></sbb-title>
 
         <div
           v-for="(key, index) in Object.keys($data.tokens)"
           :key="index"
         >
 
-          <lyne-title level="2" :text="`Elevation Level ${key}`"></lyne-title>
+          <sbb-title level="2" :text="`Elevation Level ${key}`"></sbb-title>
 
-          <lyne-title level="3" text="Soft"></lyne-title>
+          <sbb-title level="3" text="Soft"></sbb-title>
 
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
@@ -34,7 +34,7 @@
             }"
           />
 
-          <lyne-title level="3" text="Hard"></lyne-title>
+          <sbb-title level="3" text="Hard"></sbb-title>
 
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
@@ -67,14 +67,14 @@
 
 <script>
 import {
-  designTokensByCategory,
+  designTokensByPath,
   groupedTokens
 } from '../../helpers/designToken';
 import TokenShadowBlock from '../../components/TokenShadowBlock.vue';
 
 const {
   tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const getNamedGroupedTokens = (_tokens) => {
   const keys = Object.keys(_tokens);
@@ -94,7 +94,7 @@ const getNamedGroupedTokens = (_tokens) => {
   return finalTokens;
 };
 
-const shadowTokens = designTokensByCategory(tokens, 'shadow');
+const shadowTokens = designTokensByPath(tokens, 'shadow');
 const _groupedTokens = groupedTokens(shadowTokens, 'group');
 const namedTokenGroups = getNamedGroupedTokens(_groupedTokens);
 
@@ -104,7 +104,7 @@ export default {
   },
   data() {
     return {
-      tokenPrefix: 'shadow-elevation-level-',
+      tokenPrefix: 'sbb-shadow-elevation-level-',
       tokens: namedTokenGroups
     };
   }

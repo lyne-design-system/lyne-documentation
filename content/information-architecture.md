@@ -1,10 +1,10 @@
-<lyne-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform" class="page-title"></lyne-title>
+<sbb-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform" class="page-title"></sbb-title>
 
-<lyne-title level="4" text="Status"></lyne-title>
+<sbb-title level="4" text="Status"></sbb-title>
 
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
-<lyne-title level="4" text="Notes"></lyne-title>
+<sbb-title level="4" text="Notes"></sbb-title>
 
 Every menu item of the proposed IA which sits above the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below the line aims to support returning users with day-to-day needs and activities.
 
@@ -14,7 +14,7 @@ Content sections of pages are highlighted by braces `()`
 
 `Home` contains an introduction text with a link to *All about Lyne* and multiple teasers to link to the *Get started* guides for the most present Design System disciplines. *Start designing* and *Start coding* in the beginning, but at some point also *Start writing*(TBD), *Start contributing*, *What is happening* and *Guidelines*.
 
-<lyne-title level="4" text="Proposed IA for left side navigation"></lyne-title>
+<sbb-title level="4" text="Proposed IA for left side navigation"></sbb-title>
 
 
 <details>
@@ -42,7 +42,7 @@ Content sections of pages are highlighted by braces `()`
       * Assets & tools
   * How Lyne works
     * Structure/architecture
-    * How is everything related 
+    * How is everything related
     * For whom? (Show the different roles which profit from Lyne)
   * How we work (team/processes/principles)
     * Code of conduct
@@ -61,8 +61,8 @@ Content sections of pages are highlighted by braces `()`
     * Roadmap (Where we are going)
 
   * Glossary (vocabulary/dictionary/common language/terminology/jargon)
-  
-  <lyne-title level="4" text="Not yet included"></lyne-title>
+
+  <sbb-title level="4" text="Not yet included"></sbb-title>
 
   * Gallery/Implementations/Examples based on Lyne
 </details>
@@ -183,7 +183,7 @@ Content sections of pages are highlighted by braces `()`
   * Support (& contact)
 </details>
 
-<lyne-title level="4" text="Sources/IA is influenced by:"></lyne-title>
+<sbb-title level="4" text="Sources/IA is influenced by:"></sbb-title>
 
 * [Carbon](https://www.carbondesignsystem.com)
 * [Carbons new IA](https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205)

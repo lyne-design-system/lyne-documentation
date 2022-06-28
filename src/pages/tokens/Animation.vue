@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Animation" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Animation" class="page-title"></sbb-title>
 
           <TokensTable
             :tokens="$data.tokens"
@@ -18,14 +18,18 @@
 </template>
 
 <script>
-import { designTokensByCategory } from '../../helpers/designToken';
+import {
+  addUnitToTokenValue, designTokensByCategory
+} from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
-const animationTokens = designTokensByCategory(tokens, 'animation');
+const easingAnimationTokens = designTokensByCategory(tokens, 'animation');
+const durationAnimationTokens = designTokensByCategory(tokens, 'time')
+  .map((animation) => addUnitToTokenValue(animation, 'ms'));
 
 export default {
   components: {
@@ -33,7 +37,10 @@ export default {
   },
   data() {
     return {
-      tokens: animationTokens
+      tokens: [
+        ...durationAnimationTokens,
+        ...easingAnimationTokens
+      ]
     };
   }
 };

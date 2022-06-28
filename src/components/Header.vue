@@ -32,7 +32,7 @@
         class="navigation-logo"
         href="/"
       >
-        <lyne-sbb-logo protective-room="none" />
+        <sbb-logo protective-room="none" />
       </a>
     </nav>
   </header>
@@ -105,7 +105,7 @@ export default {
 }
 
 .navigation-logo:hover {
-  background-color: $color-milk-default;
+  background-color: $sbb-color-milk-default;
 }
 
 .navigation-menu-button {
@@ -123,7 +123,7 @@ export default {
 }
 
 .navigation-menu-button:hover {
-  background-color: $color-milk-default;
+  background-color: $sbb-color-milk-default;
 }
 
 .button-text {

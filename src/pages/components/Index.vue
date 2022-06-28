@@ -3,7 +3,7 @@
 
     <section class="section">
       <div class="content">
-        <lyne-title level="1" text="Components" class="page-title"></lyne-title>
+        <sbb-title level="1" text="Components" class="page-title"></sbb-title>
 
         <ul>
           <li
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import components from 'lyne-test/dist/collection/storybundle/components.json';
+import components from '@sbb-esta/lyne-components/dist/collection/storybundle/components.json';
 
 export default {
   data() {

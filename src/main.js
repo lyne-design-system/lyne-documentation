@@ -1,4 +1,4 @@
-import { defineCustomElements } from 'lyne-test/loader';
+import { defineCustomElements } from '@sbb-esta/lyne-components/loader';
 import CustomBuefy from './customBuefy';
 import DefLayout from './layouts/Default.vue';
 

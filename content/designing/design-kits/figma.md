@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Figma Design Kit" class="page-title"></lyne-title>
+<sbb-title level="1" text="Figma Design Kit" class="page-title"></sbb-title>
 
 Lyne Design Tokens and Lyne Components are available for designer on Figma:
 

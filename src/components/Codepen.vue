@@ -11,16 +11,16 @@
       :value="JSON.stringify(contents)"
     >
 
-    <lyne-button
+    <sbb-button
       label="Edit on Codepen.io"
       variant="secondary"
       type="submit"
       icon="true"
       size="m"
-      v-on="{'lyne-button_click': buttonClick}"
+      v-on="{'sbb-button_click': buttonClick}"
     >
       <LinkIcon />
-    </lyne-button>
+    </sbb-button>
 
   </form>
 </template>

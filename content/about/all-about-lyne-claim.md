@@ -1,21 +1,21 @@
-<lyne-title level="1" text="Claim" class="page-title"></lyne-title>
+<sbb-title level="1" text="Claim" class="page-title"></sbb-title>
 
-<lyne-title level="2" text="Structure"></lyne-title>
+<sbb-title level="2" text="Structure"></sbb-title>
 
 * What
 * For whom
 * How
 * Why
 
-<lyne-title level="2" text="Claim components"></lyne-title>
+<sbb-title level="2" text="Claim components"></sbb-title>
 
 Lyne
 
-<lyne-title level="2" text="what:"></lyne-title>
+<sbb-title level="2" text="what:"></sbb-title>
 
 is an interconnected, collaboration focused and well documented open-source design system of the SBB
 
-<lyne-title level="2" text="how:"></lyne-title>
+<sbb-title level="2" text="how:"></sbb-title>
 
 it provides ...
 
@@ -28,9 +28,9 @@ it provides ...
 * that works as the foundation
 * (a broad community of contributors and participants) ... long-term goal
 
-<lyne-title level="2" text="why/for whom:"></lyne-title>
+<sbb-title level="2" text="why/for whom:"></sbb-title>
 
-* to help product teams work more efficiently 
+* to help product teams work more efficiently
 * we make it easier to build products and digital experiences / services
 * to empower people and to unite teams
 * to share knowledge
@@ -39,7 +39,7 @@ it provides ...
 * for developers, designers, and content authors to build, maintain, and scale digital experiences
 * to make SBB’s applications more cohesive/consistent
 
-<lyne-title level="2" text="Claim 3rd draft"></lyne-title>
+<sbb-title level="2" text="Claim 3rd draft"></sbb-title>
 
 * What
 * For whom

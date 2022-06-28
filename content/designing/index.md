@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Designing with Lyne" class="page-title"></lyne-title>
+<sbb-title level="1" text="Designing with Lyne" class="page-title"></sbb-title>
 
 Lyne provides certain artifacts for designer to get you up and running, namely:
 

@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Guidelines" class="page-title"></lyne-title>
+<sbb-title level="1" text="Guidelines" class="page-title"></sbb-title>
 
 * [Guiding Principles](/guidelines/principles)
 * [Naming](/guidelines/naming)
