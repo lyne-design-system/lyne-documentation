@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Goals and Benefits" class="page-title"></lyne-title>
+<sbb-title level="1" text="Goals and Benefits" class="page-title"></sbb-title>
 
 The <span class="is-highlighted">Lyne Design System – also just called *Lyne*</span> – addresses multiple goals and creates a multitude of benefits and chances for different teams and in the long run entire SBB organization.
 
@@ -8,23 +8,23 @@ The <span class="is-highlighted">Lyne Design System – also just called *Lyne*<
 - [*Lyne*'s advantages and the resulting chances](#lynes-advantages-and-the-resulting--chances)
 - [Potential which could be unlocked thanks to *Lyne*](#potential-which-could-be-unlocked-thanks-to-lyne)
 
-<lyne-title level="3" text="What Lyne is and why we need it"></lyne-title>
+<sbb-title level="3" text="What Lyne is and why we need it"></sbb-title>
 
 *Lyne* creates a shared workspace for designers, developers and their stakeholders.
 
 The *Lyne Design System* is a holistic approach towards a consistent, maintainable, <span class="is-highlighted">cross-company design language</span> for all SBB [web|digital] products/services for a <span class="is-highlighted">better common understanding</span> between stakeholders, content authors, designers and developers.
 
-<lyne-title level="3" text="What Lyne consists of"></lyne-title>
+<sbb-title level="3" text="What Lyne consists of"></sbb-title>
 
 The *Lyne Design System* is based on an intuitive, unique — the Single Source of Truth — referential resource[this very website], including shared and well-documented guidelines, vocabulary and <span class="is-highlighted">processes</span>, design decisions (so called Design Tokens), as well as centralized, vendor and framework agnostic basic building blocks (Lyne Components).
 
-<lyne-title level="3" text="What Lyne does"></lyne-title>
+<sbb-title level="3" text="What Lyne does"></sbb-title>
 
 *Lyne* documents, <span class="is-highlighted show-rocket-and-cash">standardizes and streamlines</span> the design and development process for SBB [web|digital] experiences transparently and <span class="is-highlighted">governs the design language of the SBB brand experience</span>.
 
 The *Lyne Design System* not only <span class="is-highlighted show-cash">enables an optimized collaboration</span> and integration workflow between the Design System Core Team and consumers (e.g. product teams) of *Lyne Design System* but also <span class="is-highlighted show-rocket">accelerates the creation and development process(time to market)</span> in a sustainable, maintainable, and long term committed fashion.
 
-<lyne-title level="3" text="Lyne's advantages and the resulting chances"></lyne-title>
+<sbb-title level="3" text="Lyne's advantages and the resulting chances"></sbb-title>
 
 - <span class="is-highlighted">One language/terminology</span>
     - Better understanding
@@ -71,7 +71,7 @@ The *Lyne Design System* not only <span class="is-highlighted show-cash">enables
     - <span class="is-highlighted">Sustainability</span>
     - Commitment
 
-<lyne-title level="3" text="Potential which could be unlocked thanks to Lyne"></lyne-title>
+<sbb-title level="3" text="Potential which could be unlocked thanks to Lyne"></sbb-title>
 
 - Better understanding
 - <span class="is-highlighted show-rocket-and-cash">Clearer communication</span>
@@ -97,7 +97,7 @@ The *Lyne Design System* not only <span class="is-highlighted show-cash">enables
 - <span class="is-highlighted show-party">Sustainability</span>
 - Commitment
 
-<lyne-title level="3" text="Risks"></lyne-title>
+<sbb-title level="3" text="Risks"></sbb-title>
 
 General risks of a Design System which we always need to face and be aware of:
 

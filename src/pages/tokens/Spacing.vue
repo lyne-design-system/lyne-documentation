@@ -2,14 +2,14 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Spacing" class="page-title"></lyne-title>
+        <sbb-title level="1" text="Spacing" class="page-title"></sbb-title>
 
         <div
           class="content"
           v-for="(category, index) in $data.tokens"
           :key="index"
         >
-          <lyne-title level="2" :text="category.title"></lyne-title>
+          <sbb-title level="2" :text="category.title"></sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span
@@ -29,22 +29,17 @@
 </template>
 
 <script>
-import { designTokensByCategory } from '../../helpers/designToken';
+import {
+  addUnitToTokenValue, designTokensByPath
+} from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
-const spacingTokens = designTokensByCategory(tokens, 'spacing');
-
-spacingTokens.map((_token) => {
-  const token = _token;
-
-  token.value = `${token.value}px`;
-
-  return token;
-});
+const spacingTokens = designTokensByPath(tokens, 'spacing')
+  .map((token) => addUnitToTokenValue(token, 'px'));
 
 const tokensFixed = spacingTokens.filter((token) => token.attributes.type === 'fixed');
 const tokensResponsive = spacingTokens.filter((token) => token.attributes.type === 'responsive');

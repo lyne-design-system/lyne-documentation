@@ -3,13 +3,13 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Typography" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Typography" class="page-title"></sbb-title>
 
           <div
             v-for="(group, index) in $data.tokensGroups"
             :key="index"
           >
-            <lyne-title level="2" :text="group.name"></lyne-title>
+            <sbb-title level="2" :text="group.name"></sbb-title>
 
             <TokensTable
               :tokens="group.tokens"
@@ -34,8 +34,8 @@
                 vel augue laoreet rutrum faucibus.</span>
                 <span
                   v-if="group.key === 'scale'"
-                  :style="{fontSize: `${slotProps.token.value}px`}"
-                >Scale Example</span>
+                  :style="{fontSize: slotProps.token.value}"
+                >Scale Example </span>
               </template>
             </TokensTable>
           </div>
@@ -48,18 +48,22 @@
 </template>
 
 <script>
-import { designTokensByCategory } from '../../helpers/designToken';
+import {
+  addUnitToTokenValue,
+  designTokensByCategory, designTokensByType
+} from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const typoTokens = designTokensByCategory(tokens, 'typo');
+const scaleTokens = designTokensByType(tokens, 'scale')
+  .map((scale) => addUnitToTokenValue(scale, 'px'));
 const typeFaceTokens = typoTokens.filter((token) => token.attributes.type === 'typeFace');
 const letterSpacingTokens = typoTokens.filter((token) => token.attributes.type === 'letterSpacing');
 const lineHeightTokens = typoTokens.filter((token) => token.attributes.type === 'lineHeight');
-const scaleTokens = typoTokens.filter((token) => token.attributes.type === 'scale');
 const remainingTokens = typoTokens.filter((token) => token.attributes.type === 'fontFamilyFallback');
 
 export default {

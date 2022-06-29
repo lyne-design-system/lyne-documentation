@@ -91,7 +91,7 @@ export default {
   display: block;
   padding: .3rem 2.5rem .3rem 1rem;
   margin: .4rem 0;
-  color: $color-black-default;
+  color: $sbb-color-black-default;
   border-radius: 100px;
 }
 
@@ -113,8 +113,8 @@ export default {
 }
 
 .link.active {
-  background-color: $color-milk-default;
-  color: $color-granite-default;
+  background-color: $sbb-color-milk-default;
+  color: $sbb-color-granite-default;
 }
 
 </style>

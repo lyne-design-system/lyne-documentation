@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import componentItems from 'lyne-test/dist/collection/storybundle/components.json';
+import componentItems from '@sbb-esta/lyne-components/dist/collection/storybundle/components.json';
 import {
   addLevelsToNavItems,
   getPathOfNavItem

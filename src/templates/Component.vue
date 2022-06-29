@@ -4,10 +4,10 @@
     <section class="section">
       <div class="container">
 
-        <lyne-title level="1" :text="$data.title" class="page-title"></lyne-title>
+        <sbb-title level="1" :text="$data.title" class="page-title"></sbb-title>
 
         <div class="content">
-          <lyne-title level="2" text="Variants"></lyne-title>
+          <sbb-title level="2" text="Variants"></sbb-title>
 
           <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
 
@@ -16,7 +16,7 @@
             v-for="(story, index) in $data.stories"
             :key="index"
           >
-            <lyne-title level="3" :text="`Variant: ${story.documentation && story.documentation.title ? story.documentation.title : '(no title)'}`"></lyne-title>
+            <sbb-title level="3" :text="`Variant: ${story.documentation && story.documentation.title ? story.documentation.title : '(no title)'}`"></sbb-title>
 
             <div
               v-html="story.element"
@@ -38,22 +38,22 @@
                 class="variant-codepen"
               />
 
-              <lyne-button
+              <sbb-button
                 variant="secondary"
                 label="Copy"
                 size="m"
                 icon
                 v-on="{
-                  'lyne-button_click': copyClick.bind(false, story.elementRaw)
+                  'sbb-button_click': copyClick.bind(false, story.elementRaw)
                 }"
               >
                 <CopyIcon />
-              </lyne-button>
+              </sbb-button>
 
             </div>
           </div>
 
-          <lyne-title level="2" text="Documentation"></lyne-title>
+          <sbb-title level="2" text="Documentation"></sbb-title>
 
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
 
@@ -109,7 +109,7 @@ const setLocalData = (context, _data) => {
    * window object is required in storybundle, therefore we should only do it
    * when the component get's mounted in the client context or is updated
    */
-  const lyneStories = require('lyne-test/dist/collection/storybundle');
+  const lyneStories = require('@sbb-esta/lyne-components/dist/collection/storybundle');
 
   const rawStories = lyneStories[context.compId];
   const stories = [];
@@ -240,7 +240,7 @@ export default {
   z-index: 1;
   padding: 36px;
   margin-bottom: 16px;
-  background-color: $color-milk-default;
+  background-color: $sbb-color-milk-default;
   border-radius: 8px;
 }
 
@@ -253,7 +253,7 @@ export default {
 }
 
 .code-view {
-  background-color: $color-black-default;
+  background-color: $sbb-color-black-default;
   border-radius: 8px;
 }
 

@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Icons" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Icons" class="page-title"></sbb-title>
 
           <!-- Type switch -->
           <b-tabs

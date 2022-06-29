@@ -4,15 +4,15 @@ body {
 
 // title styles
 
-lyne-title {
+sbb-title {
   margin: 3rem 0 1rem;
 }
 
-.variant-container lyne-title {
+.variant-container sbb-title {
   margin: 0;
 }
 
-lyne-title.page-title {
+sbb-title.page-title {
   margin-bottom: 4rem;
   margin-top: 0;
 }
@@ -20,8 +20,8 @@ lyne-title.page-title {
 // custom tag
 
 .tag-mark {
-  background-color: $color-red-default;
-  color: $color-white-default;
+  background-color: $sbb-color-red-default;
+  color: $sbb-color-white-default;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: 12px;
@@ -37,6 +37,6 @@ lyne-title.page-title {
 }
 
 .dropdown-menu .dropdown-content .dropdown-item .breadcrump-arrow {
-  color: $color-cement-default;
+  color: $sbb-color-cement-default;
   padding: 0 4px;
 }

@@ -35,7 +35,7 @@ const codepenHtml = (element, name) => {
         font-display: fallback;
       }
     </style>
-    <script src='https://unpkg.com/lyne-test/dist/lyne-components/lyne-components.js'><\/script>
+    <script type='module' src='https://unpkg.com/@sbb-esta/lyne-components/dist/lyne-components/lyne-components.esm.js'><\/script>
   </head>
   <body>
     ${element}

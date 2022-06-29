@@ -1,29 +1,29 @@
-<lyne-title level="1" text="How we work" class="page-title"></lyne-title>
+<sbb-title level="1" text="How we work" class="page-title"></sbb-title>
 
-<lyne-title level="2" text="Code of conduct"></lyne-title>
+<sbb-title level="2" text="Code of conduct"></sbb-title>
 
-<lyne-title level="2" text="Who we are"></lyne-title>
+<sbb-title level="2" text="Who we are"></sbb-title>
 
   * Core Team
   * Community
 
-<lyne-title level="2" text="Guiding Principles"></lyne-title>
+<sbb-title level="2" text="Guiding Principles"></sbb-title>
 
 [Guiding Principles](/guidelines/principles/)
 
-<lyne-title level="2" text="Governance model"></lyne-title>
+<sbb-title level="2" text="Governance model"></sbb-title>
 
   * Component contribution process
   * [Contributing](/contributing/)
 
-<lyne-title level="2" text="QA"></lyne-title>
+<sbb-title level="2" text="QA"></sbb-title>
 
   * In ... TUNE?
   * In ... SHAPE?
 
-<lyne-title level="2" text="Metrics"></lyne-title>
+<sbb-title level="2" text="Metrics"></sbb-title>
 
 
-<lyne-title level="2" text="What we are working on"></lyne-title>
+<sbb-title level="2" text="What we are working on"></sbb-title>
 
-<lyne-title level="2" text="Roadmap (Where we are going)"></lyne-title>
+<sbb-title level="2" text="Roadmap (Where we are going)"></sbb-title>

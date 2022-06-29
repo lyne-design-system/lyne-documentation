@@ -3,13 +3,13 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Size" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Size" class="page-title"></sbb-title>
 
           <div
             v-for="(key, index) in Object.keys($data.tokens)"
             :key="index"
           >
-            <lyne-title level="2" :text="key"></lyne-title>
+            <sbb-title level="2" :text="key"></sbb-title>
 
             <TokensTable :tokens="$data.tokens[key]">
               <template v-slot="slotProps">
@@ -40,25 +40,19 @@
 
 <script>
 import {
-  designTokensByCategory,
+  addUnitToTokenValue,
+  designTokensByPath,
   groupedTokens
 } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 
-const sizeTokens = designTokensByCategory(tokens, 'size');
-
-sizeTokens.map((_token) => {
-  const token = _token;
-
-  token.value = `${token.value}px`;
-
-  return token;
-});
+const sizeTokens = designTokensByPath(tokens, 'size')
+  .map((token) => addUnitToTokenValue(token, 'px'));
 
 const tokensByGroups = groupedTokens(sizeTokens, 'group');
 
@@ -107,7 +101,6 @@ export default {
 }
 
 .icon-size-token {
-  display: block;
   width: auto;
   display: flex;
   justify-content: center;

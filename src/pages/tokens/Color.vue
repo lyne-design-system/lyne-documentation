@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Color" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Color" class="page-title"></sbb-title>
 
           <TokensTable :tokens="$data.tokens">
             <template v-slot="slotProps">
@@ -30,7 +30,7 @@ import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const colorTokens = designTokensByCategory(tokens, 'color');
 const sortedColorTokens = sortByKey(colorTokens, 'name');

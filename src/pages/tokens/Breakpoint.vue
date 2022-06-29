@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <lyne-title level="1" text="Breakpoint" class="page-title"></lyne-title>
+          <sbb-title level="1" text="Breakpoint" class="page-title"></sbb-title>
 
           <TokensTable
             :tokens="$data.tokens"
@@ -18,22 +18,17 @@
 </template>
 
 <script>
-import { designTokensByCategory } from '../../helpers/designToken';
+import {
+  addUnitToTokenValue, designTokensByPath
+} from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
 const {
   tokens
-} = require('lyne-design-tokens/dist/js/tokens-raw.json');
+} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
-const breakpointTokens = designTokensByCategory(tokens, 'breakpoint');
-
-breakpointTokens.map((_token) => {
-  const token = _token;
-
-  token.value = `${token.value}px`;
-
-  return token;
-});
+const breakpointTokens = designTokensByPath(tokens, 'breakpoint')
+  .map((token) => addUnitToTokenValue(token, 'px'));
 
 export default {
   components: {

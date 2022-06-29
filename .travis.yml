@@ -22,7 +22,7 @@ jobs:
     - git checkout master || travis_terminate 1
     - git pull || travis_terminate 1
     - npm install || travis_terminate 1
-    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
+    - npm install @sbb-esta/lyne-components@latest @sbb-esta/lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
     - npm run lint || travis_terminate 1
     -  npm run build || travis_terminate 1
 
@@ -35,6 +35,6 @@ jobs:
     if: ((branch != master OR type = pull_request) AND fork = false)
     script:
     - npm install || travis_terminate 1
-    - npm install lyne-test@latest lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
+    - npm install @sbb-esta/lyne-components@latest @sbb-esta/lyne-design-tokens@latest lyne-icons@latest --save || travis_terminate 1
     - npm run lint || travis_terminate 1
     - npm run build || travis_terminate 1

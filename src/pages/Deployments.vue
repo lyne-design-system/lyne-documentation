@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <lyne-title level="1" text="Releases" class="page-title"></lyne-title>
+        <sbb-title level="1" text="Releases" class="page-title"></sbb-title>
 
         <p>Here you can find all production releases and preview builds for <code>lyne-components</code> linked with their corresponding Storybook release.</p>
 
@@ -35,18 +35,23 @@
             : 'tab-section']"
         >
           <ul>
-            <li
-              class="list-item"
-              v-for="(deployment) in $data.deployments[tab.id]"
-              :key="deployment.date"
-            >
-              <span class="list-item-title">{{tab.id === 'production' ? 'Version' : 'Branch'}}: {{deployment.tag}}</span>
-              <a
-                class="list-item-link"
-                :href="deployment.url"
-              >View</a>
-              <span class="list-item-date">{{formatDate(deployment.date)}}</span>
-            </li>
+            <template v-for="(deployment) in $data.deployments[tab.id]">
+              <li
+                v-if="deployment.date !== ''"
+                class="list-item"
+                :key="deployment.date"
+              >
+                <span class="list-item-title">{{tab.id === 'production' ? 'Version' : 'Branch'}}: {{deployment.tag}}</span>
+                <a
+                  class="list-item-link"
+                  :href="deployment.url"
+                >View</a>
+                <span class="list-item-date">{{formatDate(deployment.date)}}</span>
+              </li>
+              <template v-else>
+                No elements.
+              </template>
+            </template>
           </ul>
         </div>
       </div>
@@ -93,7 +98,7 @@ export default {
     return {
       deployments: {
         preview: null,
-        prod: null
+        production: null
       },
       tabs: [
         {

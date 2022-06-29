@@ -164,11 +164,11 @@ export default {
 
 .search-highlight {
   font-weight: bold;
-  color: $color-red-default;
+  color: $sbb-color-red-default;
 }
 
 .breadcrump-arrow {
-  color: $color-black-default;
+  color: $sbb-color-black-default;
   padding: 0 .5rem;
 }
 

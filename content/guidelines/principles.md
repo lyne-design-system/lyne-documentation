@@ -1,4 +1,4 @@
-<lyne-title level="1" text="Guiding Principles" class="page-title"></lyne-title>
+<sbb-title level="1" text="Guiding Principles" class="page-title"></sbb-title>
 
 Lyne's Guiding Principles are derived from the SBB brand values and SBB UX principles and are enhanced through our context and focus.
 
