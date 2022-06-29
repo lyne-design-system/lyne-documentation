@@ -1,6 +1,6 @@
 {
   "name": "lyne-documentation",
-  "version": "1.57.1",
+  "version": "1.58.0",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
@@ -13,9 +13,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@sbb-esta/lyne-design-tokens": "^0.1.7",
-    "@sbb-esta/lyne-components": "^0.1.4",
     "@gridsome/source-graphql": "^0.1.0",
+    "@sbb-esta/lyne-components": "^0.1.4",
+    "@sbb-esta/lyne-design-tokens": "^0.2.0",
     "axios": "^0.27.2",
     "buefy": "~0.9.21",
     "flexsearch": "~0.6.32",
@@ -23,7 +23,7 @@
     "gridsome-plugin-i18n": "^1.6.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "lyne-helper-eslint-config": "~1.0.7",
-    "lyne-icons": "^4.34.2",
+    "lyne-icons": "^4.35.1",
     "prettier": "~2.6.2",
     "prismjs": "~1.28.0"
   },

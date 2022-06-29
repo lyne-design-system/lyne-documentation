@@ -1,3 +1,10 @@
+# [1.58.0](https://github.com/lyne-design-system/lyne-documentation/compare/v1.57.1...v1.58.0) (2022-06-29)
+
+
+### Features
+
+* updated lyne-design-tokens and lyne-components libs and their refs ([#640](https://github.com/lyne-design-system/lyne-documentation/issues/640)) ([0207c5b](https://github.com/lyne-design-system/lyne-documentation/commit/0207c5bda8c5619c76163326f36d18d317fd81c8))
+
 ## [1.57.1](https://github.com/lyne-design-system/lyne-documentation/compare/v1.57.0...v1.57.1) (2022-05-24)
 
 
