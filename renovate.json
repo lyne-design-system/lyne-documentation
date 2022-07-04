@@ -1,5 +1,32 @@
 {
-  "extends": [
-    "config:base"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "nodenv": {
+    "enabled": false
+  },
+  "lockFileMaintenance": {
+    "schedule": ["before 7am on monday"],
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "squash"
+    },
+    {
+      "groupName": "esta",
+      "matchPackagePrefixes": ["@sbb-esta/"],
+      "prPriority": 10
+    },
+    {
+      "groupName": "eslint",
+      "matchPackagePrefixes": ["@typescript-eslint/", "eslint", "vue-eslint"]
+    },
+    {
+      "groupName": "commitlint",
+      "matchPackagePrefixes": ["@commitlint/", "standard-version"]
+    }
   ]
 }
