@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-bind:class="{hidden: !$data.showMenu}"
-    class="menu"
-  >
+  <div v-bind:class="{ hidden: !$data.showMenu }" class="menu">
     <Search class="search" />
     <ul>
       <NavigationItem
@@ -17,10 +14,7 @@
 
 <script>
 import componentItems from '@sbb-esta/lyne-components/dist/collection/storybundle/components.json';
-import {
-  addLevelsToNavItems,
-  getPathOfNavItem
-} from '../../helpers/navigation';
+import { addLevelsToNavItems, getPathOfNavItem } from '../../helpers/navigation';
 import eventBus from '../../helpers/eventBus';
 import navData from '../../navigation';
 import NavigationItem from './NavigationItem.vue';
@@ -39,7 +33,7 @@ const addComponentNavItems = (components, _navData) => {
   components.forEach((comp) => {
     navDataCopy[indexOfCompNavItem].children.push({
       name: comp,
-      path: `/components/${comp}`
+      path: `/components/${comp}`,
     });
   });
 
@@ -49,7 +43,7 @@ const addComponentNavItems = (components, _navData) => {
 export default {
   components: {
     NavigationItem,
-    Search
+    Search,
   },
   created() {
     const navWithComps = addComponentNavItems(componentItems.components, navData);
@@ -58,9 +52,7 @@ export default {
     this.paths = getPathOfNavItem(this.navData, this.$route.path);
 
     eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
-      const {
-        showMenu
-      } = event.detail;
+      const { showMenu } = event.detail;
 
       this.showMenu = showMenu;
     });
@@ -69,41 +61,39 @@ export default {
     const data = {
       navData: [],
       paths: [],
-      showMenu: false
+      showMenu: false,
     };
 
     return data;
   },
   name: 'Navigation',
   watch: {
-    $route () {
+    $route() {
       eventBus.bus.dispatchEvent(eventBus.names.toggleMenu, {
-        showMenu: false
+        showMenu: false,
       });
-    }
-  }
+    },
+  },
 };
-
 </script>
 
 <style lang="scss" scoped>
-  @import "~/src/styles/index";
+@import '~/src/styles/index';
 
-  .menu.column {
+.menu.column {
+  display: block;
+  padding: 1.5rem 0.5rem 1rem;
+}
+
+.menu.hidden {
+  display: none;
+
+  @include desktop {
     display: block;
-    padding: 1.5rem .5rem 1rem;
   }
+}
 
-  .menu.hidden {
-    display: none;
-
-    @include desktop {
-      display: block;
-    }
-  }
-
-  .search {
-    margin-bottom: 1rem;
-  }
-
+.search {
+  margin-bottom: 1rem;
+}
 </style>

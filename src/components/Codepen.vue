@@ -1,15 +1,6 @@
 <template>
-  <form
-    action="https://codepen.io/pen/define"
-    method="POST"
-    target="_blank"
-    ref="form"
-  >
-    <input
-      type="hidden"
-      name="data"
-      :value="JSON.stringify(contents)"
-    >
+  <form action="https://codepen.io/pen/define" method="POST" target="_blank" ref="form">
+    <input type="hidden" name="data" :value="JSON.stringify(contents)" />
 
     <sbb-button
       label="Edit on Codepen.io"
@@ -17,11 +8,10 @@
       type="submit"
       icon="true"
       size="m"
-      v-on="{'sbb-button_click': buttonClick}"
+      v-on="{ 'sbb-button_click': buttonClick }"
     >
       <LinkIcon />
     </sbb-button>
-
   </form>
 </template>
 
@@ -30,14 +20,14 @@ import LinkIcon from 'lyne-icons/dist/icons/link-external-small.svg';
 
 export default {
   components: {
-    LinkIcon
+    LinkIcon,
   },
   methods: {
     buttonClick() {
       this.$refs.form.submit();
-    }
+    },
   },
   name: 'Codepen',
-  props: ['contents']
+  props: ['contents'],
 };
 </script>

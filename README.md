@@ -3,6 +3,7 @@
 # Lyne Documentation Platform for Lyne Design System
 
 ## Live version of the Lyne documentation platform can be found here
+
 https://lyne-documentation.netlify.app/
 
 ## Setup for development
@@ -10,6 +11,7 @@ https://lyne-documentation.netlify.app/
 First of all run `npm install` on the command line to install all dependencies required by the Lyne Documentation Platform.
 
 Then you can run the dev server with the following command:
+
 ```bash
 npm run develop
 ```

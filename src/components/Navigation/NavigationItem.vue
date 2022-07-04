@@ -1,6 +1,5 @@
 <template>
   <li>
-
     <g-link
       class="link"
       :class="'link--level-' + item.level"
@@ -9,25 +8,18 @@
     >
       {{ item.name }}
 
-      <span
-        class="link__icon"
-        v-if="isFolder"
-      >
+      <span class="link__icon" v-if="isFolder">
         <i
           class="mdi"
           v-bind:class="{
             'mdi-chevron-down': !isOpen,
-            'mdi-chevron-up': isOpen
+            'mdi-chevron-up': isOpen,
           }"
         ></i>
       </span>
     </g-link>
 
-    <ul
-      class="sub-menu"
-      v-show="isOpen"
-      v-if="isFolder"
-    >
+    <ul class="sub-menu" v-show="isOpen" v-if="isFolder">
       <NavigationItem
         v-for="(child, index) in item.children"
         :key="index"
@@ -36,32 +28,30 @@
       ></NavigationItem>
     </ul>
   </li>
-
 </template>
 
 <script>
-
 export default {
   computed: {
     isFolder() {
       return this.item.children && this.item.children.length;
-    }
+    },
   },
   data() {
     const data = {
-      isOpen: false
+      isOpen: false,
     };
 
     return data;
   },
   methods: {
-    toggle () {
+    toggle() {
       if (this.isFolder) {
         this.isOpen = !this.isOpen;
       }
-    }
+    },
   },
-  mounted () {
+  mounted() {
     let childIsInOpenPath = false;
 
     if (this.paths) {
@@ -71,16 +61,12 @@ export default {
     this.isOpen = childIsInOpenPath;
   },
   name: 'NavigationItem',
-  props: [
-    'item',
-    'paths'
-  ]
+  props: ['item', 'paths'],
 };
-
 </script>
 
 <style lang="scss" scoped>
-@import "~/src/styles/index";
+@import '~/src/styles/index';
 
 .sub-menu {
   margin-left: 1rem;
@@ -89,8 +75,8 @@ export default {
 .link {
   position: relative;
   display: block;
-  padding: .3rem 2.5rem .3rem 1rem;
-  margin: .4rem 0;
+  padding: 0.3rem 2.5rem 0.3rem 1rem;
+  margin: 0.4rem 0;
   color: $sbb-color-black-default;
   border-radius: 100px;
 }
@@ -116,5 +102,4 @@ export default {
   background-color: $sbb-color-milk-default;
   color: $sbb-color-granite-default;
 }
-
 </style>

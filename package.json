@@ -1,20 +1,31 @@
 {
-  "name": "lyne-documentation",
-  "version": "1.0.0",
+  "name": "@sbb-esta/lyne-documentation",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Lyne Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyne-design-system/lyne-documentation"
+  },
+  "bugs": {
+    "url": "https://github.com/lyne-design-system/lyne-documentation/issues"
+  },
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
+    "format": "prettier \"**/*\" --write --ignore-unknown",
+    "integrity": "yarn -s format",
     "lint": "npm run lint:js && npm run lint:vue && npm run lint:yml",
-    "lint:js": "eslint ./ --ext .js",
-    "lint:vue": "eslint ./ --ext .vue",
-    "lint:yml": "eslint ./ --ext .yml,.yaml",
-    "semantic-release": "semantic-release",
+    "lint:js": "eslint \"**/*.js\"",
+    "lint:vue": "eslint \"**/*.vue\"",
+    "lint:yml": "eslint \"**/*.{yml,yaml}\"",
     "prepare": "husky install"
   },
   "dependencies": {
     "@gridsome/source-graphql": "^0.1.0",
-    "@sbb-esta/lyne-components": "^0.1.4",
+    "@sbb-esta/lyne-components": "^0.1.5",
     "@sbb-esta/lyne-design-tokens": "^0.2.0",
     "axios": "^0.27.2",
     "buefy": "~0.9.21",
@@ -24,7 +35,7 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "lyne-helper-eslint-config": "~1.0.7",
     "lyne-icons": "^4.39.2",
-    "prettier": "~2.6.2",
+    "prettier": "2.7.1",
     "prismjs": "~1.28.0"
   },
   "devDependencies": {
@@ -33,33 +44,33 @@
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "~0.6.2",
     "@gridsome/transformer-remark": "~0.6.4",
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/exec": "~6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "eslint": "~7.32.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-gridsome": "^1.6.2",
+    "eslint": "8.19.0",
+    "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-vue": "~8.6.0",
+    "eslint-plugin-vue": "9.1.1",
     "eslint-plugin-yaml": "^0.5.0",
     "gridsome-plugin-remark-mermaid": "~1.0.1",
     "husky": "^8.0.1",
+    "lint-staged": "13.0.3",
     "netlify-cli": "^10.5.1",
-    "node-sass": "~6.0.1",
-    "sass-loader": "^10.1.1",
-    "semantic-release": "~19.0.3",
-    "semantic-release-slack-bot": "~3.5.3",
+    "node-sass": "6.0.1",
+    "sass-loader": "10.3.0",
+    "standard-version": "9.5.0",
     "style-resources-loader": "^1.5.0",
     "vue-eslint-parser": "^9.0.2",
     "vue-svg-loader": "^0.16.0"
   },
-  "author": "Lyne Team",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lyne-design-system/lyne-documentation"
+  "prettier": {
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "printWidth": 100
   },
-  "bugs": {
-    "url": "https://github.com/lyne-design-system/lyne-documentation/issues"
+  "lint-staged": {
+    "*.{js,ts,css,scss,json,md,html,yaml,yml,vue}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,yaml,yml,vue}": [
+      "eslint --fix"
+    ]
   }
 }

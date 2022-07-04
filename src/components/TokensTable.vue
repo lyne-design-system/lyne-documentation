@@ -8,10 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="(token, index) in tokens"
-        :key="index"
-      >
+      <tr v-for="(token, index) in tokens" :key="index">
         <td class="textCell">{{ token.name }}</td>
         <td class="textCell">{{ token.value }}</td>
         <td v-if="!hideExampleColumn">
@@ -25,10 +22,7 @@
 <script>
 export default {
   name: 'TokensTable',
-  props: [
-    'hideExampleColumn',
-    'tokens'
-  ]
+  props: ['hideExampleColumn', 'tokens'],
 };
 </script>
 
@@ -37,5 +31,4 @@ table td.textCell {
   line-height: 100%;
   vertical-align: middle;
 }
-
 </style>

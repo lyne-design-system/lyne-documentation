@@ -4,18 +4,14 @@
       <div class="container">
         <sbb-title level="1" text="Layout" class="page-title"></sbb-title>
 
-        <div
-          class="content"
-          v-for="(category, index) in $data.tokens"
-          :key="'tokens'  + index"
-        >
+        <div class="content" v-for="(category, index) in $data.tokens" :key="'tokens' + index">
           <sbb-title level="2" :text="category.title"></sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span
                 class="token--grid"
                 :style="{
-                  'grid-template-columns': 'repeat('+slotProps.token.value+', 1fr)',
+                  'grid-template-columns': 'repeat(' + slotProps.token.value + ', 1fr)',
                 }"
               >
                 <span
@@ -27,11 +23,7 @@
             </template>
           </TokensTable>
         </div>
-        <div
-          class="content"
-          v-for="(category, index) in $data.tokensPx"
-          :key="'tokensPx' + index"
-        >
+        <div class="content" v-for="(category, index) in $data.tokensPx" :key="'tokensPx' + index">
           <sbb-title level="2" :text="category.title"></sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
@@ -39,31 +31,28 @@
                 class="token--px"
                 :style="{
                   height: slotProps.token.value,
-                  width: slotProps.token.value
+                  width: slotProps.token.value,
                 }"
               />
             </template>
           </TokensTable>
         </div>
       </div>
-
     </section>
   </Layout>
 </template>
 
 <script>
-import {
-  addUnitToTokenValue, designTokensByPath
-} from '../../helpers/designToken';
+import { addUnitToTokenValue, designTokensByPath } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
-const {
-  tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
+const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const layoutTokens = designTokensByPath(tokens, 'layout');
 
-const baseGridColumns = layoutTokens.filter((token) => token.attributes.group === 'base-grid-columns');
+const baseGridColumns = layoutTokens.filter(
+  (token) => token.attributes.group === 'base-grid-columns'
+);
 
 const baseGridGutterResponsive = layoutTokens
   .filter((token) => token.attributes.group === 'base-grid-gutter-responsive')
@@ -76,36 +65,35 @@ const baseOffsetResponsive = layoutTokens
 const data = [
   {
     title: 'Base Grid Columns (by breakpoint)',
-    values: baseGridColumns
-  }
+    values: baseGridColumns,
+  },
 ];
 
 const dataPxValues = [
   {
     title: 'Base Grid Gutter — Responsive (by breakpoint)',
-    values: baseGridGutterResponsive
+    values: baseGridGutterResponsive,
   },
   {
     title: 'Base Offset — Responsive (by breakpoint)',
-    values: baseOffsetResponsive
-  }
+    values: baseOffsetResponsive,
+  },
 ];
 
 export default {
   components: {
-    TokensTable
+    TokensTable,
   },
   data() {
     return {
       tokens: data,
-      tokensPx: dataPxValues
+      tokensPx: dataPxValues,
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .token--px {
   display: block;
   background-color: black;
@@ -123,5 +111,4 @@ export default {
     height: 1rem;
   }
 }
-
 </style>

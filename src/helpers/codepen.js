@@ -1,5 +1,4 @@
 const codepenHtml = (element, name) => {
-
   /* eslint-disable no-useless-escape */
   const html = `
 <!DOCTYPE html>

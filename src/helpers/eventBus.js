@@ -19,9 +19,11 @@ class EventBus {
 
   dispatchEvent(event, detail = {}) {
     if (process.isClient) {
-      this.bus.dispatchEvent(new CustomEvent(event, {
-        detail
-      }));
+      this.bus.dispatchEvent(
+        new CustomEvent(event, {
+          detail,
+        })
+      );
     }
   }
 }
@@ -29,10 +31,10 @@ class EventBus {
 const bus = new EventBus();
 
 const names = {
-  toggleMenu: 'toggle-menu'
+  toggleMenu: 'toggle-menu',
 };
 
 export default {
   bus,
-  names
+  names,
 };

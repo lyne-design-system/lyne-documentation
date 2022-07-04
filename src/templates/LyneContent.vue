@@ -1,7 +1,7 @@
 <template>
-  <Layout >
+  <Layout>
     <section class="section">
-      <div  class="container">
+      <div class="container">
         <div class="content" v-html="$page.contentItem.content"></div>
       </div>
     </section>

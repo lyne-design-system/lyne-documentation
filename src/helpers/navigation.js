@@ -11,15 +11,9 @@ const getPathOfNavItem = (obj, search, usePathTitles) => {
 
       if (path) {
         if (value.path) {
+          const returnValue = usePathTitles ? value.name : value.path;
 
-          const returnValue = usePathTitles
-            ? value.name
-            : value.path;
-
-          return [
-            returnValue,
-            ...path
-          ];
+          return [returnValue, ...path];
         }
 
         return path;
@@ -81,7 +75,4 @@ const addLevelsToNavItems = (_nav) => {
   return nav;
 };
 
-export {
-  addLevelsToNavItems,
-  getPathOfNavItem
-};
+export { addLevelsToNavItems, getPathOfNavItem };

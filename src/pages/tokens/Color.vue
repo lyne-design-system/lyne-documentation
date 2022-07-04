@@ -10,16 +10,14 @@
               <span
                 class="token"
                 :style="{
-                  backgroundColor: slotProps.token.value
+                  backgroundColor: slotProps.token.value,
                 }"
               />
             </template>
           </TokensTable>
-
         </div>
       </div>
     </section>
-
   </Layout>
 </template>
 
@@ -28,32 +26,28 @@ import { designTokensByCategory } from '../../helpers/designToken';
 import sortByKey from '../../helpers/sort';
 import TokensTable from '../../components/TokensTable.vue';
 
-const {
-  tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
+const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const colorTokens = designTokensByCategory(tokens, 'color');
 const sortedColorTokens = sortByKey(colorTokens, 'name');
 
 export default {
   components: {
-    TokensTable
+    TokensTable,
   },
   data() {
     return {
-      tokens: sortedColorTokens
+      tokens: sortedColorTokens,
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .token {
   display: block;
   width: 4rem;
   height: 4rem;
-  border: 1px solid black
+  border: 1px solid black;
 }
-
 </style>

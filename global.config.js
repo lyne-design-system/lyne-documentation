@@ -6,5 +6,5 @@ module.exports = {
   lyneComponentsDocumentationPath: 'node_modules/@sbb-esta/lyne-components/dist/documentation',
   lyneComponentsPrefix: 'sbb',
   lyneDocumentationContentTypeName: 'LyneContent',
-  storybookBaseUrl: 'https://lyne-components-storybook.netlify.app'
+  storybookBaseUrl: 'https://lyne-components-storybook.netlify.app',
 };

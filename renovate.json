@@ -16,6 +16,11 @@
       "automergeStrategy": "squash"
     },
     {
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "groupName": "esta",
       "matchPackagePrefixes": ["@sbb-esta/"],
       "prPriority": 10

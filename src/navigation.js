@@ -3,27 +3,27 @@ const navigationData = [
     children: [
       {
         name: 'Goals and Benefits',
-        path: '/about/goals-and-benefits/'
+        path: '/about/goals-and-benefits/',
       },
       {
         name: 'What you get',
-        path: '/about/what-you-get/'
+        path: '/about/what-you-get/',
       },
       {
         name: 'How Lyne works',
-        path: '/about/how-lyne-works/'
+        path: '/about/how-lyne-works/',
       },
       {
         name: 'How we work',
-        path: '/about/how-we-work/'
+        path: '/about/how-we-work/',
       },
       {
         name: 'Glossary',
-        path: '/about/glossary/'
-      }
+        path: '/about/glossary/',
+      },
     ],
     name: 'All about Lyne',
-    path: '/about/'
+    path: '/about/',
   },
   {
     children: [
@@ -31,99 +31,99 @@ const navigationData = [
         children: [
           {
             name: 'Sketch',
-            path: '/designing/design-kits/sketch/'
+            path: '/designing/design-kits/sketch/',
           },
           {
             name: 'Figma',
-            path: '/designing/design-kits/figma/'
-          }
+            path: '/designing/design-kits/figma/',
+          },
         ],
         name: 'Design kits',
-        path: '/designing/design-kits/'
-      }
+        path: '/designing/design-kits/',
+      },
     ],
     name: 'Designing',
-    path: '/designing/'
+    path: '/designing/',
   },
   {
     name: 'Coding',
-    path: '/coding/'
+    path: '/coding/',
   },
   {
     children: [
       {
         name: 'Component',
-        path: '/contributing/component/'
-      }
+        path: '/contributing/component/',
+      },
     ],
     name: 'Contributing',
-    path: '/contributing/'
+    path: '/contributing/',
   },
   {
     children: [
       {
         name: 'Guiding Principles',
-        path: '/guidelines/principles/'
+        path: '/guidelines/principles/',
       },
       {
         name: 'Naming',
-        path: '/guidelines/naming/'
-      }
+        path: '/guidelines/naming/',
+      },
     ],
     name: 'Guidelines',
-    path: '/guidelines/'
+    path: '/guidelines/',
   },
   {
     children: [
       {
         name: 'Animation',
-        path: '/tokens/animation/'
+        path: '/tokens/animation/',
       },
       {
         name: 'Border',
-        path: '/tokens/border/'
+        path: '/tokens/border/',
       },
       {
         name: 'Breakpoint',
-        path: '/tokens/breakpoint/'
+        path: '/tokens/breakpoint/',
       },
       {
         name: 'Color',
-        path: '/tokens/color/'
+        path: '/tokens/color/',
       },
       {
         name: 'Icons',
-        path: '/tokens/icons/'
+        path: '/tokens/icons/',
       },
       {
         name: 'Size',
-        path: '/tokens/size/'
+        path: '/tokens/size/',
       },
       {
         name: 'Shadow',
-        path: '/tokens/shadow/'
+        path: '/tokens/shadow/',
       },
       {
         name: 'Spacing',
-        path: '/tokens/spacing/'
+        path: '/tokens/spacing/',
       },
       {
         name: 'Typography',
-        path: '/tokens/typo/'
+        path: '/tokens/typo/',
       },
       {
         name: 'Layout',
-        path: '/tokens/layout/'
-      }
+        path: '/tokens/layout/',
+      },
     ],
     name: 'Design Tokens',
-    path: '/tokens/'
+    path: '/tokens/',
   },
   {
     children: [],
     name: 'Components',
-    path: '/components/'
-  }
+    path: '/components/',
+  },
 ];
 
 export default navigationData;

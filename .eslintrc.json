@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "env": {
+    "es2020": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "extends": ["prettier"],
+      "rules": {
+        "no-unused-vars": [
+          "error",
+          {
+            "vars": "all"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.vue"],
+      "extends": ["plugin:vue/essential", "prettier"],
+      "rules": {
+        "vue/multi-word-component-names": "off",
+        "vue/no-reserved-component-names": "off"
+      }
+    },
+    {
+      "files": ["*.yaml", "*.yml"],
+      "plugins": ["yaml"]
+    }
+  ]
+}

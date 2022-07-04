@@ -18,19 +18,19 @@ PROCESS PREVIEW IMAGE COMING
 
 Who exactly profits?
 
-* UI/UX Designer
-* UI/UX Architect
-* UX Researcher
-* Creative Leads
-* Front End Developer
-* Back End Developer
-* Business Developer
-* Business Analyst
-* UX Writer
-* Copy Writer
-* Translator
-* Brand Manager
-* Product Owner
-* Product Manager
-* Decision Maker
-* Leader
+- UI/UX Designer
+- UI/UX Architect
+- UX Researcher
+- Creative Leads
+- Front End Developer
+- Back End Developer
+- Business Developer
+- Business Analyst
+- UX Writer
+- Copy Writer
+- Translator
+- Brand Manager
+- Product Owner
+- Product Manager
+- Decision Maker
+- Leader

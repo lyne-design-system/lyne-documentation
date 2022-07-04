@@ -5,56 +5,46 @@
         <div class="content">
           <sbb-title level="1" text="Border" class="page-title"></sbb-title>
 
-          <div
-            v-for="(group, index) in $data.tokensGroups"
-            :key="index"
-          >
+          <div v-for="(group, index) in $data.tokensGroups" :key="index">
             <sbb-title level="2" :text="group.name"></sbb-title>
 
-            <TokensTable
-              :tokens="group.tokens"
-            >
+            <TokensTable :tokens="group.tokens">
               <template v-slot="slotProps">
                 <span
                   v-if="group.key === 'width'"
                   class="border-token-width"
-                  :style="{borderWidth: slotProps.token.value}"
+                  :style="{ borderWidth: slotProps.token.value }"
                 />
                 <span
                   v-if="group.key === 'radius'"
                   class="border-token-radius"
-                  :style="{borderRadius: slotProps.token.value}"
+                  :style="{ borderRadius: slotProps.token.value }"
                 />
               </template>
             </TokensTable>
           </div>
-
         </div>
       </div>
     </section>
-
   </Layout>
 </template>
 
 <script>
-import {
-  addUnitToTokenValue, designTokensByPath
-} from '../../helpers/designToken';
+import { addUnitToTokenValue, designTokensByPath } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
-const {
-  tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
+const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
-const borderTokens = designTokensByPath(tokens, 'border')
-  .map((token) => addUnitToTokenValue(token, 'px'));
+const borderTokens = designTokensByPath(tokens, 'border').map((token) =>
+  addUnitToTokenValue(token, 'px')
+);
 
 const widthTokens = borderTokens.filter((token) => token.attributes.type === 'width');
 const radiusTokens = borderTokens.filter((token) => token.attributes.type === 'radius');
 
 export default {
   components: {
-    TokensTable
+    TokensTable,
   },
   data() {
     return {
@@ -62,21 +52,20 @@ export default {
         {
           key: 'width',
           name: 'border-width',
-          tokens: widthTokens
+          tokens: widthTokens,
         },
         {
           key: 'radius',
           name: 'border-radius',
-          tokens: radiusTokens
-        }
-      ]
+          tokens: radiusTokens,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .border-token-width {
   display: block;
   width: 4rem;
@@ -91,5 +80,4 @@ export default {
   height: 4rem;
   border: 1px solid black;
 }
-
 </style>
