@@ -1,22 +1,26 @@
 <template>
   <Layout>
-
     <section class="section">
       <div class="container">
-
         <sbb-title level="1" :text="$data.title" class="page-title"></sbb-title>
 
         <div class="content">
           <sbb-title level="2" text="Variants"></sbb-title>
 
-          <p>Checkout the storybook for this component to play around with all the variants: <a :href="$data.storybook" target="_blank">Storybook</a></p>
+          <p>
+            Checkout the storybook for this component to play around with all the variants:
+            <a :href="$data.storybook" target="_blank">Storybook</a>
+          </p>
 
-          <div
-            class="variants"
-            v-for="(story, index) in $data.stories"
-            :key="index"
-          >
-            <sbb-title level="3" :text="`Variant: ${story.documentation && story.documentation.title ? story.documentation.title : '(no title)'}`"></sbb-title>
+          <div class="variants" v-for="(story, index) in $data.stories" :key="index">
+            <sbb-title
+              level="3"
+              :text="`Variant: ${
+                story.documentation && story.documentation.title
+                  ? story.documentation.title
+                  : '(no title)'
+              }`"
+            ></sbb-title>
 
             <div
               v-html="story.element"
@@ -24,17 +28,14 @@
               :style="story.documentation.container.styles"
             />
 
-            <pre
-              v-html="componentHtml(story.elementRaw)"
-              class="code-view"
-            />
+            <pre v-html="componentHtml(story.elementRaw)" class="code-view" />
 
             <div class="code-buttons">
               <Codepen
-                :contents='{
-                  "title": `Lyne Components Sandbox: ${$data.title}`,
-                  "html": codepenHtml(story.elementRaw, $data.title)
-                }'
+                :contents="{
+                  title: `Lyne Components Sandbox: ${$data.title}`,
+                  html: codepenHtml(story.elementRaw, $data.title),
+                }"
                 class="variant-codepen"
               />
 
@@ -44,23 +45,20 @@
                 size="m"
                 icon
                 v-on="{
-                  'sbb-button_click': copyClick.bind(false, story.elementRaw)
+                  'sbb-button_click': copyClick.bind(false, story.elementRaw),
                 }"
               >
                 <CopyIcon />
               </sbb-button>
-
             </div>
           </div>
 
           <sbb-title level="2" text="Documentation"></sbb-title>
 
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
-
         </div>
       </div>
     </section>
-
   </Layout>
 </template>
 
@@ -91,7 +89,6 @@ import prettier from '../helpers/prettier';
 import Codepen from '../components/Codepen.vue';
 
 const setLocalData = (context, _data) => {
-
   if (!context) {
     return;
   }
@@ -127,81 +124,78 @@ const setLocalData = (context, _data) => {
     }
   }
 
-  Object.keys(rawStories)
-    .forEach((key) => {
-      if (key !== 'default') {
-        const storyObject = {};
-        const story = rawStories[key];
-        const storyKeys = Object.keys(story);
+  Object.keys(rawStories).forEach((key) => {
+    if (key !== 'default') {
+      const storyObject = {};
+      const story = rawStories[key];
+      const storyKeys = Object.keys(story);
 
-        // handle documentation key
-        if (storyKeys.includes('documentation')) {
-          storyObject.documentation = story.documentation;
-        } else {
-          storyObject.documentation = {};
-        }
-
-        // handle container key
-        const docuKeys = Object.keys(storyObject.documentation);
-
-        if (docuKeys.includes('container')) {
-          storyObject.documentation.container = story.documentation.container;
-        } else {
-          storyObject.documentation.container = {};
-        }
-
-        // adobt styles
-        const containerKeys = Object.keys(storyObject.documentation.container);
-
-        if (containerKeys.includes('styles')) {
-          const rawStyles = storyObject.documentation.container.styles;
-          const stylesKeys = Object.keys(rawStyles);
-          let styles = '';
-
-          stylesKeys.forEach((styleKey) => {
-            const style = rawStyles[styleKey];
-
-            styles += `${styleKey}: ${style};`;
-          });
-
-          storyObject.documentation.container.styles = styles;
-        } else {
-          storyObject.documentation.container.styles = '';
-        }
-
-        // set html
-        if (story && Object.keys(story)
-          .includes('args')) {
-          storyObject.element = story(story.args).outerHTML;
-          const rawElement = story(story.args);
-
-          // remove attributes that are defined in disableArgs
-          if (ignoreArgs.length > 0) {
-            ignoreArgs.forEach((arg) => {
-              rawElement.removeAttribute(arg);
-            });
-          }
-
-          storyObject.elementRaw = rawElement.outerHTML;
-        }
-
-        stories.push(storyObject);
+      // handle documentation key
+      if (storyKeys.includes('documentation')) {
+        storyObject.documentation = story.documentation;
+      } else {
+        storyObject.documentation = {};
       }
-    });
-  data.stories = stories;
 
+      // handle container key
+      const docuKeys = Object.keys(storyObject.documentation);
+
+      if (docuKeys.includes('container')) {
+        storyObject.documentation.container = story.documentation.container;
+      } else {
+        storyObject.documentation.container = {};
+      }
+
+      // adobt styles
+      const containerKeys = Object.keys(storyObject.documentation.container);
+
+      if (containerKeys.includes('styles')) {
+        const rawStyles = storyObject.documentation.container.styles;
+        const stylesKeys = Object.keys(rawStyles);
+        let styles = '';
+
+        stylesKeys.forEach((styleKey) => {
+          const style = rawStyles[styleKey];
+
+          styles += `${styleKey}: ${style};`;
+        });
+
+        storyObject.documentation.container.styles = styles;
+      } else {
+        storyObject.documentation.container.styles = '';
+      }
+
+      // set html
+      if (story && Object.keys(story).includes('args')) {
+        storyObject.element = story(story.args).outerHTML;
+        const rawElement = story(story.args);
+
+        // remove attributes that are defined in disableArgs
+        if (ignoreArgs.length > 0) {
+          ignoreArgs.forEach((arg) => {
+            rawElement.removeAttribute(arg);
+          });
+        }
+
+        storyObject.elementRaw = rawElement.outerHTML;
+      }
+
+      stories.push(storyObject);
+    }
+  });
+  data.stories = stories;
 };
 
 export default {
   components: {
     Codepen,
-    CopyIcon
+    CopyIcon,
   },
   data() {
     return {
       stories: [],
       storybook: '',
-      title: ''
+      title: '',
     };
   },
   methods: {
@@ -216,7 +210,7 @@ export default {
     },
     copyClick(content) {
       navigator.clipboard.writeText(content);
-    }
+    },
   },
   mounted() {
     setLocalData(this.$context, this.$data);
@@ -224,12 +218,12 @@ export default {
   name: 'LyneComponent',
   updated() {
     setLocalData(this.$context, this.$data);
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~/src/styles/index";
+@import '~/src/styles/index';
 
 .variants {
   position: relative;
@@ -256,5 +250,4 @@ export default {
   background-color: $sbb-color-black-default;
   border-radius: 8px;
 }
-
 </style>

@@ -1,8 +1,6 @@
 <template>
   <Layout>
-
     <Search />
-
   </Layout>
 </template>
 
@@ -11,7 +9,7 @@ import Search from '../components/Search.vue';
 
 export default {
   components: {
-    Search
-  }
+    Search,
+  },
 };
 </script>

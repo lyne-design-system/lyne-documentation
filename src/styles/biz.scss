@@ -1,39 +1,42 @@
 // Add biz or beeeep mode capability
 .is-mode-beep {
-    // Hide most of the content
-    * {
-      // But keep the headers untouched to understand the document structure
-      p, ul li, div.notification {
-        text-decoration: line-through;
-        text-decoration-thickness: 1em;
-      }
-    }
-    // Except the highlighted content snippets
-    .is-highlighted, p sbb-title {
-      display: inline-block;
-      text-decoration: none !important;
-      // Exclude headers from tweaking
-      &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(sbb-title) {
-        margin: 0 1em;
-      }
-      &:after {
-        margin-left: .25em;
-      }
-      // Highlight where to save money
-      &.show-cash:after {
-          content: "💸";
-      }
-      // Highlight where to save time
-      &.show-rocket:after {
-        content: "🚀";
-      }
-      // Highlight where to save time and money
-      &.show-rocket-and-cash:after {
-        content: "🚀 💸";
-      }
-      // Highlight where to celebrate
-      &.show-party:after {
-        content: "🥳";
-      }
+  // Hide most of the content
+  * {
+    // But keep the headers untouched to understand the document structure
+    p,
+    ul li,
+    div.notification {
+      text-decoration: line-through;
+      text-decoration-thickness: 1em;
     }
   }
+  // Except the highlighted content snippets
+  .is-highlighted,
+  p sbb-title {
+    display: inline-block;
+    text-decoration: none !important;
+    // Exclude headers from tweaking
+    &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(sbb-title) {
+      margin: 0 1em;
+    }
+    &:after {
+      margin-left: 0.25em;
+    }
+    // Highlight where to save money
+    &.show-cash:after {
+      content: '💸';
+    }
+    // Highlight where to save time
+    &.show-rocket:after {
+      content: '🚀';
+    }
+    // Highlight where to save time and money
+    &.show-rocket-and-cash:after {
+      content: '🚀 💸';
+    }
+    // Highlight where to celebrate
+    &.show-party:after {
+      content: '🥳';
+    }
+  }
+}

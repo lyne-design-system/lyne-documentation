@@ -5,10 +5,7 @@
         <div class="content">
           <sbb-title level="1" text="Size" class="page-title"></sbb-title>
 
-          <div
-            v-for="(key, index) in Object.keys($data.tokens)"
-            :key="index"
-          >
+          <div v-for="(key, index) in Object.keys($data.tokens)" :key="index">
             <sbb-title level="2" :text="key"></sbb-title>
 
             <TokensTable :tokens="$data.tokens[key]">
@@ -16,8 +13,8 @@
                 <span
                   v-if="key === 'icon'"
                   class="icon-size-token"
-                  v-html='getSampleIconForToken(slotProps.token)'
-                  :style="{height: slotProps.token.value}"
+                  v-html="getSampleIconForToken(slotProps.token)"
+                  :style="{ height: slotProps.token.value }"
                 />
 
                 <span
@@ -25,44 +22,38 @@
                   class="default-size-token"
                   :style="{
                     height: slotProps.token.value,
-                    width: slotProps.token.value
+                    width: slotProps.token.value,
                   }"
                 />
               </template>
             </TokensTable>
           </div>
         </div>
-
       </div>
     </section>
   </Layout>
 </template>
 
 <script>
-import {
-  addUnitToTokenValue,
-  designTokensByPath,
-  groupedTokens
-} from '../../helpers/designToken';
+import { addUnitToTokenValue, designTokensByPath, groupedTokens } from '../../helpers/designToken';
 import TokensTable from '../../components/TokensTable.vue';
 
-const {
-  tokens
-} = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
+const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 
-const sizeTokens = designTokensByPath(tokens, 'size')
-  .map((token) => addUnitToTokenValue(token, 'px'));
+const sizeTokens = designTokensByPath(tokens, 'size').map((token) =>
+  addUnitToTokenValue(token, 'px')
+);
 
 const tokensByGroups = groupedTokens(sizeTokens, 'group');
 
 export default {
   components: {
-    TokensTable
+    TokensTable,
   },
   data() {
     return {
-      tokens: tokensByGroups
+      tokens: tokensByGroups,
     };
   },
   methods: {
@@ -88,13 +79,12 @@ export default {
       }
 
       return '';
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .default-size-token {
   display: block;
   background-color: black;
@@ -110,5 +100,4 @@ export default {
   display: block;
   height: 100%;
 }
-
 </style>

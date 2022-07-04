@@ -16,14 +16,14 @@ the community to participate and contribute to the Lyne Design System.**
 
 We will accept contributions in the following areas:
 
-* Bug or request
-* Documentation
-* [Component](/contributing/component/)
-* Icon
-* Pictogram
-* Design Token
-* Pattern
-* Other contribution
+- Bug or request
+- Documentation
+- [Component](/contributing/component/)
+- Icon
+- Pictogram
+- Design Token
+- Pattern
+- Other contribution
 
 Once you start contributing please follow [Lyne's Contributing Guidelines](https://github.com/lyne-design-system/lyne/blob/master/CONTRIBUTING.md).
 

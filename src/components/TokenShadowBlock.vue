@@ -1,34 +1,20 @@
 <template>
-  <div
-    class="shadow"
-    :style="getShadowStyle()"
-  >
-
-    <div
-      v-for="(key, index) in Object.keys(shadows)"
-      :key="index"
-    >
-
-      <p>Shadow {{key}}</p>
+  <div class="shadow" :style="getShadowStyle()">
+    <div v-for="(key, index) in Object.keys(shadows)" :key="index">
+      <p>Shadow {{ key }}</p>
       <b-field grouped group-multiline>
-        <div
-          class="control"
-          v-for="(key2, index2) in Object.keys(shadows[key])"
-          :key="index2"
-        >
+        <div class="control" v-for="(key2, index2) in Object.keys(shadows[key])" :key="index2">
           <div>
             <span>
-              {{baseName}}-{{key2 === 'color' ? type : 'shadow'}}-{{key}}-{{key2}}
+              {{ baseName }}-{{ key2 === 'color' ? type : 'shadow' }}-{{ key }}-{{ key2 }}
             </span>
             <span class="tag-mark">
-              {{shadows[key][key2]}}
+              {{ shadows[key][key2] }}
             </span>
           </div>
         </div>
       </b-field>
-
     </div>
-
   </div>
 </template>
 
@@ -37,14 +23,10 @@ export default {
   methods: {
     getShadowStyle() {
       return `box-shadow: ${this.shadows['1']['offset-x']} ${this.shadows['1']['offset-y']} ${this.shadows['1'].blur} ${this.shadows['1'].spread} ${this.shadows['1'].color}, ${this.shadows['2']['offset-x']} ${this.shadows['2']['offset-y']} ${this.shadows['2'].blur} ${this.shadows['2'].spread} ${this.shadows['2'].color}`;
-    }
+    },
   },
   name: 'TokenShadowBlock',
-  props: [
-    'baseName',
-    'shadows',
-    'type'
-  ]
+  props: ['baseName', 'shadows', 'type'],
 };
 </script>
 

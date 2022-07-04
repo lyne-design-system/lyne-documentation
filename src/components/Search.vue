@@ -6,7 +6,7 @@
     icon="magnify"
     group-field="path"
     group-options="results"
-    @select="opt => handleSelect(opt)"
+    @select="(opt) => handleSelect(opt)"
     open-on-focus
   >
     <template slot="group" slot-scope="props">
@@ -16,7 +16,6 @@
     <template slot-scope="props">
       <span class="result-item" v-html="props.option.text"></span>
     </template>
-
   </b-autocomplete>
 </template>
 
@@ -54,7 +53,10 @@ const stripResultItems = (content, searchTerm) => {
   const results = [];
 
   indexes.forEach((index) => {
-    const contentPart = content.substring(index - amountOfStringsBeforeAndAfterResult, index + searchTerm.length + amountOfStringsBeforeAndAfterResult);
+    const contentPart = content.substring(
+      index - amountOfStringsBeforeAndAfterResult,
+      index + searchTerm.length + amountOfStringsBeforeAndAfterResult
+    );
 
     results.push(`... ${contentPart} ...`);
   });
@@ -62,23 +64,23 @@ const stripResultItems = (content, searchTerm) => {
   return results;
 };
 
-const highlightSearchTerm = (results, searchTerm) => results.map((result) => {
+const highlightSearchTerm = (results, searchTerm) =>
+  results.map((result) => {
+    // Make sure there's no regex special chars
+    const sanitizedSearchTerm = searchTerm.replace(/\W/gu, '');
 
-  // Make sure there's no regex special chars
-  const sanitizedSearchTerm = searchTerm.replace(/\W/gu, '');
+    // Build regex
+    const regexForContent = new RegExp(sanitizedSearchTerm, 'giu');
 
-  // Build regex
-  const regexForContent = new RegExp(sanitizedSearchTerm, 'giu');
+    // Replace content where regex matches
+    return result.replace(regexForContent, '<span class="search-highlight">$&</span>');
+  });
 
-  // Replace content where regex matches
-  return result.replace(regexForContent, '<span class="search-highlight">$&</span>');
-
-});
-
-const addUrlToResults = (results, path) => results.map((result) => ({
-  text: result,
-  url: path
-}));
+const addUrlToResults = (results, path) =>
+  results.map((result) => ({
+    text: result,
+    url: path,
+  }));
 
 const formatResults = (results, searchTerm) => {
   const returnResults = [];
@@ -97,23 +99,21 @@ const formatResults = (results, searchTerm) => {
 
     returnResults.push({
       path: paths.join('<span class="breadcrump-arrow">></span>'),
-      results: addUrl
+      results: addUrl,
     });
   });
 
   return returnResults;
-
 };
 
 export default {
   beforeMount() {
-
     this.index = new Flexsearch({
       doc: {
         field: 'content',
-        id: 'id'
+        id: 'id',
       },
-      tokenize: 'forward'
+      tokenize: 'forward',
     });
 
     this.index.add(this.$static.authorContent.edges.map((e) => e.node));
@@ -124,18 +124,18 @@ export default {
 
       const results = this.index.search({
         limit: 10,
-        query: this.searchTerm
+        query: this.searchTerm,
       });
 
       const formatedResults = formatResults(results, this.searchTerm);
 
       return formatedResults;
-    }
+    },
   },
   data() {
     return {
       index: null,
-      searchTerm: ''
+      searchTerm: '',
     };
   },
   methods: {
@@ -145,17 +145,15 @@ export default {
       }
     },
     isValidSearchTerm(searchTerm) {
-      return searchTerm
-        ? searchTerm.length > 2
-        : false;
-    }
+      return searchTerm ? searchTerm.length > 2 : false;
+    },
   },
-  name: 'Search'
+  name: 'Search',
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~/src/styles/index";
+@import '~/src/styles/index';
 
 .autocomplete .dropdown-menu.dropdown-menu {
   max-width: unset;
@@ -169,7 +167,6 @@ export default {
 
 .breadcrump-arrow {
   color: $sbb-color-black-default;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
-
 </style>

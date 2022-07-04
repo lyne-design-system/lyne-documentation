@@ -1,37 +1,21 @@
 <template>
-
   <header>
-
-    <nav
-      class="navigation"
-      role="navigation"
-      aria-label="main navigation"
-    >
+    <nav class="navigation" role="navigation" aria-label="main navigation">
       <button
         class="navigation-menu-button"
-        v-bind:class="{'is-active': showMenu}"
+        v-bind:class="{ 'is-active': showMenu }"
         aria-label="menu"
         :aria-expanded="showMenu"
         @click="menuClick"
       >
+        <ButtonIcon v-if="!showMenu" class="button-icon" />
 
-          <ButtonIcon
-            v-if="!showMenu"
-            class="button-icon"
-          />
+        <CloseIcon v-if="showMenu" class="button-icon" />
 
-          <CloseIcon
-            v-if="showMenu"
-            class="button-icon"
-          />
-
-          <span class="button-text">Menu</span>
+        <span class="button-text">Menu</span>
       </button>
 
-      <a
-        class="navigation-logo"
-        href="/"
-      >
+      <a class="navigation-logo" href="/">
         <sbb-logo protective-room="none" />
       </a>
     </nav>
@@ -46,40 +30,37 @@ import eventBus from '../helpers/eventBus';
 export default {
   components: {
     ButtonIcon,
-    CloseIcon
+    CloseIcon,
   },
   created() {
     eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
-      const {
-        showMenu
-      } = event.detail;
+      const { showMenu } = event.detail;
 
       this.showMenu = showMenu;
     });
   },
   data() {
     const exportData = {
-      showMenu: false
+      showMenu: false,
     };
 
     return exportData;
   },
   methods: {
-    menuClick () {
+    menuClick() {
       this.showMenu = !this.showMenu;
 
       eventBus.bus.dispatchEvent(eventBus.names.toggleMenu, {
-        showMenu: this.showMenu
+        showMenu: this.showMenu,
       });
-    }
+    },
   },
-  name: 'Header'
+  name: 'Header',
 };
-
 </script>
 
 <style lang="scss" scoped>
-@import "~/src/styles/index";
+@import '~/src/styles/index';
 
 .navigation {
   display: flex;
@@ -137,5 +118,4 @@ export default {
   height: 24px;
   margin-right: 4px;
 }
-
 </style>

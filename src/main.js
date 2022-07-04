@@ -4,17 +4,14 @@ import DefLayout from './layouts/Default.vue';
 
 const globalConfig = require('../global.config');
 
-export default (Vue, {
-  head
-}) => {
-
+export default (Vue, { head }) => {
   defineCustomElements();
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
   head.htmlAttrs = {
     lang: 'en',
-    mode: 'shared'
+    mode: 'shared',
   };
   /* eslint-enable no-param-reassign */
 
@@ -30,7 +27,7 @@ export default (Vue, {
 
   head.link.push({
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.9.95/css/materialdesignicons.min.css',
-    rel: 'stylesheet'
+    rel: 'stylesheet',
   });
 
   head.link.push({
@@ -38,7 +35,7 @@ export default (Vue, {
     crossOrigin: '',
     href: 'https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2',
     rel: 'preload',
-    type: 'font/woff2'
+    type: 'font/woff2',
   });
 
   head.link.push({
@@ -46,14 +43,14 @@ export default (Vue, {
     crossOrigin: '',
     href: 'https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2',
     rel: 'preload',
-    type: 'font/woff2'
+    type: 'font/woff2',
   });
 
   head.link.push({
     as: 'style',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.9.95/css/materialdesignicons.min.css',
     rel: 'preload',
-    type: 'text/css'
+    type: 'text/css',
   });
 
   head.link.push({
@@ -61,20 +58,19 @@ export default (Vue, {
     crossOrigin: '',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.9.95/fonts/materialdesignicons-webfont.woff2?v=4.9.95',
     rel: 'preload',
-    type: 'font/woff2'
+    type: 'font/woff2',
   });
 
   head.meta.push({
     content: 'noindex, nofollow',
-    name: 'robots'
+    name: 'robots',
   });
 
   head.meta.push({
     content: 'width=device-width, initial-scale=1',
-    name: 'viewport'
+    name: 'viewport',
   });
 
   // Init buefy
   Vue.use(CustomBuefy);
-
 };

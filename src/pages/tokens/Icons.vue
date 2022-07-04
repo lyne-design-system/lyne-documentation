@@ -12,15 +12,10 @@
             :animated="false"
             @input="handleTypeChange"
           >
-
-            <b-tab-item
-              v-for="(type, index) in $data.filterOptions.type"
-              :key="index"
-            >
-
+            <b-tab-item v-for="(type, index) in $data.filterOptions.type" :key="index">
               <template #header>
-                  {{type}}
-                  <span class="tag-mark tag-count">{{$data.iconsCount[type]}}</span>
+                {{ type }}
+                <span class="tag-mark tag-count">{{ $data.iconsCount[type] }}</span>
               </template>
 
               <!-- Filter category -->
@@ -38,7 +33,6 @@
                   >
                     {{ category }}
                   </option>
-
                 </b-select>
               </div>
 
@@ -52,14 +46,11 @@
                   type="search"
                   icon="magnify"
                   @input.native="handleFilterChange"
-                  ></b-input>
+                ></b-input>
               </div>
 
               <!-- Color switch -->
-              <div
-                class="block"
-                v-if="$data.showColorOptions"
-              >
+              <div class="block" v-if="$data.showColorOptions">
                 <p>Color:</p>
 
                 <b-radio
@@ -69,16 +60,14 @@
                   :name="'color' + type"
                   :native-value="colorVariant.value"
                 >
-                  {{colorVariant.name}}
+                  {{ colorVariant.name }}
                 </b-radio>
               </div>
             </b-tab-item>
           </b-tabs>
 
           <div class="table-wrapper">
-            <p v-if="!$data.filterIsPristine">
-              {{$data.icons.length}} Icons
-            </p>
+            <p v-if="!$data.filterIsPristine">{{ $data.icons.length }} Icons</p>
 
             <p v-if="$data.icons.length === 0">No icons to display</p>
             <table class="table is-fullwidth" v-if="$data.icons.length > 0">
@@ -94,43 +83,39 @@
                 </tr>
               </thead>
               <tbody>
-                <tr
-                  v-for='(icon) in $data.icons'
-                  :key='icon.id'
-                >
+                <tr v-for="icon in $data.icons" :key="icon.id">
                   <td class="iconCell">
                     <span
-                      v-html='$data.iconsSvgs[icon.fullName]'
-                      class='iconToken'
+                      v-html="$data.iconsSvgs[icon.fullName]"
+                      class="iconToken"
                       :class="[
                         icon.variants.size ? icon.variants.size : '',
                         icon.properties.color === true ? 'colorizable' : 'noncolorizable',
-                        icon.properties.color === true ? $data.color : ''
+                        icon.properties.color === true ? $data.color : '',
                       ]"
                     ></span>
                   </td>
-                  <td class="textCell">{{icon.fullName}}</td>
+                  <td class="textCell">{{ icon.fullName }}</td>
                   <td class="textCell">
                     <a
                       v-on:click="downloadFile(icon)"
-                      :id='icon.id'
-                      :download='icon.fullName + ".svg"'
-                      href=””
+                      :id="icon.id"
+                      :download="icon.fullName + '.svg'"
+                      href="””"
                       class="download-button"
                     >
                       <i class="mdi mdi-download"></i>
                     </a>
                   </td>
-                  <td class="textCell">{{icon.category}}</td>
-                  <td class="textCell">{{icon.properties.color}}</td>
-                  <td class="textCell">{{icon.properties.scalable}}</td>
-                  <td class="textCell cell-keywords">{{icon.properties.keywords}}</td>
+                  <td class="textCell">{{ icon.category }}</td>
+                  <td class="textCell">{{ icon.properties.color }}</td>
+                  <td class="textCell">{{ icon.properties.scalable }}</td>
+                  <td class="textCell cell-keywords">{{ icon.properties.keywords }}</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-
       </div>
     </section>
   </Layout>
@@ -151,14 +136,11 @@ const _typeOptions = (icons) => {
   const options = ['All'];
 
   icons.forEach((icon) => {
-    const {
-      type
-    } = icon;
+    const { type } = icon;
 
     if (options.indexOf(type) < 0) {
       options.push(type);
     }
-
   });
 
   return options;
@@ -193,14 +175,13 @@ const _categoriesForAllTypes = (icons, types) => {
 const _allCategories = (typesWithCategories) => {
   const categories = ['All'];
 
-  Object.keys(typesWithCategories)
-    .forEach((type) => {
-      typesWithCategories[type].forEach((category) => {
-        if (categories.indexOf(category) === -1 && category !== 'All') {
-          categories.push(category);
-        }
-      });
+  Object.keys(typesWithCategories).forEach((type) => {
+    typesWithCategories[type].forEach((category) => {
+      if (categories.indexOf(category) === -1 && category !== 'All') {
+        categories.push(category);
+      }
     });
+  });
 
   return categories.sort();
 };
@@ -227,7 +208,8 @@ const filterBySearchTerm = (search, icons) => {
   const results = [];
 
   icons.forEach((icon) => {
-    const foundInKeywords = icon.properties.keywords && icon.properties.keywords.indexOf(search) !== -1;
+    const foundInKeywords =
+      icon.properties.keywords && icon.properties.keywords.indexOf(search) !== -1;
     const foundInName = icon.fullName && icon.fullName.indexOf(search) !== -1;
 
     if (foundInName || foundInKeywords) {
@@ -264,15 +246,16 @@ const iconsCountForTypes = (icons, types) => {
 const colorOptions = [
   {
     name: 'Default color',
-    value: 'color-black'
+    value: 'color-black',
   },
   {
     name: 'Primary color',
-    value: 'color-primary'
-  }
+    value: 'color-primary',
+  },
 ];
 
-const currentIconsHaveColorizableIcons = (icons) => icons.filter((icon) => icon.properties.color === true).length > 0;
+const currentIconsHaveColorizableIcons = (icons) =>
+  icons.filter((icon) => icon.properties.color === true).length > 0;
 
 export default {
   data() {
@@ -282,24 +265,24 @@ export default {
       filterIsPristine: true,
       filterOptions: {
         category: allCategories,
-        type: typeOptions
+        type: typeOptions,
       },
       filterValues: {
         category: 'All',
         search: '',
-        type: 0
+        type: 0,
       },
       icons: [],
       iconsCount: iconsCountForTypes(lyneIcons, typeOptions),
       iconsSvgs: lyneIconsSvgs,
-      showColorOptions: false
+      showColorOptions: false,
     };
   },
   methods: {
     downloadFile(icon) {
       const text = lyneIconsSvgs[icon.fullName];
       const data = new Blob([text], {
-        type: 'text/plain'
+        type: 'text/plain',
       });
       const url = window.URL.createObjectURL(data);
 
@@ -315,7 +298,6 @@ export default {
       this.$data.showColorOptions = currentIconsHaveColorizableIcons(this.$data.icons);
     },
     handleTypeChange() {
-
       // set categories for type
       const currentType = typeOptions[this.$data.filterValues.type];
 
@@ -334,76 +316,75 @@ export default {
 
       // filter icons
       this.handleFilterChange();
-    }
+    },
   },
   mounted() {
     this.handleFilterChange();
-  }
+  },
 };
 </script>
 
 <style lang="scss">
-  .tag-count {
-    margin-left: .5rem;
-  }
+.tag-count {
+  margin-left: 0.5rem;
+}
 
-  .table-wrapper {
-    overflow-x: scroll;
-  }
+.table-wrapper {
+  overflow-x: scroll;
+}
 
-  table td.textCell {
-    line-height: 100%;
-    vertical-align: middle;
-  }
+table td.textCell {
+  line-height: 100%;
+  vertical-align: middle;
+}
 
-  table td.textCell.cell-keywords {
-    max-width: 150px;
-  }
+table td.textCell.cell-keywords {
+  max-width: 150px;
+}
 
-  table td.iconCell {
-    vertical-align: middle;
-    padding: 0;
-  }
+table td.iconCell {
+  vertical-align: middle;
+  padding: 0;
+}
 
-  .iconToken {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-  }
+.iconToken {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
 
-  .iconToken.small {
-    height: 24px;
-  }
+.iconToken.small {
+  height: 24px;
+}
 
-  .iconToken.medium {
-    height: 36px;
-  }
+.iconToken.medium {
+  height: 36px;
+}
 
-  .iconToken.large {
-    height: 48px;
-  }
+.iconToken.large {
+  height: 48px;
+}
 
-  .iconToken.color-black {
-    color: black;
-  }
+.iconToken.color-black {
+  color: black;
+}
 
-  .iconToken.color-primary.colorizable {
-    color: red;
-  }
+.iconToken.color-primary.colorizable {
+  color: red;
+}
 
-  .iconToken svg {
-    display: block;
-    fill: currentColor;
-  }
+.iconToken svg {
+  display: block;
+  fill: currentColor;
+}
 
-  .download-button {
-    display: flex;
-    width: 3rem;
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.1);
-  }
-
+.download-button {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
 </style>

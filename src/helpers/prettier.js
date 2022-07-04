@@ -8,7 +8,7 @@ const prettierHtml = (element) => {
     plugins: [parserHtml],
     printWidth: 80,
     semi: false,
-    useTabs: false
+    useTabs: false,
   });
 
   return formatted;

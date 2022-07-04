@@ -1,7 +1,8 @@
 /**
  * Find design tokens by category.
  */
-const designTokensByCategory = (json, category) => json.filter((token) => token.attributes.category === category);
+const designTokensByCategory = (json, category) =>
+  json.filter((token) => token.attributes.category === category);
 
 /**
  * Find design tokens by path.
@@ -51,5 +52,5 @@ export {
   designTokensByCategory,
   designTokensByPath,
   designTokensByType,
-  groupedTokens
+  groupedTokens,
 };

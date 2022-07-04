@@ -1,10 +1,10 @@
 <sbb-title level="1" text="All about Lyne Design System" class="page-title"></sbb-title>
 
-Lyne Design System <span class="is-highlighted">– also just called *Lyne* –</span> is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.
+Lyne Design System <span class="is-highlighted">– also just called _Lyne_ –</span> is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.
 
 We provide the building blocks to create consistent, scalable experiences across SBB [web|digital] products in a sustainable fashion with long term commitment.
 
-Lyne consists of working code, design tools, resources and documentation, but also  provides guidance through patterns, practices and a shared vocabulary for common understanding. Everything connected with each other, <span class="is-highlighted">in-sync</span> and transparent — our common <span class="is-highlighted">Design Language</span> and the Single Source of Truth for SBB [web|digital] services and products.
+Lyne consists of working code, design tools, resources and documentation, but also provides guidance through patterns, practices and a shared vocabulary for common understanding. Everything connected with each other, <span class="is-highlighted">in-sync</span> and transparent — our common <span class="is-highlighted">Design Language</span> and the Single Source of Truth for SBB [web|digital] services and products.
 
 Lyne empowers people and unites teams to work <span class="is-highlighted show-cash">more efficiently</span> and deliver <span class="is-highlighted show-cash">more consistent experiences</span>.
 
@@ -15,7 +15,6 @@ Lyne empowers people and unites teams to work <span class="is-highlighted show-c
 Check out the following sections and get to know Lyne more in depth.
 
 At some we might use some jargon to be more specific to describe certain concepts or artifacts. If there are new or unknown terms, have a look at our [glossary](/about/glossary/) which might hold a description or explanation. Otherwise help us improve and check the <a href="/contributing">contributing</a> section.
-
 
 <sbb-title level="3" text="Goals and Benefits"></sbb-title>
 
@@ -28,10 +27,11 @@ See our <span class="is-highlighted show-rocket-and-cash">[Goals and Benefits](/
 <sbb-title level="3" text="What you get"></sbb-title>
 
 Lyne provides certain artifacts, namely:
-* Components
-* Design Tokens
-* Figma Team Library (with Styles & Components)
-* Design Patterns
+
+- Components
+- Design Tokens
+- Figma Team Library (with Styles & Components)
+- Design Patterns
 
 Check out the [What you get](/about/what-you-get/) section for further insights and with a more in depth explanation.
 
@@ -54,5 +54,3 @@ Due to that we created a [glossary](/about/glossary/). It's the base of our shar
 The glossary acts as our dictionary since people from different disciplines are participating within the Lyne Design System.
 
 If there are new or unknown terms, have a look at our [glossary](/about/glossary/) which might hold a description or explanation for you.
-
-
