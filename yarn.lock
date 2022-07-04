@@ -1182,7 +1182,7 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@gridsome/cli@^0.3.4":
+"@gridsome/cli@0.3.4", "@gridsome/cli@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.3.4.tgz#42fa7a4368a80bd04ec497c93cae5a66b041fe22"
   integrity sha512-KkfnDs3aDRdNapxS5QwCUDUzNJgc+uRExw5IRUrVn38zOdmJc0d8hFqHZ7GpcHEX1W0BVyUsa4sQ3LNyjlttsg==
@@ -1200,7 +1200,7 @@
     sort-package-json "^1.15.0"
     update-notifier "^4.1.0"
 
-"@gridsome/source-filesystem@~0.6.2":
+"@gridsome/source-filesystem@0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.6.2.tgz#95f65e9fcf03624ba23f8f0bee0779fe8e8b9021"
   integrity sha512-K1pyXwFYIlABaHq3wqOPyYt4ARzLZuUQ+UZKjDSBT9I0T0qpCbwir5kJMQkR7qY4ONflUrv8fgG6DNSrc1uzbA==
@@ -1212,7 +1212,7 @@
     mime-types "^2.1.21"
     slash "^2.0.0"
 
-"@gridsome/source-graphql@^0.1.0":
+"@gridsome/source-graphql@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@gridsome/source-graphql/-/source-graphql-0.1.0.tgz#43bfab1b2301a9a12fbffcdb72bf767586bd68ae"
   integrity sha512-4u+0FfcTEgffOtY5lJq2ob33IS/dhEEKZNOTkeQZzTA7fq/eXwEDrFUj5n2oPXrIPUkc+6w3bc7ts1kxJJE6HQ==
@@ -1222,7 +1222,7 @@
     graphql-tools "^4.0.4"
     node-fetch "^2.6.0"
 
-"@gridsome/transformer-remark@~0.6.4":
+"@gridsome/transformer-remark@0.6.4":
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.6.4.tgz#e2b5319fc021379730cfd86b4f1c1276d8677b5e"
   integrity sha512-DCRQn1KFLk9Iy+ZjhDdYoTOYhEBphP57dRsLkhLqcnbuMCttDcI6V9udUR6GHgWWN3h0XV2dGVXcQ056Xm9Hpg==
@@ -3241,7 +3241,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@^0.27.2:
+axios@0.27.2:
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
   integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
@@ -3621,7 +3621,7 @@ browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.20.2, browserslist@^4
     node-releases "^2.0.5"
     update-browserslist-db "^1.0.4"
 
-buefy@~0.9.21:
+buefy@0.9.21:
   version "0.9.21"
   resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.9.21.tgz#1b01f4dafefe958ca7934447dfe821dfef18d2fe"
   integrity sha512-geOJgzi5jFDyRJ9Zl0379yyRBatZ6Qg83kRnCJTb7/nCuXcfXd/eis3tFaDTGuntnfv2MezHzc092OIHwgRwAg==
@@ -7353,7 +7353,7 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.6.tgz#022e9218c637f9f3fc9c35ab9c9193f05add60b2"
   integrity sha512-0sQoMh9s0BYsm+12Huy/rkKxVu4R1+r96YX5cG44rHV0pQ6iC3Q+mkoMFaGWObMFYQxCVT+ssG1ksneA2MI9KQ==
 
-flexsearch@~0.6.32:
+flexsearch@0.6.32:
   version "0.6.32"
   resolved "https://registry.yarnpkg.com/flexsearch/-/flexsearch-0.6.32.tgz#1e20684d317af65baa445cdd9864a5f5b320f510"
   integrity sha512-EF1BWkhwoeLtbIlDbY/vDSLBen/E5l/f1Vg7iX5CDymQCamcx1vhlc3tIZxIDplPjgi0jhG37c67idFbjg+v+Q==
@@ -8141,7 +8141,7 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-i18n@^1.6.0:
+gridsome-plugin-i18n@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-i18n/-/gridsome-plugin-i18n-1.6.0.tgz#6bb1456fa60a1be856a7bd0a04bea41f753db3e0"
   integrity sha512-p7jNEk5RwhQlAVMPZyCvw7HxrheRfbXf7w4wXm0NJdxj9FD9r61voEDVlUGirdt+Rt2lJ5HDowzg3qsumnWM6w==
@@ -8149,7 +8149,7 @@ gridsome-plugin-i18n@^1.6.0:
     core-js "^3.6.4"
     vue-i18n "^8.15.5"
 
-gridsome-plugin-remark-mermaid@~1.0.1:
+gridsome-plugin-remark-mermaid@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-mermaid/-/gridsome-plugin-remark-mermaid-1.0.1.tgz#23393b1818e6b09b2961d09587b9018745707228"
   integrity sha512-Oie/gVVwaI/5sfwY3io/ypQLRwXPBUsnjZALIIVuCgUoYc6pdPksZv+hzCbo2deZkmoYJoTz8Jmz+QQ+lkqnuw==
@@ -8162,7 +8162,7 @@ gridsome-plugin-remark-mermaid@~1.0.1:
     xast-util-from-xml "^1.0.0"
     xast-util-to-xml "^1.0.0"
 
-gridsome-plugin-remark-shiki@^0.6.0:
+gridsome-plugin-remark-shiki@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-shiki/-/gridsome-plugin-remark-shiki-0.6.0.tgz#88110d129e4fe56317b4be82792e910490f722fb"
   integrity sha512-2V+P/O9vumRxa6ymcqAn5V6pAsv/iYffzV6i6vFmZHL/+asFlXeFXEOYwbyccCjIqXDiLzB//oaz+PHwFpkw6A==
@@ -8171,7 +8171,7 @@ gridsome-plugin-remark-shiki@^0.6.0:
     shiki-languages "^0.2.6"
     unist-util-visit "^2.0.1"
 
-gridsome@^0.7.23:
+gridsome@0.7.23:
   version "0.7.23"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.23.tgz#d8b06bdf6b4ed06411be3ec3696324f29c83063e"
   integrity sha512-2/koBt4YWoTKRQR+7Gy84EHbNTa9y6JgRjBO84wOpZjEWglwxDh0cFAq8QbhHnf13mXbJVRm5aHBESO5iD5BcA==
@@ -8697,7 +8697,7 @@ human-signals@^3.0.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-3.0.1.tgz#c740920859dafa50e5a3222da9d3bf4bb0e5eef5"
   integrity sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==
 
-husky@^8.0.1:
+husky@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/husky/-/husky-8.0.1.tgz#511cb3e57de3e3190514ae49ed50f6bc3f50b3e9"
   integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
@@ -10382,7 +10382,7 @@ luxon@^2.4.0:
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.4.0.tgz#9435806545bb32d4234dab766ab8a3d54847a765"
   integrity sha512-w+NAwWOUL5hO0SgwOHsMBAmZ15SoknmQXhSO0hIbJCAmPKSsGeK8MlmhYh2w6Iib38IxN2M+/ooXWLbeis7GuA==
 
-lyne-helper-eslint-config@~1.0.7:
+lyne-helper-eslint-config@1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/lyne-helper-eslint-config/-/lyne-helper-eslint-config-1.0.7.tgz#1eb0203ae372bcbcee8b069dcc2e15d6448f2a10"
   integrity sha512-iPpMWyiMNzzdN2iQT0HWplD3DstQeoZkYEa9dBdPBT4hBGuG1YXwYhJnK1rrW4auN4iXfTtV0ZnuypyU9PrAGw==
@@ -10392,7 +10392,7 @@ lyne-helper-trigger-travis@~1.0.3:
   resolved "https://registry.yarnpkg.com/lyne-helper-trigger-travis/-/lyne-helper-trigger-travis-1.0.6.tgz#cc04cc0a6c10a3d5c3e7693a578d164cf7d3d183"
   integrity sha512-K5XeHtsynOwEq8EuM6NZrW+5BchHp2E13qkKR5D1DbgronCnUZQm5G7XaL4JK2FZ6ID2ClC/6yr6GtkDbZyQ/Q==
 
-lyne-icons@^4.39.2:
+lyne-icons@4.39.2:
   version "4.39.2"
   resolved "https://registry.yarnpkg.com/lyne-icons/-/lyne-icons-4.39.2.tgz#116e7e27eaec0417eb4932f198dc23b836d85e21"
   integrity sha512-En2LYRuX99qMYHIsSxIz8g6YRoLcJRnn3PYzYJdNziGM8zSVGaLCzoaOmgaAA3OP82EDL/W5GgLyZ7kgx1YEwA==
@@ -11047,7 +11047,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-netlify-cli@^10.5.1:
+netlify-cli@10.7.1:
   version "10.7.1"
   resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.7.1.tgz#1c422909d86a7645eeec1a5f936942e295e5dad8"
   integrity sha512-SQnfN3HKvrAW4UobTvVpG5Iq4uwWK5bEszYBC1Rbft29FIIQhgtN9Im/ykM1dzk7HubzC8cFeUkEWET3rv15zQ==
@@ -12816,7 +12816,7 @@ prettyjson@^1.2.1:
     colors "1.4.0"
     minimist "^1.2.0"
 
-prismjs@~1.28.0:
+prismjs@1.28.0:
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.28.0.tgz#0d8f561fa0f7cf6ebca901747828b149147044b6"
   integrity sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==
@@ -14701,7 +14701,7 @@ strip-outer@^1.0.0:
   dependencies:
     escape-string-regexp "^1.0.2"
 
-style-resources-loader@^1.5.0:
+style-resources-loader@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/style-resources-loader/-/style-resources-loader-1.5.0.tgz#6e0585ca475b9dac45387c308be90d74c814f41f"
   integrity sha512-fIfyvQ+uvXaCBGGAgfh+9v46ARQB1AWdaop2RpQw0PBVuROsTBqGvx8dj0kxwjGOAyq3vepe4AOK3M6+Q/q2jw==
@@ -15971,7 +15971,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-svg-loader@^0.16.0:
+vue-svg-loader@0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/vue-svg-loader/-/vue-svg-loader-0.16.0.tgz#adccbdc9aca90132bde9c9d96cd49f74efecd345"
   integrity sha512-2RtFXlTCYWm8YAEO2qAOZ2SuIF2NvLutB5muc3KDYoZq5ZeCHf8ggzSan3ksbbca7CJ/Aw57ZnDF4B7W/AkGtw==
