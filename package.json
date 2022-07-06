@@ -34,7 +34,7 @@
     "gridsome-plugin-i18n": "1.6.0",
     "gridsome-plugin-remark-shiki": "0.6.0",
     "lyne-helper-eslint-config": "1.0.7",
-    "lyne-icons": "4.39.2",
+    "lyne-icons": "4.39.4",
     "prettier": "2.7.1",
     "prismjs": "1.28.0"
   },
