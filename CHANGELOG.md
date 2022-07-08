@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.5 (2022-07-08)
+
+### Bug Fixes
+
+- **deps:** update dependency lyne-icons to v4.40.0 ([6f8044d](https://github.com/lyne-design-system/lyne-documentation/commit/6f8044dea30e263a5912a7cb13a986665a7c52e0))
+
 ### 0.1.4 (2022-07-08)
 
 ### Bug Fixes
