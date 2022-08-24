@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.21 (2022-08-24)
+
+### Bug Fixes
+
+- **deps:** update dependency prismjs to v1.29.0 ([48e3c1c](https://github.com/lyne-design-system/lyne-documentation/commit/48e3c1c64da401a36fedab6d5582047502b8e98f))
+
 ### 0.1.20 (2022-08-23)
 
 ### Bug Fixes
