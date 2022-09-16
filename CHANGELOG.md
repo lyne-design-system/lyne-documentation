@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.30 (2022-09-16)
+
+### Bug Fixes
+
+- **deps:** update esta ([abc239f](https://github.com/lyne-design-system/lyne-documentation/commit/abc239f22d5f1565fb9dfd5b3b4230099904c916))
+
 ### 0.1.29 (2022-09-15)
 
 ### Bug Fixes
