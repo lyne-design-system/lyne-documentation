@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.36 (2022-10-03)
+
+### Bug Fixes
+
+- **deps:** update dependency flexsearch to v0.7.31 ([be2a9d1](https://github.com/lyne-design-system/lyne-documentation/commit/be2a9d17c65890771f37960a40f747184da0e832))
+
 ### 0.1.35 (2022-10-03)
 
 ### Bug Fixes
