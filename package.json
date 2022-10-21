@@ -44,7 +44,7 @@
     "@gridsome/cli": "0.3.4",
     "@gridsome/source-filesystem": "0.6.2",
     "@gridsome/transformer-remark": "0.6.4",
-    "eslint": "8.25.0",
+    "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-vue": "9.6.0",
