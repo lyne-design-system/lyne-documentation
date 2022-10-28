@@ -26,7 +26,7 @@
   "dependencies": {
     "@gridsome/source-graphql": "0.1.0",
     "@sbb-esta/lyne-components": "0.12.1",
-    "@sbb-esta/lyne-design-tokens": "0.2.4",
+    "@sbb-esta/lyne-design-tokens": "0.2.5",
     "axios": "0.27.2",
     "buefy": "0.9.22",
     "flexsearch": "0.7.31",
