@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.51 (2022-10-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @sbb-esta/lyne-design-tokens to v0.2.5 ([ee001db](https://github.com/lyne-design-system/lyne-documentation/commit/ee001db2ee083943fd98b9a413a985aaaedaf100))
+
 ### 0.1.50 (2022-10-26)
 
 ### Bug Fixes
