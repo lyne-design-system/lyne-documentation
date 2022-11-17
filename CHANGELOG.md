@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.65](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.64...v0.1.65) (2022-11-17)
+
+### Bug Fixes
+
+- **deps:** update esta ([214c002](https://github.com/lyne-design-system/lyne-documentation/commit/214c00255d4034c21bfc13c9800aec25c0e3db0a))
+
 ### [0.1.64](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.63...v0.1.64) (2022-11-17)
 
 ### Bug Fixes
