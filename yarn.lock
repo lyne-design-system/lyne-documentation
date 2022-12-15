@@ -2088,15 +2088,15 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sbb-esta/lyne-components@0.17.0":
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.17.0.tgz#d7a19af68b77b04b0269756775a2ae20be6001c9"
-  integrity sha512-8FLF8jQoShISmHUY77+HrUrD8TF76NT86zwxU19K01hMrV5HSB/UZ7d9UXcn/Agsdq3jD9mYFz/ACzlEQEkuvw==
+"@sbb-esta/lyne-components@0.19.2":
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.19.2.tgz#a020778b0bf22ad0b2ec4f2b9362d3815be35726"
+  integrity sha512-HmYNaiZr63jIufMNpqjzfHsxPPQhsTkyF7wBGkDKAyUFQYjhNmuEOg1ALEdIdafDkEavDYG36xxBQ/B6vRtFQw==
 
-"@sbb-esta/lyne-design-tokens@0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-design-tokens/-/lyne-design-tokens-0.2.6.tgz#586390f48e910b5e73f0518ca1b28ec8feaf7865"
-  integrity sha512-vLJpTqAsvvli3fP6v8tuDVOya4mfulfc//0qqki/3yqVa4yA7CwYkWJMBqv4AZNK1g27VeFQABykc/Q+rpfSOA==
+"@sbb-esta/lyne-design-tokens@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-design-tokens/-/lyne-design-tokens-0.3.2.tgz#b1b0f1bf9593424c01f5ff3c2cae7270318f4f4d"
+  integrity sha512-6GTGTC0zJOzNcXmZbDygF1wx1jfLU6aW35WJ2BHr/rg5/fnKhEBSIbs9nSZ1yc6y87x+42VWbUnUMfMQjRWo6Q==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
