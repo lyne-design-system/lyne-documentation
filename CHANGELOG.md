@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.95](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.94...v0.1.95) (2023-01-14)
+
+### Bug Fixes
+
+- **deps:** update dependency prettier to v2.8.3 ([bc3f027](https://github.com/lyne-design-system/lyne-documentation/commit/bc3f027365c7769c6bcd6bf66bad93507a35815c))
+
 ### [0.1.94](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.93...v0.1.94) (2023-01-13)
 
 ### Bug Fixes
