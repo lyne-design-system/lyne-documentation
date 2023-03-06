@@ -2095,10 +2095,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sbb-esta/lyne-components@0.26.19":
-  version "0.26.19"
-  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.26.19.tgz#ac5483fa37e1bf05f34a57f03fd6433481f5871b"
-  integrity sha512-E0Hz2l0LQr3vcfT2EJG7DDNXOIq2/BSExiiWticFam/Y/OoEUbEBcwdwtgq4jvPH9yCUeMbx33IflDybt/TfBw==
+"@sbb-esta/lyne-components@0.27.0":
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.27.0.tgz#3dc77104ec83bce20a8dc22c1111be828f29c1da"
+  integrity sha512-1QSXkhkizq1oJ2L9rh/zXrThks6xnbefJ3cVOoGdVcf3yT0nlmZfsriWBoowP1wjeNTFfqgAuHW/dILafgitcA==
 
 "@sbb-esta/lyne-design-tokens@0.3.4":
   version "0.3.4"
