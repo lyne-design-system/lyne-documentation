@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.121](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.120...v0.1.121) (2023-03-06)
+
+### Bug Fixes
+
+- **deps:** update dependency @sbb-esta/lyne-components to v0.27.0 ([#674](https://github.com/lyne-design-system/lyne-documentation/issues/674)) ([4ad76b9](https://github.com/lyne-design-system/lyne-documentation/commit/4ad76b94d9c8c48198ccf94458d7ff803fc5829d))
+- **deps:** update dependency axios to v1 ([#662](https://github.com/lyne-design-system/lyne-documentation/issues/662)) ([8c55656](https://github.com/lyne-design-system/lyne-documentation/commit/8c5565653aea8db5152abb8c0561bfa9540b81ee))
+
 ### [0.1.120](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.119...v0.1.120) (2023-02-23)
 
 ### Bug Fixes
