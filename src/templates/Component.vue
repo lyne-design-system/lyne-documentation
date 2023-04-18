@@ -146,7 +146,7 @@ const setLocalData = (context, _data) => {
         storyObject.documentation.container = {};
       }
 
-      // adobt styles
+      // adopt styles
       const containerKeys = Object.keys(storyObject.documentation.container);
 
       if (containerKeys.includes('styles')) {
