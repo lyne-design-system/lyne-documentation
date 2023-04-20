@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.147](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.146...v0.1.147) (2023-04-20)
+
+### Bug Fixes
+
+- **deps:** update dependency axios to v1.3.6 ([768bcc2](https://github.com/lyne-design-system/lyne-documentation/commit/768bcc2c61a0915a91a6f54a4b0e41a298a9563c))
+
 ### [0.1.146](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.145...v0.1.146) (2023-04-18)
 
 ### Bug Fixes
