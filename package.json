@@ -27,7 +27,7 @@
     "@gridsome/source-graphql": "0.1.0",
     "@sbb-esta/lyne-components": "0.33.11",
     "@sbb-esta/lyne-design-tokens": "0.3.4",
-    "axios": "1.3.6",
+    "axios": "1.4.0",
     "buefy": "0.9.23",
     "flexsearch": "0.7.31",
     "gridsome": "0.7.23",
