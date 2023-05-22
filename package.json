@@ -47,7 +47,7 @@
     "eslint": "8.41.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-vue": "9.13.0",
+    "eslint-plugin-vue": "9.14.0",
     "eslint-plugin-yaml": "0.5.0",
     "gridsome-plugin-remark-mermaid": "1.0.1",
     "husky": "8.0.3",
