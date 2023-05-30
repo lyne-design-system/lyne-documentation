@@ -26,7 +26,7 @@
   "dependencies": {
     "@gridsome/source-graphql": "0.1.0",
     "@sbb-esta/icons": "0.1.37",
-    "@sbb-esta/lyne-components": "0.35.14",
+    "@sbb-esta/lyne-components": "0.35.16",
     "@sbb-esta/lyne-design-tokens": "0.3.4",
     "@sbb-esta/pictograms": "0.0.6",
     "axios": "1.4.0",
