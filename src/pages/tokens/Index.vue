@@ -3,9 +3,9 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <sbb-title level="1" text="Design Tokens" class="page-title"></sbb-title>
+          <sbb-title level="1" class="page-title">Design Tokens</sbb-title>
 
-          <sbb-title level="2" text="Access"></sbb-title>
+          <sbb-title level="2">Access</sbb-title>
 
           <p>Our managed system of Design Tokens can be either accessed via npm or our cdn:</p>
           <ul>
@@ -14,7 +14,7 @@
             </li>
           </ul>
 
-          <sbb-title level="2" text="Source"></sbb-title>
+          <sbb-title level="2">Source</sbb-title>
 
           <p>
             The source repository (where design tokens are defined and generated) can be found on
@@ -27,7 +27,7 @@
             >lyne-design-tokens</a
           >
 
-          <sbb-title level="2" text="Categories"></sbb-title>
+          <sbb-title level="2">Categories</sbb-title>
 
           <p>We define and provide information for Design Tokens in the following Categories</p>
           <ul>
@@ -69,10 +69,6 @@ const categories = [
   {
     name: 'Color',
     url: 'color',
-  },
-  {
-    name: 'Icons',
-    url: 'icons',
   },
   {
     name: 'Shadow',

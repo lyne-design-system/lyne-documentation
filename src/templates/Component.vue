@@ -2,10 +2,10 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <sbb-title level="1" :text="$data.title" class="page-title"></sbb-title>
+        <sbb-title level="1" class="page-title">{{ $data.title }}</sbb-title>
 
         <div class="content">
-          <sbb-title level="2" text="Variants"></sbb-title>
+          <sbb-title level="2">Variants</sbb-title>
 
           <p>
             Checkout the storybook for this component to play around with all the variants:
@@ -13,14 +13,13 @@
           </p>
 
           <div class="variants" v-for="(story, index) in $data.stories" :key="index">
-            <sbb-title
-              level="3"
-              :text="`Variant: ${
+            <sbb-title level="3">{{
+              `Variant: ${
                 story.documentation && story.documentation.title
                   ? story.documentation.title
                   : '(no title)'
-              }`"
-            ></sbb-title>
+              }`
+            }}</sbb-title>
 
             <div
               v-html="story.element"
@@ -43,17 +42,16 @@
                 variant="secondary"
                 label="Copy"
                 size="m"
-                icon
+                icon-name="form-small"
                 v-on="{
-                  'sbb-button_click': copyClick.bind(false, story.elementRaw),
+                  click: copyClick.bind(false, story.elementRaw),
                 }"
               >
-                <CopyIcon />
               </sbb-button>
             </div>
           </div>
 
-          <sbb-title level="2" text="Documentation"></sbb-title>
+          <sbb-title level="2">Documentation</sbb-title>
 
           <div v-html="$page.mdDoc.edges[0].node.content"></div>
         </div>
@@ -81,7 +79,6 @@ query(
 <script>
 import * as pjs from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
-import CopyIcon from 'lyne-icons/dist/icons/form-small.svg';
 import globalConfig from '../../global.config';
 
 import codepenHtml from '../helpers/codepen';
@@ -100,7 +97,7 @@ const setLocalData = (context, _data) => {
   const data = _data;
 
   data.title = context.compId;
-  data.storybook = `${globalConfig.storybookBaseUrl}/?path=/story/${context.compId}`;
+  data.storybook = globalConfig.storybookBaseUrl;
 
   /**
    * window object is required in storybundle, therefore we should only do it
@@ -123,7 +120,7 @@ const setLocalData = (context, _data) => {
       ignoreArgs = docu.disableArgs;
     }
   }
-
+  console.log('raw', rawStories);
   Object.keys(rawStories).forEach((key) => {
     if (key !== 'default') {
       const storyObject = {};
@@ -145,6 +142,11 @@ const setLocalData = (context, _data) => {
       } else {
         storyObject.documentation.container = {};
       }
+
+      const unCamelCase = (string) =>
+        string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b([A-Z]+)([A-Z])([a-z])/, '$1 $2$3');
+
+      storyObject.documentation.title = unCamelCase(key);
 
       // adopt styles
       const containerKeys = Object.keys(storyObject.documentation.container);
@@ -184,12 +186,12 @@ const setLocalData = (context, _data) => {
     }
   });
   data.stories = stories;
+  console.log(stories);
 };
 
 export default {
   components: {
     Codepen,
-    CopyIcon,
   },
   data() {
     return {

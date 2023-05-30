@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <sbb-title level="1" text="Animation" class="page-title"></sbb-title>
+          <sbb-title level="1" class="page-title">Animation</sbb-title>
 
           <TokensTable :tokens="$data.tokens" :hideExampleColumn="true" />
         </div>

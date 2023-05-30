@@ -2,10 +2,10 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <sbb-title level="1" text="Spacing" class="page-title"></sbb-title>
+        <sbb-title level="1" class="page-title">Spacing</sbb-title>
 
         <div class="content" v-for="(category, index) in $data.tokens" :key="index">
-          <sbb-title level="2" :text="category.title"></sbb-title>
+          <sbb-title level="2">{{ category.title }}</sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span

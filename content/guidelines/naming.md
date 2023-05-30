@@ -1,1 +1,1 @@
-<sbb-title level="1" text="Naming Guidelines" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">Naming Guidelines</sbb-title>

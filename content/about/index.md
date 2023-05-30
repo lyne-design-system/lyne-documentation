@@ -1,4 +1,4 @@
-<sbb-title level="1" text="All about Lyne Design System" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">All about Lyne Design System</sbb-title>
 
 Lyne Design System <span class="is-highlighted">– also just called _Lyne_ –</span> is SBB–CFF–FFSs holistic, human-centered and collaboration-focused open-source design system.
 
@@ -10,13 +10,13 @@ Lyne empowers people and unites teams to work <span class="is-highlighted show-c
 
 <div class="notification is-primary is-light">Lyne is the <strong>product name</strong> we chose for our design system. Therefore Lyne is not a derived nor bought of the self service or product. We are actively building and enhancing Lyne and so can you with your <a href="/contributing">contributions</a>.</div>
 
-<sbb-title level="2" text="Lyne behind the scenes"></sbb-title>
+<sbb-title level="2">Lyne behind the scenes</sbb-title>
 
 Check out the following sections and get to know Lyne more in depth.
 
 At some we might use some jargon to be more specific to describe certain concepts or artifacts. If there are new or unknown terms, have a look at our [glossary](/about/glossary/) which might hold a description or explanation. Otherwise help us improve and check the <a href="/contributing">contributing</a> section.
 
-<sbb-title level="3" text="Goals and Benefits"></sbb-title>
+<sbb-title level="3">Goals and Benefits</sbb-title>
 
 Lyne creates a shared, connected and transparent workspace for designers, developers and their stakeholders. The Lyne Design System documents, standardizes and streamlines the design and development process for SBB [web|digital] experiences and governs the design language of the SBB brand experience.
 
@@ -24,7 +24,7 @@ We focus on people, their needs and use automation wherever possible to create o
 
 See our <span class="is-highlighted show-rocket-and-cash">[Goals and Benefits](/about/goals-and-benefits)</span> section to get more insights about the opportunities which Lyne brings with it.
 
-<sbb-title level="3" text="What you get"></sbb-title>
+<sbb-title level="3">What you get</sbb-title>
 
 Lyne provides certain artifacts, namely:
 
@@ -37,15 +37,15 @@ Check out the [What you get](/about/what-you-get/) section for further insights 
 
 Besides the above listed artifacts Lyne is also everything in between, the glue which keeps all together and in our case even in-sync.
 
-<sbb-title level="3" text="How Lyne works"></sbb-title>
+<sbb-title level="3">How Lyne works</sbb-title>
 
 [How Lyne works](/about/how-lyne-works/)
 
-<sbb-title level="3" text="How we work"></sbb-title>
+<sbb-title level="3">How we work</sbb-title>
 
 See the [How we work](/about/how-we-work/) section to meet our processes, our team get to know our Guiding Principles.
 
-<sbb-title level="3" text="Glossary"></sbb-title>
+<sbb-title level="3">Glossary</sbb-title>
 
 A Design System is a complex topic and introduces many new concepts, new tools and has its very distinct vocabulary, terminology and jargon.
 

@@ -2,12 +2,12 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <sbb-title level="1" text="Shadow" class="page-title"></sbb-title>
+        <sbb-title level="1" class="page-title">Shadow</sbb-title>
 
         <div v-for="(key, index) in Object.keys($data.tokens)" :key="index">
-          <sbb-title level="2" :text="`Elevation Level ${key}`"></sbb-title>
+          <sbb-title level="2">{{ `Elevation Level ${key}` }}</sbb-title>
 
-          <sbb-title level="3" text="Soft"></sbb-title>
+          <sbb-title level="3">Soft</sbb-title>
 
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"
@@ -34,7 +34,7 @@
             }"
           />
 
-          <sbb-title level="3" text="Hard"></sbb-title>
+          <sbb-title level="3">Hard</sbb-title>
 
           <TokenShadowBlock
             :baseName="$data.tokenPrefix + key"

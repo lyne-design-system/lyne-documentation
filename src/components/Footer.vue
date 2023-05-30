@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="content">
-      <sbb-title level="2" visual-level="5" text="Packages by Lyne Design System"></sbb-title>
+      <sbb-title level="2" visual-level="5">Relevant Packages</sbb-title>
       <ul>
         <li v-for="link in $data.links" :key="link.href">
           <a :href="link.link" target="_blank" rel="noopener"
@@ -10,14 +10,14 @@
         </li>
       </ul>
 
-      <sbb-title level="2" visual-level="5" text="Further Ressources"></sbb-title>
+      <sbb-title level="2" visual-level="5">Further Resources</sbb-title>
       <ul>
         <li>
-          <g-link to="/deployments/">Storybook version history of lyne-components</g-link>
+          <a :href="$data.storybookUrl">Storybook</a>
         </li>
       </ul>
 
-      <sbb-title level="2" visual-level="5" text="Notice"></sbb-title>
+      <sbb-title level="2" visual-level="5">Notice</sbb-title>
       <!-- eslint-disable-next-line max-len -->
       <p>
         We intend to build the Lyne documentation platform based on the
@@ -44,9 +44,12 @@
 </template>
 
 <script>
+import globalConfig from '../../global.config';
+
 const lyneComponentsVersion = require('@sbb-esta/lyne-components/package.json').version;
 const lyneDesignTokensVersion = require('@sbb-esta/lyne-design-tokens/package.json').version;
-const lyneIconsVersion = require('lyne-icons/package.json').version;
+const sbbIconsVersion = require('@sbb-esta/icons/package.json').version;
+const sbbPictogramsVersion = require('@sbb-esta/pictograms/package.json').version;
 const documentationPackageJson = require('../../package.json');
 
 const lyneDocumentationVersion = '0.0.0';
@@ -54,11 +57,17 @@ const lyneDocumentationVersion = '0.0.0';
 export default {
   data() {
     const dataExport = {
+      storybookUrl: globalConfig.storybookBaseUrl,
       links: {
         components: {
           link: 'https://github.com/lyne-design-system/lyne-components',
           title: 'lyne-components',
           version: lyneComponentsVersion,
+        },
+        tokens: {
+          link: 'https://github.com/lyne-design-system/lyne-design-tokens',
+          title: 'lyne-design-tokens',
+          version: lyneDesignTokensVersion,
         },
         documentation: {
           link: 'https://github.com/lyne-design-system/lyne-documentation',
@@ -66,14 +75,14 @@ export default {
           version: lyneDocumentationVersion,
         },
         icons: {
-          link: 'https://github.com/lyne-design-system/lyne-icons',
-          title: 'lyne-icons',
-          version: lyneIconsVersion,
+          link: 'https://github.com/sbb-design-systems/sbb-icons',
+          title: 'sbb-icons',
+          version: sbbIconsVersion,
         },
-        tokens: {
-          link: 'https://github.com/lyne-design-system/lyne-design-tokens',
-          title: 'lyne-design-tokens',
-          version: lyneDesignTokensVersion,
+        pictograms: {
+          link: 'https://github.com/sbb-design-systems/sbb-pictograms',
+          title: 'sbb-pictograms',
+          version: sbbPictogramsVersion,
         },
       },
     };

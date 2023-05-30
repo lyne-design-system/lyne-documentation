@@ -1,4 +1,4 @@
-<sbb-title level="1" text="What you get" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">What you get</sbb-title>
 
 - Artifacts
   - Components

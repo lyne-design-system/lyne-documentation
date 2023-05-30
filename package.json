@@ -25,8 +25,10 @@
   },
   "dependencies": {
     "@gridsome/source-graphql": "0.1.0",
+    "@sbb-esta/icons": "0.1.37",
     "@sbb-esta/lyne-components": "0.35.10",
     "@sbb-esta/lyne-design-tokens": "0.3.4",
+    "@sbb-esta/pictograms": "0.0.6",
     "axios": "1.4.0",
     "buefy": "0.9.23",
     "flexsearch": "0.7.31",
@@ -34,7 +36,6 @@
     "gridsome-plugin-i18n": "1.6.0",
     "gridsome-plugin-remark-shiki": "0.6.0",
     "lyne-helper-eslint-config": "1.0.7",
-    "lyne-icons": "4.40.0",
     "prettier": "2.8.8",
     "prismjs": "1.29.0"
   },

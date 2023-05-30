@@ -3,10 +3,10 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <sbb-title level="1" text="Size" class="page-title"></sbb-title>
+          <sbb-title level="1" class="page-title">Size</sbb-title>
 
           <div v-for="(key, index) in Object.keys($data.tokens)" :key="index">
-            <sbb-title level="2" :text="key"></sbb-title>
+            <sbb-title level="2">{{ key }}</sbb-title>
 
             <TokensTable :tokens="$data.tokens[key]">
               <template v-slot="slotProps">
@@ -39,7 +39,6 @@ import { addUnitToTokenValue, designTokensByPath, groupedTokens } from '../../he
 import TokensTable from '../../components/TokensTable.vue';
 
 const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
-const lyneIcons = require('lyne-icons/dist/icons.json').icons;
 
 const sizeTokens = designTokensByPath(tokens, 'size').map((token) =>
   addUnitToTokenValue(token, 'px')
@@ -59,23 +58,23 @@ export default {
   methods: {
     getSampleIconForToken(token) {
       if (token.attributes.item === 'ui') {
-        return lyneIcons[`armchair-profile-user-${token.attributes.subitem}`];
+        return `<sbb-icon name="armchair-profile-user-${token.attributes.subitem}"></sbb-icon>`;
       }
 
       if (token.attributes.item === 'timetable') {
         if (token.attributes.subitem === 'attribute') {
-          return lyneIcons['sa-sk'];
+          return '<sbb-icon name="sa-sk"></sbb-icon>';
         }
 
         if (token.attributes.subitem === 'him-cus') {
-          return lyneIcons['cancellation'];
+          return '<sbb-icon name="cancellation"></sbb-icon>';
         }
 
-        return lyneIcons['ic-11'];
+        return '<sbb-icon name="ic-11"></sbb-icon>';
       }
 
       if (token.attributes.item === 'pictograms') {
-        return lyneIcons['accessibility-barrierefrei-left'];
+        return '<sbb-icon name="accessibility-barrierefrei-left"></sbb-icon>';
       }
 
       return '';

@@ -2,10 +2,10 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <sbb-title level="1" text="Layout" class="page-title"></sbb-title>
+        <sbb-title level="1" class="page-title">Layout</sbb-title>
 
         <div class="content" v-for="(category, index) in $data.tokens" :key="'tokens' + index">
-          <sbb-title level="2" :text="category.title"></sbb-title>
+          <sbb-title level="2">{{ category.title }}</sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span
@@ -24,7 +24,7 @@
           </TokensTable>
         </div>
         <div class="content" v-for="(category, index) in $data.tokensPx" :key="'tokensPx' + index">
-          <sbb-title level="2" :text="category.title"></sbb-title>
+          <sbb-title level="2">{{ category.title }}</sbb-title>
           <TokensTable :tokens="category.values">
             <template v-slot="slotProps">
               <span

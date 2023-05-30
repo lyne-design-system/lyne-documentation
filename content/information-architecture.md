@@ -1,10 +1,10 @@
-<sbb-title level="1" text="Information architecture (IA) for the Lyne (Web) documentation platform" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">Information architecture (IA) for the Lyne (Web) documentation platform</sbb-title>
 
-<sbb-title level="4" text="Status"></sbb-title>
+<sbb-title level="4">Status</sbb-title>
 
 - [x] Approved as starting point by [Marius Bleuer](https://github.com/mbleuer), [Sabrina Heid](https://github.com/sabrinaheid), [Daniel Schindler](https://github.com/DanTheMen), [Yves Tscherry](https://github.com/feerglas), [Michael Zumstein](https://github.com/4aficiona2) on 15.09.2020
 
-<sbb-title level="4" text="Notes"></sbb-title>
+<sbb-title level="4">Notes</sbb-title>
 
 Every menu item of the proposed IA which sits above the line aim's to guide users to get up and running (potential first time visitors/newcomers). Everything below the line aims to support returning users with day-to-day needs and activities.
 
@@ -14,7 +14,7 @@ Content sections of pages are highlighted by braces `()`
 
 `Home` contains an introduction text with a link to _All about Lyne_ and multiple teasers to link to the _Get started_ guides for the most present Design System disciplines. _Start designing_ and _Start coding_ in the beginning, but at some point also _Start writing_(TBD), _Start contributing_, _What is happening_ and _Guidelines_.
 
-<sbb-title level="4" text="Proposed IA for left side navigation"></sbb-title>
+<sbb-title level="4">Proposed IA for left side navigation</sbb-title>
 
 <details>
   <summary>All about Lyne</summary>
@@ -62,7 +62,7 @@ Essentials, goals(see benefits for more details), What you get, How Lyne works, 
 
 - Glossary (vocabulary/dictionary/common language/terminology/jargon)
 
-<sbb-title level="4" text="Not yet included"></sbb-title>
+<sbb-title level="4">Not yet included</sbb-title>
 
 - Gallery/Implementations/Examples based on Lyne
 </details>
@@ -183,7 +183,7 @@ File a bug or are you missing something (link to contributions)
 - Support (& contact)
 </details>
 
-<sbb-title level="4" text="Sources/IA is influenced by:"></sbb-title>
+<sbb-title level="4">Sources/IA is influenced by:</sbb-title>
 
 - [Carbon](https://www.carbondesignsystem.com)
 - [Carbons new IA](https://medium.com/carbondesign/carbons-new-information-architecture-531c52207205)

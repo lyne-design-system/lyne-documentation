@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <sbb-title level="1" text="Lyne Design System" class="page-title"></sbb-title>
+        <sbb-title level="1" class="page-title">Lyne Design System</sbb-title>
 
         <div class="content">
           <p class="is-size-4">

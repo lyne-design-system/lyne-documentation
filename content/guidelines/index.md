@@ -1,4 +1,4 @@
-<sbb-title level="1" text="Guidelines" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">Guidelines</sbb-title>
 
 - [Guiding Principles](/guidelines/principles)
 - [Naming](/guidelines/naming)

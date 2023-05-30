@@ -2166,6 +2166,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@sbb-esta/icons@0.1.37":
+  version "0.1.37"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/icons/-/icons-0.1.37.tgz#87f41de231d9c8c177cae8731d64e56e7a716429"
+  integrity sha512-pCPki2k9dMy++ROPiT0FiPuDYi7wJvyE6xVtLa0LKzTSgKvaGNfad45M0QnTV5Xv2QnJac5wwCgQn37nwLpm7Q==
+
 "@sbb-esta/lyne-components@0.35.10":
   version "0.35.10"
   resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.35.10.tgz#8a0e27d936d8d044895ec555c7e960e4c76ac421"
@@ -2175,6 +2180,11 @@
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-design-tokens/-/lyne-design-tokens-0.3.4.tgz#9a86f31d315bf98cc3152ccb8a4414d0abf81472"
   integrity sha512-kE79I3tVvSgaK3CLDChfyak/NqrkPoR2n+6ZK5AnOUiAJD2E1nUqiyfn/rYXN06IVX+fs+GMdP1T3tKU4ScrTQ==
+
+"@sbb-esta/pictograms@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/pictograms/-/pictograms-0.0.6.tgz#b5ede2c762e9df2be6b7d529c3c7234b471d636e"
+  integrity sha512-+0wDzJdVF1m3+uJazmzWHwg9VtLusaOe/PW9/pZGc4+LOO1N+q5G6TH2xzwWXlA1EC6Fkwn/rxbK+H5PqSD9TA==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -11032,20 +11042,6 @@ lyne-helper-eslint-config@1.0.7:
   resolved "https://registry.yarnpkg.com/lyne-helper-eslint-config/-/lyne-helper-eslint-config-1.0.7.tgz#1eb0203ae372bcbcee8b069dcc2e15d6448f2a10"
   integrity sha512-iPpMWyiMNzzdN2iQT0HWplD3DstQeoZkYEa9dBdPBT4hBGuG1YXwYhJnK1rrW4auN4iXfTtV0ZnuypyU9PrAGw==
 
-lyne-helper-trigger-travis@~1.0.3:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/lyne-helper-trigger-travis/-/lyne-helper-trigger-travis-1.0.6.tgz#cc04cc0a6c10a3d5c3e7693a578d164cf7d3d183"
-  integrity sha512-K5XeHtsynOwEq8EuM6NZrW+5BchHp2E13qkKR5D1DbgronCnUZQm5G7XaL4JK2FZ6ID2ClC/6yr6GtkDbZyQ/Q==
-
-lyne-icons@4.40.0:
-  version "4.40.0"
-  resolved "https://registry.yarnpkg.com/lyne-icons/-/lyne-icons-4.40.0.tgz#803a1ba2e839973e9da41471f36beb8699b0c7f8"
-  integrity sha512-oAweW3xSGJjYaLKQmL3CH0rJwwRl8KgLljojKHuCZb7Col4LYzcKy9vQ0Kh9l8bbMcOD8PDf+LDCJNPJ/iQ8QA==
-  dependencies:
-    lyne-helper-trigger-travis "~1.0.3"
-    ncp "~2.0.0"
-    rimraf "~3.0.2"
-
 macos-release@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-3.1.0.tgz#6165bb0736ae567ed6649e36ce6a24d87cbb7aca"
@@ -11794,11 +11790,6 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
-
-ncp@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
-  integrity sha512-zIdGUrPRFTUELUvr3Gmc7KZ2Sw/h1PiVM0Af/oHB6zgnV1ikqSfRk+TOufi79aHYCW3NiOXmr1BP5nWbzojLaA==
 
 negotiator@0.6.3, negotiator@^0.6.2, negotiator@^0.6.3:
   version "0.6.3"
@@ -14491,7 +14482,7 @@ rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
-rimraf@^3.0.0, rimraf@^3.0.2, rimraf@~3.0.2:
+rimraf@^3.0.0, rimraf@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
   integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==

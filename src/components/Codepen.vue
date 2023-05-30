@@ -3,25 +3,18 @@
     <input type="hidden" name="data" :value="JSON.stringify(contents)" />
 
     <sbb-button
-      label="Edit on Codepen.io"
       variant="secondary"
-      type="submit"
-      icon="true"
       size="m"
-      v-on="{ 'sbb-button_click': buttonClick }"
+      v-on="{ click: buttonClick }"
+      icon-name="link-external-small"
     >
-      <LinkIcon />
+      Edit on Codepen.io
     </sbb-button>
   </form>
 </template>
 
 <script>
-import LinkIcon from 'lyne-icons/dist/icons/link-external-small.svg';
-
 export default {
-  components: {
-    LinkIcon,
-  },
   methods: {
     buttonClick() {
       this.$refs.form.submit();

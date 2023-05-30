@@ -92,10 +92,6 @@ const navigationData = [
         path: '/tokens/color/',
       },
       {
-        name: 'Icons',
-        path: '/tokens/icons/',
-      },
-      {
         name: 'Size',
         path: '/tokens/size/',
       },

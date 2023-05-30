@@ -3,10 +3,10 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <sbb-title level="1" text="Typography" class="page-title"></sbb-title>
+          <sbb-title level="1" class="page-title">Typography</sbb-title>
 
           <div v-for="(group, index) in $data.tokensGroups" :key="index">
-            <sbb-title level="2" :text="group.name"></sbb-title>
+            <sbb-title level="2">{{ group.name }}</sbb-title>
 
             <TokensTable :tokens="group.tokens" :hideExampleColumn="group.hideExample">
               <template v-slot="slotProps">

@@ -1,4 +1,4 @@
-<sbb-title level="1" text="How to Contribute a component?" class="page-title"></sbb-title>
+<sbb-title level="1" class="page-title">How to Contribute a component?</sbb-title>
 
 PROCESS PREVIEW IMAGE COMING
 

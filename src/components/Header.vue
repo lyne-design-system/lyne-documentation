@@ -8,9 +8,9 @@
         :aria-expanded="showMenu"
         @click="menuClick"
       >
-        <ButtonIcon v-if="!showMenu" class="button-icon" />
+        <sbb-icon name="hamburger-menu-small" v-if="!showMenu" class="button-icon" />
 
-        <CloseIcon v-if="showMenu" class="button-icon" />
+        <sbb-icon name="cross-small" v-if="showMenu" class="button-icon" />
 
         <span class="button-text">Menu</span>
       </button>
@@ -23,15 +23,9 @@
 </template>
 
 <script>
-import ButtonIcon from 'lyne-icons/dist/icons/hamburger-menu-small.svg';
-import CloseIcon from 'lyne-icons/dist/icons/cross-small.svg';
 import eventBus from '../helpers/eventBus';
 
 export default {
-  components: {
-    ButtonIcon,
-    CloseIcon,
-  },
   created() {
     eventBus.bus.addEventListener(eventBus.names.toggleMenu, (event) => {
       const { showMenu } = event.detail;
