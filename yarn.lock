@@ -2229,10 +2229,10 @@
   resolved "https://registry.yarnpkg.com/@sbb-esta/icons/-/icons-0.1.37.tgz#87f41de231d9c8c177cae8731d64e56e7a716429"
   integrity sha512-pCPki2k9dMy++ROPiT0FiPuDYi7wJvyE6xVtLa0LKzTSgKvaGNfad45M0QnTV5Xv2QnJac5wwCgQn37nwLpm7Q==
 
-"@sbb-esta/lyne-components@0.35.16":
-  version "0.35.16"
-  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.35.16.tgz#f367843e7bf3533ba2bcf57aba29c977924af374"
-  integrity sha512-7/tSTymzSG4Y7Q1/dvKG8RjDuexeAQJfPYwdvra7hlK/P77q+QfuuVeF4xEZ8ldv1XKjgl1foQ57Vk0QXVp9oQ==
+"@sbb-esta/lyne-components@0.35.18":
+  version "0.35.18"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/lyne-components/-/lyne-components-0.35.18.tgz#ac700f063746b8564bee7498f81e78880806b7c8"
+  integrity sha512-CR1JXh5xKJA4viWTBf97j5MeJwF72/8Cvdo7dCE9usVKvAX0RLkJO+gVC10M8lgOnPt+INsRS8hfqzmHADFEaw==
 
 "@sbb-esta/lyne-design-tokens@0.3.4":
   version "0.3.4"
