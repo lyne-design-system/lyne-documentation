@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.165](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.164...v0.1.165) (2023-05-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @sbb-esta/lyne-components to v0.36.0 ([9e0e399](https://github.com/lyne-design-system/lyne-documentation/commit/9e0e39943321911214ac21c9c1cf8f49ccaf1c8a))
+
 ### [0.1.164](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.163...v0.1.164) (2023-05-30)
 
 ### Bug Fixes
