@@ -24,7 +24,6 @@
             <div
               v-html="story.element"
               class="variant-container"
-              :style="story.documentation.container.styles"
             />
 
             <pre v-html="componentHtml(story.elementRaw)" class="code-view" />
@@ -101,7 +100,7 @@ const setLocalData = (context, _data) => {
 
   /**
    * window object is required in storybundle, therefore we should only do it
-   * when the component get's mounted in the client context or is updated
+   * when the component gets mounted in the client context or is updated
    */
   const lyneStories = require('@sbb-esta/lyne-components/dist/collection/storybundle');
 
@@ -120,57 +119,21 @@ const setLocalData = (context, _data) => {
       ignoreArgs = docu.disableArgs;
     }
   }
-  console.log('raw', rawStories);
+
   Object.keys(rawStories).forEach((key) => {
+    const unCamelCase = (string) =>
+      string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b([A-Z]+)([A-Z])([a-z])/, '$1 $2$3');
+
     if (key !== 'default') {
       const storyObject = {};
       const story = rawStories[key];
-      const storyKeys = Object.keys(story);
-
-      // handle documentation key
-      if (storyKeys.includes('documentation')) {
-        storyObject.documentation = story.documentation;
-      } else {
-        storyObject.documentation = {};
-      }
-
-      // handle container key
-      const docuKeys = Object.keys(storyObject.documentation);
-
-      if (docuKeys.includes('container')) {
-        storyObject.documentation.container = story.documentation.container;
-      } else {
-        storyObject.documentation.container = {};
-      }
-
-      const unCamelCase = (string) =>
-        string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b([A-Z]+)([A-Z])([a-z])/, '$1 $2$3');
-
+      storyObject.documentation = {};
       storyObject.documentation.title = unCamelCase(key);
-
-      // adopt styles
-      const containerKeys = Object.keys(storyObject.documentation.container);
-
-      if (containerKeys.includes('styles')) {
-        const rawStyles = storyObject.documentation.container.styles;
-        const stylesKeys = Object.keys(rawStyles);
-        let styles = '';
-
-        stylesKeys.forEach((styleKey) => {
-          const style = rawStyles[styleKey];
-
-          styles += `${styleKey}: ${style};`;
-        });
-
-        storyObject.documentation.container.styles = styles;
-      } else {
-        storyObject.documentation.container.styles = '';
-      }
 
       // set html
       if (story && Object.keys(story).includes('args')) {
-        storyObject.element = story(story.args).outerHTML;
-        const rawElement = story(story.args);
+        storyObject.element = story.render(story.args).outerHTML;
+        const rawElement = story.render(story.args);
 
         // remove attributes that are defined in disableArgs
         if (ignoreArgs.length > 0) {
@@ -186,7 +149,6 @@ const setLocalData = (context, _data) => {
     }
   });
   data.stories = stories;
-  console.log(stories);
 };
 
 export default {
