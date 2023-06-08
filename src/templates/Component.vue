@@ -21,10 +21,7 @@
               }`
             }}</sbb-title>
 
-            <div
-              v-html="story.element"
-              class="variant-container"
-            />
+            <div v-html="story.element" class="variant-container" />
 
             <pre v-html="componentHtml(story.elementRaw)" class="code-view" />
 
