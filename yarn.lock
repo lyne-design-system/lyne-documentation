@@ -2211,10 +2211,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sbb-esta/icons@0.1.43":
-  version "0.1.43"
-  resolved "https://registry.yarnpkg.com/@sbb-esta/icons/-/icons-0.1.43.tgz#679a20ae97c202e5b4a2f1ccdb7c867ce16df9b4"
-  integrity sha512-UF0A7dVDwG+cyCytAsZZnPXIjfhRM9KiHhrvLf+vt3ErwbuOFGC/XEP7arqnOpX9dfUzLZWkajQcRJK3o9UqOQ==
+"@sbb-esta/icons@0.1.44":
+  version "0.1.44"
+  resolved "https://registry.yarnpkg.com/@sbb-esta/icons/-/icons-0.1.44.tgz#6e942cc1c55fc5b8d07d2a536794f7b29bc23f33"
+  integrity sha512-chmi4kff6I77ifPF+Atm9Z7TllxBNcdWZJ9LMwzacFM830Xd5+JQ+svujneBFcxZIlJJiC5Mbs9cwgdkCPhlow==
 
 "@sbb-esta/lyne-components@0.36.20":
   version "0.36.20"
