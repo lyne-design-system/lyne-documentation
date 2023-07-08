@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.186](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.185...v0.1.186) (2023-07-08)
+
+### Bug Fixes
+
+- **deps:** update dependency @sbb-esta/icons to v0.1.46 ([d2d58fd](https://github.com/lyne-design-system/lyne-documentation/commit/d2d58fd537f71c146ae3898d77ce414ede4358ae))
+
 ### [0.1.185](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.184...v0.1.185) (2023-07-05)
 
 ### Bug Fixes
