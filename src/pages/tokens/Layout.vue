@@ -51,7 +51,7 @@ const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.
 const layoutTokens = designTokensByPath(tokens, 'layout');
 
 const baseGridColumns = layoutTokens.filter(
-  (token) => token.attributes.group === 'base-grid-columns'
+  (token) => token.attributes.group === 'base-grid-columns',
 );
 
 const baseGridGutterResponsive = layoutTokens

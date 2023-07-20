@@ -20,7 +20,7 @@ const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.
 
 const easingAnimationTokens = designTokensByCategory(tokens, 'animation');
 const durationAnimationTokens = designTokensByCategory(tokens, 'time').map((animation) =>
-  addUnitToTokenValue(animation, 'ms')
+  addUnitToTokenValue(animation, 'ms'),
 );
 
 export default {

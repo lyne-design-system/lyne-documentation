@@ -41,7 +41,7 @@ import TokensTable from '../../components/TokensTable.vue';
 const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const sizeTokens = designTokensByPath(tokens, 'size').map((token) =>
-  addUnitToTokenValue(token, 'px')
+  addUnitToTokenValue(token, 'px'),
 );
 
 const tokensByGroups = groupedTokens(sizeTokens, 'group');

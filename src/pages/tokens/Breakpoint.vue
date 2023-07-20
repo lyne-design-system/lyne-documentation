@@ -19,7 +19,7 @@ import TokensTable from '../../components/TokensTable.vue';
 const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const breakpointTokens = designTokensByPath(tokens, 'breakpoint').map((token) =>
-  addUnitToTokenValue(token, 'px')
+  addUnitToTokenValue(token, 'px'),
 );
 
 export default {

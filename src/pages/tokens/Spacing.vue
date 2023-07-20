@@ -30,7 +30,7 @@ import TokensTable from '../../components/TokensTable.vue';
 const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const spacingTokens = designTokensByPath(tokens, 'spacing').map((token) =>
-  addUnitToTokenValue(token, 'px')
+  addUnitToTokenValue(token, 'px'),
 );
 
 const tokensFixed = spacingTokens.filter((token) => token.attributes.type === 'fixed');

@@ -49,13 +49,13 @@ const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.
 
 const typoTokens = designTokensByCategory(tokens, 'typo');
 const scaleTokens = designTokensByType(tokens, 'scale').map((scale) =>
-  addUnitToTokenValue(scale, 'px')
+  addUnitToTokenValue(scale, 'px'),
 );
 const typeFaceTokens = typoTokens.filter((token) => token.attributes.type === 'typeFace');
 const letterSpacingTokens = typoTokens.filter((token) => token.attributes.type === 'letterSpacing');
 const lineHeightTokens = typoTokens.filter((token) => token.attributes.type === 'lineHeight');
 const remainingTokens = typoTokens.filter(
-  (token) => token.attributes.type === 'fontFamilyFallback'
+  (token) => token.attributes.type === 'fontFamilyFallback',
 );
 
 export default {

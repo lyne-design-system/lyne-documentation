@@ -55,7 +55,7 @@ const stripResultItems = (content, searchTerm) => {
   indexes.forEach((index) => {
     const contentPart = content.substring(
       index - amountOfStringsBeforeAndAfterResult,
-      index + searchTerm.length + amountOfStringsBeforeAndAfterResult
+      index + searchTerm.length + amountOfStringsBeforeAndAfterResult,
     );
 
     results.push(`... ${contentPart} ...`);
