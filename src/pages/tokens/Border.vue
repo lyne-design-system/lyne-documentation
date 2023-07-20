@@ -36,7 +36,7 @@ import TokensTable from '../../components/TokensTable.vue';
 const { tokens } = require('@sbb-esta/lyne-design-tokens/dist/js/sbb-tokens-raw.json');
 
 const borderTokens = designTokensByPath(tokens, 'border').map((token) =>
-  addUnitToTokenValue(token, 'px')
+  addUnitToTokenValue(token, 'px'),
 );
 
 const widthTokens = borderTokens.filter((token) => token.attributes.type === 'width');

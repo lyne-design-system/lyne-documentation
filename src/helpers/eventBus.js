@@ -22,7 +22,7 @@ class EventBus {
       this.bus.dispatchEvent(
         new CustomEvent(event, {
           detail,
-        })
+        }),
       );
     }
   }
