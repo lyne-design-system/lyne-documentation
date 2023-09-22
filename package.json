@@ -30,7 +30,7 @@
     "@sbb-esta/lyne-design-tokens": "0.3.5",
     "@sbb-esta/pictograms": "0.0.6",
     "axios": "1.5.0",
-    "buefy": "0.9.23",
+    "buefy": "0.9.24",
     "flexsearch": "0.7.31",
     "gridsome": "0.7.23",
     "gridsome-plugin-i18n": "1.6.0",
