@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.195](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.194...v0.1.195) (2023-09-27)
+
+### Bug Fixes
+
+- **deps:** update dependency buefy to v0.9.25 ([99eb9f0](https://github.com/lyne-design-system/lyne-documentation/commit/99eb9f02bf8566c76c6b4dbd4e2fe614b68574c4))
+
 ### [0.1.194](https://github.com/lyne-design-system/lyne-documentation/compare/v0.1.193...v0.1.194) (2023-09-26)
 
 ### Bug Fixes
